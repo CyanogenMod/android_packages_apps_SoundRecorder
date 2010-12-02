@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Enregistrador de so</string>
+  <string name="record_your_message">Enregistreu el vostre missatge</string>
+  <string name="message_recorded">Missatge enregistrat</string>
+  <string name="review_message">Revisa el missatge</string>
+  <string name="recording">S\'està enregistrant</string>
+  <string name="recording_stopped">Heu aturat l\'enregistrament</string>
+  <string name="storage_is_full">L\'emmagatzematge és ple</string>
+  <string name="max_length_reached">S\'ha arribat a la llargària màxima</string>
+  <string name="insert_sd_card">Si us plau, introduïu una targeta SD</string>
+  <string name="min_available"><xliff:g id="minutes">%d</xliff:g> min disponibles</string>
+  <string name="sec_available"><xliff:g id="seconds">%d</xliff:g> seg disponibles</string>
+  <string name="accept">Utilitza aquest enregistrament</string>
+  <string name="discard">Descarta</string>
+  <string name="button_ok">D\'acord</string>
+  <string name="timer_format"><xliff:g id="format">%02d:%02d</xliff:g></string>
+  <string name="press_record">Prem el botó de gravar</string>
+  <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+  <string name="audio_db_artist_name">Els seus enregistraments</string>
+  <string name="audio_db_album_name">Enregistraments d\'àudio</string>
+  <string name="audio_db_playlist_name">Els meus enregistraments</string>
+  <string name="error_sdcard_access">No es pot accedir a la targeta SD</string>
+  <string name="error_app_internal">S\'ha produït un error intern de l\'aplicació</string>
+  <string name="error_mediadb_new_record">No es pot desar l\'àudio gravat</string>
+</resources>
