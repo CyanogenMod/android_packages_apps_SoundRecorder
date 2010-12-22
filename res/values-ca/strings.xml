@@ -14,7 +14,6 @@
   <string name="accept">Utilitza aquest enregistrament</string>
   <string name="discard">Descarta</string>
   <string name="button_ok">D\'acord</string>
-  <string name="timer_format"><xliff:g id="format">%02d:%02d</xliff:g></string>
   <string name="press_record">Prem el botó de gravar</string>
   <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
   <string name="audio_db_artist_name">Els seus enregistraments</string>
