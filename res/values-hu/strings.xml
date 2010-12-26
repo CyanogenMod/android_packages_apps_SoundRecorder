@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2007 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- application name and title of error dialogs-->
+    <string name="app_name">Hangrögzítő</string>
+
+    <!-- Screen title before and during recording -->
+    <string name="record_your_message">Üzenet rögzítése</string>
+    <!-- Screen title after recording -->
+    <string name="message_recorded">Üzenet rögzítve</string>
+    <!-- Screen title while playing back a recording -->
+    <string name="review_message">Üzenet visszajátszása</string>
+    <!-- Label shown during recording -->
+    <string name="recording">Felvétel…</string>
+    <!-- Label shown when the recording is stopped for a reason other than the user stopping it (e.g. the sd card was removed) -->
+    <string name="recording_stopped">Felvétel leállítva</string>
+    <!-- label shown when there is not enough space to record something -->
+    <string name="storage_is_full">Tárhely megtelt</string>
+    <!-- label shown when the recording has reached maximum allowed file size -->
+    <string name="max_length_reached">Elérte a maximális hosszt</string>
+    <!-- label shown when there is no sd card available to record to -->
+    <string name="insert_sd_card">Kérjük, illessze be az SD-kártyát</string>
+    <!-- label shown when there is more than 1 minute but less than 9 minutes of space left to record -->
+	<string name="min_available"><xliff:g id="minutes">%d</xliff:g> perc áll rendelkezésre</string>
+    <!-- label shown when there is less than 1 minute of space left to record -->
+	<string name="sec_available"><xliff:g id="seconds">%d</xliff:g> mp áll rendelkezésre</string>
+
+    <!-- button to accept the current recording and return it to the caller -->
+    <string name="accept">Használja ezt a felvételt</string>
+    <!-- button to discard the current recording and return to the caller -->
+    <string name="discard">Elutasít</string>
+    <!-- acknowlegement button in a number of dialogs -->
+    <string name="button_ok">OK</string>
+    <!-- label shown before the user has recorded anything -->
+    <string name="press_record">Nyomja meg a felvétel gombot</string>
+   
+    <!-- the name under which recordings will be visible in the media database is formatted like this --> 
+    <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
+    <!-- all recordings will show up in the media database with this 'artist' name -->
+	<string name="audio_db_artist_name">Saját magam</string>
+    <!-- all recordings will show up in the media database with this 'album' name -->
+    <string name="audio_db_album_name">Hangfelvételek</string>
+    <!-- all recordings will show up in the media database in a playlist with this name -->
+    <string name="audio_db_playlist_name">Saját felvételek</string>
+   
+    <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+    <string name="error_sdcard_access">Nem lehet hozzáférni az SD kártyához</string>
+    <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
+    <string name="error_app_internal">Alkalmazás hiba</string>
+    <!-- shown as the message in a dialog when the recording could not be added to the media database -->
+    <string name="error_mediadb_new_record">Nem lehet menteni a felvételt</string>
+</resources>
