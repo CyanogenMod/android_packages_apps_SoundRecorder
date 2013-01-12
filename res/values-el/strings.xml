@@ -16,7 +16,7 @@
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name" msgid="5955735546071433666">"Πρόγραμμα εγγραφής ήχου"</string>
+    <string name="app_name">Ηχογράφηση</string>
     <string name="record_your_message" msgid="1583671906691662148">"Εγγράψτε το μήνυμά σας"</string>
     <string name="message_recorded" msgid="381539460921872233">"Το μήνυμα καταγράφηκε"</string>
     <string name="review_message" msgid="201616012287839474">"Επισκόπηση μηνύματος"</string>
@@ -28,12 +28,10 @@
     <string name="insert_sd_card" product="default" msgid="2251831579676114197">"Εισαγάγετε μια κάρτα SD"</string>
     <string name="min_available" msgid="5493947690062988925">"<xliff:g id="MINUTES">%d</xliff:g> λεπτά διαθέσιμα"</string>
     <string name="sec_available" msgid="2297020788861694399">"<xliff:g id="SECONDS">%d</xliff:g> δευτ. διαθέσιμα"</string>
-    <string name="accept" msgid="7770652589312551402">"Χρησιμοποιήστε αυτήν την εγγραφή"</string>
+    <string name="accept">Αποδοχή εγγραφής</string>
     <string name="discard" msgid="761613433029406319">"Απόρριψη"</string>
     <string name="button_ok" msgid="3004911343723076226">"OK"</string>
     <string name="press_record" msgid="5039711805290780494">"Πατήστε το κουμπί εγγραφής"</string>
-    <!-- no translation found for audio_db_title_format (7912182366970749312) -->
-    <skip />
     <string name="audio_db_artist_name" msgid="961640229118120080">"Οι εγγραφές σας"</string>
     <string name="audio_db_album_name" msgid="9072588113803264440">"Εγγραφές ήχου"</string>
     <string name="audio_db_playlist_name" msgid="5592939050047058162">"Οι εγγραφές μου"</string>
