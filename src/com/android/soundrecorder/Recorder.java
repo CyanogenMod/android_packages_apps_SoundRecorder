@@ -239,8 +239,12 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public void stopRecording() {
         if (mRecorder == null)
             return;
-
-        mRecorder.stop();
+        try {
+            mRecorder.stop();
+        }catch (RuntimeException exception){
+            setError(INTERNAL_ERROR);
+            Log.e(TAG, "Stop Failed");
+        }
         mRecorder.reset();
         mRecorder.release();
         mRecorder = null;
