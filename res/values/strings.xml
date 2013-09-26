@@ -49,6 +49,12 @@
     <string name="button_ok">OK</string>
     <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
     <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+    <!-- label shown before the user has recorded anything -->
+    <string name="press_record">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
+    6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
+    <!-- label shown before the user has recorded anything -SSR support added-->
+    <string name="press_record_ssr">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
+    6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
    
     <!-- the name under which recordings will be visible in the media database is formatted like this --> 
     <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
@@ -64,7 +70,13 @@
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
     <string name="error_sdcard_access" product="default">Can\'t access SD card.</string>
     <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
-    <string name="error_app_internal">Internal application error.</string>
+    <string name="error_app_internal">Internal application error</string>
+    <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+    <string name="error_app_unsupported">Unsupported format</string>
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
+    <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+    <string name="error_mediadb_incall">This option is supported, only while in call</string>
+    <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+    <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
 </resources>
