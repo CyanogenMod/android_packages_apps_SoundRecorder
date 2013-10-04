@@ -649,6 +649,7 @@ public class SoundRecorder extends Activity
                   Log.e(TAG, "Selected Voice Tx only Source: sourcetype" + mAudioSourceType);
               }
               ret = true;
+              break;
             }
 
             case KeyEvent.KEYCODE_1: // Voice Rx Only (Only during Call(
@@ -656,6 +657,7 @@ public class SoundRecorder extends Activity
               Log.e(TAG, "Selected Voice Rx only Source: Key Event" + KeyEvent.KEYCODE_1);
               mAudioSourceType = MediaRecorder.AudioSource.VOICE_DOWNLINK;
               ret = true;
+              break;
             }
 
             case KeyEvent.KEYCODE_2: // Voice Rx+Tx (Only during Call)
@@ -663,6 +665,7 @@ public class SoundRecorder extends Activity
               Log.e(TAG, "Selected Voice Tx+Rx Source: Key Event" + KeyEvent.KEYCODE_2);
               mAudioSourceType = MediaRecorder.AudioSource.VOICE_CALL;
               ret = true;
+              break;
             }
 
             case KeyEvent.KEYCODE_3: // Selected AMR codec type
@@ -670,6 +673,7 @@ public class SoundRecorder extends Activity
               Log.e(TAG, "Selected AUDIO_AMR Codec: Key Event" + KeyEvent.KEYCODE_3);
               mRequestedType = AUDIO_AMR;
               ret = true;
+              break;
             }
 
             case KeyEvent.KEYCODE_4: // Selected EVRC codec type
@@ -677,6 +681,7 @@ public class SoundRecorder extends Activity
               Log.e(TAG, "Selected Voice AUDIO_EVRC Codec: Key Event" + KeyEvent.KEYCODE_4);
               mRequestedType = AUDIO_EVRC;
               ret = true;
+              break;
             }
 
             case KeyEvent.KEYCODE_5: // Selected QCELP codec type
@@ -684,12 +689,14 @@ public class SoundRecorder extends Activity
               Log.e(TAG, "Selected AUDIO_QCELP Codec: Key Event" + KeyEvent.KEYCODE_5);
               mRequestedType = AUDIO_QCELP;
               ret = true;
+              break;
             }
             case KeyEvent.KEYCODE_6: // Selected AAC codec type
             {
               Log.e(TAG, "Selected AUDIO_AAC_MP4 Codec: Key Event" + KeyEvent.KEYCODE_6);
               mRequestedType = AUDIO_AAC_MP4;
               ret = true;
+              break;
             }
             case KeyEvent.KEYCODE_7: // Selected 6 channel wave lpcm codec type
             {
@@ -716,6 +723,7 @@ public class SoundRecorder extends Activity
               mAudioOutputFormat = MediaRecorder.OutputFormat.AMR_WB;
               mAmrWidebandExtension = ".awb";
               ret = true;
+              break;
             }
             case KeyEvent.KEYCODE_A: // Selected amr-wb codec type in .3gpp file format
             {
@@ -724,6 +732,7 @@ public class SoundRecorder extends Activity
               mAmrWidebandExtension = ".3gpp";
               mAudioOutputFormat = MediaRecorder.OutputFormat.THREE_GPP;
               ret = true;
+              break;
             }
 
             default:
