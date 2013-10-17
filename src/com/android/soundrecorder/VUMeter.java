@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2011 The Android Open Source Project
+ * Copyright (c) 2012, The Linux Foundation. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -36,7 +37,6 @@ public class VUMeter extends View {
     
     Paint mPaint, mShadow;
     float mCurrentAngle;
-    
     Recorder mRecorder;
 
     public VUMeter(Context context) {
@@ -67,7 +67,14 @@ public class VUMeter extends View {
     	mRecorder = recorder;
     	invalidate();
     }
-    
+
+    /**
+     *  Reset angle of pointer.
+     */
+    public void reset() {
+        mCurrentAngle = 0;
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);

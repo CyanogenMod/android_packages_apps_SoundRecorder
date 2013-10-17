@@ -31,6 +31,7 @@
     <string name="accept" msgid="1888285552128743656">"完成"</string>
     <string name="discard" msgid="761613433029406319">"捨棄"</string>
     <string name="button_ok" msgid="3004911343723076226">"確定"</string>
+    <string name="press_record">點擊開始錄音</string>
     <!-- no translation found for audio_db_title_format (7912182366970749312) -->
     <skip />
     <string name="audio_db_artist_name" msgid="961640229118120080">"您的錄音"</string>
@@ -38,6 +39,9 @@
     <string name="audio_db_playlist_name" msgid="5592939050047058162">"我的錄音"</string>
     <string name="error_sdcard_access" product="nosdcard" msgid="86629081075681774">"無法存取 USB 儲存裝置。"</string>
     <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"無法存取 SD 卡。"</string>
+    <string name="error_in_call_record">電話錄音正在進行中</string>
     <string name="error_app_internal" msgid="312884382388702022">"內部應用程式錯誤。"</string>
     <string name="error_mediadb_new_record" msgid="261714902333432462">"無法儲存錄製的音訊。"</string>
+    <string name="file_saved">檔案保存成功</string>
+    <string name="file_discard">放棄錄音</string>
 </resources>
