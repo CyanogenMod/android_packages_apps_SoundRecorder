@@ -24,13 +24,15 @@
     <string name="recording_stopped" msgid="1580278719585249612">"Opname gestop"</string>
     <string name="storage_is_full" msgid="416039755956726221">"Berging is vol"</string>
     <string name="max_length_reached" msgid="6398215743584093353">"Maksimum lengte bereik"</string>
-    <string name="insert_sd_card" product="nosdcard" msgid="4609407750669086933">"Heg USB-berging"</string>
-    <string name="insert_sd_card" product="default" msgid="1007630222084726808">"Sit \'n SD-kaart in"</string>
+    <string name="sd_card_unavailable" product="nosdcard">"Heg USB-berging"</string>
+    <string name="sd_card_unavailable" product="default">"SD-kaart nie beskikbaar nie"</string>
     <string name="min_available" msgid="5493947690062988925">"<xliff:g id="MINUTES">%d</xliff:g> min beskikbaar"</string>
     <string name="sec_available" msgid="2297020788861694399">"<xliff:g id="SECONDS">%d</xliff:g> s beskikbaar"</string>
     <string name="accept" msgid="1888285552128743656">"Klaar"</string>
     <string name="discard" msgid="761613433029406319">"Verwerp"</string>
     <string name="button_ok" msgid="3004911343723076226">"OK"</string>
+    <string name="press_record">"Druk opname"</string>
+    <string name="press_record_ssr">"Druk: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR end druk opname"</string>
     <!-- no translation found for audio_db_title_format (7912182366970749312) -->
     <skip />
     <string name="audio_db_artist_name" msgid="961640229118120080">"Jou opnames"</string>
@@ -39,5 +41,12 @@
     <string name="error_sdcard_access" product="nosdcard" msgid="86629081075681774">"Kan nie toegang tot USB-berging kry nie."</string>
     <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"Kan nie toegang tot SD-kaart kry nie."</string>
     <string name="error_app_internal" msgid="312884382388702022">"Interne programfout."</string>
+    <string name="error_in_call_record">"In oproep opname is aan die gang"</string>
+    <string name="error_app_unsupported">"Onbekende formaat"</string>
+    <string name="error_mediadb_incall">"Hierdie opsie is net geldig tydens \'n oproep"</string>
+    <string name="error_mediadb_aacincall">"AAC stem oproep opname word nie ondersteun nie"</string>
     <string name="error_mediadb_new_record" msgid="261714902333432462">"Kon nie klankopname stoor nie."</string>
+    <string name="recording_now">Besig om op te neem\u2026</string>
+    <string name="file_saved">Lêer is gestoor</string>
+    <string name="file_discard">Lêer is weggegooi</string>
 </resources>
