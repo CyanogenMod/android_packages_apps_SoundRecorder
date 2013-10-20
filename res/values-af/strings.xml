@@ -39,5 +39,9 @@
     <string name="error_sdcard_access" product="nosdcard" msgid="86629081075681774">"Kan nie toegang tot USB-berging kry nie."</string>
     <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"Kan nie toegang tot SD-kaart kry nie."</string>
     <string name="error_app_internal" msgid="312884382388702022">"Interne programfout."</string>
+    <string name="error_in_call_record">"In oproep opname is aan die gang"</string>
+    <string name="error_app_unsupported">"Onbekende formaat"</string>
+    <string name="error_mediadb_incall">"Hierdie opsie is net geldig tydens \'n oproep"</string>
+    <string name="error_mediadb_aacincall">"AAC stem oproep opname word nie ondersteun nie"</string>
     <string name="error_mediadb_new_record" msgid="261714902333432462">"Kon nie klankopname stoor nie."</string>
 </resources>
