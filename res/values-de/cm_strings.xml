@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2013 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="sd_card_unavailable" product="nosdcard">USB-Speicher einhängen</string>
+    <string name="sd_card_unavailable" product="default">SD-Karte nicht verfügbar</string>
+    <string name="press_record">Drücke Aufnahme</string>
+    <string name="press_record_ssr">Drücke: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR und drücke Aufnahme</string>
+    <string name="error_in_call_record">Gesprächsmitschnitt ist aktiv</string>
+    <string name="error_app_unsupported">Nicht unterstützes Format</string>
+    <string name="error_mediadb_incall">Diese Option wird nur während eines Telefongesprächs unterstützt</string>
+    <string name="error_mediadb_aacincall">Gesprächsmittschnitt im AAC-Format wird nicht unterstützt</string>
+    <string name="recording_now">Aufnahme läuft\u2026</string>
+    <string name="file_saved">Aufnahme wurde gespeichert</string>
+    <string name="file_discard">Aufnahme wurde verworfen</string>
+</resources>
