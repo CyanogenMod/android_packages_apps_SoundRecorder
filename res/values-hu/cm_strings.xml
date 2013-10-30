@@ -15,15 +15,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="sd_card_unavailable" product="nosdcard">Az USB-tár csatlakoztatása</string>
-    <string name="sd_card_unavailable" product="default">Helyezzen be egy SD-kártyát</string>
-    <string name="press_record">Nyomja meg a felvétel gombot</string>
-    <string name="press_record_ssr">Válasszon: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR és nyomja meg a felvétel gombot</string>
     <string name="error_in_call_record">Hívás rögzítése folyamatban</string>
     <string name="error_app_unsupported">Nem támogatott formátum</string>
     <string name="error_mediadb_incall">Ez az opció csak hívás közben használható</string>
     <string name="error_mediadb_aacincall">Nem támogatott az AAC kódolású hangrögzítés</string>
-    <string name="recording_now">Rögzítés most ...</string>
-    <string name="file_saved">A fájl elmentve</string>
-    <string name="file_discard">A fájl elvetésre került</string>
 </resources>

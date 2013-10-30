@@ -15,15 +15,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sd_card_unavailable" product="nosdcard">Pripojiť úložisko USB</string>
-    <string name="sd_card_unavailable" product="default">Nedostupná karta SD</string>
-    <string name="press_record">Stlačte tlačidlo pre záznam</string>
-    <string name="press_record_ssr">Stlačte: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR a potom tlačidlo pre záznam</string>
     <string name="error_in_call_record">Prebieha záznam hovoru</string>
     <string name="error_app_unsupported">Nepodporovaný formát</string>
     <string name="error_mediadb_incall">Táto možnosť je podporovaná len počas hovoru</string>
     <string name="error_mediadb_aacincall">Záznam hlasových hovorov AAC nie je podporovaný</string>
-    <string name="recording_now">Zaznamenávanie\u2026</string>
-    <string name="file_saved">Súbor bol uložený</string>
-    <string name="file_discard">Súbor bol zahodený</string>
 </resources>
