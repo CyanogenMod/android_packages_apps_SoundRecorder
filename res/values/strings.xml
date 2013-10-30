@@ -33,9 +33,9 @@
     <!-- label shown when the recording has reached maximum allowed file size -->
     <string name="max_length_reached">Maximum length reached</string>
     <!-- label shown when there is no sd card available to record to [CHAR LIMIT=30] -->
-    <string name="sd_card_unavailable" product="nosdcard">Mount USB storage</string>
+    <string name="insert_sd_card" product="nosdcard">Mount USB storage</string>
     <!-- label shown when there is no sd card available to record to -->
-    <string name="sd_card_unavailable" product="default">SD card unavailable</string>
+    <string name="insert_sd_card" product="default">SD card unavailable</string>
     <!-- label shown when there is more than 1 minute but less than 9 minutes of space left to record -->
     <string name="min_available"><xliff:g id="minutes">%d</xliff:g> min available</string>
     <!-- label shown when there is less than 1 minute of space left to record -->
@@ -49,10 +49,6 @@
     <string name="button_ok">OK</string>
     <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
     <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
-    <!-- label shown before the user has recorded anything -->
-    <string name="press_record">Press record</string>
-    <!-- label shown before the user has recorded anything -SSR support added-->
-    <string name="press_record_ssr">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR and Press record</string>
     <!-- the name under which recordings will be visible in the media database is formatted like this --> 
     <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
     <!-- all recordings will show up in the media database with this 'artist' name -->
@@ -75,13 +71,7 @@
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
     <!-- shown as the message in a dialog when the recording cannot be started while in call -->
-    <string name="error_mediadb_incall">This option is supported, only while in call</string>
+    <string name="error_mediadb_incall">This option is not supported during a call</string>
     <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
     <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
-    <!-- Label shown during recording -->
-    <string name="recording_now">Recording now ...</string>
-    <!-- shown as the message in a dialog when the recording file is saved successfully -->
-    <string name="file_saved">File has been saved</string>
-    <!-- shown as the message in a dialog when the recording file is discarded -->
-    <string name="file_discard">File has been discarded</string>
 </resources>

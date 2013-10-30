@@ -14,15 +14,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="sd_card_unavailable" product="nosdcard">Подключите USB-накопитель</string>
-    <string name="sd_card_unavailable" product="default">SD-карта недоступна</string>
-    <string name="press_record">Нажмите кнопку записи</string>
-    <string name="press_record_ssr">Нажмите: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR, а затем кнопку записи</string>
     <string name="error_in_call_record">Идёт запись вызова</string>
     <string name="error_app_unsupported">Неподдерживаемый формат</string>
     <string name="error_mediadb_incall">Эта опция доступна только во время вызова</string>
     <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается</string>
-    <string name="recording_now">Идёт запись\u2026</string>
-    <string name="file_saved">Файл сохранён</string>
-    <string name="file_discard">Файл не был сохранён</string>
 </resources>

@@ -15,15 +15,8 @@
      limitations under the License.
 -->
 <resources>
-    <string name="sd_card_unavailable" product="nosdcard">Μη διαθέσιμος χώρος αποθήκευσης USB</string>
-    <string name="sd_card_unavailable" product="default">Μη διαθέσιμη κάρτα SD</string>
-    <string name="press_record">Πιέστε εγγραφή</string>
-    <string name="press_record_ssr">Πιέστε: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR και πιέστε εγγραφή</string>
     <string name="error_in_call_record">Η ηχογράφηση κλήσης είναι σε εξέλιξη</string>
     <string name="error_app_unsupported">Μη υποστηριζόμενη μορφή</string>
     <string name="error_mediadb_incall">Αυτή η επιλογή υποστηρίζεται μόνο κατά τη διάρκεια μιας κλήσης</string>
     <string name="error_mediadb_aacincall">Η εγγραφή φωνητικής κλήσης σε μορφή AAC δεν υποστηρίζεται</string>
-    <string name="recording_now">Γίνεται εγγραφή\u2026</string>
-    <string name="file_saved">Το αρχείο αποθηκεύτηκε</string>
-    <string name="file_discard">Το αρχείο απορρίφθηκε</string>
 </resources>

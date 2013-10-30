@@ -209,11 +209,8 @@ public class SoundRecorder extends Activity
     static final String RECORDER_STATE_KEY = "recorder_state";
     static final String SAMPLE_INTERRUPTED_KEY = "sample_interrupted";
     static final String MAX_FILE_SIZE_KEY = "max_file_size";
-    private final String DIALOG_STATE_KEY = "dialog_state";
     private final String LAST_FILE_NAME_KEY = "last_file_name";
     private boolean mIsGettingContent = false;
-    // State of file saved dialog. -1:not show, 0:show, 1:show and exit.
-    private int mDialogState = -1;
 
     static final String AUDIO_3GPP = "audio/3gpp";
     static final String AUDIO_AMR = "audio/amr";
@@ -345,10 +342,7 @@ public class SoundRecorder extends Activity
                 mRecorder.restoreState(recorderState);
                 mSampleInterrupted = recorderState.getBoolean(SAMPLE_INTERRUPTED_KEY, false);
                 mMaxFileSize = recorderState.getLong(MAX_FILE_SIZE_KEY, -1);
-
-                int showAndExit = recorderState.getInt(DIALOG_STATE_KEY);
                 mLastFileName = recorderState.getString(LAST_FILE_NAME_KEY);
-                if (showAndExit != -1) showDialogAndExit(showAndExit == 1);
             }
         }
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
@@ -395,7 +389,6 @@ public class SoundRecorder extends Activity
         mRecorder.saveState(recorderState);
         recorderState.putBoolean(SAMPLE_INTERRUPTED_KEY, mSampleInterrupted);
         recorderState.putLong(MAX_FILE_SIZE_KEY, mMaxFileSize);
-        recorderState.putInt(DIALOG_STATE_KEY, mDialogState);
         recorderState.putString(LAST_FILE_NAME_KEY,mLastFileName);
         
         outState.putBundle(RECORDER_STATE_KEY, recorderState);
@@ -458,7 +451,7 @@ public class SoundRecorder extends Activity
                 if (!Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED)) {
                     mSampleInterrupted = true;
                     // When turn on usb storage, sd card is unavailable.
-                    mErrorUiMessage = getResources().getString(R.string.sd_card_unavailable);
+                    mErrorUiMessage = getResources().getString(R.string.insert_sd_card);
                     updateUi();
                 } else if (!mRemainingTimeCalculator.diskSpaceAvailable()) {
                     mSampleInterrupted = true;
@@ -525,24 +518,12 @@ public class SoundRecorder extends Activity
                 break;
             case R.id.acceptButton:
                 mRecorder.stop();
-                saveSampleAndExit(true);
+                saveSample();
+                finish();
                 break;
             case R.id.discardButton:
                 mRecorder.delete();
-                //prompt before exit
-                new AlertDialog.Builder(this)
-                    .setTitle(R.string.app_name)
-                    .setMessage(R.string.file_discard)
-                    .setPositiveButton(R.string.button_ok,
-                        new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                dialog.dismiss();
-                                finish();
-                            }
-                        }
-                    )
-                    .setCancelable(false)
-                    .show();
+                finish();
                 break;
         }
     }
@@ -554,7 +535,7 @@ public class SoundRecorder extends Activity
     public void onBackPressed() {
         switch (mRecorder.state()) {
             case Recorder.IDLE_STATE:
-                if (!saveSampleAndExit(true)) {
+                if (!saveSample()) {
                     finish();
                 }
                 break;
@@ -563,7 +544,7 @@ public class SoundRecorder extends Activity
                 break;
             case Recorder.RECORDING_STATE:
                 mRecorder.stop();
-                saveSampleAndExit(true);
+                saveSample();
                 break;
         }
         super.onBackPressed();
@@ -758,9 +739,9 @@ public class SoundRecorder extends Activity
     /*
      * If we have just recorded a sample, this adds it to the media data base
      * and sets the result to the sample's URI.
-     * Return ture to indicate sample is saved, or false otherwise.
+     * Return true to indicate sample is saved, or false otherwise.
      */
-    private boolean saveSampleAndExit(boolean exit) {
+    private boolean saveSample() {
         Uri uri = null;
 
         if (mRecorder.sampleLength() <= 0) {
@@ -778,25 +759,8 @@ public class SoundRecorder extends Activity
             }
         }
 
-        showDialogAndExit(exit);
         setResult(RESULT_OK, new Intent().setData(uri));
         return true;
-    }
-
-    // Show a dialog when the file was saved
-    private void showDialogAndExit(boolean exit) {
-        mDialogState = exit ? 1 : 0;
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle(R.string.app_name).setMessage(mLastFileName +"\n"+ getResources().getString(R.string.file_saved))
-        .setPositiveButton(R.string.button_ok,
-            new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface dialog, int which) {
-                    dialog.dismiss();
-                    if (mDialogState == 1) finish();
-                    mDialogState = -1;
-                }
-            }
-        ).setCancelable(false).show();
     }
 
     /*
@@ -1085,12 +1049,7 @@ public class SoundRecorder extends Activity
                     mStateMessage1.setVisibility(View.INVISIBLE);
                     mStateLED.setVisibility(View.VISIBLE);
                     //mStateLED.setImageResource(R.drawable.idle_led);
-                    mStateMessage2.setVisibility(View.VISIBLE);
-                    if (true == bSSRSupported) {
-                        mStateMessage2.setText(res.getString(R.string.press_record_ssr));
-                    } else {
-                        mStateMessage2.setText(res.getString(R.string.press_record));
-                    }
+                    mStateMessage2.setVisibility(View.INVISIBLE);
                     mExitButtons.setVisibility(View.INVISIBLE);
                     // Reset the angle of poniter.
                     mVUMeter.reset();
