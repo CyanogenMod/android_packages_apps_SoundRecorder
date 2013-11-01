@@ -32,6 +32,10 @@
     <string name="storage_is_full">Storage is full</string>
     <!-- label shown when the recording has reached maximum allowed file size -->
     <string name="max_length_reached">Maximum length reached</string>
+    <!-- label shown when there is no sd card available to record to -->
+    <string name="insert_sd_card" product="nosdcard">Mount USB storage</string>
+    <!-- label shown when there is no sd card available to record to -->
+    <string name="insert_sd_card" product="default">Insert an SD card</string>
     <!-- label shown when there is no sd card available to record to [CHAR LIMIT=30] -->
     <string name="sd_card_unavailable" product="nosdcard">Mount USB storage</string>
     <!-- label shown when there is no sd card available to record to -->
