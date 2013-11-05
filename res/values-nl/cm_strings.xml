@@ -15,6 +15,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- CAF strings -->
     <string name="error_in_call_record">Actief gesprek wordt opgenomen</string>
     <string name="error_app_unsupported">Formaat niet ondersteund</string>
     <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek</string>
