@@ -248,7 +248,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         mRecorder.reset();
         mRecorder.release();
         mRecorder = null;
-
+        mChannels = 0;
         mSampleLength = (int)( (System.currentTimeMillis() - mSampleStart)/1000 );
         setState(IDLE_STATE);
     }
