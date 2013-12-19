@@ -64,6 +64,7 @@ import android.widget.Toast;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.media.AudioManager;
+import android.os.SystemProperties;
 import android.view.inputmethod.InputMethodManager;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -412,8 +413,8 @@ public class SoundRecorder extends Activity
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         mPhoneStateListener = getPhoneStateListener();
 
-        String ssrRet = mAudioManager.getParameters("ssr");
-        if (ssrRet.contains("=true")) {
+        String ssrRet = SystemProperties.get("ro.qc.sdk.audio.ssr","false");
+        if (ssrRet.contains("true")) {
             Log.d(TAG,"Surround sound recording is supported");
             bSSRSupported = true;
         } else {
