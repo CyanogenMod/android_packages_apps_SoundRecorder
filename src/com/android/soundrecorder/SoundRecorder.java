@@ -67,6 +67,7 @@ import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.telephony.SubscriptionManager;
 import android.media.AudioManager;
+import android.os.SystemProperties;
 import android.view.inputmethod.InputMethodManager;
 import android.view.Menu;
 import android.view.MenuInflater;
