@@ -49,6 +49,8 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
 
     public int mChannels = 0;
     public int mSamplingRate = 0;
+    public String mStoragePath = Environment.getExternalStorageDirectory()
+            .toString() + "/SoundRecorder";
 
     public interface OnStateChangedListener {
         public void onStateChanged(int state);
@@ -163,17 +165,19 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
             mSampleFile.delete();
             mSampleFile = null;
             mSampleLength = 0;
-        }
-
-        File sampleDir = Environment.getExternalStorageDirectory();
-        if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
-            sampleDir = new File("/sdcard/sdcard");
-        try {
-            mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
-        } catch (IOException e) {
-            setError(SDCARD_ACCESS_ERROR);
-            return;
-        }
+        } else {
+            File sampleDir = new File(mStoragePath);
+            if (!sampleDir.exists()) {
+                sampleDir.mkdirs();
+            }
+            if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
+                sampleDir = new File("/sdcard/sdcard");
+            try {
+                mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
+            } catch (IOException e) {
+                setError(SDCARD_ACCESS_ERROR);
+                return;
+            }
 
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(audiosourcetype);
