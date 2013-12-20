@@ -271,6 +271,7 @@ public class SoundRecorder extends Activity
     Button mDiscardButton;
     VUMeter mVUMeter;
     private BroadcastReceiver mSDCardMountEventReceiver = null;
+    private BroadcastReceiver mPowerOffReceiver = null;
     private TelephonyManager mTelephonyManager;
     private PhoneStateListener[] mPhoneStateListener;
 
@@ -345,6 +346,7 @@ public class SoundRecorder extends Activity
         
         setResult(RESULT_CANCELED);
         registerExternalStorageListener();
+        registerPowerOffListener();
         if (icycle != null) {
             Bundle recorderState = icycle.getBundle(RECORDER_STATE_KEY);
             if (recorderState != null) {
@@ -822,9 +824,35 @@ public class SoundRecorder extends Activity
             unregisterReceiver(mSDCardMountEventReceiver);
             mSDCardMountEventReceiver = null;
         }
+        if (mPowerOffReceiver != null) {
+            unregisterReceiver(mPowerOffReceiver);
+            mPowerOffReceiver = null;
+        }
         super.onDestroy();
     }
-    
+
+    /*
+     * Registers an intent to listen for ACTION_SHUTDOWN notifications.
+     */
+    private void registerPowerOffListener() {
+        if (mPowerOffReceiver == null) {
+            mPowerOffReceiver = new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    String action = intent.getAction();
+                    if (action.equals(Intent.ACTION_SHUTDOWN)) {
+                        if (mRecorder != null) {
+                            mRecorder.stop();
+                        }
+                    }
+                }
+            };
+            IntentFilter iFilter = new IntentFilter();
+            iFilter.addAction(Intent.ACTION_SHUTDOWN);
+            registerReceiver(mPowerOffReceiver, iFilter);
+        }
+    }
+
     /*
      * Registers an intent to listen for ACTION_MEDIA_EJECT/ACTION_MEDIA_MOUNTED
      * notifications.
