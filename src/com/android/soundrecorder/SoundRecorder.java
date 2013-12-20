@@ -528,6 +528,7 @@ public class SoundRecorder extends Activity
                 }
                 break;
             case R.id.playButton:
+                stopAudioPlayback();
                 mRecorder.startPlayback();
                 break;
             case R.id.stopButton:
