@@ -1020,12 +1020,11 @@ public class SoundRecorder extends Activity
             case Recorder.IDLE_STATE:
                 if (mRecorder.sampleLength() == 0) {
                     mRecordButton.setEnabled(true);
-                    mRecordButton.setFocusable(true);
+                    mRecordButton.setFocusable(false);
                     mPlayButton.setEnabled(false);
                     mPlayButton.setFocusable(false);
                     mStopButton.setEnabled(false);
                     mStopButton.setFocusable(false);
-                    mRecordButton.requestFocus();
                     
                     mStateMessage1.setVisibility(View.INVISIBLE);
                     mStateLED.setVisibility(View.VISIBLE);
