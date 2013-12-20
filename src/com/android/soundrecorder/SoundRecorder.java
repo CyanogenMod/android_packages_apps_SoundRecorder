@@ -905,9 +905,9 @@ public class SoundRecorder extends Activity
         String title = formatter.format(date);
         long sampleLengthMillis = mRecorder.sampleLength() * 1000L;
 
-        // Lets label the recorded audio file as NON-MUSIC so that the file
-        // won't be displayed automatically, except for in the playlist.
-        cv.put(MediaStore.Audio.Media.IS_MUSIC, "0");
+        // Label the recorded audio file as MUSIC so that the file
+        // will be displayed automatically
+        cv.put(MediaStore.Audio.Media.IS_MUSIC, "1");
 
         cv.put(MediaStore.Audio.Media.TITLE, title);
         cv.put(MediaStore.Audio.Media.DATA, file.getAbsolutePath());
