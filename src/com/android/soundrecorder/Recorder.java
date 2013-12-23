@@ -162,21 +162,23 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public void startRecording(int outputfileformat, String extension, 
                    Context context, int audiosourcetype, int codectype) {
         stop();
-        
-        if (mSampleFile == null) {
-            File sampleDir = new File(mStoragePath);
-            if (!sampleDir.exists()) {
-                sampleDir.mkdirs();
-            }
-            if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
-                sampleDir = new File("/sdcard/sdcard");
-            
-            try {
-                mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
-            } catch (IOException e) {
-                setError(SDCARD_ACCESS_ERROR);
-                return;
-            }
+
+        if (mSampleFile != null) {
+            delete();
+        }
+
+        File sampleDir = new File(mStoragePath);
+        if (!sampleDir.exists()) {
+            sampleDir.mkdirs();
+        }
+        if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
+            sampleDir = new File("/sdcard/sdcard");
+
+        try {
+            mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
+        } catch (IOException e) {
+            setError(SDCARD_ACCESS_ERROR);
+            return;
         }
         
         mRecorder = new MediaRecorder();
