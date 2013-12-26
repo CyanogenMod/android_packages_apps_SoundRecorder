@@ -52,6 +52,7 @@
     <!-- label shown before the user has recorded anything -->
     <string name="press_record">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
     6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
+    <string name="press_record2">Press record</string>
     <!-- label shown before the user has recorded anything -SSR support added-->
     <string name="press_record_ssr">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
     6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
@@ -79,4 +80,16 @@
     <string name="error_mediadb_incall">This option is supported, only while in call</string>
     <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
     <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
+    <!-- shown as the dialog title when user selects recording format -->
+    <string name="format_setting">File type</string>
+    <string name="format_setting_amr_item">AMR</string>
+    <string name="format_setting_3gpp_item">3GPP</string>
+    <string name="format_setting_wav_item">WAV</string>
+    <string name="storage_setting">Storage location</string>
+    <string name="storage_setting_sdcard_item">SD card</string>
+    <string name="storage_setting_local_item">Phone storage</string>
+    <string name="no_phonestorage">Phone storage unmounted</string>
+    <string name="keyboard">Keyboard</string>
+    <string name="file_deleted">File has been deleted!</string>
+    <string name="in_call_record_error">In call record error.</string>
 </resources>
