@@ -31,6 +31,8 @@
     <string name="accept" msgid="1888285552128743656">"完成"</string>
     <string name="discard" msgid="761613433029406319">"放弃"</string>
     <string name="button_ok" msgid="3004911343723076226">"确定"</string>
+    <string name="press_record">点击开始录音: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP</string>
+    <string name="press_record2">点击开始录音</string>
     <!-- no translation found for audio_db_title_format (7912182366970749312) -->
     <skip />
     <string name="audio_db_artist_name" msgid="961640229118120080">"您的录音"</string>
@@ -40,4 +42,16 @@
     <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"无法使用SD卡。"</string>
     <string name="error_app_internal" msgid="312884382388702022">"发生内部应用错误。"</string>
     <string name="error_mediadb_new_record" msgid="261714902333432462">"无法保存录制的音频。"</string>
+    <!-- shown as the dialog title when user selects recording format -->
+    <string name="format_setting">"文件类型"</string>
+    <string name="format_setting_amr_item">"AMR"</string>
+    <string name="format_setting_3gpp_item">"3GPP"</string>
+    <string name="format_setting_wav_item">"WAV"</string>
+    <string name="storage_setting">"存储位置"</string>
+    <string name="storage_setting_sdcard_item">"SD卡"</string>
+    <string name="storage_setting_local_item">"话机U盘"</string>
+    <string name="no_phonestorage">"手机内存储被卸载"</string>
+    <string name="keyboard">键盘</string>
+    <string name="file_deleted">文件已经被删除 ！</string>
+    <string name="in_call_record_error">通话中录音失败.</string>
 </resources>
