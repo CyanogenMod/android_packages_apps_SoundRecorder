@@ -42,6 +42,9 @@
     <string name="error_sdcard_access" product="default" msgid="5750308258096153274">"无法使用SD卡。"</string>
     <string name="error_app_internal" msgid="312884382388702022">"发生内部应用错误。"</string>
     <string name="error_mediadb_new_record" msgid="261714902333432462">"无法保存录制的音频。"</string>
+    <string name="recording_now">正在录音 ...</string>
+    <string name="file_saved">文件保存成功</string>
+    <string name="file_discard">放弃录音</string>
     <!-- shown as the dialog title when user selects recording format -->
     <string name="format_setting">"文件类型"</string>
     <string name="format_setting_amr_item">"AMR"</string>
