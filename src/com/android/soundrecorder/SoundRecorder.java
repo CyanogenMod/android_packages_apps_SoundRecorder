@@ -274,6 +274,8 @@ public class SoundRecorder extends Activity
     private AudioManager mAudioManager;
     private boolean mRecorderStop = false;
 
+    private boolean mWAVSupport = true;
+
     int mAudioSourceType = MediaRecorder.AudioSource.MIC;
     int mPhoneCount = 0;
     static int sOldCallState = TelephonyManager.CALL_STATE_IDLE;
@@ -362,6 +364,7 @@ public class SoundRecorder extends Activity
             if (AUDIO_AMR.equals(s) || AUDIO_3GPP.equals(s) || AUDIO_ANY.equals(s)
                     || ANY_ANY.equals(s)) {
                 mRequestedType = s;
+                mWAVSupport = false;
             } else if (s != null) {
                 // we only support amr and 3gpp formats right now 
                 setResult(RESULT_CANCELED);
@@ -382,6 +385,11 @@ public class SoundRecorder extends Activity
         mRequestedType = mSharedPreferences.getString("requestedType", mRequestedType);
         mFileType = mSharedPreferences.getInt("fileType", mFileType);
         mStoragePath = mSharedPreferences.getString("storagePath", mStoragePath);
+        if (!mWAVSupport && mRequestedType == AUDIO_WAVE_2CH_LPCM) {
+            mRequestedType = AUDIO_AMR;
+            mFileType = 0;
+        }
+
         setContentView(R.layout.main);
         mAudioManager = (AudioManager)getSystemService(Context.AUDIO_SERVICE);
         mRecorder = new Recorder();
@@ -689,7 +697,9 @@ public class SoundRecorder extends Activity
         if (optionType == SETTING_TYPE_FILE_TYPE) {
             adapter.add(R.string.format_setting_amr_item);
             adapter.add(R.string.format_setting_3gpp_item);
-            adapter.add(R.string.format_setting_wav_item);
+            if (mWAVSupport) {
+                adapter.add(R.string.format_setting_wav_item);
+            }
         } else if (optionType == SETTING_TYPE_STORAGE_LOCATION) {
             adapter.add(R.string.storage_setting_local_item);
             adapter.add(R.string.storage_setting_sdcard_item);
