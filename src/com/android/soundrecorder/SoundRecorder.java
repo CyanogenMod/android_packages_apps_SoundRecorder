@@ -604,6 +604,7 @@ public class SoundRecorder extends Activity
                                 mRecorder.sampleFile(), mMaxFileSize);
                     }
                 }
+                invalidateOptionsMenu();
                 break;
             case R.id.playButton:
                 if (!mRecorder.sampleFile().exists()) {
@@ -621,6 +622,7 @@ public class SoundRecorder extends Activity
                 mStateMessage2.setText(getResources().getString(R.string.recording_stopped));
                 mStateLED.setVisibility(View.VISIBLE);
                 mRecorderStop = true;
+                invalidateOptionsMenu();
                 break;
             case R.id.acceptButton:
                 if (!mRecorder.sampleFile().exists()) {
