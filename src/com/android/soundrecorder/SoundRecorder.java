@@ -272,7 +272,7 @@ public class SoundRecorder extends Activity
     String mAmrWidebandExtension = ".awb";
     private AudioManager mAudioManager;
     private boolean mRecorderStop = false;
-
+    private boolean mDataExist = false;
     private boolean mWAVSupport = true;
 
     int mAudioSourceType = MediaRecorder.AudioSource.MIC;
@@ -396,6 +396,7 @@ public class SoundRecorder extends Activity
 
         initResourceRefs();
         mRecorderStop = false;
+        mDataExist = false;
 
         setResult(RESULT_CANCELED);
         registerExternalStorageListener();
@@ -1027,7 +1028,7 @@ public class SoundRecorder extends Activity
         } catch(UnsupportedOperationException ex) {  // Database manipulation failure
             return false;
         } finally {
-            if (uri == null) {
+            if (uri == null && !mDataExist) {
                 return false;
             }
         }
@@ -1208,6 +1209,18 @@ public class SoundRecorder extends Activity
         mLastFileName = file.getAbsolutePath().substring(
                 file.getAbsolutePath().lastIndexOf("/")+1, file.getAbsolutePath().length()).replace("-", "");
 
+        Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+        final String[] ids = new String[] { MediaStore.Audio.Playlists._ID };
+        final String where = MediaStore.Audio.Playlists.DATA + "=?";
+        final String[] args = new String[] { file.getAbsolutePath() };
+        Cursor cursor = query(uri, ids, where, args, null);
+
+        if (cursor != null && cursor.getCount() > 0) {
+            mDataExist = true;
+            cursor.close();
+            return null;
+        }
+
         // Label the recorded audio file as MUSIC so that the file
         // will be displayed automatically
         cv.put(MediaStore.Audio.Media.IS_MUSIC, "1");
@@ -1226,7 +1239,12 @@ public class SoundRecorder extends Activity
         ContentResolver resolver = getContentResolver();
         Uri base = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
         Log.d(TAG, "ContentURI: " + base);
-        Uri result = resolver.insert(base, cv);
+        Uri result;
+        try {
+            result = resolver.insert(base, cv);
+        } catch (Exception exception) {
+            result = null;
+        }
         if (result == null) {
             new AlertDialog.Builder(this)
                 .setTitle(R.string.app_name)
