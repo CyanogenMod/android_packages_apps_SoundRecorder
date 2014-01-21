@@ -1196,7 +1196,7 @@ public class SoundRecorder extends Activity
         Uri uri = MediaStore.Audio.Playlists.getContentUri("external");
         final String[] ids = new String[] { MediaStore.Audio.Playlists._ID };
         final String where = MediaStore.Audio.Playlists.NAME + "=?";
-        final String[] args = new String[] { res.getString(R.string.audio_db_playlist_name) };
+        final String[] args = new String[] { "My recordings" };
         Cursor cursor = query(uri, ids, where, args, null);
         if (cursor == null) {
             Log.v(TAG, "query returns null");
@@ -1217,7 +1217,7 @@ public class SoundRecorder extends Activity
      */
     private Uri createPlaylist(Resources res, ContentResolver resolver) {
         ContentValues cv = new ContentValues();
-        cv.put(MediaStore.Audio.Playlists.NAME, res.getString(R.string.audio_db_playlist_name));
+        cv.put(MediaStore.Audio.Playlists.NAME, "My recordings");
         Uri uri = resolver.insert(MediaStore.Audio.Playlists.getContentUri("external"), cv);
         if (uri == null) {
             new AlertDialog.Builder(this)
