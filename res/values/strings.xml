@@ -26,6 +26,8 @@
     <string name="review_message">Review message</string>
     <!-- Label shown during recording -->
     <string name="recording">Recording</string>
+    <!-- Label shown when recording is paused -->
+    <string name="recording_paused">pause</string>
     <!-- Label shown when the recording is stopped for a reason other than the user stopping it (e.g. the sd card was removed) -->
     <string name="recording_stopped">Recording stopped</string>
     <!-- label shown when there is not enough space to record something -->
