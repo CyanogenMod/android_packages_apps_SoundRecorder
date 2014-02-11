@@ -21,6 +21,7 @@
     <string name="message_recorded" msgid="381539460921872233">"信息已录制"</string>
     <string name="review_message" msgid="201616012287839474">"查看信息"</string>
     <string name="recording" msgid="4426791467211376099">"录音"</string>
+    <string name="recording_paused">暂停</string>
     <string name="recording_stopped" msgid="1580278719585249612">"录音停止"</string>
     <string name="storage_is_full" msgid="416039755956726221">"存储空间已满"</string>
     <string name="max_length_reached" msgid="6398215743584093353">"已达到长度上限"</string>

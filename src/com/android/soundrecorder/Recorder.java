@@ -41,6 +41,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public static final int IDLE_STATE = 0;
     public static final int RECORDING_STATE = 1;
     public static final int PLAYING_STATE = 2;
+    public static final int PAUSE_STATE = 3;
     
     int mState = IDLE_STATE;
 
@@ -61,7 +62,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     OnStateChangedListener mOnStateChangedListener = null;
     
     long mSampleStart = 0;       // time at which latest record or play operation started
-    int mSampleLength = 0;      // length of current sample
+    long mSampleLength = 0;      // length of current sample
     File mSampleFile = null;
     
     MediaRecorder mRecorder = null;
@@ -72,7 +73,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     
     public void saveState(Bundle recorderState) {
         recorderState.putString(SAMPLE_PATH_KEY, mSampleFile.getAbsolutePath());
-        recorderState.putInt(SAMPLE_LENGTH_KEY, mSampleLength);
+        recorderState.putLong(SAMPLE_LENGTH_KEY, mSampleLength);
     }
     
     public int getMaxAmplitude() {
@@ -85,7 +86,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         String samplePath = recorderState.getString(SAMPLE_PATH_KEY);
         if (samplePath == null)
             return;
-        int sampleLength = recorderState.getInt(SAMPLE_LENGTH_KEY, -1);
+        long sampleLength = recorderState.getLong(SAMPLE_LENGTH_KEY, -1);
         if (sampleLength == -1)
             return;
 
@@ -120,13 +121,16 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     }
     
     public int progress() {
-        if (mState == RECORDING_STATE || mState == PLAYING_STATE)
-            return (int) ((System.currentTimeMillis() - mSampleStart)/1000);
+        if (mState == RECORDING_STATE) {
+            return (int) ((mSampleLength + (System.currentTimeMillis() - mSampleStart)) / 1000);
+        } else if (mState == PLAYING_STATE) {
+            return (int) ((System.currentTimeMillis() - mSampleStart) / 1000);
+        }
         return 0;
     }
     
     public int sampleLength() {
-        return mSampleLength;
+        return (int) (mSampleLength / 1000);
     }
 
     public File sampleFile() {
@@ -257,6 +261,34 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         mSampleStart = System.currentTimeMillis();
         setState(RECORDING_STATE);
     }
+
+    public void pauseRecording() {
+        if (mRecorder == null) {
+            return;
+        }
+        try {
+            mRecorder.pause();
+        } catch (RuntimeException exception) {
+            setError(INTERNAL_ERROR);
+            Log.e(TAG, "Pause Failed");
+        }
+        mSampleLength = mSampleLength + (System.currentTimeMillis() - mSampleStart);
+        setState(PAUSE_STATE);
+    }
+
+    public void resumeRecording() {
+        if (mRecorder == null) {
+            return;
+        }
+        try {
+            mRecorder.start();
+        } catch (RuntimeException exception) {
+            setError(INTERNAL_ERROR);
+            Log.e(TAG, "Resume Failed");
+        }
+        mSampleStart = System.currentTimeMillis();
+        setState(RECORDING_STATE);
+    }
     
     public void stopRecording() {
         if (mRecorder == null)
@@ -272,7 +304,9 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         mRecorder = null;
         mChannels = 0;
         mSamplingRate = 0;
-        mSampleLength = (int)( (System.currentTimeMillis() - mSampleStart)/1000 );
+        if (mState == RECORDING_STATE) {
+            mSampleLength = mSampleLength + (System.currentTimeMillis() - mSampleStart);
+        }
         setState(IDLE_STATE);
     }
     
