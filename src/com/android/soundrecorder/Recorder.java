@@ -55,6 +55,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public int mChannels = 0;
     public int mSamplingRate = 0;
     public String mStoragePath = SoundRecorder.STORAGE_PATH_LOCAL_PHONE;
+    public String mTime;
 
     public interface OnStateChangedListener {
         public void onStateChanged(int state);
@@ -137,6 +138,10 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public File sampleFile() {
         return mSampleFile;
     }
+
+    public String getStartRecordingTime() {
+        return mTime;
+    }
     
     /**
      * Resets the recorder state. If a sample was recorded, the file is deleted.
@@ -183,6 +188,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         try {
             SimpleDateFormat simpleDateFormat = new SimpleDateFormat(DATE_FORMAT);
             String time = simpleDateFormat.format(new Date(System.currentTimeMillis()));
+            mTime = time;
             if (extension == null) {
                 extension = ".tmp";
             }
