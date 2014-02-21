@@ -1261,10 +1261,7 @@ public class SoundRecorder extends Activity
         ContentValues cv = new ContentValues();
         long current = System.currentTimeMillis();
         long modDate = file.lastModified();
-        Date date = new Date(current);
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                res.getString(R.string.audio_db_title_format));
-        String title = formatter.format(date);
+        String title = mRecorder.getStartRecordingTime();
         long sampleLengthMillis = mRecorder.sampleLength() * 1000L;
         mLastFileName = file.getAbsolutePath().substring(
                 file.getAbsolutePath().lastIndexOf("/")+1, file.getAbsolutePath().length()).replace("-", "");
