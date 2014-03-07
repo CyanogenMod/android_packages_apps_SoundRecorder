@@ -107,7 +107,10 @@ class RemainingTimeCalculator {
     private long mLastFileSize;
     
     public RemainingTimeCalculator(Context context) {
-        mSDCardDirectory = new File(SoundRecorder.getSDPath(context));
+        String extPath = SoundRecorder.getSDPath(context);
+        if (extPath != null) {
+            mSDCardDirectory = new File(extPath);
+        }
         mPhoneCardDirectory = Environment.getExternalStorageDirectory();
     }
     
@@ -228,6 +231,10 @@ class RemainingTimeCalculator {
 
     public void setStoragePath(int path) {
         mPath = path;
+    }
+
+    public boolean hasExternalStorage() {
+        return mSDCardDirectory != null;
     }
 }
 
@@ -776,6 +783,9 @@ public class SoundRecorder extends Activity
         // TODO Auto-generated method stub
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
+        if (!mRemainingTimeCalculator.hasExternalStorage()) {
+            menu.removeItem(R.id.menu_item_storage);
+        }
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -784,7 +794,9 @@ public class SoundRecorder extends Activity
         super.onPrepareOptionsMenu(menu);
         menu.findItem(R.id.menu_item_keyboard).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
         menu.findItem(R.id.menu_item_filetype).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
-        menu.findItem(R.id.menu_item_storage).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
+        if (mRemainingTimeCalculator.hasExternalStorage()) {
+            menu.findItem(R.id.menu_item_storage).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
+        }
         if (SystemProperties.getBoolean("debug.soundrecorder.enable", false)) {
             menu.findItem(R.id.menu_item_keyboard).setVisible(true);
         } else {
@@ -794,7 +806,9 @@ public class SoundRecorder extends Activity
         if (mRecorderStop) {
             menu.findItem(R.id.menu_item_keyboard).setEnabled(false);
             menu.findItem(R.id.menu_item_filetype).setEnabled(false);
-            menu.findItem(R.id.menu_item_storage).setEnabled(false);
+            if (mRemainingTimeCalculator.hasExternalStorage()) {
+                menu.findItem(R.id.menu_item_storage).setEnabled(false);
+            }
         }
         return true;
     }
