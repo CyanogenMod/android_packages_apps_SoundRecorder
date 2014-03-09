@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="recording_paused">pause</string>
+    <string name="error_app_unsupported">Ikke understøttet format</string>
+    <string name="error_mediadb_incall">Denne indstillinger understøttes kun under opkald</string>
+    <string name="error_mediadb_aacincall">Optagelse af AAC-stemmeopkald understøttes ikke</string>
+    <string name="format_setting">Filtype</string>
+    <string name="format_setting_amr_item">AMR</string>
+    <string name="format_setting_3gpp_item">3GPP</string>
+    <string name="format_setting_wav_item">WAV</string>
+    <string name="storage_setting">Hvor der gemmes</string>
+    <string name="storage_setting_sdcard_item">SD-card</string>
+    <string name="storage_setting_local_item">Telefonlager</string>
+    <string name="no_phonestorage">Telefonlager er demonteret</string>
+    <string name="keyboard">Tastatur</string>
+    <string name="file_deleted">Filen er blevet slettet!</string>
+    <string name="in_call_record_error">Fejl i optagelse under opkald.</string>
+</resources>
