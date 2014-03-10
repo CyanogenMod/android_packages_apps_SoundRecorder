@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     Copyright (C) 2014 The CyanogenMod Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="recording_paused">Pauze</string>
+    <string name="press_record">Druk: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
+    6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP en druk op \'opnemen\'</string>
+    <string name="press_record2">Druk op \'opnemen\'</string>
+    <string name="press_record_ssr">Druk: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
+    6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR 9-AMR-WB A-AMR-WB-3GPP en druk op \'opnemen\'</string>
+    <string name="error_app_unsupported">Formaat niet ondersteund</string>
+    <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek</string>
+    <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund</string>
+    <string name="recording_now">Opnemen\u2026</string>
+    <string name="file_saved">Bestand opgeslagen</string>
+    <string name="file_discard">Bestand weggegooid</string>
+    <string name="format_setting">Bestandstype</string>
+    <string name="format_setting_amr_item">AMR</string>
+    <string name="format_setting_3gpp_item">3GPP</string>
+    <string name="format_setting_wav_item">WAV</string>
+    <string name="storage_setting">Opslaglocatie</string>
+    <string name="storage_setting_sdcard_item">SD-kaart</string>
+    <string name="storage_setting_local_item">Telefoonopslag</string>
+    <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
+    <string name="keyboard">Toetsenbord</string>
+    <string name="file_deleted">Bestand verwijderd</string>
+    <string name="in_call_record_error">Fout bij opnemen tijdens gesprek.</string>
+</resources>
