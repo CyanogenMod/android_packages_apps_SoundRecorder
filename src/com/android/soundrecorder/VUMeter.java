@@ -33,10 +33,10 @@ public class VUMeter extends View {
     static final float DROPOFF_STEP = 0.18f;
     static final float SURGE_STEP = 0.35f;
     static final long  ANIMATION_INTERVAL = 70;
-    
+
     Paint mPaint, mShadow;
     float mCurrentAngle;
-    
+
     Recorder mRecorder;
 
     public VUMeter(Context context) {
@@ -52,32 +52,37 @@ public class VUMeter extends View {
     void init(Context context) {
         Drawable background = context.getResources().getDrawable(R.drawable.vumeter);
         setBackgroundDrawable(background);
-        
+
         mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         mPaint.setColor(Color.WHITE);
         mShadow = new Paint(Paint.ANTI_ALIAS_FLAG);
         mShadow.setColor(Color.argb(60, 0, 0, 0));
-        
+
         mRecorder = null;
-        
+
         mCurrentAngle = 0;
     }
 
-    public void setRecorder(Recorder recorder) {
-    	mRecorder = recorder;
-    	invalidate();
+    public void resetAngle() {
+        mCurrentAngle = 0;
+        invalidate();
     }
-    
+
+    public void setRecorder(Recorder recorder) {
+        mRecorder = recorder;
+        invalidate();
+    }
+
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
         final float minAngle = (float)Math.PI/8;
         final float maxAngle = (float)Math.PI*7/8;
-                
+
         float angle = minAngle;
         if (mRecorder != null)
-        	angle += (float)(maxAngle - minAngle)*mRecorder.getMaxAmplitude()/32768;
+            angle += (float)(maxAngle - minAngle)*mRecorder.getMaxAmplitude()/32768;
 
         if (angle > mCurrentAngle)
             mCurrentAngle = angle;
@@ -99,8 +104,8 @@ public class VUMeter extends View {
         canvas.drawCircle(pivotX + SHADOW_OFFSET, pivotY + SHADOW_OFFSET, PIVOT_RADIUS, mShadow);
         canvas.drawLine(x0, y0, pivotX, pivotY, mPaint);
         canvas.drawCircle(pivotX, pivotY, PIVOT_RADIUS, mPaint);
-        
+
         if (mRecorder != null && mRecorder.state() == Recorder.RECORDING_STATE)
-        	postInvalidateDelayed(ANIMATION_INTERVAL);
+            postInvalidateDelayed(ANIMATION_INTERVAL);
     }
 }
