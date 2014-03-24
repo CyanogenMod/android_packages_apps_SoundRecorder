@@ -26,8 +26,6 @@
     <string name="review_message">Review message</string>
     <!-- Label shown during recording -->
     <string name="recording">Recording</string>
-    <!-- Label shown when recording is paused -->
-    <string name="recording_paused">pause</string>
     <!-- Label shown when the recording is stopped for a reason other than the user stopping it (e.g. the sd card was removed) -->
     <string name="recording_stopped">Recording stopped</string>
     <!-- label shown when there is not enough space to record something -->
@@ -51,6 +49,7 @@
     <string name="button_ok">OK</string>
     <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
     <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
+   
     <!-- the name under which recordings will be visible in the media database is formatted like this --> 
     <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
     <!-- all recordings will show up in the media database with this 'artist' name -->
@@ -59,31 +58,13 @@
     <string name="audio_db_album_name">Audio recordings</string>
     <!-- all recordings will show up in the media database in a playlist with this name -->
     <string name="audio_db_playlist_name">My recordings</string>
-
+   
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
     <string name="error_sdcard_access" product="nosdcard">Can\'t access USB storage.</string>
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
     <string name="error_sdcard_access" product="default">Can\'t access SD card.</string>
     <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
-    <string name="error_app_internal">Internal application error</string>
-    <!-- shown as the message in a dialog when the app encountered and unsupported format -->
-    <string name="error_app_unsupported">Unsupported format</string>
+    <string name="error_app_internal">Internal application error.</string>
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
-    <!-- shown as the message in a dialog when the recording cannot be started while in call -->
-    <string name="error_mediadb_incall">This option is not supported during a call</string>
-    <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
-    <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
-    <!-- shown as the dialog title when user selects recording format -->
-    <string name="format_setting">File type</string>
-    <string name="format_setting_amr_item">AMR</string>
-    <string name="format_setting_3gpp_item">3GPP</string>
-    <string name="format_setting_wav_item">WAV</string>
-    <string name="storage_setting">Storage location</string>
-    <string name="storage_setting_sdcard_item">SD card</string>
-    <string name="storage_setting_local_item">Phone storage</string>
-    <string name="no_phonestorage">Phone storage unmounted</string>
-    <string name="keyboard">Keyboard</string>
-    <string name="file_deleted">File has been deleted!</string>
-    <string name="in_call_record_error">In call record error.</string>
 </resources>
