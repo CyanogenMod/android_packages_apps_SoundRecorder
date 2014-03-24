@@ -645,7 +645,6 @@ public class SoundRecorder extends Activity
                         mRemainingTimeCalculator.setBitRate(BITRATE_3GPP);
                         mRecorder.setChannels(2);
                         mRecorder.setSamplingRate(SAMPLERATE_MULTI_CH);
-                        mAudioSourceType = MediaRecorder.AudioSource.MIC;
                         mRecorder.startRecording(MediaRecorder.OutputFormat.WAVE,
                                 ".wav", this, mAudioSourceType, MediaRecorder.AudioEncoder.LPCM);
                     } else if (AUDIO_AMR_WB.equals(mRequestedType)) {
