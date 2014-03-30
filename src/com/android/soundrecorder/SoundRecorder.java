@@ -680,7 +680,9 @@ public class SoundRecorder extends Activity
                 mStateMessage2.setVisibility(View.VISIBLE);
                 mStateMessage2.setText(getResources().getString(R.string.recording_stopped));
                 mStateLED.setVisibility(View.VISIBLE);
-                mRecorderStop = true;
+                if (mRecorder.sampleLength() > 0) {
+                    mRecorderStop = true;
+                }
                 mVUMeter.resetAngle();
                 invalidateOptionsMenu();
                 break;
