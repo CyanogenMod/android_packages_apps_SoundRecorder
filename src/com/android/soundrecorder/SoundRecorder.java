@@ -362,6 +362,7 @@ public class SoundRecorder extends Activity
         };
         return phoneStateListener;
     }
+
     @Override
     public void onCreate(Bundle icycle) {
         super.onCreate(icycle);
@@ -448,6 +449,7 @@ public class SoundRecorder extends Activity
 
         updateUi();
     }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -457,6 +459,7 @@ public class SoundRecorder extends Activity
             mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_CALL_STATE);
         }
     }
+
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -676,10 +679,6 @@ public class SoundRecorder extends Activity
                 break;
             case R.id.stopButton:
                 mRecorder.stop();
-                // Display the tips of stop record
-                mStateMessage2.setVisibility(View.VISIBLE);
-                mStateMessage2.setText(getResources().getString(R.string.recording_stopped));
-                mStateLED.setVisibility(View.VISIBLE);
                 if (mRecorder.sampleLength() > 0) {
                     mRecorderStop = true;
                 }
@@ -1418,7 +1417,8 @@ public class SoundRecorder extends Activity
                     mStopButton.setFocusable(false);
 
                     mStateMessage1.setVisibility(View.INVISIBLE);
-                    mStateLED.setVisibility(View.VISIBLE);
+                    // No idle led res available, so just inactive mStateLED.
+                    mStateLED.setVisibility(View.INVISIBLE);
                     //mStateLED.setImageResource(R.drawable.idle_led);
                     mStateMessage2.setVisibility(View.VISIBLE);
                     if (true == bSSRSupported) {
@@ -1446,8 +1446,11 @@ public class SoundRecorder extends Activity
                     mStopButton.setFocusable(false);
 
                     mStateMessage1.setVisibility(View.INVISIBLE);
+                    // No idle led res available, so just inactive mStateLED.
                     mStateLED.setVisibility(View.INVISIBLE);
-                    mStateMessage2.setVisibility(View.INVISIBLE);
+                    //mStateLED.setImageResource(R.drawable.idle_led);
+                    mStateMessage2.setVisibility(View.VISIBLE);
+                    mStateMessage2.setText(res.getString(R.string.recording_stopped));
 
                     mExitButtons.setVisibility(View.VISIBLE);
                     mVUMeter.setVisibility(View.INVISIBLE);
@@ -1458,10 +1461,9 @@ public class SoundRecorder extends Activity
                 }
 
                 if (mSampleInterrupted) {
+                    //TODO: Set decent message and icon resources
                     mStateMessage2.setVisibility(View.VISIBLE);
                     mStateMessage2.setText(res.getString(R.string.recording_stopped));
-                    //mStateLED.setImageResource(R.drawable.idle_led);
-                    mStateLED.setVisibility(View.VISIBLE);
                 }
 
                 if (mErrorUiMessage != null) {
