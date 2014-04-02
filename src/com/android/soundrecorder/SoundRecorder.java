@@ -247,6 +247,7 @@ public class SoundRecorder extends Activity
     static final String SAMPLE_INTERRUPTED_KEY = "sample_interrupted";
     static final String MAX_FILE_SIZE_KEY = "max_file_size";
     private final String DIALOG_STATE_KEY = "dialog_state";
+    private static final String EXIT_AFTER_RECORD = "exit_after_record";
     // State of file saved dialog. -1:not show, 0:show, 1:show and exit.
     private int mDialogState = -1;
 
@@ -286,6 +287,7 @@ public class SoundRecorder extends Activity
     private boolean mRecorderProcessed = false;
     private boolean mDataExist = false;
     private boolean mWAVSupport = true;
+    private boolean mExitAfterRecord = false;
 
     int mAudioSourceType = MediaRecorder.AudioSource.MIC;
     int mPhoneCount = 0;
@@ -387,6 +389,8 @@ public class SoundRecorder extends Activity
             final String EXTRA_MAX_BYTES
                 = android.provider.MediaStore.Audio.Media.EXTRA_MAX_BYTES;
             mMaxFileSize = i.getLongExtra(EXTRA_MAX_BYTES, -1);
+
+            mExitAfterRecord = i.getBooleanExtra(EXIT_AFTER_RECORD, false);
         }
 
         if (AUDIO_ANY.equals(mRequestedType) || ANY_ANY.equals(mRequestedType)) {
@@ -694,7 +698,7 @@ public class SoundRecorder extends Activity
                 }
                 mRecorder.stop();
                 mRecorderProcessed = true;
-                saveSampleAndExit(false);
+                saveSampleAndExit(mExitAfterRecord);
                 break;
             case R.id.discardButton:
                 mRecorder.delete();
@@ -707,6 +711,9 @@ public class SoundRecorder extends Activity
                         new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 dialog.dismiss();
+                                if (mExitAfterRecord) {
+                                    finish();
+                                }
                             }
                         }
                     )
