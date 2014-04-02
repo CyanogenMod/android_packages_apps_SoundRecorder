@@ -274,6 +274,7 @@ public class SoundRecorder extends Activity
     static final int SAMPLERATE_AMR_WB = 16000;
     static final int SAMPLERATE_8000 = 8000;
     static final long STOP_WAIT = 300;
+    static final long BACK_KEY_WAIT = 400;
     int mAudioOutputFormat = MediaRecorder.OutputFormat.AMR_WB;
     String mAmrWidebandExtension = ".awb";
     private AudioManager mAudioManager;
@@ -515,7 +516,6 @@ public class SoundRecorder extends Activity
         try{
            Thread.sleep(STOP_WAIT);
         } catch (InterruptedException ex) {
-              Log.e(TAG,"sleep() for stop wait interrupted");
         }
     }
 
@@ -860,6 +860,10 @@ public class SoundRecorder extends Activity
                     mRecorder.stop();
                     break;
                 case Recorder.RECORDING_STATE:
+                    try {
+                        Thread.sleep(BACK_KEY_WAIT);
+                    } catch (InterruptedException ex) {
+                    }
                     mRecorder.stop();
                     saveSampleAndExit(true);
                     break;
