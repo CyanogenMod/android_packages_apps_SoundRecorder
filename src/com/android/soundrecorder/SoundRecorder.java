@@ -901,6 +901,7 @@ public class SoundRecorder extends Activity
                 case Recorder.PLAYING_STATE:
                     mRecorder.stop();
                     break;
+                case Recorder.PAUSE_STATE:
                 case Recorder.RECORDING_STATE:
                     try {
                         Thread.sleep(BACK_KEY_WAIT);
