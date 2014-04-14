@@ -665,10 +665,12 @@ public class SoundRecorder extends Activity
                 mRecorder.stop();
                 mRecorderProcessed = true;
                 saveSampleAndExit(mExitAfterRecord);
+                mVUMeter.resetAngle();
                 break;
             case R.id.discardButton:
                 mRecorder.delete();
                 mRecorderProcessed = true;
+                mVUMeter.resetAngle();
                 //prompt before exit
                 new AlertDialog.Builder(this)
                     .setTitle(R.string.app_name)
