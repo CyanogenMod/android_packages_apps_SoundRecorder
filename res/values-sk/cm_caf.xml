@@ -16,19 +16,19 @@
      limitations under the License.
 -->
 <resources>
-  <string name="recording_paused">Pauze</string>
-  <string name="error_app_unsupported">Formaat niet ondersteund</string>
-  <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek</string>
-  <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund</string>
-  <string name="format_setting">Bestandstype</string>
+  <string name="recording_paused">pauza</string>
+  <string name="error_app_unsupported">Nepodporovaný formát</string>
+  <string name="error_mediadb_incall">Táto možnosť nie je počas hovoru podporovaná</string>
+  <string name="error_mediadb_aacincall">Nahrávanie hovoru do formátu AAC nie je podporované</string>
+  <string name="format_setting">Typ súboru</string>
   <string name="format_setting_amr_item">AMR</string>
   <string name="format_setting_3gpp_item">3GPP</string>
   <string name="format_setting_wav_item">WAV</string>
-  <string name="storage_setting">Opslaglocatie</string>
-  <string name="storage_setting_sdcard_item">SD-kaart</string>
-  <string name="storage_setting_local_item">Telefoonopslag</string>
-  <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
-  <string name="keyboard">Toetsenbord</string>
-  <string name="file_deleted">Bestand verwijderd</string>
-  <string name="in_call_record_error">Fout bij opnemen tijdens gesprek.</string>
+  <string name="storage_setting">Ukladací priestor</string>
+  <string name="storage_setting_sdcard_item">Karta SD</string>
+  <string name="storage_setting_local_item">Úložisko v telefóne</string>
+  <string name="no_phonestorage">Úložisko telefónu nie je pripojené</string>
+  <string name="keyboard">Klávesnica</string>
+  <string name="file_deleted">Súbor bol vymazaný!</string>
+  <string name="in_call_record_error">Chyba pri nahrávaní hovoru.</string>
 </resources>
