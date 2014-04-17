@@ -16,19 +16,19 @@
      limitations under the License.
 -->
 <resources>
-  <string name="recording_paused">Pauze</string>
-  <string name="error_app_unsupported">Formaat niet ondersteund</string>
-  <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek</string>
-  <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund</string>
-  <string name="format_setting">Bestandstype</string>
+  <string name="recording_paused">pausa</string>
+  <string name="error_app_unsupported">formato non supportato</string>
+  <string name="error_mediadb_incall">Questa opzione non è supportata durante una chiamata</string>
+  <string name="error_mediadb_aacincall">La registrazione della chiamata in formato AAC non è supportata</string>
+  <string name="format_setting">Tipo file</string>
   <string name="format_setting_amr_item">AMR</string>
   <string name="format_setting_3gpp_item">3GPP</string>
   <string name="format_setting_wav_item">WAV</string>
-  <string name="storage_setting">Opslaglocatie</string>
-  <string name="storage_setting_sdcard_item">SD-kaart</string>
-  <string name="storage_setting_local_item">Telefoonopslag</string>
-  <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
-  <string name="keyboard">Toetsenbord</string>
-  <string name="file_deleted">Bestand verwijderd</string>
-  <string name="in_call_record_error">Fout bij opnemen tijdens gesprek.</string>
+  <string name="storage_setting">Posizione di archiviazione</string>
+  <string name="storage_setting_sdcard_item">scheda SD</string>
+  <string name="storage_setting_local_item">memoria del dispositivo</string>
+  <string name="no_phonestorage">Memoria del dispositivo non montata</string>
+  <string name="keyboard">Tastiera</string>
+  <string name="file_deleted">Il file è stato eliminato!</string>
+  <string name="in_call_record_error">Errore registrazione della chiamata.</string>
 </resources>

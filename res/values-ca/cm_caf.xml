@@ -16,19 +16,19 @@
      limitations under the License.
 -->
 <resources>
-  <string name="recording_paused">Pauze</string>
-  <string name="error_app_unsupported">Formaat niet ondersteund</string>
-  <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek</string>
-  <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund</string>
-  <string name="format_setting">Bestandstype</string>
+  <string name="recording_paused">pausa</string>
+  <string name="error_app_unsupported">Format no suportat</string>
+  <string name="error_mediadb_incall">Aquesta opció no està suportada durant una trucada</string>
+  <string name="error_mediadb_aacincall">La gravació de trucada AAC no està suportada</string>
+  <string name="format_setting">Tipus de fitxer</string>
   <string name="format_setting_amr_item">AMR</string>
   <string name="format_setting_3gpp_item">3GPP</string>
   <string name="format_setting_wav_item">WAV</string>
-  <string name="storage_setting">Opslaglocatie</string>
-  <string name="storage_setting_sdcard_item">SD-kaart</string>
-  <string name="storage_setting_local_item">Telefoonopslag</string>
-  <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
-  <string name="keyboard">Toetsenbord</string>
-  <string name="file_deleted">Bestand verwijderd</string>
-  <string name="in_call_record_error">Fout bij opnemen tijdens gesprek.</string>
+  <string name="storage_setting">Ubicació d\'emmagatzematge</string>
+  <string name="storage_setting_sdcard_item">Targeta SD</string>
+  <string name="storage_setting_local_item">Emmagatzematge del telèfon</string>
+  <string name="no_phonestorage">Emmagatzematge del telèfon desmuntat</string>
+  <string name="keyboard">Teclat</string>
+  <string name="file_deleted">L\'arxiu ha estat esborrat!</string>
+  <string name="in_call_record_error">Error de gravació durant la trucada.</string>
 </resources>
