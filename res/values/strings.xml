@@ -76,9 +76,9 @@
     <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
     <!-- shown as the dialog title when user selects recording format -->
     <string name="format_setting">File type</string>
-    <string name="format_setting_amr_item">AMR</string>
-    <string name="format_setting_3gpp_item">3GPP</string>
-    <string name="format_setting_wav_item">WAV</string>
+    <string name="format_setting_amr_item" translatable="false">AMR</string>
+    <string name="format_setting_3gpp_item" translatable="false">3GPP</string>
+    <string name="format_setting_wav_item" translatable="false">WAV</string>
     <string name="storage_setting">Storage location</string>
     <string name="storage_setting_sdcard_item">SD card</string>
     <string name="storage_setting_local_item">Phone storage</string>
