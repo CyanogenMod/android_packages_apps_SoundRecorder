@@ -15,15 +15,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">השהה</string>
   <string name="error_app_unsupported">תבנית לא נתמכת</string>
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה</string>
-  <string name="error_mediadb_aacincall">הקלטת קול שיחה AAC לא נתמך</string>
+  <string name="error_mediadb_aacincall">הקלטת קול שיחת AAC לא נתמכת</string>
   <string name="format_setting">סוג קובץ</string>
-  <string name="format_setting_amr_item">AMR</string>
-  <string name="format_setting_3gpp_item">3GPP</string>
-  <string name="format_setting_wav_item">WAV</string>
   <string name="storage_setting">מיקום האחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס SD</string>
   <string name="storage_setting_local_item">אחסון פנימי</string>

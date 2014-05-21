@@ -15,11 +15,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">一時停止</string>
-  <string name="error_app_unsupported">未対応のフォーマット</string>
+  <string name="error_app_unsupported">サポートされていないフォーマットです</string>
   <string name="error_mediadb_incall">このオプションは通話中には使用できません</string>
-  <string name="error_mediadb_aacincall">ACCの音声通話録音には対応していません</string>
+  <string name="error_mediadb_aacincall">ACCでの音声通話録音はサポートされていません</string>
   <string name="format_setting">ファイル形式</string>
   <string name="storage_setting">ストレージの場所</string>
   <string name="storage_setting_sdcard_item">SDカード</string>

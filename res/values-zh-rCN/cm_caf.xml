@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">暂停</string>
   <string name="error_app_unsupported">不支持的格式</string>
   <string name="error_mediadb_incall">通话期间不支持此选项</string>

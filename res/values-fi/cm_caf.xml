@@ -15,15 +15,12 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">keskeytä</string>
   <string name="error_app_unsupported">Muotoa ei tueta</string>
   <string name="error_mediadb_incall">Ominaisuutta ei voi käyttää puhelun aikana</string>
   <string name="error_mediadb_aacincall">AAC-tallentamista puhelun aikana ei tueta</string>
   <string name="format_setting">Tiedostotyyppi</string>
-  <string name="format_setting_amr_item">AMR</string>
-  <string name="format_setting_3gpp_item">3GPP</string>
-  <string name="format_setting_wav_item">WAV</string>
   <string name="storage_setting">Tallennustila</string>
   <string name="storage_setting_sdcard_item">Muistikortti</string>
   <string name="storage_setting_local_item">Puhelimen muisti</string>

@@ -16,15 +16,11 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">暫停</string>
-  <string name="error_app_unsupported">不支援的格式</string>
-  <string name="error_mediadb_incall">通話時不支援此選項</string>
-  <string name="format_setting">檔案類型</string>
-  <string name="storage_setting">儲存位置</string>
-  <string name="storage_setting_sdcard_item">SD 卡</string>
-  <string name="storage_setting_local_item">手機儲存空間</string>
-  <string name="no_phonestorage">手機儲存空間已卸載</string>
-  <string name="keyboard">鍵盤</string>
-  <string name="file_deleted">檔案已刪除！</string>
-  <string name="in_call_record_error">通話錄音錯誤。</string>
+  <string name="error_app_unsupported">Formatet saknar stöd</string>
+  <string name="format_setting">Filtyp</string>
+  <string name="storage_setting">Lagringsplats</string>
+  <string name="storage_setting_sdcard_item">SD-kort</string>
+  <string name="storage_setting_local_item">Telefonlagring</string>
+  <string name="keyboard">Tangentbord</string>
+  <string name="file_deleted">Filen har tagits bort!</string>
 </resources>

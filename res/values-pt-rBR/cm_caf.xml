@@ -15,7 +15,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">pausar</string>
   <string name="error_app_unsupported">Formato não suportado</string>
   <string name="error_mediadb_incall">Esta opção não é suportada durante uma chamada</string>

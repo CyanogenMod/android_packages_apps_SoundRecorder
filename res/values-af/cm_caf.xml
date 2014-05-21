@@ -15,18 +15,15 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">pouse</string>
   <string name="error_app_unsupported">Nie-ondersteunde formaat</string>
   <string name="error_mediadb_incall">Hierdie opsie word nie tydens \'n oproep ondersteun nie</string>
-  <string name="error_mediadb_aacincall">AAK stem oproep opname word nie ondersteun nie</string>
+  <string name="error_mediadb_aacincall">AAC stem oproep opname word nie ondersteun nie</string>
   <string name="format_setting">Lêertipe</string>
-  <string name="format_setting_amr_item">AMR</string>
-  <string name="format_setting_3gpp_item">3GPP</string>
-  <string name="format_setting_wav_item">WAV</string>
   <string name="storage_setting">Stoor plek</string>
   <string name="storage_setting_sdcard_item">SD kaart</string>
-  <string name="storage_setting_local_item">Interne Foon spasie</string>
+  <string name="storage_setting_local_item">Foon spasie</string>
   <string name="no_phonestorage">Selfoon spasie ongemonteer</string>
   <string name="keyboard">Sleutelbord</string>
   <string name="file_deleted">Lêer is verwyder!</string>

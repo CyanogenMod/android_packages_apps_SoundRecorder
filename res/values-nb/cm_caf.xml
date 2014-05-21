@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">Pause</string>
-  <string name="error_app_unsupported">Format nicht unterstützt</string>
-  <string name="error_mediadb_incall">Während eines Anrufs wird diese Option nicht unterstützt</string>
-  <string name="error_mediadb_aacincall">Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt</string>
-  <string name="format_setting">Dateityp</string>
-  <string name="storage_setting">Speicherort</string>
-  <string name="storage_setting_sdcard_item">SD-Karte</string>
-  <string name="storage_setting_local_item">Telefonspeicher</string>
-  <string name="no_phonestorage">Telefonspeicher ist nicht verfügbar</string>
+  <string name="recording_paused">pause</string>
+  <string name="error_app_unsupported">Ustøttet format</string>
+  <string name="error_mediadb_incall">Dette alternativet støttes ikke under en samtale</string>
+  <string name="error_mediadb_aacincall">AAC videoanrop opptak støttes ikke</string>
+  <string name="format_setting">Filtype</string>
+  <string name="storage_setting">Lagringslokasjon</string>
+  <string name="storage_setting_sdcard_item">SD-kort</string>
+  <string name="storage_setting_local_item">Telefon lagring</string>
+  <string name="no_phonestorage">Telefon lagring avmontert</string>
   <string name="keyboard">Tastatur</string>
-  <string name="file_deleted">Datei wurde gelöscht!</string>
-  <string name="in_call_record_error">Fehler bei der Aufnahme des Anrufes</string>
+  <string name="file_deleted">Filen har blitt slettet!</string>
+  <string name="in_call_record_error">In-call opptak feilet.</string>
 </resources>
