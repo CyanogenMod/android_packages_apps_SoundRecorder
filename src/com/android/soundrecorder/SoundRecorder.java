@@ -37,10 +37,12 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.AudioManager;
 import android.media.MediaRecorder;
+import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.Message;
 import android.os.PowerManager;
 import android.os.StatFs;
 import android.os.SystemProperties;
@@ -263,6 +265,7 @@ public class SoundRecorder extends Activity
 
     static final int SETTING_TYPE_STORAGE_LOCATION = 0;
     static final int SETTING_TYPE_FILE_TYPE = 1;
+    static final int FOCUSCHANGE = 2;
     static final String STORAGE_PATH_LOCAL_PHONE = Environment.getExternalStorageDirectory()
             .toString() + "/SoundRecorder";
 
@@ -515,7 +518,7 @@ public class SoundRecorder extends Activity
         // should be public, but isn't.
         Intent i = new Intent("com.android.music.musicservicecommand");
         i.putExtra("command", "pause");
-        mAudioManager.requestAudioFocus(null, AudioManager.STREAM_MUSIC,
+        mAudioManager.requestAudioFocus(mAudioFocusListener, AudioManager.STREAM_MUSIC,
                     AudioManager.AUDIOFOCUS_GAIN);
         sendBroadcast(i);
         try{
@@ -523,6 +526,38 @@ public class SoundRecorder extends Activity
         } catch (InterruptedException ex) {
         }
     }
+
+    private OnAudioFocusChangeListener mAudioFocusListener = new OnAudioFocusChangeListener() {
+        public void onAudioFocusChange(int focusChange) {
+            mRecorderHandler.obtainMessage(FOCUSCHANGE, focusChange, 0).sendToTarget();
+        }
+    };
+
+    private Handler mRecorderHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case FOCUSCHANGE:
+                    switch (msg.arg1) {
+                        case AudioManager.AUDIOFOCUS_LOSS:
+                            if (mRecorder.state() == Recorder.RECORDING_STATE) {
+                                mRecorder.stop();
+                                if (mRecorder.sampleLength() > 0) {
+                                    mRecorderStop = true;
+                                }
+                                mVUMeter.resetAngle();
+                                invalidateOptionsMenu();
+                            } else if (mRecorder.state() == Recorder.PLAYING_STATE) {
+                                mRecorder.stopPlayback();
+                            }
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 
     /*
      * Handle the buttons.
@@ -1054,7 +1089,7 @@ public class SoundRecorder extends Activity
         if (mRecorder.sampleLength() > 0) {
             mRecorderStop = true;
         }
-        mAudioManager.abandonAudioFocus(null);
+        mAudioManager.abandonAudioFocus(mAudioFocusListener);
         super.onPause();
     }
 
