@@ -1549,6 +1549,7 @@ public class SoundRecorder extends Activity
                 mStateMessage2.setText(res.getString(R.string.recording_paused));
 
                 mExitButtons.setVisibility(View.INVISIBLE);
+                mVUMeter.resetAngle();
                 mVUMeter.setVisibility(View.VISIBLE);
 
                 mStateProgressBar.setVisibility(View.INVISIBLE);
