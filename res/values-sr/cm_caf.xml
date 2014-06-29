@@ -21,10 +21,10 @@
   <string name="error_mediadb_incall">Ова опција није подржана у току позива</string>
   <string name="error_mediadb_aacincall">AAC снимање говорног позива није подржано</string>
   <string name="format_setting">Тип фајла</string>
-  <string name="storage_setting">Локација складиштења</string>
+  <string name="storage_setting">Локација складишта</string>
   <string name="storage_setting_sdcard_item">SD картица</string>
-  <string name="storage_setting_local_item">Телефонско складиштење</string>
-  <string name="no_phonestorage">Телефонско складиштење није монтирано</string>
+  <string name="storage_setting_local_item">Телефонско складиште</string>
+  <string name="no_phonestorage">Телефонско складиште није монтирано</string>
   <string name="keyboard">Тастатура</string>
   <string name="file_deleted">Фајл је обрисан!</string>
   <string name="in_call_record_error">Грешка снимања позива.</string>
