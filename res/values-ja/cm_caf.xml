@@ -26,6 +26,6 @@
   <string name="storage_setting_local_item">携帯電話のストレージ</string>
   <string name="no_phonestorage">携帯電話のストレージはマウントされていません</string>
   <string name="keyboard">キーボード</string>
-  <string name="file_deleted">ファイルは削除されました</string>
+  <string name="file_deleted">ファイルを削除しました</string>
   <string name="in_call_record_error">通話中の録音エラー。</string>
 </resources>
