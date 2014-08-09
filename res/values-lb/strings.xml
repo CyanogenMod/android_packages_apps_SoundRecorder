@@ -15,10 +15,22 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="app_name">Tounophueler</string>
   <string name="record_your_message">Huel däi Message op</string>
   <string name="message_recorded">Message opgeholl</string>
+  <string name="review_message">Message nolauschteren</string>
   <string name="recording">Gëtt opgeholl</string>
   <string name="recording_stopped">Ophuele gestoppt</string>
   <string name="storage_is_full">Späicher ass voll</string>
+  <string name="max_length_reached">Maximal Längt erreecht</string>
+  <string name="insert_sd_card" product="nosdcard">USB-Späicher bereetstellen</string>
+  <string name="insert_sd_card" product="default">SD-Kaart asetzen</string>
+  <string name="accept">Fäerdeg</string>
+  <string name="discard">Verwerfen</string>
   <string name="button_ok">OK</string>
+  <string name="audio_db_title_format"><xliff:g id="format">dd/MM/yyyy HH:mm:ss</xliff:g></string>
+  <string name="audio_db_artist_name">Deng Opnamen</string>
+  <string name="audio_db_album_name">Audio-Opnamen</string>
+  <string name="audio_db_playlist_name">Meng Opnamen</string>
+  <string name="error_app_internal">Internen Applikatiounsfeeler</string>
 </resources>
