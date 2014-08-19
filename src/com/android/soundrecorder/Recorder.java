@@ -159,20 +159,22 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public void startRecording(int outputfileformat, String extension, 
                    Context context, int audiosourcetype, int codectype) {
         stop();
-        
-        if (mSampleFile == null) {
-            File sampleDir = Environment.getExternalStorageDirectory();
-            if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
-                sampleDir = new File("/sdcard/sdcard");
-            
-            try {
-                mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
-            } catch (IOException e) {
-                setError(SDCARD_ACCESS_ERROR);
-                return;
-            }
+        if (mSampleFile != null) {
+            mSampleFile.delete();
+            mSampleFile = null;
+            mSampleLength = 0;
         }
-        
+
+        File sampleDir = Environment.getExternalStorageDirectory();
+        if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
+            sampleDir = new File("/sdcard/sdcard");
+        try {
+            mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
+        } catch (IOException e) {
+            setError(SDCARD_ACCESS_ERROR);
+            return;
+        }
+
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(audiosourcetype);
         //set channel for surround sound recording.
