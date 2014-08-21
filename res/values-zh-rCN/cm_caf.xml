@@ -28,9 +28,4 @@
   <string name="keyboard">键盘</string>
   <string name="file_deleted">文件已被删除!</string>
   <string name="in_call_record_error">通话录音错误。</string>
-  <string name="press_record">点击开始录音: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP 6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP</string>
-  <string name="press_record2">点击开始录音</string>
-  <string name="recording_now">正在录音 ...</string>
-  <string name="file_saved">文件保存成功</string>
-  <string name="file_discard">放弃录音</string>
 </resources>
