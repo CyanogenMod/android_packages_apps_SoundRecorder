@@ -51,14 +51,6 @@
     <string name="button_ok">OK</string>
     <!-- Do not translate. Format of the timer that shows how much has been recorded so far -->
     <string name="timer_format" translatable="false"><xliff:g id="format">%02d:%02d</xliff:g></string>
-    <!-- label shown before the user has recorded anything -->
-    <string name="press_record">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
-    6-AAC_MP4 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
-    <string name="press_record2">Press record</string>
-    <!-- label shown before the user has recorded anything -SSR support added-->
-    <string name="press_record_ssr">Press: 0-MIC 1-Rx 2-Tx+Rx 3-AMR 4-EVRC 5-QCELP
-    6-AAC_MP4 7-AAC_SSR 8-LPCM_SSR 9-AMR-WB A-AMR-WB-3GPP and Press record</string>
-   
     <!-- the name under which recordings will be visible in the media database is formatted like this --> 
     <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
     <!-- all recordings will show up in the media database with this 'artist' name -->
@@ -67,7 +59,7 @@
     <string name="audio_db_album_name">Audio recordings</string>
     <!-- all recordings will show up in the media database in a playlist with this name -->
     <string name="audio_db_playlist_name">My recordings</string>
-   
+
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
     <string name="error_sdcard_access" product="nosdcard">Can\'t access USB storage.</string>
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
@@ -79,15 +71,9 @@
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
     <!-- shown as the message in a dialog when the recording cannot be started while in call -->
-    <string name="error_mediadb_incall">This option is supported, only while in call</string>
+    <string name="error_mediadb_incall">This option is not supported during a call</string>
     <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
     <string name="error_mediadb_aacincall">AAC voice call recording is not supported</string>
-    <!-- Label shown during recording -->
-    <string name="recording_now">Recording now ...</string>
-    <!-- shown as the message in a dialog when the recording file is saved successfully -->
-    <string name="file_saved">File has been saved</string>
-    <!-- shown as the message in a dialog when the recording file is discarded -->
-    <string name="file_discard">File has been discarded</string>
     <!-- shown as the dialog title when user selects recording format -->
     <string name="format_setting">File type</string>
     <string name="format_setting_amr_item" translatable="false">AMR</string>
