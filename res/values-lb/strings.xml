@@ -25,7 +25,7 @@
   <string name="max_length_reached">Maximal Längt erreecht</string>
   <string name="insert_sd_card" product="nosdcard">USB-Späicher bereetstellen</string>
   <string name="insert_sd_card" product="default">SD-Kaart asetzen</string>
-  <string name="min_available"><xliff:g id="minutes">%d</xliff:g> Min. iwwereg</string>
+  <string name="min_available"><xliff:g id="minutes">%d</xliff:g> Min. iwwreg</string>
   <string name="sec_available"><xliff:g id="seconds">%d</xliff:g> Sek. iwwreg</string>
   <string name="accept">Fäerdeg</string>
   <string name="discard">Verwerfen</string>
