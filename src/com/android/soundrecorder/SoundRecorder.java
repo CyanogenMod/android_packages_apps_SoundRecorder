@@ -34,10 +34,12 @@ import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.AudioManager;
 import android.media.MediaRecorder;
+import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.Message;
 import android.os.PowerManager;
 import android.os.StatFs;
 import android.os.PowerManager.WakeLock;
@@ -217,6 +219,8 @@ public class SoundRecorder extends Activity
     static final String AUDIO_AMR_WB = "audio/amr-wb";
     static final String AUDIO_ANY = "audio/*";
     static final String ANY_ANY = "*/*";
+
+    static final int FOCUSCHANGE = 0;
     
     static final int BITRATE_AMR =  5900; // bits/sec
     static final int BITRATE_EVRC = 8500;
@@ -438,8 +442,35 @@ public class SoundRecorder extends Activity
      */
     private void stopAudioPlayback() {
         AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        am.requestAudioFocus(null, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+        am.requestAudioFocus(mAudioFocusListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
     }
+
+    private OnAudioFocusChangeListener mAudioFocusListener = new OnAudioFocusChangeListener() {
+        public void onAudioFocusChange(int focusChange) {
+            mRecorderHandler.obtainMessage(FOCUSCHANGE, focusChange, 0).sendToTarget();
+        }
+    };
+
+    private Handler mRecorderHandler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            switch (msg.what) {
+                case FOCUSCHANGE:
+                    switch (msg.arg1) {
+                        case AudioManager.AUDIOFOCUS_LOSS:
+                            if (mRecorder.state() == Recorder.RECORDING_STATE) {
+                                mRecorder.stop();
+                            } else if (mRecorder.state() == Recorder.PLAYING_STATE) {
+                                mRecorder.stopPlayback();
+                            }
+                            break;
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
 
     /*
      * Handle the buttons.
@@ -756,7 +787,7 @@ public class SoundRecorder extends Activity
         }
         mSampleInterrupted = mRecorder.state() == Recorder.RECORDING_STATE;
         mRecorder.stop();
-        mAudioManager.abandonAudioFocus(null);
+        mAudioManager.abandonAudioFocus(mAudioFocusListener);
         super.onPause();
     }
 
