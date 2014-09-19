@@ -284,6 +284,7 @@ public class SoundRecorder extends Activity
                       if ((sOldCallState == TelephonyManager.CALL_STATE_OFFHOOK)
                                && !(mAudioSourceType == MediaRecorder.AudioSource.MIC)){
                          mRecorder.stop();
+                         sOldCallState = TelephonyManager.CALL_STATE_IDLE;
                          mAudioSourceType = MediaRecorder.AudioSource.MIC;
                       }
                       break;
@@ -493,7 +494,7 @@ public class SoundRecorder extends Activity
                 } else {
                     stopAudioPlayback();
 
-                    if ((mAudioManager.getMode() == AudioManager.MODE_IN_CALL) &&
+                    if ((sOldCallState == TelephonyManager.CALL_STATE_OFFHOOK) &&
                         (mAudioSourceType == MediaRecorder.AudioSource.MIC)) {
                         mAudioSourceType = MediaRecorder.AudioSource.VOICE_UPLINK;
                         Log.e(TAG, "Selected Voice Tx only Source: sourcetype" + mAudioSourceType);
