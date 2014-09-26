@@ -53,6 +53,7 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+import android.telephony.SubscriptionManager;
 import android.media.AudioManager;
 import android.view.inputmethod.InputMethodManager;
 import android.os.SystemProperties;
@@ -231,6 +232,7 @@ public class SoundRecorder extends Activity
     private AudioManager mAudioManager;
 
     int mAudioSourceType = MediaRecorder.AudioSource.MIC;
+    int mPhoneCount = 0;
     static int sOldCallState = TelephonyManager.CALL_STATE_IDLE;
     WakeLock mWakeLock;
     String mRequestedType = AUDIO_ANY;
@@ -266,10 +268,11 @@ public class SoundRecorder extends Activity
     VUMeter mVUMeter;
     private BroadcastReceiver mSDCardMountEventReceiver = null;
     private TelephonyManager mTelephonyManager;
-    private PhoneStateListener mPhoneStateListener;
+    private PhoneStateListener[] mPhoneStateListener;
 
-    private PhoneStateListener getPhoneStateListener() {
-        PhoneStateListener phoneStateListener = new PhoneStateListener() {
+    private PhoneStateListener getPhoneStateListener(long subId) {
+
+        PhoneStateListener phoneStateListener = new PhoneStateListener(subId) {
             @Override
             public void onCallStateChanged(int state, String ignored) {
                switch (state) {
@@ -346,7 +349,12 @@ public class SoundRecorder extends Activity
             }
         }
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        mPhoneStateListener = getPhoneStateListener();
+        mPhoneCount = mTelephonyManager.getPhoneCount();
+        mPhoneStateListener = new PhoneStateListener[mPhoneCount];
+        for(int j = 0; j < mPhoneCount; j++) {
+            long[] subId = SubscriptionManager.getSubId(j);
+            mPhoneStateListener[j] = getPhoneStateListener(subId[0]);
+        }
 
         String ssrRet = SystemProperties.get("ro.qc.sdk.audio.ssr","false");
         if (ssrRet.contains("true")) {
@@ -364,8 +372,10 @@ public class SoundRecorder extends Activity
         super.onResume();
         // While we're in the foreground, listen for phone state changes.
         mTelephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-            mTelephonyManager.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE);
-   }
+        for(int i = 0; i < mPhoneCount; i++) {
+            mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_CALL_STATE);
+        }
+    }
     @Override
     public void onConfigurationChanged(Configuration newConfig) {
         super.onConfigurationChanged(newConfig);
@@ -741,7 +751,9 @@ public class SoundRecorder extends Activity
     @Override
     protected void onPause() {
         // Stop listening for phone state changes.
-        mTelephonyManager.listen(mPhoneStateListener, PhoneStateListener.LISTEN_NONE);
+        for(int i = 0; i < mPhoneCount; i++) {
+            mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_NONE);
+        }
         mSampleInterrupted = mRecorder.state() == Recorder.RECORDING_STATE;
         mRecorder.stop();
         mAudioManager.abandonAudioFocus(null);
