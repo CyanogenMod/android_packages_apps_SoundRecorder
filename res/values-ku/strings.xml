@@ -36,6 +36,5 @@
   <string name="audio_db_playlist_name">تۆمارکردنەکانم</string>
   <string name="error_sdcard_access" product="nosdcard">بەکاربێت USB  ناتوانرێت یادگەی</string>
   <string name="error_sdcard_access" product="default">SD ناتوانرێت کارتی دەرەکی بەکاربێت</string>
-  <string name="error_app_internal">هەڵەیەکی ناوەکی ڕوویدا لە بەرنامەکەدا</string>
   <string name="error_mediadb_new_record">ناتوانرێت دەنگی تۆمارکراو بپارێزرێت.</string>
 </resources>
