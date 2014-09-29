@@ -20,12 +20,12 @@
   <string name="error_app_unsupported">ไม่รองรับไฟล์นามสกุลนี้</string>
   <string name="error_mediadb_incall">ตัวเลือกนี้ไม่สามารถใช้ในระหว่างใช้สายได้</string>
   <string name="error_mediadb_aacincall">AAC บันทึกเสียงระหว่างใช้สายไม่รองรับ</string>
+  <string name="in_call_record_error">บันทึกระหว่างใช้สายล้มเหลว</string>
   <string name="format_setting">ประเภทไฟล์</string>
   <string name="storage_setting">สถานที่เก็บ</string>
   <string name="storage_setting_sdcard_item">SD card</string>
   <string name="storage_setting_local_item">ภายในโทรศัพท์</string>
   <string name="no_phonestorage">ที่เก็บภายในโทรศัพท์ไม่ถูกเชื่อมต่อ</string>
   <string name="keyboard">แป้นพิมพ์</string>
-  <string name="file_deleted">แฟ้มถูกลบ!</string>
-  <string name="in_call_record_error">บันทึกระหว่างใช้สายล้มเหลว</string>
+  <string name="file_deleted">แฟ้มถูกลบ</string>
 </resources>

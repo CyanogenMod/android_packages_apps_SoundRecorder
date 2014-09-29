@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">pausa</string>
-  <string name="error_app_unsupported">Format no suportat</string>
-  <string name="error_mediadb_incall">Aquesta opció no està suportada durant una trucada</string>
-  <string name="error_mediadb_aacincall">La gravació de trucada AAC no està suportada</string>
+  <string name="recording_paused">Pausat</string>
+  <string name="error_app_unsupported">Format no suportat.</string>
+  <string name="error_mediadb_incall">Aquesta opció no està suportada durant una trucada.</string>
+  <string name="error_mediadb_aacincall">La gravació de trucada AAC no està suportada.</string>
+  <string name="in_call_record_error">Error de gravació durant la trucada.</string>
   <string name="format_setting">Tipus de fitxer</string>
-  <string name="storage_setting">Ubicació d\'emmagatzematge</string>
+  <string name="storage_setting">Ubicació de l\'emmagatzematge</string>
   <string name="storage_setting_sdcard_item">Targeta SD</string>
   <string name="storage_setting_local_item">Emmagatzematge del telèfon</string>
   <string name="no_phonestorage">Emmagatzematge del telèfon desmuntat</string>
   <string name="keyboard">Teclat</string>
-  <string name="file_deleted">L\'arxiu ha estat esborrat!</string>
-  <string name="in_call_record_error">Error de gravació durant la trucada.</string>
+  <string name="file_deleted">L\'arxiu ha estat esborrat</string>
 </resources>

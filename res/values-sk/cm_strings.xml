@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">pauza</string>
-  <string name="error_app_unsupported">Nieobsługiwany format</string>
-  <string name="error_mediadb_incall">Ta opcja nie jest obsługiwana podczas rozmowy</string>
-  <string name="error_mediadb_aacincall">Zapisywanie połączenia głosowego w formacie AAC jest nieobsługiwane</string>
-  <string name="format_setting">Typ pliku</string>
-  <string name="storage_setting">Lokalizacja pamięci</string>
+  <string name="recording_paused">Pozastavené</string>
+  <string name="error_app_unsupported">Nepodporovaný formát.</string>
+  <string name="error_mediadb_incall">Táto možnosť nie je podporovaná počas hovoru.</string>
+  <string name="error_mediadb_aacincall">Nahrávanie hovoru do formátu AAC nie je podporované.</string>
+  <string name="in_call_record_error">Chyba pri nahrávaní hovoru.</string>
+  <string name="format_setting">Typ súboru</string>
+  <string name="storage_setting">Úložisko</string>
   <string name="storage_setting_sdcard_item">Karta SD</string>
-  <string name="storage_setting_local_item">Pamięć telefonu</string>
-  <string name="no_phonestorage">Pamięć telefonu odmontowana</string>
-  <string name="keyboard">Klawiatura</string>
-  <string name="file_deleted">Plik został usunięty!</string>
-  <string name="in_call_record_error">Błąd w trakcie nagrywania.</string>
+  <string name="storage_setting_local_item">Úložisko v telefóne</string>
+  <string name="no_phonestorage">Úložisko telefónu je odpojené</string>
+  <string name="keyboard">Klávesnica</string>
+  <string name="file_deleted">Súbor bol vymazaný</string>
 </resources>

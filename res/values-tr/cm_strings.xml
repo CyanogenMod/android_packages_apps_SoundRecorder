@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">duraklat</string>
-  <string name="error_app_unsupported">Desteklenmeyen biçim</string>
-  <string name="error_mediadb_incall">Arama sırasında bu seçenek desteklenmiyor</string>
-  <string name="error_mediadb_aacincall">AAC sesli arama kaydı desteklenmiyor</string>
+  <string name="recording_paused">Duraklatıldı</string>
+  <string name="error_app_unsupported">Desteklenmeyen biçim.</string>
+  <string name="error_mediadb_incall">Arama sırasında bu seçenek desteklenmiyor.</string>
+  <string name="error_mediadb_aacincall">AAC ses çağrısı kaydı desteklenmiyor.</string>
+  <string name="in_call_record_error">Çağrı kaydı hatası.</string>
   <string name="format_setting">Dosya türü</string>
-  <string name="storage_setting">Depolama konumu</string>
+  <string name="storage_setting">Depolama yeri</string>
   <string name="storage_setting_sdcard_item">SD kart</string>
   <string name="storage_setting_local_item">Telefon hafızası</string>
   <string name="no_phonestorage">Telefon hafızası ayrılmış</string>
   <string name="keyboard">Klavye</string>
-  <string name="file_deleted">Dosya silindi!</string>
-  <string name="in_call_record_error">Çağrı kaydı hatası.</string>
+  <string name="file_deleted">Dosya silindi</string>
 </resources>

@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">pause</string>
-  <string name="error_app_unsupported">Format non pris en charge</string>
-  <string name="error_mediadb_incall">Cette option n\'est pas pris en charge pendant un appel</string>
-  <string name="error_mediadb_aacincall">Enregistrement d\'appel vocal AAC non pris en charge</string>
+  <string name="recording_paused">En pause</string>
+  <string name="error_app_unsupported">Format non pris en charge.</string>
+  <string name="error_mediadb_incall">Cette option n\'est pas prise en charge pendant un appel.</string>
+  <string name="error_mediadb_aacincall">Enregistrement d\'appel vocal AAC non pris en charge.</string>
+  <string name="in_call_record_error">Erreur d\'enregistrement en cours d\'appel.</string>
   <string name="format_setting">Type de fichier</string>
   <string name="storage_setting">Emplacement de stockage</string>
   <string name="storage_setting_sdcard_item">Carte SD</string>
   <string name="storage_setting_local_item">Stockage du téléphone</string>
-  <string name="no_phonestorage">Stockage téléphone non monté</string>
+  <string name="no_phonestorage">Stockage du téléphone non disponible</string>
   <string name="keyboard">Clavier</string>
-  <string name="file_deleted">Le fichier a été supprimé !</string>
-  <string name="in_call_record_error">Erreur d\'enregistrement d\'appel.</string>
+  <string name="file_deleted">Le fichier a été supprimé</string>
 </resources>

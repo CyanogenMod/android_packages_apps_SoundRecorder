@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">szünet</string>
-  <string name="error_app_unsupported">Nem támogatott formátum</string>
-  <string name="error_mediadb_incall">Ez a beállítás nem támogatott hívás közben</string>
-  <string name="error_mediadb_aacincall">AAC hanghívás felvétele nem támogatott</string>
+  <string name="recording_paused">Szüneteltetve</string>
+  <string name="error_app_unsupported">Nem támogatott formátum.</string>
+  <string name="error_mediadb_incall">Ez a beállítás nem támogatott hívás közben.</string>
+  <string name="error_mediadb_aacincall">AAC hanghívás felvétele nem támogatott.</string>
+  <string name="in_call_record_error">Hívásrögzítési hiba.</string>
   <string name="format_setting">Fájltípus</string>
   <string name="storage_setting">Tárolási hely</string>
   <string name="storage_setting_sdcard_item">SD kártya</string>
   <string name="storage_setting_local_item">Telefon tárhelye</string>
   <string name="no_phonestorage">Telefon tárhelye lecsatlakoztatva</string>
   <string name="keyboard">Billentyűzet</string>
-  <string name="file_deleted">Fájl törölve!</string>
-  <string name="in_call_record_error">Hívásrögzítési hiba.</string>
+  <string name="file_deleted">Fájl törölve</string>
 </resources>

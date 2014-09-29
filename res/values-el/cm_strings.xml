@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">παύση</string>
-  <string name="error_app_unsupported">Μη υποστηριζόμενη μορφή</string>
-  <string name="error_mediadb_incall">Αυτή η επιλογή δεν υποστηρίζεται κατά τη διάρκεια μιας κλήσης</string>
-  <string name="error_mediadb_aacincall">Η εγγραφή φωνητικής κλήσης σε μορφή AAC δεν υποστηρίζεται</string>
+  <string name="recording_paused">Σε παύση</string>
+  <string name="error_app_unsupported">Μη υποστηριζόμενη μορφή.</string>
+  <string name="error_mediadb_incall">Αυτή η επιλογή δεν υποστηρίζεται κατά τη διάρκεια μιας κλήσης.</string>
+  <string name="error_mediadb_aacincall">Η εγγραφή φωνητικής κλήσης σε μορφή AAC δεν υποστηρίζεται.</string>
+  <string name="in_call_record_error">Σφάλμα κατά την ηχογράφηση κλήσης.</string>
   <string name="format_setting">Τύπος αρχείου</string>
   <string name="storage_setting">Θέση αποθήκευσης</string>
   <string name="storage_setting_sdcard_item">Κάρτα SD</string>
   <string name="storage_setting_local_item">Αποθ. χώρος τηλεφώνου</string>
   <string name="no_phonestorage">Αποθ. χώρος τηλεφώνου αποπροσαρτημένος</string>
   <string name="keyboard">Πληκτρολόγιο</string>
-  <string name="file_deleted">Το αρχείο έχει διαγραφεί!</string>
-  <string name="in_call_record_error">Σφάλμα κατά την ηχογράφηση κλήσης.</string>
+  <string name="file_deleted">Το αρχείο έχει διαγραφεί</string>
 </resources>

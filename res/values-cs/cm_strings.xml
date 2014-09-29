@@ -16,16 +16,16 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">pauza</string>
-  <string name="error_app_unsupported">Nepodporovaný formát</string>
-  <string name="error_mediadb_incall">Tato volba není při hovoru podporována</string>
-  <string name="error_mediadb_aacincall">Nahrávání hovoru do AAC není podporováno</string>
+  <string name="recording_paused">Pozastaveno</string>
+  <string name="error_app_unsupported">Nepodporovaný formát.</string>
+  <string name="error_mediadb_incall">Tato volba není při hovoru podporována.</string>
+  <string name="error_mediadb_aacincall">Nahrávání hovoru do AAC není podporováno.</string>
+  <string name="in_call_record_error">Chyba při nahrávání hovoru.</string>
   <string name="format_setting">Typ souboru</string>
   <string name="storage_setting">Umístění nahrávek</string>
   <string name="storage_setting_sdcard_item">Karta SD</string>
   <string name="storage_setting_local_item">Úložiště telefonu</string>
   <string name="no_phonestorage">Úložiště telefonu není připojené</string>
   <string name="keyboard">Klávesnice</string>
-  <string name="file_deleted">Soubor byl smazán!</string>
-  <string name="in_call_record_error">Chyba při nahrávání hovoru.</string>
+  <string name="file_deleted">Soubor byl smazán</string>
 </resources>
