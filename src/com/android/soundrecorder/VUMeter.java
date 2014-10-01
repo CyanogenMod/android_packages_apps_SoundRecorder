@@ -32,7 +32,7 @@ public class VUMeter extends View {
     static final float SHADOW_OFFSET = 2.0f;
     static final float DROPOFF_STEP = 0.18f;
     static final float SURGE_STEP = 0.35f;
-    static final long  ANIMATION_INTERVAL = 70;
+    static final long  ANIMATION_INTERVAL = 30;
 
     Paint mPaint, mShadow;
     float mCurrentAngle;
