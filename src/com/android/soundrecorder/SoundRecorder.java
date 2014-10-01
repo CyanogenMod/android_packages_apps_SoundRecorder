@@ -808,7 +808,6 @@ public class SoundRecorder extends Activity
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // TODO Auto-generated method stub
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
         if (!mRemainingTimeCalculator.hasExternalStorage()) {
@@ -843,7 +842,6 @@ public class SoundRecorder extends Activity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // TODO Auto-generated method stub
         switch (item.getItemId()) {
             case R.id.menu_item_keyboard:
                 if(mRecorder.state() == Recorder.IDLE_STATE) {
@@ -1402,34 +1400,28 @@ public class SoundRecorder extends Activity
                     mStateLED.setVisibility(View.INVISIBLE);
                     //mStateLED.setImageResource(R.drawable.idle_led);
                     mStateMessage2.setVisibility(View.INVISIBLE);
+
                     mExitButtons.setVisibility(View.INVISIBLE);
-                    mVUMeter.setVisibility(View.VISIBLE);
 
                     mStateProgressBar.setVisibility(View.INVISIBLE);
-
-                    setTitle(res.getString(R.string.record_your_message));
                 } else {
                     mRecordButton.setImageResource(R.drawable.record);
-                    mRecordButton.setEnabled(true);
-                    mRecordButton.setFocusable(true);
+                    mRecordButton.setEnabled(false);
+                    mRecordButton.setFocusable(false);
                     mPlayButton.setEnabled(true);
                     mPlayButton.setFocusable(true);
                     mStopButton.setEnabled(false);
                     mStopButton.setFocusable(false);
 
                     mStateMessage1.setVisibility(View.INVISIBLE);
-                    // No idle led res available, so just inactive mStateLED.
-                    mStateLED.setVisibility(View.INVISIBLE);
-                    //mStateLED.setImageResource(R.drawable.idle_led);
+                    mStateLED.setVisibility(View.VISIBLE);
+                    mStateLED.setImageResource(R.drawable.stopped_led);
                     mStateMessage2.setVisibility(View.VISIBLE);
-                    mStateMessage2.setText(res.getString(R.string.recording_stopped));
+                    mStateMessage2.setText(res.getString(R.string.recording_finished));
 
                     mExitButtons.setVisibility(View.VISIBLE);
-                    mVUMeter.setVisibility(View.INVISIBLE);
 
                     mStateProgressBar.setVisibility(View.INVISIBLE);
-
-                    setTitle(res.getString(R.string.message_recorded));
                 }
 
                 if (mSampleInterrupted) {
@@ -1460,17 +1452,13 @@ public class SoundRecorder extends Activity
                 mStateMessage2.setText(res.getString(R.string.recording));
 
                 mExitButtons.setVisibility(View.INVISIBLE);
-                mVUMeter.setVisibility(View.VISIBLE);
 
                 mStateProgressBar.setVisibility(View.INVISIBLE);
 
-                setTitle(res.getString(R.string.record_your_message));
-
                 break;
-
             case Recorder.PLAYING_STATE:
-                mRecordButton.setEnabled(true);
-                mRecordButton.setFocusable(true);
+                mRecordButton.setEnabled(false);
+                mRecordButton.setFocusable(false);
                 mPlayButton.setEnabled(false);
                 mPlayButton.setFocusable(false);
                 mStopButton.setEnabled(true);
@@ -1481,11 +1469,9 @@ public class SoundRecorder extends Activity
                 mStateMessage2.setVisibility(View.INVISIBLE);
 
                 mExitButtons.setVisibility(View.VISIBLE);
-                mVUMeter.setVisibility(View.INVISIBLE);
 
                 mStateProgressBar.setVisibility(View.VISIBLE);
 
-                setTitle(res.getString(R.string.review_message));
                 break;
             case Recorder.PAUSE_STATE:
                 mRecordButton.setImageResource(R.drawable.record);
@@ -1498,17 +1484,14 @@ public class SoundRecorder extends Activity
 
                 mStateMessage1.setVisibility(View.VISIBLE);
                 mStateLED.setVisibility(View.VISIBLE);
-                mStateLED.setImageResource(R.drawable.recording_led);
+                mStateLED.setImageResource(R.drawable.paused_led);
                 mStateMessage2.setVisibility(View.VISIBLE);
                 mStateMessage2.setText(res.getString(R.string.recording_paused));
 
                 mExitButtons.setVisibility(View.INVISIBLE);
                 mVUMeter.resetAngle();
-                mVUMeter.setVisibility(View.VISIBLE);
 
                 mStateProgressBar.setVisibility(View.INVISIBLE);
-
-                setTitle(res.getString(R.string.record_your_message));
 
                 break;
         }
@@ -1550,8 +1533,6 @@ public class SoundRecorder extends Activity
                 message = res.getString(R.string.error_sdcard_access);
                 break;
             case Recorder.IN_CALL_RECORD_ERROR:
-                // TODO: update error message to reflect that the recording could not be
-                //       performed during a call.
                 message = res.getString(R.string.in_call_record_error);
                 isExit = true;
                 break;
