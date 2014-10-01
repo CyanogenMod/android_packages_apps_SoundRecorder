@@ -17,6 +17,11 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Label shown when recording is paused -->
     <string name="recording_paused">Paused</string>
+    <!-- Label shown when recording is finished -->
+    <string name="recording_finished">Recording finished</string>
+
+    <!-- Button to save the current recording -->
+    <string name="save">Save</string>
 
     <!-- shown as the message in a dialog when the app encountered and unsupported format -->
     <string name="error_app_unsupported">Unsupported format.</string>
@@ -25,7 +30,7 @@
     <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
     <string name="error_mediadb_aacincall">AAC voice call recording is not supported.</string>
 
-    <string name="in_call_record_error">In-call record error.</string>
+    <string name="in_call_record_error">Recording is not supported during a call.</string>
 
     <!-- shown as the dialog title when user selects recording format -->
     <string name="format_setting">File type</string>
