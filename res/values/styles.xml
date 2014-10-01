@@ -15,9 +15,15 @@
 -->
 <resources>
     <style name="Theme.SoundRecorder" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:actionBarStyle">@style/ActionBar.Solid.SoundRecorder</item>
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
+
+    <style name="ActionBar.Solid.SoundRecorder" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@color/action_bar_background</item>
+    </style>
+
     <style name="MediaButton" parent="@android:style/MediaButton">
-        <item name="android:background">@android:drawable/btn_default</item>
+        <item name="android:background">@drawable/btn_round</item>
     </style>
 </resources>
