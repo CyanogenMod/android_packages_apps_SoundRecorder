@@ -36,5 +36,6 @@
   <string name="audio_db_playlist_name">Les mios grabaciones</string>
   <string name="error_sdcard_access" product="nosdcard">Nun pue accedese al almacenamientu USB.</string>
   <string name="error_sdcard_access" product="default">Nun pue accedese a la tarxeta SD.</string>
+  <string name="error_app_internal">Fallu internu de l\'aplicación.</string>
   <string name="error_mediadb_new_record">Nun pudo guardase l\'audiu grabáu.</string>
 </resources>
