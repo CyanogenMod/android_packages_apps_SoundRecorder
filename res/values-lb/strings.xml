@@ -36,5 +36,6 @@
   <string name="audio_db_playlist_name">Meng Opnamen</string>
   <string name="error_sdcard_access" product="nosdcard">Kann net op den USB-Späicher zougräifen.</string>
   <string name="error_sdcard_access" product="default">Kann net op d\'SD-Kaart zougräifen.</string>
+  <string name="error_app_internal">Internen Applikatiounsfeeler.</string>
   <string name="error_mediadb_new_record">Konnt den Toun deen opgeholl gouf net späicheren.</string>
 </resources>
