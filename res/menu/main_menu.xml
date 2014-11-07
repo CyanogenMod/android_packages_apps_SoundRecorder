@@ -35,6 +35,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         android:id="@+id/menu_item_storage"
         android:title="@string/storage_setting"/>
     <item
+        android:id="@+id/menu_item_view_recordings"
+        android:title="@string/view_recordings"/>
+    <item
         android:id="@+id/menu_item_keyboard"
         android:title="@string/keyboard"/>
 </menu>
