@@ -1540,6 +1540,10 @@ public class SoundRecorder extends Activity
                 message = res.getString(R.string.error_app_internal);
                 isExit = true;
                 break;
+            case Recorder.INTERNAL_ERROR_RECORDER_PREPARE:
+                message = res.getString(R.string.error_app_internal_recorder);
+                isExit = true;
+                break;
             case Recorder.UNSUPPORTED_FORMAT:
                 message = res.getString(R.string.error_app_unsupported);
                 isExit = true;
