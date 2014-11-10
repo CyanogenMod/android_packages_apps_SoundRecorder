@@ -43,4 +43,7 @@
     <string name="no_phonestorage">Phone storage unmounted</string>
     <string name="keyboard">Keyboard</string>
     <string name="file_deleted">File has been deleted</string>
+
+    <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+    <string name="error_app_internal_recorder">Internal application error.\n\nMicrophone may already be active.</string>
 </resources>
