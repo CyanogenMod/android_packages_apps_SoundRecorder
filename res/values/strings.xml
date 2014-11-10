@@ -64,7 +64,7 @@
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
     <string name="error_sdcard_access" product="default">Can\'t access SD card.</string>
     <!-- shown as the message in a dialog when the app encountered an unspecified internal error -->
-    <string name="error_app_internal">Internal application error.</string>
+    <string name="error_app_internal">Internal application error.\n\nMicrophone may already be active.</string>
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
 </resources>
