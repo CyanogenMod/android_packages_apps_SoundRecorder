@@ -1549,7 +1549,7 @@ public class SoundRecorder extends Activity
                 message = res.getString(R.string.error_app_internal);
                 isExit = true;
                 break;
-            case Recorder.INTERNAL_ERROR_RECORDER_PREPARE:
+            case Recorder.INTERNAL_ERROR_MAYBE_IN_USE:
                 message = res.getString(R.string.error_app_internal_recorder);
                 isExit = true;
                 break;

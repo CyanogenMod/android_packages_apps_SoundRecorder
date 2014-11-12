@@ -51,7 +51,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public static final int INTERNAL_ERROR = 2;
     public static final int IN_CALL_RECORD_ERROR = 3;
     public static final int UNSUPPORTED_FORMAT = 4;
-    public static final int INTERNAL_ERROR_RECORDER_PREPARE = 5;
+    public static final int INTERNAL_ERROR_MAYBE_IN_USE = 5;
 
     public int mChannels = 0;
     public int mSamplingRate = 0;
@@ -239,7 +239,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         try {
             mRecorder.prepare();
         } catch(IOException exception) {
-            setError(INTERNAL_ERROR_RECORDER_PREPARE);
+            setError(INTERNAL_ERROR);
             mRecorder.reset();
             mRecorder.release();
             if (mSampleFile != null) mSampleFile.delete();
@@ -259,7 +259,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
             if (isInCall) {
                 setError(IN_CALL_RECORD_ERROR);
             } else {
-                setError(INTERNAL_ERROR);
+                setError(INTERNAL_ERROR_MAYBE_IN_USE);
             }
             mRecorder.reset();
             mRecorder.release();
