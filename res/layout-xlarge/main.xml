@@ -122,7 +122,8 @@
         android:layout_height="60dip"
         android:background="@color/bottom_bar_background"
         android:gravity="center_horizontal"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:elevation="8dp">
 
         <LinearLayout
             android:layout_marginTop="4dip"

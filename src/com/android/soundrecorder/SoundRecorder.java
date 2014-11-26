@@ -707,7 +707,7 @@ public class SoundRecorder extends Activity
 
     private void openOptionDialog(int optionType) {
         final Context dialogContext = new ContextThemeWrapper(this,
-                android.R.style.Theme_Holo_Dialog);
+                android.R.style.Theme_Material_Dialog);
         final Resources res = dialogContext.getResources();
         final LayoutInflater dialogInflater = (LayoutInflater) dialogContext
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
