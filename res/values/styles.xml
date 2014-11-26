@@ -14,13 +14,10 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Holo.DialogWhenLarge">
-        <item name="android:actionBarStyle">@style/ActionBar.Solid.SoundRecorder</item>
+    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Material.DialogWhenLarge">
         <item name="android:windowCloseOnTouchOutside">true</item>
-    </style>
-
-    <style name="ActionBar.Solid.SoundRecorder" parent="@android:style/Widget.Holo.ActionBar.Solid">
-        <item name="android:background">@color/action_bar_background</item>
+        <item name="android:colorPrimary">@color/material_primary</item>
+        <item name="android:colorPrimaryDark">@color/material_dark</item>
     </style>
 
     <style name="MediaButton" parent="@android:style/MediaButton">
