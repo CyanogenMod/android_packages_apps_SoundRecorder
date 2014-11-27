@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Nieobsługiwany format.</string>
   <string name="error_mediadb_incall">Ta opcja nie jest obsługiwana podczas rozmowy.</string>
   <string name="error_mediadb_aacincall">Zapisywanie połączenia głosowego w formacie AAC jest nieobsługiwane.</string>
-  <string name="in_call_record_error">Błąd w trakcie nagrywania.</string>
   <string name="format_setting">Typ pliku</string>
   <string name="storage_setting">Miejsce przechowywania</string>
   <string name="storage_setting_sdcard_item">Karta pamięci</string>

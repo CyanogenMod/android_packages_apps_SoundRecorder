@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Pozastaveno</string>
+  <string name="recording_finished">Nahrávání dokončeno</string>
+  <string name="save">Uložit</string>
   <string name="error_app_unsupported">Nepodporovaný formát.</string>
   <string name="error_mediadb_incall">Tato volba není při hovoru podporována.</string>
   <string name="error_mediadb_aacincall">Nahrávání hovoru do AAC není podporováno.</string>
-  <string name="in_call_record_error">Chyba při nahrávání hovoru.</string>
+  <string name="in_call_record_error">Nahrávání není při hovoru podporováno.</string>
   <string name="format_setting">Typ souboru</string>
   <string name="storage_setting">Umístění nahrávek</string>
   <string name="storage_setting_sdcard_item">Karta SD</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Úložiště telefonu není připojené</string>
   <string name="keyboard">Klávesnice</string>
   <string name="file_deleted">Soubor byl smazán</string>
+  <string name="error_app_internal_recorder">Interní chyba aplikace.\n\nMikrofon je už používán.</string>
+  <string name="view_recordings">Zobrazit nahrávky</string>
 </resources>

@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Neatbalstīts formāts.</string>
   <string name="error_mediadb_incall">Sarunas laikā šī iespēja nav atbalstīta.</string>
   <string name="error_mediadb_aacincall">AAC balss zvanu ieraksts nav atbalstīts.</string>
-  <string name="in_call_record_error">Sarunas ierakstīšanas kļūda.</string>
   <string name="format_setting">Faila veids</string>
   <string name="storage_setting">Krātuves atrašanās vieta</string>
   <string name="storage_setting_sdcard_item">SD karte</string>

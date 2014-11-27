@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Приостановлено</string>
+  <string name="recording_finished">Запись завершена</string>
+  <string name="save">Сохранить</string>
   <string name="error_app_unsupported">Неподдерживаемый формат.</string>
   <string name="error_mediadb_incall">Этот параметр не поддерживается во время вызова.</string>
   <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается.</string>
-  <string name="in_call_record_error">Ошибка записи вызова.</string>
+  <string name="in_call_record_error">Запись не поддерживается во время вызова.</string>
   <string name="format_setting">Тип файла</string>
   <string name="storage_setting">Место хранения</string>
   <string name="storage_setting_sdcard_item">SD-карта</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Память телефона не подключена</string>
   <string name="keyboard">Клавиатура</string>
   <string name="file_deleted">Файл был удалён</string>
+  <string name="error_app_internal_recorder">Внутренняя ошибка.\n\nВозможно, микрофон используется другим приложением.</string>
+  <string name="view_recordings">Открыть папку записей</string>
 </resources>

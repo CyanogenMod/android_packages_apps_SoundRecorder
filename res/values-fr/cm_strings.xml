@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Format non pris en charge.</string>
   <string name="error_mediadb_incall">Cette option n\'est pas prise en charge pendant un appel.</string>
   <string name="error_mediadb_aacincall">Enregistrement d\'appel vocal AAC non pris en charge.</string>
-  <string name="in_call_record_error">Erreur d\'enregistrement en cours d\'appel.</string>
   <string name="format_setting">Type de fichier</string>
   <string name="storage_setting">Emplacement de stockage</string>
   <string name="storage_setting_sdcard_item">Carte SD</string>

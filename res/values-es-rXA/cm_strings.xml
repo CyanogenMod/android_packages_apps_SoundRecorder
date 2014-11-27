@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Formatu non sofitáu.</string>
   <string name="error_mediadb_incall">Esta opción nun tien sofitu mientres una llamada.</string>
   <string name="error_mediadb_aacincall">La grabación AAC de llamada nun ta sofitada.</string>
-  <string name="in_call_record_error">Fallu de grabación de llamada.</string>
   <string name="format_setting">Tipu de ficheru</string>
   <string name="storage_setting">Llugar d\'almacenamientu</string>
   <string name="storage_setting_sdcard_item">Tarxeta SD</string>

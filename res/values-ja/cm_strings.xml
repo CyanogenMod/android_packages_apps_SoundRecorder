@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">一時停止中</string>
+  <string name="recording_finished">録音が終了しました</string>
+  <string name="save">保存</string>
   <string name="error_app_unsupported">サポートされていないフォーマットです。</string>
   <string name="error_mediadb_incall">このオプションは通話中にはサポートされていません。</string>
   <string name="error_mediadb_aacincall">ACCの音声通話録音はサポートされていません。</string>
-  <string name="in_call_record_error">通話中の録音エラー。</string>
+  <string name="in_call_record_error">通話中の録音はサポートされていません。</string>
   <string name="format_setting">ファイル形式</string>
   <string name="storage_setting">ストレージの場所</string>
   <string name="storage_setting_sdcard_item">SDカード</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">携帯電話のストレージがマウントされていません</string>
   <string name="keyboard">キーボード</string>
   <string name="file_deleted">ファイルが削除されました</string>
+  <string name="error_app_internal_recorder">内部アプリケーションエラーです。\n\nマイクが使用中の可能性があります。</string>
+  <string name="view_recordings">録音を表示</string>
 </resources>

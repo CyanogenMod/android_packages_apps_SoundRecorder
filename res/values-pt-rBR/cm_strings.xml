@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Pausado</string>
+  <string name="recording_finished">A gravação terminou</string>
+  <string name="save">Salvar</string>
   <string name="error_app_unsupported">Formato não suportado.</string>
   <string name="error_mediadb_incall">Esta opção não é suportada durante uma chamada.</string>
   <string name="error_mediadb_aacincall">Gravação de chamada de voz em AAC não é suportada.</string>
-  <string name="in_call_record_error">Erro na gravação da chamada.</string>
+  <string name="in_call_record_error">Não há suporte a gravação durante uma chamada.</string>
   <string name="format_setting">Tipo de arquivo</string>
   <string name="storage_setting">Local de armazenamento</string>
   <string name="storage_setting_sdcard_item">Cartão SD</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Armazenamento do telefone está desmontado</string>
   <string name="keyboard">Teclado</string>
   <string name="file_deleted">O arquivo foi apagado</string>
+  <string name="error_app_internal_recorder">Erro interno da aplicação.\n\nO microfone pode estar em uso.</string>
+  <string name="view_recordings">Exibir gravações</string>
 </resources>

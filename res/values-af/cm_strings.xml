@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Nie-ondersteunde formaat.</string>
   <string name="error_mediadb_incall">Hierdie opsie word nie tydens \'n oproep ondersteun nie.</string>
   <string name="error_mediadb_aacincall">AAK stem oproep opname word nie ondersteun nie.</string>
-  <string name="in_call_record_error">In oproep opnemings fout.</string>
   <string name="format_setting">Lêertipe</string>
   <string name="storage_setting">Stoor plek</string>
   <string name="storage_setting_sdcard_item">SD kaart</string>

@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">פורמט לא נתמך.</string>
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
   <string name="error_mediadb_aacincall">הקלטת קול שיחה AAC לא נתמך.</string>
-  <string name="in_call_record_error">שגיאת הקלטה במהלך שיחה.</string>
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס SD</string>

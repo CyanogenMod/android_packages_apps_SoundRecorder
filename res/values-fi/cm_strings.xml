@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Muotoa ei tueta.</string>
   <string name="error_mediadb_incall">Ominaisuutta ei voi käyttää puhelun aikana.</string>
   <string name="error_mediadb_aacincall">AAC-tallentamista puhelun aikana ei tueta.</string>
-  <string name="in_call_record_error">Puhelun tallennuksessa tapahtui virhe.</string>
   <string name="format_setting">Tiedostotyyppi</string>
   <string name="storage_setting">Tallennustila</string>
   <string name="storage_setting_sdcard_item">SD-kortti</string>

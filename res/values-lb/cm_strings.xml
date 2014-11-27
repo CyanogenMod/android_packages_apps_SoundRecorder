@@ -20,7 +20,6 @@
   <string name="error_app_unsupported">Format net ënnerstëtzt.</string>
   <string name="error_mediadb_incall">Dës Optioun ka während engem Uruff net benotzt ginn.</string>
   <string name="error_mediadb_aacincall">D\'Ophuele vu Sproochnoriichten am AAC-Format gëtt net ënnerstëtzt.</string>
-  <string name="in_call_record_error">Feeler beim Ophuele vun engem Telefonsgespréich.</string>
   <string name="format_setting">Fichierstyp</string>
   <string name="storage_setting">Späicherplaz</string>
   <string name="storage_setting_sdcard_item">SD-Kaart</string>
