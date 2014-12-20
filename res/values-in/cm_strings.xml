@@ -30,5 +30,6 @@
   <string name="no_phonestorage">Penyimpanan telepon dilepas</string>
   <string name="keyboard">Keyboard</string>
   <string name="file_deleted">File telah dihapus</string>
+  <string name="error_app_internal_recorder">Kesalahan aplikasi internal.\n\nMikrofon mungkin sedang digunakan.</string>
   <string name="view_recordings">Lihat rekaman</string>
 </resources>

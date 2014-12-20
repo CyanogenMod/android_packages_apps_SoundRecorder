@@ -17,9 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Onderbroken</string>
+  <string name="recording_finished">Opname voltooid</string>
+  <string name="save">Opslaan</string>
   <string name="error_app_unsupported">Formaat niet ondersteund.</string>
   <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek.</string>
   <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund.</string>
+  <string name="in_call_record_error">Opnemen wordt niet ondersteund tijdens een gesprek.</string>
   <string name="format_setting">Bestandstype</string>
   <string name="storage_setting">Opslaglocatie</string>
   <string name="storage_setting_sdcard_item">SD-kaart</string>
@@ -27,4 +30,6 @@
   <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
   <string name="keyboard">Toetsenbord</string>
   <string name="file_deleted">Bestand verwijderd</string>
+  <string name="error_app_internal_recorder">Interne app-fout.\n\nMicrofoon mogelijk in gebruik.</string>
+  <string name="view_recordings">Opnamen bekijken</string>
 </resources>

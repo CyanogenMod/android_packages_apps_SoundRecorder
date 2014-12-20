@@ -30,5 +30,6 @@
   <string name="no_phonestorage">Пам\'ять телефону демонтовано</string>
   <string name="keyboard">Клавіатура</string>
   <string name="file_deleted">Файл видалено</string>
+  <string name="error_app_internal_recorder">Внутрішня помилка програми\n\nМожливо мікрофон вже використовується.</string>
   <string name="view_recordings">Перегляд записів</string>
 </resources>

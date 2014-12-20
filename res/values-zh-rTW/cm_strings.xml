@@ -16,6 +16,8 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="recording_finished">錄製完成</string>
+  <string name="save">儲存</string>
   <string name="storage_setting">儲存位置</string>
   <string name="storage_setting_sdcard_item">SD 卡</string>
   <string name="file_deleted">檔案已刪除</string>

@@ -17,6 +17,8 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Pauséiert</string>
+  <string name="recording_finished">Opnam ofgeschloss</string>
+  <string name="save">Späicheren</string>
   <string name="error_app_unsupported">Format net ënnerstëtzt.</string>
   <string name="error_mediadb_incall">Dës Optioun ka während engem Uruff net benotzt ginn.</string>
   <string name="error_mediadb_aacincall">D\'Ophuele vu Sproochnoriichten am AAC-Format gëtt net ënnerstëtzt.</string>
