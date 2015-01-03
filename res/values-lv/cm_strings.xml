@@ -17,9 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Apturēts</string>
+  <string name="recording_finished">Ierakstīšana pabeigta</string>
+  <string name="save">Saglabāt</string>
   <string name="error_app_unsupported">Neatbalstīts formāts.</string>
   <string name="error_mediadb_incall">Sarunas laikā šī iespēja nav atbalstīta.</string>
   <string name="error_mediadb_aacincall">AAC balss zvanu ieraksts nav atbalstīts.</string>
+  <string name="in_call_record_error">Ierakstīšana sarunas laikā nav atbalstīta.</string>
   <string name="format_setting">Faila veids</string>
   <string name="storage_setting">Krātuves atrašanās vieta</string>
   <string name="storage_setting_sdcard_item">SD karte</string>
@@ -27,4 +30,6 @@
   <string name="no_phonestorage">Telefona krātuve nomontēta</string>
   <string name="keyboard">Tastatūra</string>
   <string name="file_deleted">Fails ir izdzēsts</string>
+  <string name="error_app_internal_recorder">Iekšēja lietotnes kļūda.\n\nIespējams, ka mikrofons jau tiek izmantots.</string>
+  <string name="view_recordings">Skatīt ierakstus</string>
 </resources>

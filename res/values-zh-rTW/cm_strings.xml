@@ -16,9 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="recording_paused">已暫停</string>
   <string name="recording_finished">錄製完成</string>
   <string name="save">儲存</string>
+  <string name="error_app_unsupported">不支援的格式</string>
+  <string name="error_mediadb_incall">通話時不支援此功能</string>
+  <string name="error_mediadb_aacincall">不支援 AAC 語音通話錄音</string>
+  <string name="in_call_record_error">不支援在通話中錄音</string>
+  <string name="format_setting">檔案格式</string>
   <string name="storage_setting">儲存位置</string>
   <string name="storage_setting_sdcard_item">SD 卡</string>
+  <string name="storage_setting_local_item">手機儲存空間</string>
+  <string name="no_phonestorage">已卸載手機儲存空間</string>
+  <string name="keyboard">鍵盤</string>
   <string name="file_deleted">檔案已刪除</string>
+  <string name="error_app_internal_recorder">應用程式內部錯誤。\n\n麥克風可能正在使用中。</string>
+  <string name="view_recordings">查看錄音</string>
 </resources>
