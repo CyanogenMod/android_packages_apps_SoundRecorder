@@ -31,5 +31,5 @@
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">De Fichier gouf geläscht</string>
   <string name="error_app_internal_recorder">Internen Applikatiounsfeeler.\n\nDe Mikro gëtt eventuell scho benotzt.</string>
-  <string name="view_recordings">Opnahmen uweisen</string>
+  <string name="view_recordings">Opnamen uweisen</string>
 </resources>

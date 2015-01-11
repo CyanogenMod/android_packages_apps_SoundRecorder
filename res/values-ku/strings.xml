@@ -23,13 +23,10 @@
   <string name="recording_stopped">تۆمارکردن وەستێندرا</string>
   <string name="storage_is_full">یادگە پڕ بووە </string>
   <string name="max_length_reached">شوێنی زۆر بەکارهاتووە</string>
-  <string name="insert_sd_card" product="nosdcard">به‌ستنه‌وه‌ی USB</string>
   <string name="insert_sd_card" product="default">SD کارتی دەرەکی تێبکە</string>
   <string name="min_available"><xliff:g id="minutes">%d</xliff:g> خولەک لەبەردەستدایە</string>
   <string name="sec_available"><xliff:g id="seconds">%d</xliff:g>s لەبەردەستدایە</string>
   <string name="accept">تەواو</string>
-  <string name="discard">ڕەتکردنەوە</string>
-  <string name="button_ok">باشه‌</string>
   <string name="audio_db_title_format"><xliff:g id="format">yyyy-MM-dd HH:mm:ss</xliff:g></string>
   <string name="audio_db_artist_name">تۆمارکراوەکانت</string>
   <string name="audio_db_album_name">تۆمارکردنی دەنگ</string>
