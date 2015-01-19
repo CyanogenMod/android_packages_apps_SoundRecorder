@@ -30,6 +30,6 @@
   <string name="no_phonestorage">Stocarea pe telefon demontată</string>
   <string name="keyboard">Tastatură</string>
   <string name="file_deleted">Fișierul a fost șters</string>
-  <string name="error_app_internal_recorder">Eroare internă a aplicației.\n\nMicrofonul poate fi utilizat.</string>
+  <string name="error_app_internal_recorder">Eroare internă a aplicației.\n\nMicrofonul poate fi în uz.</string>
   <string name="view_recordings">Vezi înregistrările</string>
 </resources>
