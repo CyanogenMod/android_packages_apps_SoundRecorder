@@ -377,6 +377,8 @@ public class SoundRecorder extends Activity
                 return;
             }
 
+            mWAVSupport = getResources().getBoolean(R.bool.wave_recording_supported);
+
             final String EXTRA_MAX_BYTES
                 = android.provider.MediaStore.Audio.Media.EXTRA_MAX_BYTES;
             mMaxFileSize = i.getLongExtra(EXTRA_MAX_BYTES, -1);
