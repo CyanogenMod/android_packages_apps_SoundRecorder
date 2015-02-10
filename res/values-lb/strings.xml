@@ -23,7 +23,7 @@
   <string name="recording_stopped">Ophuele gestoppt</string>
   <string name="storage_is_full">Späicher ass voll</string>
   <string name="max_length_reached">Maximal Längt erreecht</string>
-  <string name="insert_sd_card" product="nosdcard">USB-Späicher bereetstellen</string>
+  <string name="insert_sd_card" product="nosdcard">USB-Späicher abannen</string>
   <string name="insert_sd_card" product="default">SD-Kaart asetzen</string>
   <string name="min_available"><xliff:g id="minutes">%d</xliff:g> Min. iwwreg</string>
   <string name="sec_available"><xliff:g id="seconds">%d</xliff:g> Sek. iwwreg</string>

@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Tydelik onderbreek</string>
+  <string name="recording_finished">Opneming is klaar</string>
+  <string name="save">Stoor</string>
   <string name="error_app_unsupported">Nie-ondersteunde formaat.</string>
   <string name="error_mediadb_incall">Hierdie opsie word nie tydens \'n oproep ondersteun nie.</string>
   <string name="error_mediadb_aacincall">AAK stem oproep opname word nie ondersteun nie.</string>
-  <string name="in_call_record_error">In oproep opnemings fout.</string>
+  <string name="in_call_record_error">Opneming word nie ondersteun gedurende \'n oproep.</string>
   <string name="format_setting">Lêertipe</string>
   <string name="storage_setting">Stoor plek</string>
   <string name="storage_setting_sdcard_item">SD kaart</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Selfoon spasie ongemonteer</string>
   <string name="keyboard">Sleutelbord</string>
   <string name="file_deleted">Lêer is verwyder</string>
+  <string name="error_app_internal_recorder">Interne program fout.\n\nDie Mikrofoon mag in gebruik wees.</string>
+  <string name="view_recordings">Wys opnames</string>
 </resources>

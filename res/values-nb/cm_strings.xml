@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Midlertidig stanset</string>
+  <string name="recording_finished">Innspilling fullført</string>
+  <string name="save">Lagre</string>
   <string name="error_app_unsupported">Ustøttet format.</string>
   <string name="error_mediadb_incall">Dette alternativet støttes ikke under en samtale.</string>
   <string name="error_mediadb_aacincall">AAC taleanrop opptak støttes ikke.</string>
-  <string name="in_call_record_error">In-call opptak feilet.</string>
+  <string name="in_call_record_error">Innspillingen støttes ikke under en samtale.</string>
   <string name="format_setting">Filtype</string>
   <string name="storage_setting">Lagringslokasjon</string>
   <string name="storage_setting_sdcard_item">SD-kort</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Telefon lagring avmontert</string>
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">Filen har blitt slettet</string>
+  <string name="error_app_internal_recorder">Intern programfeil.\n\nMikrofonen kan være i bruk.</string>
+  <string name="view_recordings">Vis opptak</string>
 </resources>

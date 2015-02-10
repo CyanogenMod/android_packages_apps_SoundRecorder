@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">מושהה</string>
+  <string name="recording_finished">הקלטה נגמרה</string>
+  <string name="save">שמור</string>
   <string name="error_app_unsupported">פורמט לא נתמך.</string>
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
   <string name="error_mediadb_aacincall">הקלטת קול שיחה AAC לא נתמך.</string>
-  <string name="in_call_record_error">שגיאת הקלטה במהלך שיחה.</string>
+  <string name="in_call_record_error">לא ניתן להקליט בזמן שיחה.</string>
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס SD</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">אחסון המכשיר הוסר</string>
   <string name="keyboard">מקלדת</string>
   <string name="file_deleted">הקובץ נמחק</string>
+  <string name="error_app_internal_recorder">שגיאה באפליקציה פנימית.\n\n ככל הנראה המיקרופון נמצא בשימוש.</string>
+  <string name="view_recordings">הצג הקלטות</string>
 </resources>

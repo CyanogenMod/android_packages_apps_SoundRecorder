@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Призупинено</string>
+  <string name="recording_finished">Запис завершено</string>
+  <string name="save">Зберегти</string>
   <string name="error_app_unsupported">Формат не підтримується.</string>
   <string name="error_mediadb_incall">Цей параметр не підтримується під час дзвінка.</string>
   <string name="error_mediadb_aacincall">AAC запис голосового дзвінка не підтримується.</string>
-  <string name="in_call_record_error">Помилка запису голосового дзвінка.</string>
+  <string name="in_call_record_error">Записування не підтримується під час дзвінка.</string>
   <string name="format_setting">Тип файлу</string>
   <string name="storage_setting">Місце зберігання</string>
   <string name="storage_setting_sdcard_item">SD-карта</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Пам\'ять телефону демонтовано</string>
   <string name="keyboard">Клавіатура</string>
   <string name="file_deleted">Файл видалено</string>
+  <string name="error_app_internal_recorder">Внутрішня помилка програми\n\nМожливо мікрофон вже використовується.</string>
+  <string name="view_recordings">Перегляд записів</string>
 </resources>

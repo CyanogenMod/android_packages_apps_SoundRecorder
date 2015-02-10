@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Keskeytetty</string>
+  <string name="recording_finished">Tallennus valmis</string>
+  <string name="save">Tallenna</string>
   <string name="error_app_unsupported">Muotoa ei tueta.</string>
   <string name="error_mediadb_incall">Ominaisuutta ei voi käyttää puhelun aikana.</string>
   <string name="error_mediadb_aacincall">AAC-tallentamista puhelun aikana ei tueta.</string>
-  <string name="in_call_record_error">Puhelun tallennuksessa tapahtui virhe.</string>
+  <string name="in_call_record_error">Tallennusta ei tueta puhelun aikana.</string>
   <string name="format_setting">Tiedostotyyppi</string>
   <string name="storage_setting">Tallennustila</string>
   <string name="storage_setting_sdcard_item">SD-kortti</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Puhelimen muistia ei ole kiinnitetty</string>
   <string name="keyboard">Näppäimistö</string>
   <string name="file_deleted">Tiedosto on poistettu</string>
+  <string name="error_app_internal_recorder">Sovelluksen sisäinen virhe.\n\nMikrofoni saattaa olla käytössä.</string>
+  <string name="view_recordings">Tarkastele nauhoituksia</string>
 </resources>
