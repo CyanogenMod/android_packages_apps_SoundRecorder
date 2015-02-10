@@ -862,15 +862,14 @@ public class SoundRecorder extends Activity
                 }
                 break;
             case R.id.menu_item_view_recordings:
+                Uri startDir = Uri.fromFile(new File(mStoragePath + "/SoundRecorder"));
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setClassName("com.cyanogenmod.filemanager",
-                        "com.cyanogenmod.filemanager.activities.ShortcutActivity");
-                intent.putExtra("extra_shortcut_type", "navigate");
-                intent.putExtra("extra_shortcut_fso", mStoragePath);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
+                intent.setDataAndType(startDir, "resource/folder");
+                Intent chooser = Intent.createChooser(intent,
+                    getResources().getString(R.string.view_recordings_with));
+                if (intent.resolveActivity(getPackageManager()) != null) { 
+                    startActivity(chooser);
+                }
                 break;
         }
         return super.onOptionsItemSelected(item);
