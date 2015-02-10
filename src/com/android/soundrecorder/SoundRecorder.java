@@ -30,6 +30,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.IntentFilter;
 import android.content.BroadcastReceiver;
+import android.content.pm.PackageManager;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
 import android.content.res.Configuration;
@@ -814,6 +815,15 @@ public class SoundRecorder extends Activity
         if (!mRemainingTimeCalculator.hasExternalStorage()) {
             menu.removeItem(R.id.menu_item_storage);
         }
+        // Remove view recordings if there isn't an activity that can handle it
+        Uri startDir = Uri.fromFile(new File(Environment.getExternalStorageDirectory()));
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setDataAndType(startDir, "resource/folder");
+        final PackageManager packageManager = ctx.getPackageManager();
+        List<ResolveInfo> info = packageManager.queryIntentActivities(intent, 0);
+        if (info.size() == 0) {
+            menu.removeItem(R.id.menu_item_view_recordings);
+        }
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -862,15 +872,16 @@ public class SoundRecorder extends Activity
                 }
                 break;
             case R.id.menu_item_view_recordings:
-                Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setClassName("com.cyanogenmod.filemanager",
-                        "com.cyanogenmod.filemanager.activities.ShortcutActivity");
-                intent.putExtra("extra_shortcut_type", "navigate");
-                intent.putExtra("extra_shortcut_fso", mStoragePath);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                startActivity(intent);
+                try {
+                    Uri startDir = Uri.fromFile(new File(mStoragePath));
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setDataAndType(startDir, "resource/folder");
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                } catch (NotActivityFoundException) {
+                    // Ignore. This shouldn't happen. we have checked previously.
+                }
                 break;
         }
         return super.onOptionsItemSelected(item);
