@@ -47,4 +47,5 @@
     <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
     <string name="error_app_internal_recorder">Internal application error.\n\nMicrophone may be in use.</string>
     <string name="view_recordings">View recordings</string>
+    <string name="view_recordings_with">View recordings with:</string>
 </resources>
