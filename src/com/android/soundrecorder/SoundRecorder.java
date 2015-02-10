@@ -863,8 +863,6 @@ public class SoundRecorder extends Activity
                 break;
             case R.id.menu_item_view_recordings:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setClassName("com.cyanogenmod.filemanager",
-                        "com.cyanogenmod.filemanager.activities.ShortcutActivity");
                 intent.putExtra("extra_shortcut_type", "navigate");
                 intent.putExtra("extra_shortcut_fso", mStoragePath);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
