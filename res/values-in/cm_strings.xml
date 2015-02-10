@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Dijeda</string>
+  <string name="recording_finished">Rekaman selesai</string>
+  <string name="save">Simpan</string>
   <string name="error_app_unsupported">Format tidak didukung.</string>
   <string name="error_mediadb_incall">Opsi ini tidak didukung selama panggilan.</string>
   <string name="error_mediadb_aacincall">Rekaman panggilan suara AAC tidak didukung.</string>
-  <string name="in_call_record_error">Kesalahan dalam merekam panggilan.</string>
+  <string name="in_call_record_error">Rekaman tidak didukung selama panggilan.</string>
   <string name="format_setting">Jenis file</string>
   <string name="storage_setting">Lokasi penyimpanan</string>
   <string name="storage_setting_sdcard_item">Kartu SD</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Penyimpanan telepon dilepas</string>
   <string name="keyboard">Keyboard</string>
   <string name="file_deleted">File telah dihapus</string>
+  <string name="error_app_internal_recorder">Kesalahan aplikasi internal.\n\nMikrofon mungkin sedang digunakan.</string>
+  <string name="view_recordings">Lihat rekaman</string>
 </resources>

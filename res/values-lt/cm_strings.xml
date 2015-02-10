@@ -16,11 +16,13 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">Pristabdyta</string>
+  <string name="recording_paused">Sustabdyta</string>
+  <string name="recording_finished">Įrašymas baigtas</string>
+  <string name="save">Išsaugoti</string>
   <string name="error_app_unsupported">Nepalaikomas formatas.</string>
   <string name="error_mediadb_incall">Ši parinktis yra nepalaikoma pokalbio metu.</string>
   <string name="error_mediadb_aacincall">AAC balso skambučių įrašymas nepalaikomas.</string>
-  <string name="in_call_record_error">Pokalbio įrašymo klaida.</string>
+  <string name="in_call_record_error">Įrašymas nepalaikomas pokalbio metu.</string>
   <string name="format_setting">Failo tipas</string>
   <string name="storage_setting">Saugyklos vieta</string>
   <string name="storage_setting_sdcard_item">SD kortelė</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Telefono saugykla pašalinta</string>
   <string name="keyboard">Klaviatūra</string>
   <string name="file_deleted">Failas ištrintas</string>
+  <string name="error_app_internal_recorder">Vidinės programos klaida.\n\nMikrofonas gali būti naudojamas.</string>
+  <string name="view_recordings">Žiūrėti įrašus</string>
 </resources>

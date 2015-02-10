@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">විරාම වී</string>
+  <string name="recording_finished">පටිගතකරණය අවසන්</string>
+  <string name="save">සුරකින්න</string>
   <string name="error_app_unsupported">සහාය නොදක්වන නිමැවුමකි.</string>
   <string name="error_mediadb_incall">ඇමතුමක් අතරතුර මෙම විකල්පය සහාය නොදක්වයි.</string>
   <string name="error_mediadb_aacincall">AAC හඬ ඇමතුම් රෙකෝඩනය සහාය නොදක්වයි.</string>
-  <string name="in_call_record_error">ඇමතුම තුල රෙකෝඩනයේ දෝෂයක්.</string>
+  <string name="in_call_record_error">ඇමතුම අතරතුර දී පටිගතකරණයට සහාය නොදක්වයි.</string>
   <string name="format_setting">ගොනු වර්ගය</string>
   <string name="storage_setting">ආචයන පිහිටුම</string>
   <string name="storage_setting_sdcard_item">SD කාඩ්පත</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">දුරකථනයේ ආචයනය අනාරූඩය</string>
   <string name="keyboard">යතුරුපුවරුව</string>
   <string name="file_deleted">ගොනුව මකාදැමුනි</string>
+  <string name="error_app_internal_recorder">අභ්‍යන්තර යෙදුම් දෝෂයක්.\n\nමයික්‍රෝෆෝනය භාවිතයේ පවතිනවා විය හැක.</string>
+  <string name="view_recordings">පටිගතකරණයන් නරඹන්න</string>
 </resources>

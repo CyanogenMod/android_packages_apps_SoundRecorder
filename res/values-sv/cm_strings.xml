@@ -16,5 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="recording_paused">Pausad</string>
+  <string name="recording_finished">Inspelningen slutförd</string>
+  <string name="save">Spara</string>
+  <string name="error_app_unsupported">Formatet stöds inte.</string>
+  <string name="error_mediadb_incall">Detta alternativ stöds inte under ett pågående samtal.</string>
+  <string name="error_mediadb_aacincall">AAC-röstinspelning stöds ej.</string>
+  <string name="in_call_record_error">Inspelning stöds inte under samtal.</string>
   <string name="format_setting">Filtyp</string>
+  <string name="storage_setting">Lagringsplats</string>
+  <string name="storage_setting_sdcard_item">SD-kort</string>
+  <string name="storage_setting_local_item">Telefonlagring</string>
+  <string name="no_phonestorage">Telefonlagring är ej monterad</string>
+  <string name="keyboard">Tangentbord</string>
+  <string name="file_deleted">Filen har tagits bort</string>
+  <string name="error_app_internal_recorder">Intern app-fel.\n\nMikrofonen kan vara i bruk.</string>
+  <string name="view_recordings">Visa inspelningar</string>
 </resources>

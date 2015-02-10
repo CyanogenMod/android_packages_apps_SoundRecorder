@@ -17,10 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Posáu</string>
+  <string name="recording_finished">Grabación finalizada</string>
+  <string name="save">Guardar</string>
   <string name="error_app_unsupported">Formatu non sofitáu.</string>
   <string name="error_mediadb_incall">Esta opción nun tien sofitu mientres una llamada.</string>
   <string name="error_mediadb_aacincall">La grabación AAC de llamada nun ta sofitada.</string>
-  <string name="in_call_record_error">Fallu de grabación de llamada.</string>
+  <string name="in_call_record_error">La grabación nun ta sofitada mentanto una llamada.</string>
   <string name="format_setting">Tipu de ficheru</string>
   <string name="storage_setting">Llugar d\'almacenamientu</string>
   <string name="storage_setting_sdcard_item">Tarxeta SD</string>
@@ -28,4 +30,6 @@
   <string name="no_phonestorage">Almac. teléfonu desmontáu</string>
   <string name="keyboard">Tecláu</string>
   <string name="file_deleted">Desanicióse\'l ficheru</string>
+  <string name="error_app_internal_recorder">Fallu internu de l\'aplicación.\n\nEl micrófonu pue tar n\'usu.</string>
+  <string name="view_recordings">Ver grabaciones</string>
 </resources>
