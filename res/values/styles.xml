@@ -18,6 +18,7 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
         <item name="android:colorPrimary">@color/material_primary</item>
         <item name="android:colorPrimaryDark">@color/material_dark</item>
+        <item name="android:navigationBarColor">#000000</item>
     </style>
 
     <style name="MediaButton" parent="@android:style/MediaButton">
