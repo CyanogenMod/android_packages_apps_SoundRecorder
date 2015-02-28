@@ -27,7 +27,7 @@
   <string name="storage_setting">Saugyklos vieta</string>
   <string name="storage_setting_sdcard_item">SD kortelė</string>
   <string name="storage_setting_local_item">Telefono saugykla</string>
-  <string name="no_phonestorage">Telefono saugykla pašalinta</string>
+  <string name="no_phonestorage">Telefono saugykla atjungta</string>
   <string name="keyboard">Klaviatūra</string>
   <string name="file_deleted">Failas ištrintas</string>
   <string name="error_app_internal_recorder">Vidinės programos klaida.\n\nMikrofonas gali būti naudojamas.</string>

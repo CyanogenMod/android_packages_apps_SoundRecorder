@@ -17,7 +17,7 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">מושהה</string>
-  <string name="recording_finished">הקלטה נגמרה</string>
+  <string name="recording_finished">הקלטה הסתיימה</string>
   <string name="save">שמור</string>
   <string name="error_app_unsupported">פורמט לא נתמך.</string>
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
