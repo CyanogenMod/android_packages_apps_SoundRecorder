@@ -16,5 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="recording_paused">Fasilə verildi</string>
   <string name="recording_finished">Səsyazma başa çatdı</string>
+  <string name="save">Saxla</string>
+  <string name="error_app_unsupported">Dəstəklənməyən format.</string>
+  <string name="error_mediadb_incall">Bu seçim zəng vaxtı dəstəklənmir.</string>
+  <string name="error_mediadb_aacincall">AAC səsli zəng səsyazması dəstəklənmir.</string>
+  <string name="in_call_record_error">Zəng vaxtı səsyazma dəstəklənmir.</string>
+  <string name="format_setting">Fayl növü</string>
+  <string name="storage_setting">Saxlama yeri</string>
+  <string name="storage_setting_sdcard_item">SD kart</string>
+  <string name="storage_setting_local_item">Telefon yaddaşı</string>
+  <string name="no_phonestorage">Telefon yaddaşı qoşulmayıb</string>
+  <string name="keyboard">Klaviatura</string>
+  <string name="file_deleted">Fayl silindi</string>
+  <string name="error_app_internal_recorder">Daxili tətbiqetmə xətası.\n\nMikrofon istifadədə ola bilər.</string>
+  <string name="view_recordings">Səsyazmaları göstər</string>
 </resources>
