@@ -174,8 +174,6 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
 
     public void startRecording(int outputfileformat, String extension,
                    Context context, int audiosourcetype, int codectype) {
-        stop();
-
         if (mSampleFile != null) {
             delete();
         }
