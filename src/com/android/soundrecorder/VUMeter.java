@@ -16,8 +16,6 @@
 
 package com.android.soundrecorder;
 
-import java.util.Map;
-
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -81,7 +79,7 @@ public class VUMeter extends View {
         final float maxAngle = (float)Math.PI*7/8;
 
         float angle = minAngle;
-        if (mRecorder != null)
+        if (mRecorder != null && !mRecorder.isRecordingStopping())
             angle += (float)(maxAngle - minAngle)*mRecorder.getMaxAmplitude()/32768;
 
         if (angle > mCurrentAngle)
