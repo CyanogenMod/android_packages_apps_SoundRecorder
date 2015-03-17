@@ -29,7 +29,6 @@ import android.media.MediaRecorder;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.MediaPlayer.OnErrorListener;
 import android.os.Bundle;
-import android.os.Environment;
 import android.util.Log;
 
 public class Recorder implements OnCompletionListener, OnErrorListener {
@@ -45,6 +44,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public static final int PAUSE_STATE = 3;
 
     int mState = IDLE_STATE;
+    boolean isRecordingStopping = false;
 
     public static final int NO_ERROR = 0;
     public static final int SDCARD_ACCESS_ERROR = 1;
@@ -208,6 +208,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
             return;
         }
 
+        isRecordingStopping = false;
         mRecorder = new MediaRecorder();
         mRecorder.setAudioSource(audiosourcetype);
         //set channel for surround sound recording.
@@ -299,6 +300,8 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     }
 
     public void stopRecording() {
+        isRecordingStopping = true;
+
         if (mRecorder == null)
             return;
         try {
@@ -386,5 +389,9 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
 
     public void setStoragePath(String path) {
         mStoragePath = path;
+    }
+
+    public boolean isRecordingStopping() {
+        return isRecordingStopping;
     }
 }
