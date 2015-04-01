@@ -39,6 +39,7 @@ import android.media.AudioManager;
 import android.media.MediaRecorder;
 import android.media.AudioManager.OnAudioFocusChangeListener;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
@@ -235,7 +236,7 @@ class RemainingTimeCalculator {
     }
 
     public boolean hasExternalStorage() {
-        return mSDCardDirectory != null;
+        return mSDCardDirectory != null && !"user".equals(Build.TYPE);
     }
 }
 
