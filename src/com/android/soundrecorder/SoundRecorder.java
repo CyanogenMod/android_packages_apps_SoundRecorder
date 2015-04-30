@@ -400,7 +400,8 @@ public class SoundRecorder extends Activity
                 = android.provider.MediaStore.Audio.Media.EXTRA_MAX_BYTES;
             mMaxFileSize = i.getLongExtra(EXTRA_MAX_BYTES, -1);
 
-            mExitAfterRecord = i.getBooleanExtra(EXIT_AFTER_RECORD, false);
+            mExitAfterRecord = i.getBooleanExtra(EXIT_AFTER_RECORD,
+                    Intent.ACTION_GET_CONTENT.equals(i.getAction()));
         }
 
         if (AUDIO_ANY.equals(mRequestedType) || ANY_ANY.equals(mRequestedType)) {
