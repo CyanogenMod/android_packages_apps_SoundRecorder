@@ -18,10 +18,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Pausatuta</string>
   <string name="recording_finished">Grabaketa bukatu da</string>
+  <string name="save">Gorde</string>
   <string name="error_app_unsupported">Euskarririk gabeko formatua.</string>
+  <string name="error_mediadb_incall">Aukera hau ez dago eskuragarri dei batean zehar.</string>
+  <string name="error_mediadb_aacincall">AAC dei grabazioa ez dago jasanda.</string>
+  <string name="in_call_record_error">Ezin da grabatu dei baten bitartean.</string>
   <string name="format_setting">Fitxategi mota</string>
+  <string name="storage_setting">Biltegiratze tokia</string>
   <string name="storage_setting_sdcard_item">SD txartela</string>
+  <string name="storage_setting_local_item">Barne biltegiratzea</string>
+  <string name="no_phonestorage">Barne biltegiratzea desmuntatuta</string>
   <string name="keyboard">Teklatua</string>
   <string name="file_deleted">Fitxategia ezabatu da</string>
+  <string name="error_app_internal_recorder">Aplikazioaren barne errorea.\n\nMikrofonoa okupatuta egon daiteke.</string>
   <string name="view_recordings">Ikusi grabaketak</string>
 </resources>
