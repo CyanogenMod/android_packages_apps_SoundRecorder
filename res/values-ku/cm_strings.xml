@@ -25,9 +25,9 @@
   <string name="in_call_record_error">تۆمارکردن لەماوەی پەیوەندیدا پشتگیری ناکرێت.</string>
   <string name="format_setting">جۆری فایل</string>
   <string name="storage_setting">شوێنی هه‌ڵگرتن</string>
-  <string name="storage_setting_sdcard_item">بیرگەی دەرەکی</string>
-  <string name="storage_setting_local_item">بیرگەی تەلەفۆن</string>
-  <string name="no_phonestorage">بیرگەی تەلەفۆن ناجێگیرکراوە</string>
+  <string name="storage_setting_sdcard_item">یادگەی دەرەکی</string>
+  <string name="storage_setting_local_item">یادگەی تەلەفۆن</string>
+  <string name="no_phonestorage">یادگەی تەلەفۆن ناجێگیرکراوە</string>
   <string name="keyboard">تەختەکلیل</string>
   <string name="file_deleted">فایلەکە سڕایەوە</string>
   <string name="error_app_internal_recorder">هەڵەی بەرنامەی ناوەکی.\n\nلەوانەیە میکڕۆفۆن کارا بێت.</string>
