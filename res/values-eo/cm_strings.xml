@@ -17,6 +17,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Paŭzita</string>
+  <string name="recording_finished">Registrado finita</string>
   <string name="save">Konservi</string>
+  <string name="error_app_unsupported">Nesubtenata dosierformo.</string>
+  <string name="error_mediadb_incall">Tiu opcio ne estas subtenata dum la alvoko.</string>
+  <string name="error_mediadb_aacincall">Registrado de AAC alvoko ne estas subtenata.</string>
+  <string name="in_call_record_error">Registrado ne estas subtenata dum la alvoko.</string>
+  <string name="format_setting">Dosierformo</string>
+  <string name="storage_setting">Loko de memorilo</string>
+  <string name="storage_setting_sdcard_item">SD-karto</string>
+  <string name="storage_setting_local_item">Telefona memorilo</string>
+  <string name="no_phonestorage">Telefona memoro ne estas muntita</string>
   <string name="keyboard">Klavaro</string>
+  <string name="file_deleted">Dosiero estis forigita</string>
+  <string name="error_app_internal_recorder">Interna eraro de la aplikaĵo.\n\nEble la mikrofono jam estas uzata.</string>
+  <string name="view_recordings">Vidi registraĵojn</string>
 </resources>
