@@ -30,6 +30,7 @@ import android.os.Environment;
 import android.util.Log;
 
 public class Recorder implements OnCompletionListener, OnErrorListener {
+    static final String TAG = "Recorder";
     static final String SAMPLE_PREFIX = "recording";
     static final String SAMPLE_PATH_KEY = "sample_path";
     static final String SAMPLE_LENGTH_KEY = "sample_length";
@@ -44,7 +45,11 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public static final int SDCARD_ACCESS_ERROR = 1;
     public static final int INTERNAL_ERROR = 2;
     public static final int IN_CALL_RECORD_ERROR = 3;
-    
+    public static final int UNSUPPORTED_FORMAT = 4;
+
+    public int mChannels = 0;
+    public int mSamplingRate = 0;
+
     public interface OnStateChangedListener {
         public void onStateChanged(int state);
         public void onError(int error);
@@ -97,7 +102,15 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public void setOnStateChangedListener(OnStateChangedListener listener) {
         mOnStateChangedListener = listener;
     }
-    
+
+    public void setChannels(int nChannelsCount) {
+        mChannels = nChannelsCount;
+    }
+
+    public void setSamplingRate(int samplingRate) {
+        mSamplingRate = samplingRate;
+    }
+
     public int state() {
         return mState;
     }
@@ -143,26 +156,50 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         signalStateChanged(IDLE_STATE);
     }
     
-    public void startRecording(int outputfileformat, String extension, Context context) {
+    public void startRecording(int outputfileformat, String extension, 
+                   Context context, int audiosourcetype, int codectype) {
         stop();
-        
-        if (mSampleFile == null) {
-            File sampleDir = Environment.getExternalStorageDirectory();
-            if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
-                sampleDir = new File("/sdcard/sdcard");
-            
-            try {
-                mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
-            } catch (IOException e) {
-                setError(SDCARD_ACCESS_ERROR);
-                return;
-            }
+        if (mSampleFile != null) {
+            mSampleFile.delete();
+            mSampleFile = null;
+            mSampleLength = 0;
         }
-        
+
+        File sampleDir = Environment.getExternalStorageDirectory();
+        if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
+            sampleDir = new File("/sdcard/sdcard");
+        try {
+            mSampleFile = File.createTempFile(SAMPLE_PREFIX, extension, sampleDir);
+        } catch (IOException e) {
+            setError(SDCARD_ACCESS_ERROR);
+            return;
+        }
+
         mRecorder = new MediaRecorder();
-        mRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
+        mRecorder.setAudioSource(audiosourcetype);
+        //set channel for surround sound recording.
+        if (mChannels > 0) {
+            mRecorder.setAudioChannels(mChannels);
+        }
+        if (mSamplingRate > 0) {
+            mRecorder.setAudioSamplingRate(mSamplingRate);
+        }
+
         mRecorder.setOutputFormat(outputfileformat);
-        mRecorder.setAudioEncoder(MediaRecorder.AudioEncoder.AMR_NB);
+
+        try {
+            mRecorder.setAudioEncoder(codectype);
+        } catch(RuntimeException exception) {
+            setError(UNSUPPORTED_FORMAT);
+            mRecorder.reset();
+            mRecorder.release();
+            if (mSampleFile != null) mSampleFile.delete();
+            mSampleFile = null;
+            mSampleLength = 0;
+            mRecorder = null;
+            return;
+        }
+
         mRecorder.setOutputFile(mSampleFile.getAbsolutePath());
 
         // Handle IOException
@@ -172,10 +209,14 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
             setError(INTERNAL_ERROR);
             mRecorder.reset();
             mRecorder.release();
+            if (mSampleFile != null) mSampleFile.delete();
+            mSampleFile = null;
+            mSampleLength = 0;
             mRecorder = null;
             return;
         }
         // Handle RuntimeException if the recording couldn't start
+        Log.d(TAG,"audiosourcetype " +audiosourcetype);
         try {
             mRecorder.start();
         } catch (RuntimeException exception) {
@@ -199,11 +240,17 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public void stopRecording() {
         if (mRecorder == null)
             return;
-
-        mRecorder.stop();
+        try {
+            mRecorder.stop();
+        }catch (RuntimeException exception){
+            setError(INTERNAL_ERROR);
+            Log.e(TAG, "Stop Failed");
+        }
+        mRecorder.reset();
         mRecorder.release();
         mRecorder = null;
-
+        mChannels = 0;
+        mSamplingRate = 0;
         mSampleLength = (int)( (System.currentTimeMillis() - mSampleStart)/1000 );
         setState(IDLE_STATE);
     }
