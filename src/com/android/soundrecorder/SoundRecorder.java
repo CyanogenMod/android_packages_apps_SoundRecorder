@@ -1051,6 +1051,7 @@ public class SoundRecorder extends Activity
                     if (mRecorderProcessed || !mRecorderStop) {
                         finish();
                     } else {
+                        mRecorderProcessed = true;
                         saveSample();
                     }
                     break;
