@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">ವಿರಾಮಿಸಲಾಗಿದೆ</string>
   <string name="recording_finished">ರಿಕಾರ್ಡಿಂಗ್ ಅಂತ್ಯಗೊಂಡಿದೆ</string>
-  <string name="save">ಉಳಿಸಿ</string>
+  <string name="save">ಉಳಿಸು</string>
   <string name="error_app_unsupported">ಅಬೆಂಬಲಿತ ಸ್ವರೂಪ.</string>
   <string name="error_mediadb_incall">ಈ ಆಯ್ಕೆ ಕರೆ ಮಾಡುವ ಸಂದರ್ಭದಲ್ಲಿ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.</string>
   <string name="error_mediadb_aacincall">AAC ಧ್ವನಿ ಕರೆ ರಿಕಾರ್ಡಿಂಗನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
