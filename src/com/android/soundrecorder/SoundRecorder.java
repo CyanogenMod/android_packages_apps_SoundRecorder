@@ -260,6 +260,7 @@ public class SoundRecorder extends Activity
     static final String AUDIO_AAC_MP4 = "audio/aac_mp4";
     static final String AUDIO_WAVE_6CH_LPCM = "audio/wave_6ch_lpcm";
     static final String AUDIO_WAVE_2CH_LPCM = "audio/wave_2ch_lpcm";
+    static final String AUDIO_WAVE_1CH_LPCM = "audio/wave_1ch_lpcm";
     static final String AUDIO_AAC_5POINT1_CHANNEL = "audio/aac_5point1_channel";
     static final String AUDIO_AMR_WB = "audio/amr-wb";
     static final String AUDIO_ANY = "audio/*";
@@ -417,7 +418,9 @@ public class SoundRecorder extends Activity
         mRequestedType = mSharedPreferences.getString("requestedType", mRequestedType);
         mFileType = mSharedPreferences.getInt("fileType", mFileType);
         mStoragePath = mSharedPreferences.getString("storagePath", mStoragePath);
-        if (!mWAVSupport && mRequestedType == AUDIO_WAVE_2CH_LPCM) {
+        if (!mWAVSupport &&
+            (mRequestedType == AUDIO_WAVE_2CH_LPCM ||
+             mRequestedType == AUDIO_WAVE_1CH_LPCM)) {
             mRequestedType = AUDIO_AMR;
             mFileType = 0;
         }
@@ -808,6 +811,13 @@ public class SoundRecorder extends Activity
                         mRecordHandler.obtainMessage(START_RECORDING,
                                 MediaRecorder.OutputFormat.WAVE,
                                 MediaRecorder.AudioEncoder.LPCM).sendToTarget();
+                    } else if (AUDIO_WAVE_1CH_LPCM.equals(mRequestedType)) {
+                        //WAVE LPCM  1-channel recording
+                        mRecorder.setChannels(1);
+                        mAudioSourceType = MediaRecorder.AudioSource.MIC;
+                        mRecordHandler.obtainMessage(START_RECORDING,
+                                MediaRecorder.OutputFormat.WAVE,
+                                MediaRecorder.AudioEncoder.LPCM).sendToTarget();
                     } else if (AUDIO_AMR_WB.equals(mRequestedType)) {
                         mRecordHandler.obtainMessage(START_RECORDING,
                                 MediaRecorder.OutputFormat.AMR_WB,
@@ -916,7 +926,8 @@ public class SoundRecorder extends Activity
                             mMaxFileSize =mMaxFileSize-40*1024;
                         break;
                     case R.string.format_setting_wav_item:
-                        mRequestedType = AUDIO_WAVE_2CH_LPCM;
+                        mRequestedType = getResources().getBoolean(R.bool.record_stereo) ?
+                                AUDIO_WAVE_2CH_LPCM : AUDIO_WAVE_1CH_LPCM;
                         mFileType = 2;
                         mPrefsStoragePathEditor.putString("requestedType", mRequestedType);
                         mPrefsStoragePathEditor.putInt("fileType", mFileType);
