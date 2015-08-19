@@ -16,7 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <string name="recording_paused">متوقف شد</string>
+  <string name="recording_finished">ضبط به پایان رسید</string>
   <string name="save">ذخیره</string>
+  <string name="error_app_unsupported">فرمت پشتیبانی نشده.</string>
+  <string name="error_mediadb_incall">این گزینه در طول تماس پشتیبانی نمی شود.</string>
+  <string name="error_mediadb_aacincall">ضبط تماس صوتی AAC پشتیبانی نمی شود.</string>
+  <string name="in_call_record_error">ضبط در طول تماس پشتیبانی نمی شود.</string>
+  <string name="format_setting">نوع فایل</string>
   <string name="storage_setting">محل ذخیره‌سازی</string>
   <string name="storage_setting_sdcard_item">کارت حافظه</string>
+  <string name="storage_setting_local_item">حافظه تلفن</string>
+  <string name="no_phonestorage">حافظه تلفن از دسترس خارج شد</string>
+  <string name="keyboard">صفحه کلید</string>
+  <string name="file_deleted">فایل حذف شده است</string>
+  <string name="error_app_internal_recorder">خطای داخلی برنامه.\n\n شاید میکروفن در حال استفاده شدن است.</string>
+  <string name="view_recordings">مشاهده ضبط شده ها</string>
 </resources>
