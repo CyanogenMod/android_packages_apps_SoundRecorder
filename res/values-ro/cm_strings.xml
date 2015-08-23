@@ -18,7 +18,7 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">În pauză</string>
   <string name="recording_finished">Înregistrare terminată</string>
-  <string name="save">Salvaţi</string>
+  <string name="save">Salvează</string>
   <string name="error_app_unsupported">Format nesuportat.</string>
   <string name="error_mediadb_incall">Această opțiune nu este suportată în cursul unui apel.</string>
   <string name="error_mediadb_aacincall">Înregistrarea AAC a apelului vocal nu este suportată.</string>
