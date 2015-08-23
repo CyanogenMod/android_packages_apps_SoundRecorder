@@ -16,8 +16,5 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">متوقف شد</string>
-  <string name="save">ذخیره</string>
-  <string name="storage_setting">محل ذخیره‌سازی</string>
-  <string name="storage_setting_sdcard_item">کارت حافظه</string>
+  <string name="save">Konservi</string>
 </resources>
