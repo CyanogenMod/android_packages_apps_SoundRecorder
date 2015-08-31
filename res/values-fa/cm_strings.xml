@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">متوقف شد</string>
+  <string name="recording_paused">متوقف</string>
   <string name="recording_finished">ضبط به پایان رسید</string>
   <string name="save">ذخیره</string>
   <string name="error_app_unsupported">فرمت پشتیبانی نشده.</string>
@@ -27,7 +27,7 @@
   <string name="storage_setting">محل ذخیره‌سازی</string>
   <string name="storage_setting_sdcard_item">کارت حافظه</string>
   <string name="storage_setting_local_item">حافظه تلفن</string>
-  <string name="no_phonestorage">حافظه تلفن در دسترس نیست</string>
+  <string name="no_phonestorage">حافظه گوشی در دسترس نیست</string>
   <string name="keyboard">صفحه‌کلید</string>
   <string name="file_deleted">فایل حذف شده است</string>
   <string name="error_app_internal_recorder">خطای داخلی برنامه.\n\n ممکن است میکروفن در حال استفاده باشد.</string>
