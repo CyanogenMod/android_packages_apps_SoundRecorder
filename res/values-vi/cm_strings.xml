@@ -17,4 +17,19 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Đã t.dừng</string>
+  <string name="recording_finished">Ghi âm hoàn thành</string>
+  <string name="save">Lưu</string>
+  <string name="error_app_unsupported">Định dạng không được hỗ trợ.</string>
+  <string name="error_mediadb_incall">Tuỳ chọn này không được hỗ trợ khi đang gọi.</string>
+  <string name="error_mediadb_aacincall">Ghi âm cuộc gọi thoại AAC không được hỗ trợ.</string>
+  <string name="in_call_record_error">Ghi âm không được hỗ trợ khi thực hiện cuộc gọi.</string>
+  <string name="format_setting">Loại tệp</string>
+  <string name="storage_setting">Nơi lưu trữ</string>
+  <string name="storage_setting_sdcard_item">Thẻ nhớ</string>
+  <string name="storage_setting_local_item">Bộ nhớ điện thoại</string>
+  <string name="no_phonestorage">Đã ngắt kết nối bộ nhớ điện thoại</string>
+  <string name="keyboard">Bàn phím</string>
+  <string name="file_deleted">Tệp đã bị xoá</string>
+  <string name="error_app_internal_recorder">Lỗi ứng dụng nội bộ\n\nMicro đang được sử dụng.</string>
+  <string name="view_recordings">Xem bản ghi âm</string>
 </resources>
