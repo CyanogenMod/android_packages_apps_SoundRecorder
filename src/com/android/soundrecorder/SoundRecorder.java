@@ -1766,7 +1766,7 @@ public class SoundRecorder extends Activity
         StorageVolume[] volumes = mStorageManager.getVolumeList();
         for (int i = 0; i < volumes.length; i++) {
             if (volumes[i].isRemovable() && volumes[i].allowMassStorage()
-                    && volumes[i].getDescription(context).contains("SD")) {
+                    && volumes[i].getDescription(context).contains("SD") && volumes[i].isPrimary()) {
                 sd = volumes[i].getPath();
             }
         }
