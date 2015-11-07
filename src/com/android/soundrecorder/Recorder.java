@@ -183,7 +183,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         if (!sampleDir.exists()) {
             sampleDir.mkdirs();
         }
-        if (!sampleDir.canWrite()) // Workaround for broken sdcard support on the device.
+        if (!sampleDir.canWrite()) {
             sampleDir = new File("/sdcard/sdcard");
         }
 
