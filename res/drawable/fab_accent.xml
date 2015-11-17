@@ -14,17 +14,6 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <color name="primary">#DD4E42</color>
-    <color name="primary_dark">#C64C3C</color>
-    <color name="accent">#fafafa</color>
-
-    <color name="black">#212121</color>
-    <color name="white">#fafafa</color>
-    <color name="grey">#9e9e9e</color>
-
-    <color name="fab_background">@color/primary</color>
-    <color name="fab_pressed">#fafafa</color>
-    <color name="fab_focused">#fafafa</color>
-    <color name="floating_action_button_touch_tint">#d3d3d3</color>
-</resources>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <solid android:color="@color/white" />
+</shape>
