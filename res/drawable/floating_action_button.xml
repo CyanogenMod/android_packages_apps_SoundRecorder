@@ -14,16 +14,11 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
-    <dimen name="timer_view_text_size">115sp</dimen>
-
-    <dimen name="media_button_dimen">48dp</dimen>
-    <dimen name="media_button_margin">16dp</dimen>
-
-    <!-- FAB Dimensions -->
-    <dimen name="fab_size">56dp</dimen>
-    <dimen name="fab_margin">16dp</dimen>
-    <dimen name="fab_icon_size">24dp</dimen>
-    <dimen name="fab_elevation_normal">6dp</dimen>
-    <dimen name="fab_elevation_pressed">4dp</dimen>
-</resources>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/grey">
+    <item android:id="@android:id/mask">
+        <shape android:shape="oval">
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+</ripple>
