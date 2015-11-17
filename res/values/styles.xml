@@ -14,13 +14,30 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Material.DialogWhenLarge">
-        <item name="android:windowCloseOnTouchOutside">true</item>
-        <item name="android:colorPrimary">@color/material_primary</item>
-        <item name="android:colorPrimaryDark">@color/material_dark</item>
+    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Material">
+        <item name="android:colorPrimary">@color/primary</item>
+        <item name="android:colorPrimaryDark">@color/primary_dark</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
     </style>
 
     <style name="MediaButton" parent="@android:style/MediaButton">
-        <item name="android:background">@drawable/btn_round</item>
+        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_height">@dimen/media_button_dimen</item>
+        <item name="android:layout_width">@dimen/media_button_dimen</item>
+        <item name="android:layout_marginStart">@dimen/media_button_margin</item>
+        <item name="android:layout_marginEnd">@dimen/media_button_margin</item>
+
+    </style>
+
+
+    <style name="floating_action_button">
+        <item name="android:layout_width">@dimen/fab_size</item>
+        <item name="android:layout_height">@dimen/fab_size</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+        <item name="android:background">@drawable/fab_accent</item>
+        <item name="android:stateListAnimator">@anim/floating_action_button_elevation</item>
+        <item name="android:elevation">@dimen/fab_elevation_normal</item>
     </style>
 </resources>
