@@ -23,6 +23,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.Manifest;
 import android.content.ActivityNotFoundException;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -54,6 +55,8 @@ import android.os.storage.StorageManager;
 import android.os.storage.StorageVolume;
 import android.os.PowerManager.WakeLock;
 import android.provider.MediaStore;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.ContextThemeWrapper;
 import android.view.KeyEvent;
@@ -385,6 +388,36 @@ public class SoundRecorder extends Activity
     @Override
     public void onCreate(Bundle icycle) {
         super.onCreate(icycle);
+
+        final int REQUEST_WRITE_STORAGE = 51;
+        final int REQUEST_RECORD_AUDIO  = 52;
+        final int REQUEST_PHONE_STATE   = 53;
+
+        if (checkSelfPermission(android.Manifest.permission.READ_PHONE_STATE)
+            != PackageManager.PERMISSION_GRANTED) {
+            if (ActivityCompat.shouldShowRequestPermissionRationale(SoundRecorder.this,
+                Manifest.permission.READ_PHONE_STATE)) {
+                    new AlertDialog.Builder(this)
+                      .setTitle(R.string.app_name)
+                      .setMessage(R.string.phone_permission)
+                      .setPositiveButton(R.string.button_ok, null)
+                      .setCancelable(false)
+                      .show();
+            } else {
+                requestPermissions(new String[]{android.Manifest.permission.READ_PHONE_STATE},REQUEST_PHONE_STATE);
+            }
+        }
+
+        if (checkSelfPermission(android.Manifest.permission.RECORD_AUDIO)
+            != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{android.Manifest.permission.RECORD_AUDIO},REQUEST_RECORD_AUDIO);
+        }
+
+        if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+            != PackageManager.PERMISSION_GRANTED) {
+            requestPermissions(new String[]{android.Manifest.permission.WRITE_EXTERNAL_STORAGE},REQUEST_WRITE_STORAGE);
+        }
+
         mSharedPreferences = getSharedPreferences("storage_Path", Context.MODE_PRIVATE);
         mPrefsStoragePathEditor = mSharedPreferences.edit();
 
