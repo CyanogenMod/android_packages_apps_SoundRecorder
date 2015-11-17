@@ -62,7 +62,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
         public void onError(int error);
     }
     OnStateChangedListener mOnStateChangedListener = null;
-    
+
     long mSampleStart = 0;       // time at which latest record or play operation started
     long mSampleLength = 0;      // length of current sample
     File mSampleFile = null;
@@ -142,7 +142,7 @@ public class Recorder implements OnCompletionListener, OnErrorListener {
     public String getStartRecordingTime() {
         return mTime;
     }
-    
+
     /**
      * Resets the recorder state. If a sample was recorded, the file is deleted.
      */
