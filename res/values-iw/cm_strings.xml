@@ -22,7 +22,7 @@
   <string name="error_app_unsupported">פורמט לא נתמך.</string>
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
   <string name="error_mediadb_aacincall">הקלטת קול שיחה בפורמט AAC לא נתמך.</string>
-  <string name="in_call_record_error">הקלטה בזמן שיחה אינה נתמכת.</string>
+  <string name="in_call_record_error">הקלטה במהלך שיחה אינה נתמכת.</string>
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס זיכרון</string>
@@ -30,6 +30,6 @@
   <string name="no_phonestorage">אחסון המכשיר הוסר</string>
   <string name="keyboard">מקלדת</string>
   <string name="file_deleted">הקובץ נמחק</string>
-  <string name="error_app_internal_recorder">שגיאה באפליקציה פנימית.\n\n ככל הנראה המיקרופון נמצא בשימוש.</string>
+  <string name="error_app_internal_recorder">שגיאת יישום פנימית.\n\nיכול להיות שהמיקרופון נמצא כבר בשימוש.</string>
   <string name="view_recordings">הצג הקלטות</string>
 </resources>
