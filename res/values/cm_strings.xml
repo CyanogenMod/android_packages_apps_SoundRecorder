@@ -47,4 +47,18 @@
     <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
     <string name="error_app_internal_recorder">Internal application error.\n\nMicrophone may be in use.</string>
     <string name="view_recordings">View recordings</string>
+
+    <!-- Permissions feedback -->
+    <string name="denied_title">Permissions</string>
+    <string name="perm_mic">Sound Recorder needs microphone access to record audio.</string>
+    <string name="perm_storage">Sound Recorder needs storage access to save recorded files.</string>
+    <string name="perm_phone">Sound Recorder needs phone status access to prevent this app from recording while you\'re calling.</string>
+    <string name="perm_micstorage">Sound Recorder needs microphone access to record audio and storage access to save recorded files.</string>
+    <string name="perm_micphone">Sound Recorder needs microphone access to record audio and phone status access to prevent this app from recording while you\'re calling.</string>
+    <string name="perm_storagephone">Sound Recorder needs storage access to save recorded files and phone status access to prevent this app from recording while you\'re calling.</string>
+    <string name="perm_allperms">Sound Recorder needs microphone access to record audio, storage access to save recorded files and phone status access to prevent this app from recording while you\'re calling.</string>
+    <string name="perm_unknown">Permission error, check permission status from Settings.</string>
+    <string name="ask_again">Ask again</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="perm_toast">Needed permissions were denied, enable them from settings app to start recording</string>
 </resources>
