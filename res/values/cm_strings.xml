@@ -47,4 +47,17 @@
     <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
     <string name="error_app_internal_recorder">Internal application error.\n\nMicrophone may be in use.</string>
     <string name="view_recordings">View recordings</string>
+
+    <!-- Permissions hint dialog -->
+    <string name="error_mic">Sound Recorder needs microphone access to record audio.</string>
+    <string name="error_storage">Sound Recorder needs storage access to save recorded files.</string>
+    <string name="error_phone">Sound Recorder needs phone access to know if it\'s possible to record if you\'re calling</string>
+    <string name="error_micstorage">Sound Recorder needs microphone access to record audio and storage access to save recorded files.</string>
+    <string name="error_micphone">Sound Recorder needs microphone access to record audio and phone access to know if it\'s possible to record if you\'re calling.</string>
+    <string name="error_storagephone">Sound Recorder needs storage access to save recorded files and phone access to know if it\'s possible to record if you\'re calling.</string>
+    <string name="error_allperms">Sound Recorder needs microphone access to record audio, storage access to save recorded files and phone access to know if it\'s possible to record if you\'re calling.</string>
+    <string name="error_unknown">Unknown error</string>
+    <string name="denied_title">Sound Recorder Permissions</string>
+    <string name="allow">Ask again</string>
+    <string name="dismiss">Dismiss</string>
 </resources>
