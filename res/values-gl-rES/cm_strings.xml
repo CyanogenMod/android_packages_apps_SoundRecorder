@@ -16,5 +16,9 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="save">Bewarje</string>
+  <string name="recording_paused">En pausa</string>
+  <string name="recording_finished">Gravación rematada</string>
+  <string name="save">Gardar</string>
+  <string name="error_mediadb_incall">Esta opción non está dispoñíbel durante unha chamada.</string>
+  <string name="error_mediadb_aacincall">A grabación AAC da chamada non é compatíbel.</string>
 </resources>
