@@ -16,15 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">En pausa</string>
-  <string name="recording_finished">Grabación finalizada</string>
-  <string name="save">Guardar</string>
-  <string name="error_app_unsupported">Formato no compatible.</string>
-  <string name="format_setting">Tipo de archivo</string>
-  <string name="storage_setting">Lugar de almacenamiento</string>
-  <string name="storage_setting_sdcard_item">Tarjeta SD</string>
-  <string name="keyboard">Teclado</string>
-  <string name="file_deleted">El archivo ha sido eliminado</string>
-  <string name="error_app_internal_recorder">Error interno de la aplicación.\n\nEl micrófono puede estar en uso.</string>
-  <string name="view_recordings">Ver grabaciones</string>
+  <string name="recording_paused">หยุดชั่วคราวแล้ว</string>
+  <string name="recording_finished">บันทึกเสร็จแล้ว</string>
+  <string name="save">บันทึก</string>
 </resources>
