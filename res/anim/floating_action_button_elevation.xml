@@ -26,7 +26,7 @@
         <objectAnimator
             android:propertyName="translationZ"
             android:duration="@android:integer/config_shortAnimTime"
-            android:valueTo="6dp"
+            android:valueTo="@dimen/fab_elevation_normal"
             android:valueType="floatType"/>
     </item>
 </selector>
