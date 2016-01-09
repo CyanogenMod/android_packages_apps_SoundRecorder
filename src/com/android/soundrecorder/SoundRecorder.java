@@ -77,6 +77,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -477,6 +478,9 @@ public class SoundRecorder extends Activity
             Log.d(TAG,"Surround sound recording is not supported");
             bSSRSupported = false;
         }
+
+        View menuButton = findViewById(R.id.menu_button);
+        setupFakeOverflowMenuButton(menuButton);
 
         mRecordThread = new HandlerThread(RECORDER_THREAD, Thread.MAX_PRIORITY);
         startRecorderThread();
@@ -1954,4 +1958,35 @@ public class SoundRecorder extends Activity
                 .getSystemService(Context.STORAGE_SERVICE);
         return mStorageManager.getVolumeState(getSDPath(context));
     }
+
+    /**
+     * Installs click and touch listeners on a fake overflow menu button.
+     *
+     * @param menuButton the fragment's fake overflow menu button
+     */
+    public void setupFakeOverflowMenuButton(View menuButton) {
+        final PopupMenu fakeOverflow = new PopupMenu(menuButton.getContext(), menuButton) {
+            @Override
+            public void show() {
+                onPrepareOptionsMenu(getMenu());
+                super.show();
+            }
+        };
+        fakeOverflow.inflate(R.menu.main_menu);
+        fakeOverflow.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener () {
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                return onOptionsItemSelected(item);
+            }
+        });
+
+        menuButton.setOnTouchListener(fakeOverflow.getDragToOpenListener());
+        menuButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                fakeOverflow.show();
+            }
+        });
+    }
+
 }
