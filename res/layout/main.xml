@@ -109,14 +109,14 @@
         </LinearLayout>
     </FrameLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
 
         <FrameLayout android:id="@+id/fab_layout"
             style="@style/floating_action_button"
-            android:gravity="center" >
+            android:layout_gravity="center" >
 
             <ImageButton android:id="@+id/recordButton"
                 android:layout_height="match_parent"
@@ -125,6 +125,20 @@
                 android:src="@drawable/record" />
         </FrameLayout>
 
-    </LinearLayout>
-
+        <FrameLayout
+            android:id="@+id/recorder_footer_view"
+            android:layout_width="@dimen/footer_button_size"
+            android:layout_height="@dimen/footer_button_size"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="@dimen/footer_button_layout_margin" >
+            <ImageButton
+                android:id="@+id/menu_button"
+                style="@style/RecorderOverflowButtonStyle"
+                android:layout_gravity="end|center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:accessibilityTraversalAfter="@+id/fab_layout"
+                android:contentDescription="@string/button_menu" />
+        </FrameLayout>
+    </FrameLayout>
 </LinearLayout>

@@ -64,4 +64,6 @@
     <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
     <string name="error_storage_access" product="default">Can\'t access SD card. Make sure Sound Recorder has permission to access the storage</string>
     <string name="in_call_record_error">Recording is not allowed during a call.</string>
+
+    <string name="button_menu">More options</string>
 </resources>
