@@ -39,4 +39,10 @@
         <item name="android:stateListAnimator">@anim/floating_action_button_elevation</item>
         <item name="android:elevation">@dimen/fab_elevation_normal</item>
     </style>
+
+    <!-- The more menu icon in Light theme is black, change it to white -->
+    <style name="RecorderOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_menu_moreoverflow_material</item>
+    </style>
+
 </resources>
