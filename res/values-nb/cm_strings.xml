@@ -31,4 +31,7 @@
   <string name="file_deleted">Filen har blitt slettet</string>
   <string name="error_app_internal_recorder">Intern programfeil.\n\nMikrofonen kan være i bruk.</string>
   <string name="view_recordings">Vis opptak</string>
+  <string name="denied_title">Tillatelser</string>
+  <string name="ask_again">Spør igjen</string>
+  <string name="dismiss">Avvis</string>
 </resources>

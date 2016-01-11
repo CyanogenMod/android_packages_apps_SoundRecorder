@@ -31,4 +31,6 @@
   <string name="file_deleted">Fișierul a fost șters</string>
   <string name="error_app_internal_recorder">Eroare internă a aplicației.\n\nMicrofonul poate fi în uz.</string>
   <string name="view_recordings">Vezi înregistrările</string>
+  <string name="denied_title">Permisiuni</string>
+  <string name="ask_again">Întreabă din nou</string>
 </resources>

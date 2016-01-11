@@ -31,4 +31,19 @@
   <string name="file_deleted">O arquivo foi apagado</string>
   <string name="error_app_internal_recorder">Erro interno da aplicação.\n\nO microfone pode estar em uso.</string>
   <string name="view_recordings">Exibir gravações</string>
+  <string name="denied_title">Permissões</string>
+  <string name="perm_mic">Gravador de som precisa de acesso ao microfone para gravar áudio.</string>
+  <string name="perm_storage">Gravador de som precisa de acesso de armazenamento para salvar os arquivos gravados.</string>
+  <string name="perm_phone">Gravador de som precisa de acesso de estado do telefone para impedir que este app gravação enquanto você está em uma ligação.</string>
+  <string name="perm_micstorage">Gravador de som precisa de acesso ao microfone para gravar áudio e acesso ao armazenamento para salvar os arquivos gravados.</string>
+  <string name="perm_micphone">Gravador de som precisa de acesso ao microfone para gravar áudio e acesso ao estado do telefone para impedir este aplicativo a gravar enquanto você estiver em uma ligação.</string>
+  <string name="perm_storagephone">Gravador de Som precisa de acesso ao armazenamento para salvar os arquivos gravados e acesso ao estado do telefone para impedir a gravação enquanto você estiver em uma ligação.</string>
+  <string name="perm_allperms">Gravador de Som precisa de acesso ao microfone para gravar áudio, acesso ao armazenamento para salvar os arquivos gravados e acesso ao estado do telefone para impedir a gravação enquanto você estiver em uma ligação.</string>
+  <string name="perm_unknown">Erro de permissão, verificar status de permissão no app Configurações.</string>
+  <string name="ask_again">Pergunte de novo</string>
+  <string name="dismiss">Descartar</string>
+  <string name="perm_toast">As permissões necessárias foram negadas, ative-as no app Configurações para iniciar a gravação</string>
+  <string name="error_storage_access" product="nosdcard">Não é possível acessar o armazenamento USB. Certifique-se de que o Gravador de Som tem permissão para acessar o armazenamento</string>
+  <string name="error_storage_access" product="default">Não é possível acessar o cartão SD. Certifique-se de que Gravador de Som tenha permissão para acessar o armazenamento</string>
+  <string name="in_call_record_error">A gravação não é permitida durante uma ligação.</string>
 </resources>

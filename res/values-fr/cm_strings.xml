@@ -32,4 +32,18 @@
   <string name="error_app_internal_recorder">Erreur interne de l\'application.\n\nLe microphone est peut-être en cours d\'utilisation.</string>
   <string name="view_recordings">Afficher les enregistrements</string>
   <string name="denied_title">Autorisations</string>
+  <string name="perm_mic">Le magnétophone a besoin d\'accéder au microphone pour enregistrer l\'audio.</string>
+  <string name="perm_storage">Le magnétophone a besoin d’accéder au stockage pour sauvegarder les fichiers enregistrés.</string>
+  <string name="perm_phone">Le magnétophone a besoin d\'accéder à l\'état du téléphone pour empêcher cette application d\'enregistrer pendant un appel.</string>
+  <string name="perm_micstorage">Le magnétophone a besoin d’accéder au microphone pour enregistrer l\'audio et au stockage pour sauvegarder les fichiers enregistrés.</string>
+  <string name="perm_micphone">Le magnétophone a besoin d’accéder au microphone pour enregistrer l\'audio et à l\'état du téléphone pour empêcher cette application d\'enregistrer pendant un appel.</string>
+  <string name="perm_storagephone">Le magnétophone a besoin d\'accéder au stockage pour sauvegarder les fichiers enregistrés et à l\'état du téléphone pour empêcher cette application d\'enregistrer pendant un appel.</string>
+  <string name="perm_allperms">Le magnétophone a besoin d’accéder au microphone pour enregistrer l\'audio, au stockage pour sauvegarder les fichiers enregistrés et à l\'état du téléphone pour empêcher cette application d\'enregistrer pendant un appel.</string>
+  <string name="perm_unknown">Erreur d\'autorisations, vérifiez l\'état des autorisations dans l\'application Paramètres.</string>
+  <string name="ask_again">Redemander</string>
+  <string name="dismiss">Masquer</string>
+  <string name="perm_toast">Les autorisations requises ont été refusées, activez-les depuis l\'application Paramètres pour commencer à enregistrer</string>
+  <string name="error_storage_access" product="nosdcard">Impossible d\'accéder au stockage USB. Assurez-vous que le magnétophone est autorisé à accéder au stockage</string>
+  <string name="error_storage_access" product="default">Impossible d\'accéder à la carte SD. Assurez-vous que le magnétophone est autorisé à accéder au stockage</string>
+  <string name="in_call_record_error">L\'enregistrement n\'est pas autorisé pendant un appel.</string>
 </resources>

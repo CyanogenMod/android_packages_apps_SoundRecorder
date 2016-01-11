@@ -31,4 +31,19 @@
   <string name="file_deleted">Fájl törölve</string>
   <string name="error_app_internal_recorder">Belső alkalmazás hiba.\n\nLehet, hogy használatban van a mikrofon.</string>
   <string name="view_recordings">Felvételek megtekintése</string>
+  <string name="denied_title">Jogosultságok</string>
+  <string name="perm_mic">A Hangrögzítőnek szüksége van a mikrofonhoz való hozzáféréshez a hang rögzítéséhez.</string>
+  <string name="perm_storage">A Hangrögzítőnek szüksége van a telefon tárhelyéhez való hozzáférésre a rögzített hang mentéséhez.</string>
+  <string name="perm_phone">A Hangrögzítőnek szüksége van a telefon állapotához való hozzáférésre a telefonálás közbeni rögzítés megakadályozására.</string>
+  <string name="perm_micstorage">A Hangrögzítőnek szüksége van a mikrofonhoz és a telefon tárhelyéhez való hozzáférésre a rögzített hang mentéséhez.</string>
+  <string name="perm_micphone">A Hangrögzítőnek szüksége van a mikrofonhoz való hozzáférésre a hang rögzítéséhez és a telefon állapotához való hozzáférésre a telefonálás közbeni rögzítés megakadályozására.</string>
+  <string name="perm_storagephone">A Hangrögzítőnek szüksége van a telefon tárhelyéhez való hozzáférésre a rögzített hang mentéséhez és a telefon állapotához való hozzáférésre a telefonálás közbeni rögzítés megakadályozására.</string>
+  <string name="perm_allperms">A Hangrögzítőnek szüksége van a mikrofonhoz aló hozzáférésre a hang rögzítéséhez, a telefon tárhelyéhez való hozzáférésre a rögzített hang mentéséhez és a telefon állapotához való hozzáférésre a telefonálás közbeni rögzítés megakadályozására.</string>
+  <string name="perm_unknown">Jogosultsági hiba, ellenőrizze a hozzáférés állapotát a Beállításokban.</string>
+  <string name="ask_again">Kérdezze meg újra</string>
+  <string name="dismiss">Elvetés</string>
+  <string name="perm_toast">Szükséges engedélyek megtagadva, engedélyezze őket a Beállításokban a hangrögzítés megkezdéséhez</string>
+  <string name="error_storage_access" product="nosdcard">USB tárhely nem érhető el. Lehet, hogy a Hangrögzítő nem rendelkezik a tárhely eléréséhez szükséges engedéllyel</string>
+  <string name="error_storage_access" product="default">SD-kártya nem érhető el. Lehet, hogy a Hangrögzítő nem rendelkezik a tárhely eléréséhez szükséges engedéllyel</string>
+  <string name="in_call_record_error">Telefonálás közbeni hangrögzítés nem engedélyezett.</string>
 </resources>

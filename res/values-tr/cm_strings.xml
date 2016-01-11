@@ -29,6 +29,21 @@
   <string name="no_phonestorage">Telefon hafızası ayrılmış</string>
   <string name="keyboard">Klavye</string>
   <string name="file_deleted">Dosya silindi</string>
-  <string name="error_app_internal_recorder">Uygulama iç hatası.\n\nMikrafon kullanımda olabilir.</string>
+  <string name="error_app_internal_recorder">Uygulama iç hatası.\n\nMikrofon kullanımda olabilir.</string>
   <string name="view_recordings">Kayıtları görüntüle</string>
+  <string name="denied_title">İzinler</string>
+  <string name="perm_mic">Ses Kaydedici ses kaydetmek için mikrofon erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_storage">Ses Kaydedici, kaydedilen dosyaları diske kaydetmek için depolama erişimine ihtiyaç duyar.</string>
+  <string name="perm_phone">Ses Kaydedici, siz arama yaparken bu uygulamanın kaydetmesini engellemek için telefon durum erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_micstorage">Ses Kaydedici, ses kaydetmek için mikrofon erişimine ve kayıtlı dosyaları kaydetmek için depolama erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_micphone">Ses kaydedici ses kaydetmek için mikrofon erişimine ve siz arama yaparken bu uygulamanın kaydetmesini engellemek için telefon durum erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_storagephone">Ses Kaydedici, kayıtlı dosyaları diske kaydetmek için depolama erişimine ve siz arama yaparken bu uygulamanın kayıt yapmasını engellemek için telefon durum erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_allperms">Ses Kaydedici ses kaydetmek için mikrofon erişimine, kaydedilen dosyaları diske kaydetmek için depolama erişimine ve siz arama yaparken bu uygulamanın kayıt yapmasını engellemek için telefon durum erişimine ihtiyaç duyuyor.</string>
+  <string name="perm_unknown">İzin hatası, Ayarlar uygulamasından izin durumunu kontrol edin.</string>
+  <string name="ask_again">Tekrar sor</string>
+  <string name="dismiss">Vazgeç</string>
+  <string name="perm_toast">Gereken izinler reddedildi, kayda başlamak için izinleri Ayarlar uygulamasından etkinleştirin</string>
+  <string name="error_storage_access" product="nosdcard">USB depolama birimine erişilemiyor. Ses Kaydedici\'nin depolamaya erişim izni olduğundan emin olun</string>
+  <string name="error_storage_access" product="default">SD karta erişilemiyor. Ses Kaydedici\'nin depolama birimine erişim izni olduğundan emin olun</string>
+  <string name="in_call_record_error">Arama sırasında kayıt yapmaya izin verilmiyor.</string>
 </resources>

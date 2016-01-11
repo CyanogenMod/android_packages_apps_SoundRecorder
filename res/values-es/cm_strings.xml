@@ -20,9 +20,13 @@
   <string name="recording_finished">Grabación finalizada</string>
   <string name="save">Guardar</string>
   <string name="error_app_unsupported">Formato no compatible.</string>
+  <string name="error_mediadb_incall">Esta opción no es compatible durante una llamada.</string>
+  <string name="error_mediadb_aacincall">La grabación AAC de llamada no es compatible.</string>
   <string name="format_setting">Tipo de archivo</string>
   <string name="storage_setting">Lugar de almacenamiento</string>
   <string name="storage_setting_sdcard_item">Tarjeta SD</string>
+  <string name="storage_setting_local_item">Memoria interna</string>
+  <string name="no_phonestorage">Memoria interna desmontada</string>
   <string name="keyboard">Teclado</string>
   <string name="file_deleted">El archivo ha sido eliminado</string>
   <string name="error_app_internal_recorder">Error interno de la aplicación.\n\nEl micrófono puede estar en uso.</string>
@@ -33,6 +37,7 @@
   <string name="perm_phone">La grabadora de sonidos necesita acceder al estado del teléfono para evitar que esta aplicación grabe mientras usted está llamando.</string>
   <string name="perm_micstorage">La grabadora de sonidos necesita acceso micrófono para grabar audio y almacenamiento para guardar los archivos grabados.</string>
   <string name="perm_micphone">La grabadora de sonidos necesita acceso al micrófono para grabar audio y el estado del teléfono para evitar que esta aplicación grabe mientras estás llamando.</string>
+  <string name="perm_storagephone">La grabadora de sonidos necesita acceso de almacenamiento para guardar los archivos grabados y acceso a el estado del teléfono para evitar que esta aplicación grabe mientras usted está llamando.</string>
   <string name="perm_allperms">La grabadora de sonido necesita acceso al micrófono para grabar el audio, acceso al almacenamiento para guardar archivos grabados y acceso al estado del teléfono para evitar que esta aplicación grabe mientras te encuentras en una llamada telefónica.</string>
   <string name="perm_unknown">Error de permiso, compruebe el estado de permiso en la aplicación Ajustes.</string>
   <string name="ask_again">Preguntar de nuevo</string>
