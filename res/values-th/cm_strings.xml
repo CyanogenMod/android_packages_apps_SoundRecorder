@@ -19,4 +19,31 @@
   <string name="recording_paused">หยุดชั่วคราวแล้ว</string>
   <string name="recording_finished">บันทึกเสร็จแล้ว</string>
   <string name="save">บันทึก</string>
+  <string name="error_app_unsupported">ไม่รองรับไฟล์นามสกุลนี้</string>
+  <string name="error_mediadb_incall">ตัวเลือกนี้ไม่สามารถใช้ในระหว่างการโทร</string>
+  <string name="error_mediadb_aacincall">ไม่รองรับการบันทึกเสียง AAC ระหว่างใช้สาย</string>
+  <string name="format_setting">ประเภทไฟล์</string>
+  <string name="storage_setting">ตำแหน่งการจัดเก็บ</string>
+  <string name="storage_setting_sdcard_item">SD การ์ด</string>
+  <string name="storage_setting_local_item">พื้นที่จัดเก็บในโทรศัพท์</string>
+  <string name="no_phonestorage">ไม่ได้เชื่อมกับพื้นที่จัดเก็บภายในโทรศัพท์</string>
+  <string name="keyboard">แป้นพิมพ์</string>
+  <string name="file_deleted">ไฟล์ถูกลบ</string>
+  <string name="error_app_internal_recorder">ปัญหา​ภายใน​ของ​แอปพลิเคชั่น​\n\n​ไมโครโฟน​อาจ​ถูก​ใช้​อยู่​</string>
+  <string name="view_recordings">ดู​สิ่งที่บันทึก</string>
+  <string name="denied_title">การอนุญาต</string>
+  <string name="perm_mic">บันทึกเสียงต้องเข้าถึงไมโครโฟนเพื่อให้บันทึกเสียงได้</string>
+  <string name="perm_storage">บันทึกเสียงต้องเข้าถึงไมโครโฟนเพื่อให้บันทึกเสียงได้</string>
+  <string name="perm_phone">บันทึกเสียงต้องเข้าถึงสถานะโทรศัพท์เพื่อป้องกันแอพนี้ไม่ให้ทำการบันทึกขณะที่กำลังโทรศัพท์</string>
+  <string name="perm_micstorage">บันทึกเสียงต้องเข้าถึงไมโครโฟนเพื่อบันทึกเสียงและเข้าถึงพื้นที่จัดเก็บเพื่อเก็บไฟล์ที่มีการบันทึก</string>
+  <string name="perm_micphone">บันทึกเสียงต้องเข้าถึงไมโครโฟนเพื่อบันทึกเสียงและเข้าถึงสถานะโทรศัพท์เพื่อป้องกันไม่ให้แอพนี้ทำการบันทึกขณะที่คุณกำลังโทร</string>
+  <string name="perm_storagephone">บันทึกเสียงต้องการเข้าถึงที่เก็บข้อมูลเพื่อบันทึกไฟล์เสียงและเข้าถึงสถานะโทรศัพท์เพื่อป้องกันไม่ให้แอปนี้บันทึกเสียงระหว่างโทร</string>
+  <string name="perm_allperms">บันทึกเสียงต้องการเข้าถึงไมโครโฟนเพื่อบันทึกเสียง เข้าถึงที่เก็บไฟล์เพื่อบันทึกไฟล์เสียงและเข้าถึงสถานะโทรศัพท์เพื่อป้องกันการบันทึกเสียงขณะโทร</string>
+  <string name="perm_unknown">การอนุญาตผิดพลาด กรุณาตรวจสอบการอนุญาตในการตั้งค่า</string>
+  <string name="ask_again">ถามอีกครั้ง</string>
+  <string name="dismiss">ปิด</string>
+  <string name="perm_toast">การอนุญาตที่ต้องการถูกปฏิเสธ ต้องเปิดใช้งานพวกมันในการตั้งค่าเพื่อเริ่มการบันทึก</string>
+  <string name="error_storage_access" product="nosdcard">ไม่สามารถเข้าถึงที่เก็บข้อมูล USB ได้ กรุณาตรวจสอบว่าแอปบันทึกเสียงได้รับอนุญาตให้เข้าถึงที่เก็บข้อมูล</string>
+  <string name="error_storage_access" product="default">ไม่สามารถเข้าถึง SD card ได้ กรุณาตรวจสอบว่าแอปบันทึกเสียงได้รับอนุญาตให้เข้าถึงที่เก็บข้อมูล</string>
+  <string name="in_call_record_error">ไม่อนุญาตให้บันทึกเสียงขณะโทร</string>
 </resources>

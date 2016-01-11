@@ -32,6 +32,18 @@
   <string name="error_app_internal_recorder">Wewnętrzny błąd aplikacji.\n\nMikrofon może być w użyciu.</string>
   <string name="view_recordings">Zobacz nagrania</string>
   <string name="denied_title">Uprawnienia</string>
+  <string name="perm_mic">Rejestrator dźwięku potrzebuje dostępu do mikrofonu w celu nagrywania dźwięku.</string>
+  <string name="perm_storage">Rejestrator dźwięku potrzebuje dostępu do pamięci w celu zapisania nagranych plików.</string>
+  <string name="perm_phone">Rejestrator dźwięku potrzebuje dostępu do stanu telefonu, aby zapobiec nagrywaniu w trakcie wykonywania połączenia.</string>
+  <string name="perm_micstorage">Rejestrator dźwięku potrzebuje dostępu do mikrofonu w celu nagrywania dźwięku i dostępu do pamięci w celu zapisania nagranych plików.</string>
+  <string name="perm_micphone">Rejestrator dźwięku potrzebuje dostępu do mikrofonu w celu nagrywania dźwięku i dostępu do statusu telefonu, aby zapobiec nagrywaniu w trakcie wykonywania połączenia.</string>
+  <string name="perm_storagephone">Rejestrator dźwięku potrzebuje dostępu do pamięci w celu zapisania nagranych plików i do statusu telefonu, aby zapobiec nagrywaniu w trakcie wykonywania połączenia.</string>
+  <string name="perm_allperms">Rejestrator dźwięku potrzebuje dostępu do mikrofonu w celu nagrywania dźwięku, do pamięci w celu zapisania nagranych plików i do statusu telefonu, aby zapobiec nagrywaniu w trakcie wykonywania połączenia.</string>
+  <string name="perm_unknown">Błąd uprawnień, sprawdź stan uprawnień w Ustawieniach.</string>
   <string name="ask_again">Spytaj ponownie</string>
   <string name="dismiss">Odrzuć</string>
+  <string name="perm_toast">Brak wymaganych uprawnień. Włącz je w Ustawieniach, aby rozpocząć nagrywanie</string>
+  <string name="error_storage_access" product="nosdcard">Nie ma dostępu do pamięci USB. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
+  <string name="error_storage_access" product="default">Nie ma dostępu do karty SD. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
+  <string name="in_call_record_error">Nagrywanie nie jest dozwolone w trakcie wykonywania połączenia.</string>
 </resources>

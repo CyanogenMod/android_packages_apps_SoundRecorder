@@ -32,4 +32,18 @@
   <string name="error_app_internal_recorder">Sovelluksen sisäinen virhe.\n\nMikrofoni saattaa olla käytössä.</string>
   <string name="view_recordings">Tarkastele nauhoituksia</string>
   <string name="denied_title">Käyttöoikeudet</string>
+  <string name="perm_mic">Ääninauhuri tarvitsee pääsyn mikrofoniin nauhoittaakseen ääntä.</string>
+  <string name="perm_storage">Ääninauhuri tarvitsee pääsyn tallennustilaan tallentaakseen tiedostoja.</string>
+  <string name="perm_phone">Ääninauhuri tarvitsee pääsyn puhelimen tilaan estääkseen nauhoituksen puhelun aikana.</string>
+  <string name="perm_micstorage">Ääninauhuri tarvitsee pääsyn mikrofoniin nauhoittaakseen ääntä ja tallennustilaan tallentaakseen tiedostoja.</string>
+  <string name="perm_micphone">Ääninauhuri tarvitsee pääsyn mikrofoniin nauhoittaakseen ääntä ja puhelimen tilaan estääkseen nauhoituksen puhelun aikana.</string>
+  <string name="perm_storagephone">Ääninauhuri tarvitsee pääsyn tallennustilaan tallentaakseen tiedostoja ja puhelimen tilaan estääkseen nauhoituksen puhelun aikana.</string>
+  <string name="perm_allperms">Ääninauhuri tarvitsee pääsyn mikrofoniin nauhoittaakseen ääntä, tallennustilaan tallentaakseen tiedostoja ja puhelimen tilaan estääkseen nauhoituksen puhelun aikana.</string>
+  <string name="perm_unknown">Käyttöoikeusvirhe, tarkista käyttöoikeudet Asetukset-sovelluksesta.</string>
+  <string name="ask_again">Kysy uudelleen</string>
+  <string name="dismiss">Hylkää</string>
+  <string name="perm_toast">Tarvittavat käyttöoikeudet hylättiin, ota ne käyttöön Asetukset-sovelluksesta aloittaaksesi nauhoituksen</string>
+  <string name="error_storage_access" product="nosdcard">Ei voida käyttää USB-tallennustilaa. Varmista että Ääninauhurilla on oikeudet käyttää tallennustilaa</string>
+  <string name="error_storage_access" product="default">Ei voida käyttää SD-korttia. Varmista että Ääninauhurilla on oikeudet käyttää tallennustilaa</string>
+  <string name="in_call_record_error">Tallennusta ei sallita puhelun aikana.</string>
 </resources>

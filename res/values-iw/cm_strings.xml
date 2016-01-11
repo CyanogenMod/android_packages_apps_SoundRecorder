@@ -31,4 +31,19 @@
   <string name="file_deleted">הקובץ נמחק</string>
   <string name="error_app_internal_recorder">שגיאת יישום פנימית.\n\nיכול להיות שהמיקרופון נמצא כבר בשימוש.</string>
   <string name="view_recordings">הצג הקלטות</string>
+  <string name="denied_title">הרשאות</string>
+  <string name="perm_mic">הרשמקול זקוק לגישה למיקרופון על מנת להקליט שמע.</string>
+  <string name="perm_storage">הרשמקול זקוק לגישה לאחסון על מנת לשמור הקלטות.</string>
+  <string name="perm_phone">הרשמקול זקוק לגישה למצב השיחה על מנת למנוע הקלטה במהלך שיחה.</string>
+  <string name="perm_micstorage">הרשמקול זקוק לגישה למיקרופון על מנת להקליט שמע וגישה לאחסון על מנת לשמור הקלטות.</string>
+  <string name="perm_micphone">הרשמקול זקוק לגישה למיקרופון על מנת להקליט שמע וגישה למצב השיחה על מנת למנוע הקלטה במהלך שיחה.</string>
+  <string name="perm_storagephone">הרשמקול זקוק לגישה לאחסון על מנת לשמור הקלטות וגישה למצב השיחה על מנת למנוע הקלטה במהלך שיחה.</string>
+  <string name="perm_allperms">הרשמקול זקוק לגישה למיקרופון על מנת להקליט שמע, גישה לאחסון על מנת לשמור הקלטות וגישה למצב השיחה על מנת למנוע הקלטה במהלך שיחה.</string>
+  <string name="perm_unknown">שגיאת הרשאות, בדוק את מצב ההרשאות בהגדרות.</string>
+  <string name="ask_again">שאל שנית</string>
+  <string name="dismiss">ביטול</string>
+  <string name="perm_toast">ההרשאות הנדרשות נדחו, ניתן להפעיל אותן מיישום ההגדרות כדי להתחיל בהקלטה</string>
+  <string name="error_storage_access" product="nosdcard">לא ניתן לגשת לאחסון USB. אנא וודאו כי לרשמקול יש הרשאה לגשת לאחסון זה</string>
+  <string name="error_storage_access" product="default">לא ניתן לגשת לכרטיס הזיכרון. אנא וודאו כי לרשמקול יש הרשאה לגשת לאחסון זה</string>
+  <string name="in_call_record_error">לא ניתן לבצע הקלטה במהלך השיחה.</string>
 </resources>

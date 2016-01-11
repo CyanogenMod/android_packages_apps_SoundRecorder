@@ -32,5 +32,12 @@
   <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\n Das Mikrofon wird eventuell verwendet.</string>
   <string name="view_recordings">Aufnahmen anzeigen</string>
   <string name="denied_title">Berechtigungen</string>
+  <string name="perm_mic">Soundrecorder benötigt Zugriff auf das Mikrofon, um Ton aufzunehmen.</string>
+  <string name="perm_storage">Soundrecorder benötigt Zugriff auf den Speicher, um aufgezeichnete Dateien zu speichern.</string>
+  <string name="perm_micstorage">Soundrekorder benötigt Zugriff auf das Mikrofon, um Aufnahmen zu erstellen und Speicherzugriff, um aufgezeichnete Dateien zu sichern.</string>
+  <string name="perm_storagephone">Soundrecorder benötigt Zugriff auf den Speicher, um aufgezeichnete Dateien zu sichern und Zugriff auf den Telefon-Status, damit keine Aufnahme erstellt wird, während Sie telefonieren.</string>
+  <string name="perm_unknown">Berechtigungsfehler, überprüfen Sie die Berechtigungen in den Einstellungen.</string>
   <string name="ask_again">Erneut nachfragen</string>
+  <string name="perm_toast">Erforderliche Berechtigungen wurden verweigert, aktivieren Sie diese in den Einstellungen, um mit der Aufnahme zu beginnen</string>
+  <string name="in_call_record_error">Aufnahmen sind während eines Anrufs nicht erlaubt.</string>
 </resources>

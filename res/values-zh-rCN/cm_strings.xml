@@ -43,7 +43,7 @@
   <string name="ask_again">再次询问</string>
   <string name="dismiss">忽略</string>
   <string name="perm_toast">所需的权限被拒绝，请在设置应用中启用它们来开始录音。</string>
-  <string name="error_storage_access" product="nosdcard">无法访问 USB 存储，请确保录音机有权限访问您的存储。</string>
-  <string name="error_storage_access" product="default">无法访问 SD 卡。请确保录音机有权限访问您的存储。</string>
+  <string name="error_storage_access" product="nosdcard">无法访问 USB 存储，请确认录音机有访问存储空间的权限。</string>
+  <string name="error_storage_access" product="default">无法访问 SD 卡。请确认录音机有访问存储空间的权限。</string>
   <string name="in_call_record_error">在通话过程中不允许录音。</string>
 </resources>
