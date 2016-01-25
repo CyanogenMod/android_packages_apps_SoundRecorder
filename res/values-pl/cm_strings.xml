@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Nie ma dostępu do pamięci USB. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
   <string name="error_storage_access" product="default">Nie ma dostępu do karty SD. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
   <string name="in_call_record_error">Nagrywanie nie jest dozwolone w trakcie wykonywania połączenia.</string>
+  <string name="button_menu">Więcej opcji</string>
 </resources>

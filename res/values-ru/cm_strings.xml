@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Не удается получить доступ к USB-накопителю. Убедитесь, что Звукозапись имеет разрешение на доступ к хранилищу</string>
   <string name="error_storage_access" product="default">Не удается получить доступ к SD-карте. Убедитесь, что Звукозапись имеет разрешение на доступ к хранилищу</string>
   <string name="in_call_record_error">Запись аудио во время телефонного звонка невозможна.</string>
+  <string name="button_menu">Дополнительные функции</string>
 </resources>

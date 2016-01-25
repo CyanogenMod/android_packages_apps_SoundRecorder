@@ -29,21 +29,22 @@
   <string name="no_phonestorage">Pomnilnik telefona odklopljen</string>
   <string name="keyboard">Tipkovnica</string>
   <string name="file_deleted">Datoteka je bila izbrisana</string>
-  <string name="error_app_internal_recorder">Notranja napaka programa.\n\nMikrofon je morda v uporabi.</string>
+  <string name="error_app_internal_recorder">Notranja napaka aplikacije.\n\nMikrofon je morda v uporabi.</string>
   <string name="view_recordings">Pokaži posnetke</string>
   <string name="denied_title">Dovoljenja</string>
   <string name="perm_mic">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka.</string>
   <string name="perm_storage">Snemalnik zvoka potrebuje dostop do pomnilniške naprave za shranjevanje datotek s posnetki.</string>
-  <string name="perm_phone">Snemalnik zvoka potrebuje dostop do stanja telefona, da temu programu prepreči snemanje med klicem.</string>
+  <string name="perm_phone">Snemalnik zvoka potrebuje dostop do stanja telefona, da tej aplikaciji prepreči snemanje med klicem.</string>
   <string name="perm_micstorage">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka in dostop do pomnilniške naprave za shranjevanje datotek s posnetki.</string>
-  <string name="perm_micphone">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka in dostop do stanja telefona, da temu programu prepreči snemanje med klicem.</string>
-  <string name="perm_storagephone">Snemalnik zvoka potrebuje dostop do pomnilniške naprave za shranjevanje datotek s posnetki in dostop do stanja telefona, da temu programu prepreči snemanje med klicem.</string>
-  <string name="perm_allperms">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka, dostop do pomnilniške naprave za shranjevanje datotek s posnetki in dostop do stanja telefona, da temu programu prepreči snemanje med klicem.</string>
-  <string name="perm_unknown">Napaka dovoljenja, preverite stanje dovoljenja v programu Nastavitve.</string>
+  <string name="perm_micphone">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka in dostop do stanja telefona, da tej aplikaciji prepreči snemanje med klicem.</string>
+  <string name="perm_storagephone">Snemalnik zvoka potrebuje dostop do pomnilniške naprave za shranjevanje datotek s posnetki in dostop do stanja telefona, da tej aplikaciji prepreči snemanje med klicem.</string>
+  <string name="perm_allperms">Snemalnik zvoka potrebuje dostop do mikrofona za snemanje zvoka, dostop do pomnilniške naprave za shranjevanje datotek s posnetki in dostop do stanja telefona, da tej aplikaciji prepreči snemanje med klicem.</string>
+  <string name="perm_unknown">Napaka dovoljenja, preverite stanje dovoljenja v aplikaciji Nastavitve.</string>
   <string name="ask_again">Ponovno vprašaj</string>
   <string name="dismiss">Opusti</string>
-  <string name="perm_toast">Zahtevana dovoljenja so bila zavrnjena, omogočite jih v programu Nastavitve, da začnete snemati</string>
+  <string name="perm_toast">Zahtevana dovoljenja so bila zavrnjena, omogočite jih v aplikaciji Nastavitve, da začnete snemati</string>
   <string name="error_storage_access" product="nosdcard">Dostop do pomnilniške naprave USB ni mogoč. Prepričajte se, da ima Snemalnik zvoka dovoljenje za dostop do pomnilniške naprave</string>
   <string name="error_storage_access" product="default">Dostop do kartice SD ni mogoč. Prepričajte se, da ima Snemalnik zvoka dovoljenje za dostop do pomnilniške naprave</string>
   <string name="in_call_record_error">Snemanje med klicem ni dovoljeno.</string>
+  <string name="button_menu">Več možnosti</string>
 </resources>

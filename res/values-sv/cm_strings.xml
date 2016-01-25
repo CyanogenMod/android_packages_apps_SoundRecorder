@@ -31,4 +31,6 @@
   <string name="file_deleted">Filen har tagits bort</string>
   <string name="error_app_internal_recorder">Intern app-fel.\n\nMikrofonen kan vara i bruk.</string>
   <string name="view_recordings">Visa inspelningar</string>
+  <string name="ask_again">Fråga igen</string>
+  <string name="dismiss">Avvisa</string>
 </resources>

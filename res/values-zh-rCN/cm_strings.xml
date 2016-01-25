@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">无法访问 USB 存储，请确认录音机有访问存储空间的权限。</string>
   <string name="error_storage_access" product="default">无法访问 SD 卡。请确认录音机有访问存储空间的权限。</string>
   <string name="in_call_record_error">在通话过程中不允许录音。</string>
+  <string name="button_menu">更多选项</string>
 </resources>
