@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Impossible d\'accéder au stockage USB. Assurez-vous que le magnétophone est autorisé à accéder au stockage</string>
   <string name="error_storage_access" product="default">Impossible d\'accéder à la carte SD. Assurez-vous que le magnétophone est autorisé à accéder au stockage</string>
   <string name="in_call_record_error">L\'enregistrement n\'est pas autorisé pendant un appel.</string>
+  <string name="button_menu">Plus d\'options</string>
 </resources>

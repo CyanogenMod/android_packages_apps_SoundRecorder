@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Non riesco ad accedere alla memoria USB. Assicurati che Registratore Suoni disponga dei permessi per accedere alla memoria USB</string>
   <string name="error_storage_access" product="default">Non riesco ad accedere alla scheda SD. Assicurati che Registratore Suoni disponga dei permessi per accedere alla scheda SD</string>
   <string name="in_call_record_error">Impossibile registrare durante una chiamata.</string>
+  <string name="button_menu">Altre opzioni</string>
 </resources>

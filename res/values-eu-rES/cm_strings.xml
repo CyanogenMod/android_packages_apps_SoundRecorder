@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Ezin izan da USB biltegiratzea atzitu. Egiaztatu Soinu grabatzaileak biltegiratzea atzitzeko baimena duela</string>
   <string name="error_storage_access" product="default">Ezin izan da SD txartela atzitu. Egiaztatu Soinu grabatzaileak biltegiratzea atzitzeko baimena duela</string>
   <string name="in_call_record_error">Ezin da grabatu dei baten bitartean.</string>
+  <string name="button_menu">Aukera gehiago</string>
 </resources>

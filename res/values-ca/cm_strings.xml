@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">No s\'ha pogut accedir a la targeta USB. Assegura\'t que la gravadora de sons té permís per accedir a l\'emmagatzematge</string>
   <string name="error_storage_access" product="default">No s\'ha pogut accedir a la targeta SD. Assegura\'t que la gravadora de sons té permís per accedir a l\'emmagatzematge</string>
   <string name="in_call_record_error">No es permet l\'enregistrament durant una trucada.</string>
+  <string name="button_menu">Més opcions</string>
 </resources>

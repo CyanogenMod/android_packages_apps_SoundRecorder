@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">לא ניתן לגשת לאחסון USB. אנא וודאו כי לרשמקול יש הרשאה לגשת לאחסון זה</string>
   <string name="error_storage_access" product="default">לא ניתן לגשת לכרטיס הזיכרון. אנא וודאו כי לרשמקול יש הרשאה לגשת לאחסון זה</string>
   <string name="in_call_record_error">לא ניתן לבצע הקלטה במהלך השיחה.</string>
+  <string name="button_menu">אפשרויות נוספות</string>
 </resources>
