@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Ei voida käyttää USB-tallennustilaa. Varmista että Ääninauhurilla on oikeudet käyttää tallennustilaa</string>
   <string name="error_storage_access" product="default">Ei voida käyttää SD-korttia. Varmista että Ääninauhurilla on oikeudet käyttää tallennustilaa</string>
   <string name="in_call_record_error">Tallennusta ei sallita puhelun aikana.</string>
+  <string name="button_menu">Lisäasetukset</string>
 </resources>

@@ -31,4 +31,20 @@
   <string name="file_deleted">Soubor byl smazán</string>
   <string name="error_app_internal_recorder">Interní chyba aplikace.\n\nMikrofon je už používán.</string>
   <string name="view_recordings">Zobrazit nahrávky</string>
+  <string name="denied_title">Oprávnění</string>
+  <string name="perm_mic">Pro nahrávání je vyžadováno oprávnění přístup k mikrofonu.</string>
+  <string name="perm_storage">Pro ukládání je vyžadováno oprávnění přístupu k úložišti.</string>
+  <string name="perm_phone">Je vyžadováno oprávnění přístupu ke stavu telefonu, aby bylo zabránění nahrávání při hovoru.</string>
+  <string name="perm_micstorage">Záznam zvuku vyžaduje oprávnění přístupu k mikrofonu a oprávnění k přístupu na úložiště.</string>
+  <string name="perm_micphone">Záznam zvuku vyžaduje oprávnění přístupu k mikrofonu a oprávnění k přístupu k stavu telefonu pro zamezení nahrávání při telefonování.</string>
+  <string name="perm_storagephone">Záznam zvuku vyžaduje oprávnění přístupu k úložišti a oprávnění k přístupu k stavu telefonu pro zamezení nahrávání při telefonování.</string>
+  <string name="perm_allperms">Záznam zvuku vyžaduje oprávnění přístupu k mikrofonu, oprávnění k přístupu na úložiště a oprávnění k přístupu k stavu telefonu pro zamezení nahrávání při telefonování.</string>
+  <string name="perm_unknown">Chyba oprávnění, zkontrolujte oprávnění v nastavení.</string>
+  <string name="ask_again">Opakovaně se dotazovat</string>
+  <string name="dismiss">Neukládat</string>
+  <string name="perm_toast">Požadovaná oprávnění byla odepřena, pro spuštění nahrávání je povolte v nastavení aplikace</string>
+  <string name="error_storage_access" product="nosdcard">Nelze získat přístup k USB úložišti. Ujistěte se, že Záznam zvuku má oprávnění přistupovat k úložišti</string>
+  <string name="error_storage_access" product="default">Nelze získat přístup k SD kartě. Ujistěte se, že Záznam zvuku má oprávnění přistupovat k SD kartě</string>
+  <string name="in_call_record_error">Zaznamenávání zvuku není povoleno během hovoru.</string>
+  <string name="button_menu">Více možností</string>
 </resources>
