@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">Pazuirano</string>
+  <string name="recording_paused">Pauzirano</string>
   <string name="recording_finished">Snimanje završeno</string>
   <string name="save">Spremi</string>
   <string name="error_app_unsupported">Format nije podržan.</string>
@@ -24,8 +24,12 @@
   <string name="error_mediadb_aacincall">AAC snimanje glasovnog poziva nije podržano.</string>
   <string name="in_call_record_error">Snimanje nije podržano tijekom poziva.</string>
   <string name="format_setting">Vrsta datoteke</string>
+  <string name="storage_setting">Lokacija pohrane</string>
   <string name="storage_setting_sdcard_item">SD kartica</string>
+  <string name="storage_setting_local_item">Memorija telefona</string>
+  <string name="no_phonestorage">Memorija telefona nije montirana</string>
   <string name="keyboard">Tipkovnica</string>
   <string name="file_deleted">Datoteka je izbrisana</string>
+  <string name="error_app_internal_recorder">Interna pogreška aplikacije.\n\nMikrofon je možda u uporabi.</string>
   <string name="view_recordings">Pregledaj snimke</string>
 </resources>
