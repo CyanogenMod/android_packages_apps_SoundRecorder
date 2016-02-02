@@ -30,6 +30,6 @@
   <string name="no_phonestorage">Pomnilnik telefona odklopljen</string>
   <string name="keyboard">Tipkovnica</string>
   <string name="file_deleted">Datoteka je bila izbrisana</string>
-  <string name="error_app_internal_recorder">Notranja napaka programa.\n\nMikrofon je morda v uporabi.</string>
+  <string name="error_app_internal_recorder">Notranja napaka aplikacije.\n\nMikrofon je morda v uporabi.</string>
   <string name="view_recordings">Pokaži posnetke</string>
 </resources>
