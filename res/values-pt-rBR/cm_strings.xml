@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Não é possível acessar o armazenamento USB. Certifique-se de que o Gravador de Som tem permissão para acessar o armazenamento</string>
   <string name="error_storage_access" product="default">Não é possível acessar o cartão SD. Certifique-se de que Gravador de Som tenha permissão para acessar o armazenamento</string>
   <string name="in_call_record_error">A gravação não é permitida durante uma ligação.</string>
+  <string name="button_menu">Mais opções</string>
 </resources>

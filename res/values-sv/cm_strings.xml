@@ -31,6 +31,10 @@
   <string name="file_deleted">Filen har tagits bort</string>
   <string name="error_app_internal_recorder">Intern app-fel.\n\nMikrofonen kan vara i bruk.</string>
   <string name="view_recordings">Visa inspelningar</string>
+  <string name="denied_title">Rättigheter</string>
   <string name="ask_again">Fråga igen</string>
   <string name="dismiss">Avvisa</string>
+  <string name="error_storage_access" product="nosdcard">Kan inte komma åt USB-lagring. Se till att Ljudinspelaren har behörighet att komma åt lagringsplatsen</string>
+  <string name="error_storage_access" product="default">Kan inte komma åt SD-kortet. Se till att Ljudinspelaren har behörighet att komma åt lagringsplatsen</string>
+  <string name="button_menu">Fler alternativ</string>
 </resources>
