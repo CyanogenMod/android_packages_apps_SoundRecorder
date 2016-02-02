@@ -33,4 +33,6 @@
   <string name="view_recordings">Vezi înregistrările</string>
   <string name="denied_title">Permisiuni</string>
   <string name="ask_again">Întreabă din nou</string>
+  <string name="in_call_record_error">Înregistrarea nu este permisă în timpul unui apel.</string>
+  <string name="button_menu">Mai multe opțiuni</string>
 </resources>

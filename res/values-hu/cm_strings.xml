@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">USB tárhely nem érhető el. Lehet, hogy a Hangrögzítő nem rendelkezik a tárhely eléréséhez szükséges engedéllyel</string>
   <string name="error_storage_access" product="default">SD-kártya nem érhető el. Lehet, hogy a Hangrögzítő nem rendelkezik a tárhely eléréséhez szükséges engedéllyel</string>
   <string name="in_call_record_error">Telefonálás közbeni hangrögzítés nem engedélyezett.</string>
+  <string name="button_menu">További opciók</string>
 </resources>
