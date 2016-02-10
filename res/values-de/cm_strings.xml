@@ -20,8 +20,8 @@
   <string name="recording_finished">Aufnahme abgeschlossen</string>
   <string name="save">Speichern</string>
   <string name="error_app_unsupported">Format nicht unterstützt.</string>
-  <string name="error_mediadb_incall">Während eines Anrufs wird diese Option nicht unterstützt.</string>
-  <string name="error_mediadb_aacincall">Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
+  <string name="error_mediadb_incall">Diese Option wird während eines Anrufs nicht unterstützt.</string>
+  <string name="error_mediadb_aacincall">Die Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
   <string name="in_call_record_error">Aufnahme wird während eines Anrufs nicht unterstützt.</string>
   <string name="format_setting">Dateityp</string>
   <string name="storage_setting">Speicherort</string>
@@ -30,6 +30,6 @@
   <string name="no_phonestorage">Telefonspeicher ist nicht verfügbar</string>
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">Datei wurde gelöscht</string>
-  <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\n Das Mikrofon wird eventuell verwendet.</string>
+  <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\nDas Mikrofon wird eventuell verwendet.</string>
   <string name="view_recordings">Aufnahmen anzeigen</string>
 </resources>
