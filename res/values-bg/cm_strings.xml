@@ -21,7 +21,7 @@
   <string name="save">Запиши</string>
   <string name="error_app_unsupported">Неподдържан формат.</string>
   <string name="error_mediadb_incall">Тази опция не се поддържа по време на разговор.</string>
-  <string name="error_mediadb_aacincall">AAC запис на разговор не се поддържа.</string>
+  <string name="error_mediadb_aacincall">Запис на разговор в AAC формат не се поддържа.</string>
   <string name="in_call_record_error">Записването не се поддържа по време на разговор.</string>
   <string name="format_setting">Тип на файла</string>
   <string name="storage_setting">Място на съхранение</string>
