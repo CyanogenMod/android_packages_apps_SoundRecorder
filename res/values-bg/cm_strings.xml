@@ -21,7 +21,7 @@
   <string name="save">Запиши</string>
   <string name="error_app_unsupported">Неподдържан формат.</string>
   <string name="error_mediadb_incall">Тази опция не се поддържа по време на разговор.</string>
-  <string name="error_mediadb_aacincall">AAC запис на разговор не се поддържа.</string>
+  <string name="error_mediadb_aacincall">Запис на разговор в AAC формат не се поддържа.</string>
   <string name="format_setting">Тип на файла</string>
   <string name="storage_setting">Място на съхранение</string>
   <string name="storage_setting_sdcard_item">SD карта</string>
@@ -35,10 +35,10 @@
   <string name="perm_mic">Звуков запис изисква достъп до микрофон за запис на аудио.</string>
   <string name="perm_storage">Звуков запис изисква достъп до място за съхранение за запазване на записаните файлове.</string>
   <string name="perm_phone">Звуков запис необходим достъп до телефонен статус за да предотврати запис, докато Вие се обаждате.</string>
-  <string name="perm_micstorage">Звуков запис изисква достъп до микрофон и място за съхранение за запис аудио и съхранение на записаните файлове.</string>
+  <string name="perm_micstorage">Звуков запис изисква достъп до микрофон за запис на аудио и място за съхранение на записаните файлове.</string>
   <string name="perm_micphone">Звуков запис изисква достъп до микрофон и телефонен статус за да предотврати запис, докато Вие се обаждате.</string>
   <string name="perm_storagephone">Звуков запис изисква достъп до място за съхранение и телефонен статус за да предотврати запис, докато Вие се обаждате.</string>
-  <string name="perm_allperms">Звуков запис изисква достъп до микрофон за запис на звук, място за съхранение за запис на записа и телефонен статус за да предотврати запис, докато Вие се обаждате.</string>
+  <string name="perm_allperms">Звуков запис изисква достъп до микрофон за запис на звук, място за съхранение на записа и телефонен статус за да предотврати запис, докато Вие се обаждате.</string>
   <string name="perm_unknown">Грешка в разрешенията, проверете статута на разрешенията в настройките на приложението.</string>
   <string name="ask_again">Попитай отново</string>
   <string name="dismiss">Отхвърли</string>
@@ -46,5 +46,5 @@
   <string name="error_storage_access" product="nosdcard">Няма достъп до USB съхранение. Уверете се, че Звуков запис има разрешение за достъп на съхраняване</string>
   <string name="error_storage_access" product="default">Няма достъп до SD карта. Уверете се, че Звуков запис има разрешение за достъп на съхраняване</string>
   <string name="in_call_record_error">Записването не е позволено по време на разговор.</string>
-  <string name="button_menu">Повече опции</string>
+  <string name="button_menu">Още опции</string>
 </resources>

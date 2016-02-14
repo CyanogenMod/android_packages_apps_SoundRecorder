@@ -31,4 +31,20 @@
   <string name="file_deleted">Lêer is verwyder</string>
   <string name="error_app_internal_recorder">Interne program fout.\n\nDie Mikrofoon mag in gebruik wees.</string>
   <string name="view_recordings">Wys opnames</string>
+  <string name="denied_title">Toestemmings</string>
+  <string name="perm_mic">Klankopnemer het mikrofoon toegang nodig om oudio op te neem.</string>
+  <string name="perm_storage">Klankopnemer het stoor spasie toegang nodig om opnemings te stoor.</string>
+  <string name="perm_phone">Klankopnemer het foon status toegang nodig om te voorkom dat hierdie toep jou opneem terwyl jy bel.</string>
+  <string name="perm_micstorage">Klankopnemer het mikrofoon toegang nodig om oudio op te neem en stoor spasie toegang nodig om leërs te stoor.</string>
+  <string name="perm_micphone">Klankopnemer het mikrofoon toegang om oudio op te neem en foon status toegang om te verhoed dat hierdie toep jou oproep opneem terwyl jy bel.</string>
+  <string name="perm_storagephone">Klankopnemer het stoor spasie toegang nodig om leërs te stoor en foon status toegang om te verhoed dat hierdie toep jou oproep opneem terwyl jy bel.</string>
+  <string name="perm_allperms">Klankopnemer het mikrofoon toegang nodig om oudio op te neem, stoor spasie toegang nodig om leërs te stoor en foon status toegang om te verhoed dat hierdie toep jou oproep opneem terwyl jy bel.</string>
+  <string name="perm_unknown">Toestemming fout, kyk toestemming status in Instellings toep.</string>
+  <string name="ask_again">Vra weer</string>
+  <string name="dismiss">Verwyder</string>
+  <string name="perm_toast">Nodige magtiging geweier, aktiveer hulle vanaf Instellings toep om die opname te begin</string>
+  <string name="error_storage_access" product="nosdcard">Kan nie toegang verkry na USB. Maak seker Klankopnemer het toestemming na die stoor spasie</string>
+  <string name="error_storage_access" product="default">Kan nie toegang verkry na SD-Kaart. Maak seker Klankopnemer het toestemming na die stoor spasie</string>
+  <string name="in_call_record_error">Opneming word nie toegelaat gedurende \'n oproep nie.</string>
+  <string name="button_menu">Meer opsies</string>
 </resources>
