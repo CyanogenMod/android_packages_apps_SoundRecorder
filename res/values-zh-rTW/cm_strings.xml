@@ -31,4 +31,20 @@
   <string name="file_deleted">已刪除檔案</string>
   <string name="error_app_internal_recorder">應用程式內部錯誤。\n\n麥克風可能正在使用。</string>
   <string name="view_recordings">查看錄音</string>
+  <string name="denied_title">權限</string>
+  <string name="perm_mic">錄音程式需要存取麥克風以錄製音訊。</string>
+  <string name="perm_storage">錄音程式需要存取儲存空間以儲存錄音檔案。</string>
+  <string name="perm_phone">錄音程式需要存取手機狀態，以避免程式在您通話時錄音。</string>
+  <string name="perm_micstorage">錄音程式需要存取麥克風和儲存空間，以錄製並儲存音訊檔案。</string>
+  <string name="perm_micphone">錄音程式需要存取麥克風和手機狀態，以錄製音訊檔案並避免程式在您通話時錄音。</string>
+  <string name="perm_storagephone">錄音程式需要存取儲存空間和手機狀態，以儲存音訊檔案並避免程式在您通話時錄音。</string>
+  <string name="perm_allperms">錄音程式需要存取麥克風、儲存空間和手機狀態，以錄製和儲存音訊檔案並避免在您通話時錄音。</string>
+  <string name="perm_unknown">權限錯誤，請在設定中檢查權限狀態。</string>
+  <string name="ask_again">再次詢問</string>
+  <string name="dismiss">忽略</string>
+  <string name="perm_toast">所需權限被拒，請在設定中啟用以開始錄音。</string>
+  <string name="error_storage_access" product="nosdcard">無法存取 USB 儲存空間，請確保錄音程式有權限存取儲存空間。</string>
+  <string name="error_storage_access" product="default">無法存取 SD 卡，請確保錄音程式有權限存取儲存空間。</string>
+  <string name="in_call_record_error">通話時不允許錄音。</string>
+  <string name="button_menu">更多選項</string>
 </resources>

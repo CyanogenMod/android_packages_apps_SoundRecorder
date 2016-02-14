@@ -31,4 +31,8 @@
   <string name="file_deleted">Datoteka je izbrisana</string>
   <string name="error_app_internal_recorder">Interna pogreška aplikacije.\n\nMikrofon je možda u uporabi.</string>
   <string name="view_recordings">Pregledaj snimke</string>
+  <string name="denied_title">Dopuštenja</string>
+  <string name="ask_again">Pitaj opet</string>
+  <string name="dismiss">Odbaci</string>
+  <string name="in_call_record_error">Snimanje nije dopušteno tijekom poziva.</string>
 </resources>

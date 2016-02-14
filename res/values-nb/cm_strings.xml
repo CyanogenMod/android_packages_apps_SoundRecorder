@@ -34,4 +34,5 @@
   <string name="denied_title">Tillatelser</string>
   <string name="ask_again">Spør igjen</string>
   <string name="dismiss">Avvis</string>
+  <string name="button_menu">Flere alternativer</string>
 </resources>

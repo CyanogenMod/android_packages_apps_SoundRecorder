@@ -46,4 +46,5 @@
   <string name="error_storage_access" product="nosdcard">USB 저장소에 접근할 수 없습니다. Sound Recorder가 저장소 접근 권한이 있는지 확인하세요</string>
   <string name="error_storage_access" product="default">SD 카드에 접근할 수 없습니다. Sound Recorder가 저장소 접근 권한이 있는지 확인하세요</string>
   <string name="in_call_record_error">통화 중 녹음은 허용되지 않습니다.</string>
+  <string name="button_menu">기타 옵션</string>
 </resources>
