@@ -634,30 +634,21 @@ public class SoundRecorder extends Activity
     private void showPermsDialog() {
         String mPermDialogMessage = getString(R.string.perm_unknown);
         int mPermError = 0;
-        /**
-         * mPermError values
-         * 1 = Microphone
-         * 2 = Storage
-         * 5 = Phone Status
-         * 3 = 1+2
-         * 6 = 1+5
-         * 7 = 2+5
-         * 8 = 1+2+5
-         */
+
         int hasMicPerm = checkSelfPermission(Manifest.permission.RECORD_AUDIO);
         int hasStoragePerm = checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE);
         int hasPhonePerm = checkSelfPermission(Manifest.permission.READ_PHONE_STATE);
 
         if (hasMicPerm != PackageManager.PERMISSION_GRANTED) {
-            mPermError += 1;
+            mPermError |= 1 << 0;
             Log.e(TAG, "Microphone permission not granted!");
         }
         if (hasStoragePerm != PackageManager.PERMISSION_GRANTED) {
-            mPermError += 2;
+            mPermError |= 1 << 1;
             Log.e(TAG, "Storage permission not granted!");
         }
         if (hasPhonePerm != PackageManager.PERMISSION_GRANTED) {
-            mPermError += 5;
+            mPermError |= 1 << 2;
             Log.e(TAG, "Phone Status permission not granted!");
         }
 
@@ -672,16 +663,16 @@ public class SoundRecorder extends Activity
             case 3:
                 mPermDialogMessage = getString(R.string.perm_micstorage);
                 break;
-            case 5:
+            case 4:
                 mPermDialogMessage = getString(R.string.perm_phone);
                 break;
-            case 6:
+            case 5:
                 mPermDialogMessage = getString(R.string.perm_micphone);
                 break;
-            case 7:
+            case 6:
                 mPermDialogMessage = getString(R.string.perm_storagephone);
                 break;
-            case 8:
+            case 7:
                 mPermDialogMessage = getString(R.string.perm_allperms);
                 break;
         }
