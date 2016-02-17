@@ -67,6 +67,7 @@ import android.view.ContextThemeWrapper;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.view.Menu;
@@ -1164,9 +1165,13 @@ public class SoundRecorder extends Activity
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
-        if (!mRemainingTimeCalculator.hasExternalStorage()) {
-            menu.removeItem(R.id.menu_item_storage);
-        }
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
+        super.onPrepareOptionsMenu(menu);
+        Log.i(TAG, "onPrepareOptionsMenu");
 
         // Remove view recordings if there isn't an activity that can handle it
         Uri startDir = Uri.fromFile(Environment.getExternalStorageDirectory());
@@ -1177,16 +1182,13 @@ public class SoundRecorder extends Activity
         if (info.size() == 0) {
             menu.removeItem(R.id.menu_item_view_recordings);
         }
-        return super.onCreateOptionsMenu(menu);
-    }
 
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        super.onPrepareOptionsMenu(menu);
         menu.findItem(R.id.menu_item_keyboard).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
         menu.findItem(R.id.menu_item_filetype).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
         if (mRemainingTimeCalculator.hasExternalStorage()) {
             menu.findItem(R.id.menu_item_storage).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
+        } else {
+            menu.removeItem(R.id.menu_item_storage);
         }
         if (SystemProperties.getBoolean("debug.soundrecorder.enable", false)) {
             menu.findItem(R.id.menu_item_keyboard).setVisible(true);
