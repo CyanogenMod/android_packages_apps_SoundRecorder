@@ -22,7 +22,7 @@
   <string name="error_app_unsupported">Неподдерживаемый формат.</string>
   <string name="error_mediadb_incall">Этот параметр не поддерживается во время вызова.</string>
   <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается.</string>
-  <string name="in_call_record_error">Запись не поддерживается во время вызова.</string>
+  <string name="in_call_record_error">Запись во время вызова не поддерживается.</string>
   <string name="format_setting">Тип файла</string>
   <string name="storage_setting">Место хранения</string>
   <string name="storage_setting_sdcard_item">SD-карта</string>
