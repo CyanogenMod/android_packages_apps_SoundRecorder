@@ -17,12 +17,12 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Angehalten</string>
-  <string name="recording_finished">Aufnahme abgeschlossen</string>
+  <string name="recording_finished">Aufzeichnung abgeschlossen</string>
   <string name="save">Speichern</string>
-  <string name="error_app_unsupported">Format nicht unterstützt.</string>
+  <string name="error_app_unsupported">Nicht unterstütztes Format.</string>
   <string name="error_mediadb_incall">Diese Option wird während eines Anrufs nicht unterstützt.</string>
-  <string name="error_mediadb_aacincall">Die Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
-  <string name="in_call_record_error">Aufnahme wird während eines Anrufs nicht unterstützt.</string>
+  <string name="error_mediadb_aacincall">Die Aufzeichnung von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
+  <string name="in_call_record_error">Aufzeichnung wird während eines Anrufs nicht unterstützt.</string>
   <string name="format_setting">Dateityp</string>
   <string name="storage_setting">Speicherort</string>
   <string name="storage_setting_sdcard_item">SD-Karte</string>

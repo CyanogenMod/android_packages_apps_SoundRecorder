@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">В пауза</string>
+  <string name="recording_paused">На пауза</string>
   <string name="recording_finished">Записването завърши</string>
   <string name="save">Запиши</string>
   <string name="error_app_unsupported">Неподдържан формат.</string>
