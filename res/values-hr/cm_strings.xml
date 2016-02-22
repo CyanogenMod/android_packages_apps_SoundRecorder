@@ -32,7 +32,19 @@
   <string name="error_app_internal_recorder">Interna pogreška aplikacije.\n\nMikrofon je možda u uporabi.</string>
   <string name="view_recordings">Pregledaj snimke</string>
   <string name="denied_title">Dopuštenja</string>
+  <string name="perm_mic">Snimač zvuka treba pristup mikrofonu za snimanje zvuka.</string>
+  <string name="perm_storage">Snimač zvuka treba pristup pohrani za spremanje snimljenih datoteka.</string>
+  <string name="perm_phone">Snimač zvuka treba pristup stanju telefona za spriječavanje aplikacije da snima dok pozivate.</string>
+  <string name="perm_micstorage">Snimač zvuka treba pristup mikrofonu za snimanje zvuka i pohrani za spremanje snimljenih datoteka.</string>
+  <string name="perm_micphone">Snimač zvuka treba pristup mikrofonu za snimanje zvuka i pristup stanju telefona za spriječavanje aplikacije da snima dok pozivate.</string>
+  <string name="perm_storagephone">Snimač zvuka treba pristup pohrani za spremanje snimljenih datoteka i pristup stanju telefona za spriječavanje aplikacije da snima dok pozivate.</string>
+  <string name="perm_allperms">Snimač zvuka treba pristup mikrofonu za snimanje zvuka, pohrani za spremanje snimljenih datoteka i pristup stanju telefona za spriječavanje aplikacije da snima dok pozivate.</string>
+  <string name="perm_unknown">Pogreška dozvole, provjerite status dozvole u aplikaciji Postavke.</string>
   <string name="ask_again">Pitaj opet</string>
   <string name="dismiss">Odbaci</string>
+  <string name="perm_toast">Potrebne dozvole su odbijene, omogućite ih u Postavkama za početak snimanja</string>
+  <string name="error_storage_access" product="nosdcard">Nije moguće pristupiti USB pohrani. Provjerite da li Snimač zvuka ima dozvolu za pristup pohrani</string>
+  <string name="error_storage_access" product="default">Nije moguće pristupiti SD kartici. Provjerite da li Snimač zvuka ima dozvolu za pristup pohrani</string>
   <string name="in_call_record_error">Snimanje nije dopušteno tijekom poziva.</string>
+  <string name="button_menu">Više mogućnosti</string>
 </resources>
