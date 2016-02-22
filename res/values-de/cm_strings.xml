@@ -17,11 +17,11 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <string name="recording_paused">Angehalten</string>
-  <string name="recording_finished">Aufnahme abgeschlossen</string>
+  <string name="recording_finished">Aufzeichnung abgeschlossen</string>
   <string name="save">Speichern</string>
-  <string name="error_app_unsupported">Format nicht unterstützt.</string>
+  <string name="error_app_unsupported">Nicht unterstütztes Format.</string>
   <string name="error_mediadb_incall">Diese Option wird während eines Anrufs nicht unterstützt.</string>
-  <string name="error_mediadb_aacincall">Die Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
+  <string name="error_mediadb_aacincall">Die Aufzeichnung von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
   <string name="format_setting">Dateityp</string>
   <string name="storage_setting">Speicherort</string>
   <string name="storage_setting_sdcard_item">SD-Karte</string>
@@ -30,21 +30,21 @@
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">Datei wurde gelöscht</string>
   <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\nDas Mikrofon wird eventuell verwendet.</string>
-  <string name="view_recordings">Aufnahmen anzeigen</string>
+  <string name="view_recordings">Aufzeichnungen anzeigen</string>
   <string name="denied_title">Berechtigungen</string>
   <string name="perm_mic">Soundrecorder benötigt Zugriff auf das Mikrofon, um Ton aufzunehmen.</string>
   <string name="perm_storage">Soundrecorder benötigt Zugriff auf den Speicher, um aufgezeichnete Dateien zu speichern.</string>
-  <string name="perm_phone">Soundrekorder benötigt Zugriff auf den Telefon-Status, damit keine Aufnahme erstellt wird, während Sie telefonieren.</string>
+  <string name="perm_phone">Soundrekorder benötigt Zugriff auf den Telefon-Status, um zu verhindern, dass diese App Ihre Anrufe aufzeichnet.</string>
   <string name="perm_micstorage">Soundrekorder benötigt Zugriff auf das Mikrofon, um Aufnahmen zu erstellen und Speicherzugriff, um aufgezeichnete Dateien zu sichern.</string>
   <string name="perm_micphone">Soundrekorder benötigt Zugriff auf das Mikrofon, um Aufnahmen zu erstellen und Zugriff auf den Telefon-Status, um zu verhindern, dass diese App Aufzeichnungen erstellt, während Sie telefonieren.</string>
-  <string name="perm_storagephone">Soundrecorder benötigt Zugriff auf den Speicher, um aufgezeichnete Dateien zu sichern und Zugriff auf den Telefon-Status, damit keine Aufnahme erstellt wird, während Sie telefonieren.</string>
-  <string name="perm_allperms">Soundrekorder benötigt Zugriff auf das Mikrofon, um Aufnahmen zu erstellen, Speicherzugriff, um aufgezeichnete Dateien zu speichern und Zugang zum Telefon-Status, um zu verhindern, dass diese App etwas aufzeichnet, während Sie telefonieren.</string>
+  <string name="perm_storagephone">Soundrecorder benötigt Zugriff auf den Speicher, um aufgezeichnete Dateien zu sichern und Zugriff auf den Telefon-Status, damit von dieser App keine Aufnahme erstellt wird, während Sie telefonieren.</string>
+  <string name="perm_allperms">Soundrekorder benötigt Zugriff auf das Mikrofon, um Aufnahmen zu erstellen, Speicherzugriff, um aufgezeichnete Dateien zu speichern und Zugriff auf den Telefon-Status, damit von dieser App keine Aufnahme erstellt wird, während Sie telefonieren.</string>
   <string name="perm_unknown">Berechtigungsfehler, überprüfen Sie die Berechtigungen in den Einstellungen.</string>
   <string name="ask_again">Erneut nachfragen</string>
   <string name="dismiss">Verwerfen</string>
   <string name="perm_toast">Erforderliche Berechtigungen wurden verweigert, aktivieren Sie diese in den Einstellungen, um mit der Aufnahme zu beginnen</string>
-  <string name="error_storage_access" product="nosdcard">Kein Zugriff auf USB-Speicher möglich. Stellen Sie sicher, dass Soundrekorder die Berechtigung hat, auf den Speicher zuzugreifen</string>
-  <string name="error_storage_access" product="default">Kein Zugriff auf SD-Karte möglich. Stellen Sie sicher, dass Soundrekorder die Berechtigung hat, auf den Speicher zuzugreifen</string>
-  <string name="in_call_record_error">Aufnahmen sind während eines Anrufs nicht erlaubt.</string>
+  <string name="error_storage_access" product="nosdcard">Kein Zugriff auf USB-Speicher möglich. Stellen Sie sicher, dass Soundrekorder die Berechtigung hat, auf den Speicher zuzugreifen.</string>
+  <string name="error_storage_access" product="default">Kein Zugriff auf SD-Karte möglich. Stellen Sie sicher, dass Soundrekorder die Berechtigung hat, auf den Speicher zuzugreifen.</string>
+  <string name="in_call_record_error">Aufzeichnungen sind während eines Anrufs nicht erlaubt.</string>
   <string name="button_menu">Weitere Optionen</string>
 </resources>

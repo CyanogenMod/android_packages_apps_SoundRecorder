@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">В пауза</string>
+  <string name="recording_paused">На пауза</string>
   <string name="recording_finished">Записването завърши</string>
   <string name="save">Запиши</string>
   <string name="error_app_unsupported">Неподдържан формат.</string>
@@ -24,7 +24,7 @@
   <string name="error_mediadb_aacincall">Запис на разговор в AAC формат не се поддържа.</string>
   <string name="format_setting">Тип на файла</string>
   <string name="storage_setting">Място на съхранение</string>
-  <string name="storage_setting_sdcard_item">SD карта</string>
+  <string name="storage_setting_sdcard_item">Карта памет</string>
   <string name="storage_setting_local_item">Вградена памет</string>
   <string name="no_phonestorage">Вградената памет е недостъпна</string>
   <string name="keyboard">Клавиатура</string>
@@ -43,8 +43,8 @@
   <string name="ask_again">Попитай отново</string>
   <string name="dismiss">Отхвърли</string>
   <string name="perm_toast">Необходимите разрешения са отказани, разрешете ги от настройките на приложението и започнете запис</string>
-  <string name="error_storage_access" product="nosdcard">Няма достъп до USB съхранение. Уверете се, че Звуков запис има разрешение за достъп на съхраняване</string>
-  <string name="error_storage_access" product="default">Няма достъп до SD карта. Уверете се, че Звуков запис има разрешение за достъп на съхраняване</string>
+  <string name="error_storage_access" product="nosdcard">Няма достъп до USB памета. Уверете се, че приложението има необходимите разрешения за достъп</string>
+  <string name="error_storage_access" product="default">Няма достъп до картата памет. Уверете се, че приложението има необходимите разрешения за достъп</string>
   <string name="in_call_record_error">Записването не е позволено по време на разговор.</string>
   <string name="button_menu">Още опции</string>
 </resources>
