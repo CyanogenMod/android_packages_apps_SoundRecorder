@@ -66,4 +66,7 @@
     <string name="in_call_record_error">Recording is not allowed during a call.</string>
 
     <string name="button_menu">More options</string>
+
+    <string name="notification_title">Recording audio</string>
+    <string name="notification_content">Sound Recorder is recording\u2026</string>
 </resources>
