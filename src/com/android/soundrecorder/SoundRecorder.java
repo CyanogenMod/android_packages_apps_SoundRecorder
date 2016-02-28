@@ -28,6 +28,9 @@ import android.animation.Animator;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.ActivityNotFoundException;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -371,15 +374,15 @@ public class SoundRecorder extends Activity
             public void onCallStateChanged(int state, String ignored) {
                 switch (state) {
                     case TelephonyManager.CALL_STATE_IDLE:
-                        if ((sOldCallState == TelephonyManager.CALL_STATE_OFFHOOK)
+                        if ((sOldCallState != TelephonyManager.CALL_STATE_IDLE)
                                  && !(mAudioSourceType == MediaRecorder.AudioSource.MIC)) {
-                           sOldCallState = TelephonyManager.CALL_STATE_IDLE;
-                           mRecordHandler.sendEmptyMessage(STOP);
-                           mAudioSourceType = MediaRecorder.AudioSource.MIC;
+                            sOldCallState = TelephonyManager.CALL_STATE_IDLE;
+                            mRecordHandler.sendEmptyMessage(STOP);
+                            mAudioSourceType = MediaRecorder.AudioSource.MIC;
                         }
                         break;
-
                     case TelephonyManager.CALL_STATE_OFFHOOK:
+                        pauseForCall();
                         sOldCallState = TelephonyManager.CALL_STATE_OFFHOOK;
                         break;
 
@@ -726,6 +729,15 @@ public class SoundRecorder extends Activity
         for(int i = 0; i < mPhoneCount; i++) {
             mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_CALL_STATE);
         }
+
+        int state = mRecorder.state();
+
+        // If we're recording, clear the notification
+        if (state == Recorder.RECORDING_STATE) {
+            NotificationManager notificationManager =
+                (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationManager.cancel(0);
+        }
     }
 
     @Override
@@ -798,6 +810,44 @@ public class SoundRecorder extends Activity
         });
 
         mPlayButton.setVisibility(View.GONE);
+    }
+
+    private void pauseForCall() {
+        if (mRecorder.state() == Recorder.RECORDING_STATE) {
+            // Stop recording
+            mRecordHandler.sendEmptyMessage(STOP_RECORDING);
+            mUiHandler.post(mUpdateUiRunnable);
+
+            // Clear recording notification
+            NotificationManager notificationManager =
+                (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationManager.cancel(0);
+
+            // Notify user recording has been paused
+            Intent notifIntent = new Intent(this, SoundRecorder.class)
+                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                        Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                .setAction(Intent.ACTION_MAIN)
+                .addCategory(Intent.CATEGORY_LAUNCHER);
+            PendingIntent pendingNotifIntent = PendingIntent.getActivity(this,
+                0, notifIntent, 0);
+
+            Notification notification = new Notification.Builder(this)
+                .setContentTitle(getString(R.string.notification_paused_title))
+                .setContentText(getString(R.string.notification_paused_content))
+                .setStyle(new Notification.BigTextStyle()
+                                      .bigText(getString(R.string.notification_paused_content)))
+                .setContentIntent(pendingNotifIntent)
+                .setSmallIcon(R.drawable.record_disabled)
+                .build();
+
+            NotificationManager notificationmanager = (NotificationManager)
+                getSystemService(NOTIFICATION_SERVICE);
+
+            notificationmanager.notify(0, notification);
+        } else {
+            return;
+        }
     }
 
     /*
@@ -1417,23 +1467,35 @@ public class SoundRecorder extends Activity
 
     @Override
     public void onStop() {
-        mRecordHandler.removeCallbacksAndMessages(null);
-        mRecordHandler.sendEmptyMessage(STOP);
-        stopRecorderThread();
-        super.onStop();
-    }
+        int state = mRecorder.state();
 
-    @Override
-    protected void onPause() {
-        // Stop listening for phone state changes.
-        for(int i = 0; i < mPhoneCount; i++) {
-            mTelephonyManager.listen(mPhoneStateListener[i], PhoneStateListener.LISTEN_NONE);
+        // If we're recording, create a notification that reminders user we're not done
+        if (state == Recorder.RECORDING_STATE) {
+            Intent notifIntent = new Intent(this, SoundRecorder.class)
+                .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |
+                    Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                .setAction(Intent.ACTION_MAIN)
+                .addCategory(Intent.CATEGORY_LAUNCHER);
+            PendingIntent pendingNotifIntent = PendingIntent.getActivity(this,
+                0, notifIntent, 0);
+
+            Notification notification = new Notification.Builder(this)
+                .setContentTitle(getString(R.string.notification_title))
+                .setContentText(getString(R.string.notification_content))
+                .setStyle(new Notification.BigTextStyle()
+                                      .bigText(getString(R.string.notification_paused_content)))
+                .setContentIntent(pendingNotifIntent)
+                .setSmallIcon(R.drawable.record)
+                .setOngoing(true)
+                .build();
+
+            NotificationManager notificationmanager = (NotificationManager)
+                getSystemService(NOTIFICATION_SERVICE);
+
+            notificationmanager.notify(0, notification);
         }
-        mSampleInterrupted = mRecorder.state() == Recorder.RECORDING_STATE;
-        mRecordHandler.removeCallbacksAndMessages(null);
-        mRecordHandler.sendEmptyMessage(STOP);
-        mAudioManager.abandonAudioFocus(mAudioFocusListener);
-        super.onPause();
+
+        super.onStop();
     }
 
     private void startRecordingAMR() {
