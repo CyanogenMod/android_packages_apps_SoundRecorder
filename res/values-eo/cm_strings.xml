@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Paŭzita</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Registrado finita</string>
+  <!-- Button to save the current recording -->
   <string name="save">Konservi</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nesubtenata dosierformo.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Tiu opcio ne estas subtenata dum la alvoko.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Registrado de AAC alvoko ne estas subtenata.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Dosierformo</string>
   <string name="storage_setting">Loko de memorilo</string>
   <string name="storage_setting_sdcard_item">SD-karto</string>
@@ -29,6 +36,10 @@
   <string name="no_phonestorage">Telefona memoro ne estas muntita</string>
   <string name="keyboard">Klavaro</string>
   <string name="file_deleted">Dosiero estis forigita</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Interna eraro de la aplikaĵo.\n\nEble la mikrofono jam estas uzata.</string>
   <string name="view_recordings">Vidi registraĵojn</string>
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>

@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pausado</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">A gravação terminou</string>
+  <!-- Button to save the current recording -->
   <string name="save">Salvar</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formato não suportado.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Esta opção não é suportada durante uma chamada.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Gravação de chamada de voz em AAC não é suportada.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo de arquivo</string>
   <string name="storage_setting">Local de armazenamento</string>
   <string name="storage_setting_sdcard_item">Cartão SD</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Armazenamento do telefone está desmontado</string>
   <string name="keyboard">Teclado</string>
   <string name="file_deleted">O arquivo foi apagado</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Erro interno da aplicação.\n\nO microfone pode estar em uso.</string>
   <string name="view_recordings">Exibir gravações</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Permissões</string>
   <string name="perm_mic">Gravador de som precisa de acesso ao microfone para gravar áudio.</string>
   <string name="perm_storage">Gravador de som precisa de acesso de armazenamento para salvar os arquivos gravados.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Pergunte de novo</string>
   <string name="dismiss">Descartar</string>
   <string name="perm_toast">As permissões necessárias foram negadas, ative-as no app Configurações para iniciar a gravação</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Não é possível acessar o armazenamento USB. Certifique-se de que o Gravador de Som tem permissão para acessar o armazenamento</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Não é possível acessar o cartão SD. Certifique-se de que Gravador de Som tenha permissão para acessar o armazenamento</string>
   <string name="in_call_record_error">A gravação não é permitida durante uma ligação.</string>
   <string name="button_menu">Mais opções</string>

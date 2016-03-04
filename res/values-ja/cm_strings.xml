@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">一時停止中</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">録音が終了しました</string>
+  <!-- Button to save the current recording -->
   <string name="save">保存</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">サポートされていないフォーマットです。</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">このオプションは通話中にはサポートされていません。</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ACCの音声通話録音はサポートされていません。</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ファイル形式</string>
   <string name="storage_setting">ストレージの場所</string>
   <string name="storage_setting_sdcard_item">SDカード</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">携帯電話のストレージがマウントされていません</string>
   <string name="keyboard">キーボード</string>
   <string name="file_deleted">ファイルが削除されました</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">内部アプリケーションエラーです。\n\nマイクが使用中の可能性があります。</string>
   <string name="view_recordings">録音を表示</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">権限</string>
   <string name="perm_mic">音声レコーダーは音声を録音するためにマイクへのアクセスを必要とします。</string>
   <string name="perm_storage">音声レコーダーは録音したファイルを保存するためにストレージへのアクセスを必要とします。</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">次回も表示する</string>
   <string name="dismiss">閉じる</string>
   <string name="perm_toast">必要な権限が拒否されました、録音を開始するには設定アプリから権限を有効にしてください。</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">USBストレージにアクセスできません。音声レコーダーにストレージへのアクセス権限が与えられていることを確認してください。</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">SDカードにアクセスできません。音声レコーダーにストレージへのアクセス権限が与えられていることを確認してください。</string>
   <string name="in_call_record_error">通話中の録音は許可されていません。</string>
   <string name="button_menu">その他のオプション</string>
