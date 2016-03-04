@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-  <string name="recording_paused">Onderbroken</string>
+  <!-- Label shown when recording is paused -->
+  <string name="recording_paused">Gepauzeerd</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Opname voltooid</string>
+  <!-- Button to save the current recording -->
   <string name="save">Opslaan</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formaat niet ondersteund.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Niet ondersteund tijdens gesprek.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Bestandstype</string>
   <string name="storage_setting">Opslaglocatie</string>
   <string name="storage_setting_sdcard_item">SD-kaart</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Telefoonopslag ontkoppeld</string>
   <string name="keyboard">Toetsenbord</string>
   <string name="file_deleted">Bestand verwijderd</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Interne app-fout.\n\nMicrofoon mogelijk in gebruik.</string>
   <string name="view_recordings">Opnamen bekijken</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Machtigingen</string>
   <string name="perm_mic">Geluidsrecorder heeft toegang tot de microfoon nodig om geluid op te kunnen nemen.</string>
   <string name="perm_storage">Geluidsrecorder heeft toegang nodig tot de opslag om bestanden op te kunnen slaan.</string>
@@ -43,7 +52,10 @@
   <string name="ask_again">Opnieuw vragen</string>
   <string name="dismiss">Weggooien</string>
   <string name="perm_toast">Vereiste machtigingen werden geweigerd, schakel ze in in Instellingen om opname te starten</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Geen toegang tot USB-opslag. Zorg ervoor dat Geluidsrecorder de machtiging heeft voor toegang tot de opslag</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Geen toegang tot SD-kaart. Zorg ervoor dat Geluidsrecorder de machtiging heeft voor toegang tot de opslag</string>
   <string name="in_call_record_error">Opnemen niet toegestaan tijdens een oproep.</string>
+  <string name="button_menu">Meer opties</string>
 </resources>

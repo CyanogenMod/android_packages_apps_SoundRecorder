@@ -16,9 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">En pausa</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Gravación rematada</string>
+  <!-- Button to save the current recording -->
   <string name="save">Gardar</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Esta opción non está dispoñíbel durante unha chamada.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">A grabación AAC da chamada non é compatíbel.</string>
+  <!-- shown as the dialog title when user selects recording format -->
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>

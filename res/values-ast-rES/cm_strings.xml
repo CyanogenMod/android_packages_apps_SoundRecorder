@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Posáu</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Grabación finalizada</string>
+  <!-- Button to save the current recording -->
   <string name="save">Guardar</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formatu non sofitáu.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Esta opción nun tien sofitu mientres una llamada.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La grabación AAC de llamada nun ta sofitada.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipu de ficheru</string>
   <string name="storage_setting">Llugar d\'almacenamientu</string>
   <string name="storage_setting_sdcard_item">Tarxeta SD</string>
@@ -29,6 +36,10 @@
   <string name="no_phonestorage">Almac. teléfonu desmontáu</string>
   <string name="keyboard">Tecláu</string>
   <string name="file_deleted">Desanicióse\'l ficheru</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Fallu internu de l\'aplicación.\n\nEl micrófonu pue tar n\'usu.</string>
   <string name="view_recordings">Ver grabaciones</string>
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>

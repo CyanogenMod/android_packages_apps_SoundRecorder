@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">En pausa</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Grabación finalizada</string>
+  <!-- Button to save the current recording -->
   <string name="save">Guardar</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formato no compatible.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Esta opción no es compatible durante una llamada.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La grabación AAC de llamada no es compatible.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo de archivo</string>
   <string name="storage_setting">Lugar de almacenamiento</string>
   <string name="storage_setting_sdcard_item">Tarjeta SD</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Memoria interna desmontada</string>
   <string name="keyboard">Teclado</string>
   <string name="file_deleted">El archivo ha sido eliminado</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Error interno de la aplicación.\n\nEl micrófono puede estar en uso.</string>
   <string name="view_recordings">Ver grabaciones</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Permisos</string>
   <string name="perm_mic">La grabadora de sonidos necesita acceso al micrófono para grabar audio.</string>
   <string name="perm_storage">La grabadora de sonidos necesita acceso al almacenamiento para guardar archivos grabados.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Preguntar de nuevo</string>
   <string name="dismiss">Descartar</string>
   <string name="perm_toast">Los permisos necesarios se denegaron, actívalos desde la aplicación de Ajustes para iniciar la grabación</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">No se pudo acceder al almacenamiento USB. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">No se pudo acceder a la tarjeta SD. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
   <string name="in_call_record_error">No se permite la grabación durante una llamada.</string>
 </resources>

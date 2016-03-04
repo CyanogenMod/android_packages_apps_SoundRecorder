@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Đã t.dừng</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Ghi âm hoàn thành</string>
+  <!-- Button to save the current recording -->
   <string name="save">Lưu</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Định dạng không được hỗ trợ.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Tuỳ chọn này không được hỗ trợ khi đang gọi.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Ghi âm cuộc gọi thoại AAC không được hỗ trợ.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Loại tệp</string>
   <string name="storage_setting">Vị trí lưu trữ</string>
   <string name="storage_setting_sdcard_item">Thẻ nhớ</string>
@@ -29,6 +36,10 @@
   <string name="no_phonestorage">Đã ngắt kết nối bộ nhớ điện thoại</string>
   <string name="keyboard">Bàn phím</string>
   <string name="file_deleted">Tệp đã bị xoá</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Lỗi ứng dụng nội bộ.\n\nMicro đang được sử dụng.</string>
   <string name="view_recordings">Xem bản ghi âm</string>
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>

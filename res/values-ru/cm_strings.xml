@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Приостановлено</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Запись завершена</string>
+  <!-- Button to save the current recording -->
   <string name="save">Сохранить</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Неподдерживаемый формат.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Этот параметр не поддерживается во время вызова.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип файла</string>
   <string name="storage_setting">Место хранения</string>
   <string name="storage_setting_sdcard_item">SD-карта</string>
@@ -29,22 +36,26 @@
   <string name="no_phonestorage">Память телефона не подключена</string>
   <string name="keyboard">Клавиатура</string>
   <string name="file_deleted">Файл был удалён</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Внутренняя ошибка.\n\nВозможно, микрофон используется другим приложением.</string>
   <string name="view_recordings">Открыть папку записей</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Разрешения</string>
-  <string name="perm_mic">Звукозаписи требуется доступ к микрофону для записи аудио.</string>
-  <string name="perm_storage">Звукозаписи требуется доступ к хранилищу для сохранения записанных файлов.</string>
-  <string name="perm_phone">Звукозаписи требуется доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
-  <string name="perm_micstorage">Звукозаписи требуется доступ к микрофону и хранилищу для сохранения записанных файлов.</string>
-  <string name="perm_micphone">Звукозаписи требуется доступ к микрофону для записи аудио и к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
-  <string name="perm_storagephone">Звукозаписи требуется доступ к хранилищу для сохранения записанных файлов, и к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
-  <string name="perm_allperms">Звукозаписи требуется доступ к микрофону для записи аудио, к хранилищу для сохранения записанных файлов, и к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
-  <string name="perm_unknown">Ошибка разрешений, проверьте состояние разрешения в настройках.</string>
-  <string name="ask_again">Спрашивать вновь</string>
+  <string name="perm_mic">Программе Звукозапись требуется доступ к микрофону для аудиозаписи.</string>
+  <string name="perm_storage">Программе Звукозапись требуется доступ к хранилищу для сохранения записанных файлов.</string>
+  <string name="perm_phone">Приложению «Диктофон» требуется доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
+  <string name="perm_micstorage">Программе Звукозапись требуется доступ к микрофону для аудиозаписи и доступ к хранилищу для сохранения записанных файлов.</string>
+  <string name="perm_micphone">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
+  <string name="perm_storagephone">Приложению «Диктофон» требуется доступ к хранилищу для сохранения записанных файлов и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
+  <string name="perm_allperms">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи, доступ к хранилищу для сохранения записанных файлов и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
+  <string name="perm_unknown">Ошибка разрешений. Проверьте состояние разрешений в настройках.</string>
+  <string name="ask_again">Спрашивать снова</string>
   <string name="dismiss">Пропустить</string>
-  <string name="perm_toast">Отказано в разрешении, включите разрешение в настройках для начала записи</string>
-  <string name="error_storage_access" product="nosdcard">Не удается получить доступ к USB-накопителю. Убедитесь, что Звукозапись имеет разрешение на доступ к хранилищу</string>
+  <string name="perm_toast">Отказано в необходимых разрешениях. Включите их в настройках, чтобы начать запись</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Не удается получить доступ к USB-накопителю. Убедитесь, что звукозапись имеет разрешение на доступ к хранилищу</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Не удается получить доступ к SD-карте. Убедитесь, что Звукозапись имеет разрешение на доступ к хранилищу</string>
-  <string name="in_call_record_error">Запись аудио во время телефонного звонка невозможна.</string>
-  <string name="button_menu">Дополнительные функции</string>
+  <string name="in_call_record_error">Аудиозапись во время телефонного звонка запрещена.</string>
+  <string name="button_menu">Ещё</string>
 </resources>

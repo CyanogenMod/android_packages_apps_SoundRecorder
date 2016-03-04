@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pozastavené</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Nahrávanie dokončené</string>
+  <!-- Button to save the current recording -->
   <string name="save">Uložiť</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nepodporovaný formát.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Táto možnosť nie je podporovaná počas hovoru.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Nahrávanie hovoru do formátu AAC nie je podporované.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ súboru</string>
   <string name="storage_setting">Úložisko</string>
   <string name="storage_setting_sdcard_item">Karta SD</string>
@@ -29,6 +36,10 @@
   <string name="no_phonestorage">Úložisko telefónu je odpojené</string>
   <string name="keyboard">Klávesnica</string>
   <string name="file_deleted">Súbor bol vymazaný</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Vnútorná chyba aplikácie.\n\nMôžete použiť mikrofón.</string>
   <string name="view_recordings">Zobraziť nahrávky</string>
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>

@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Wstrzymano</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Nagrywanie zakończone</string>
+  <!-- Button to save the current recording -->
   <string name="save">Zapisz</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nieobsługiwany format.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Ta opcja nie jest obsługiwana podczas rozmowy.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Zapisywanie połączenia głosowego w formacie AAC jest nieobsługiwane.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ pliku</string>
   <string name="storage_setting">Miejsce przechowywania</string>
   <string name="storage_setting_sdcard_item">Karta pamięci</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Pamięć telefonu niezamontowana</string>
   <string name="keyboard">Klawiatura</string>
   <string name="file_deleted">Plik został usunięty</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Wewnętrzny błąd aplikacji.\n\nMikrofon może być w użyciu.</string>
   <string name="view_recordings">Zobacz nagrania</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Uprawnienia</string>
   <string name="perm_mic">Rejestrator dźwięku potrzebuje dostępu do mikrofonu w celu nagrywania dźwięku.</string>
   <string name="perm_storage">Rejestrator dźwięku potrzebuje dostępu do pamięci w celu zapisania nagranych plików.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Spytaj ponownie</string>
   <string name="dismiss">Odrzuć</string>
   <string name="perm_toast">Brak wymaganych uprawnień. Włącz je w Ustawieniach, aby rozpocząć nagrywanie</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Nie ma dostępu do pamięci USB. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Nie ma dostępu do karty SD. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
   <string name="in_call_record_error">Nagrywanie nie jest dozwolone w trakcie wykonywania połączenia.</string>
   <string name="button_menu">Więcej opcji</string>
