@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">In pausa</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Registrazione completata</string>
+  <!-- Button to save the current recording -->
   <string name="save">Salva</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formato non supportato.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Questa opzione non è disponibile durante una chiamata.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La registrazione della chiamata in formato AAC non è supportata.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo file</string>
   <string name="storage_setting">Posizione di memorizzazione</string>
   <string name="storage_setting_sdcard_item">Scheda SD</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Memoria del dispositivo non montata</string>
   <string name="keyboard">Tastiera</string>
   <string name="file_deleted">Il file è stato eliminato</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Errore interno dell\'app.\n\nIl microfono potrebbe essere in uso.</string>
   <string name="view_recordings">Vedi registrazioni</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Permessi</string>
   <string name="perm_mic">Registratore Suoni deve accedere al microfono per registrare audio.</string>
   <string name="perm_storage">Registratore Suoni deve accedere alla memoria per salvare le registrazioni.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Chiedi nuovamente</string>
   <string name="dismiss">Annulla</string>
   <string name="perm_toast">I permessi richiesti sono stati negati, abilitali dall\'app Impostazioni per iniziare a registrare</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Non riesco ad accedere alla memoria USB. Assicurati che Registratore Suoni disponga dei permessi per accedere alla memoria USB</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Non riesco ad accedere alla scheda SD. Assicurati che Registratore Suoni disponga dei permessi per accedere alla scheda SD</string>
   <string name="in_call_record_error">Impossibile registrare durante una chiamata.</string>
   <string name="button_menu">Altre opzioni</string>

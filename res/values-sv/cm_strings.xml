@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pausad</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Inspelningen slutförd</string>
+  <!-- Button to save the current recording -->
   <string name="save">Spara</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formatet stöds inte.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Detta alternativ stöds inte under ett pågående samtal.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC-röstinspelning stöds ej.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Filtyp</string>
   <string name="storage_setting">Lagringsplats</string>
   <string name="storage_setting_sdcard_item">SD-kort</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Telefonlagring är ej monterad</string>
   <string name="keyboard">Tangentbord</string>
   <string name="file_deleted">Filen har tagits bort</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Intern app-fel.\n\nMikrofonen kan vara i bruk.</string>
   <string name="view_recordings">Visa inspelningar</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Rättigheter</string>
   <string name="perm_mic">Ljudinspelaren behöver åtkomst till mikrofonen för att spela in ljud.</string>
   <string name="perm_storage">Ljudinspelaren behöver tillgång till lagringsplats för att spara inspelade filer.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Fråga igen</string>
   <string name="dismiss">Avvisa</string>
   <string name="perm_toast">Nödvändiga behörigheter nekades, aktivera dem i appen inställningar för att starta inspelningen</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Kan inte komma åt USB-lagring. Se till att Ljudinspelaren har behörighet att komma åt lagringsplatsen</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Kan inte komma åt SD-kortet. Se till att Ljudinspelaren har behörighet att komma åt lagringsplatsen</string>
   <string name="in_call_record_error">Inspelning är inte tillåtet under ett samtal.</string>
   <string name="button_menu">Fler alternativ</string>

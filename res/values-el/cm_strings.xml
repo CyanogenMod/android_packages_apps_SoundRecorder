@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Σε παύση</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Η εγγραφή ολοκληρώθηκε</string>
+  <!-- Button to save the current recording -->
   <string name="save">Αποθήκευση</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Μη υποστηριζόμενη μορφή.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Αυτή η επιλογή δεν υποστηρίζεται κατά τη διάρκεια μιας κλήσης.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Η εγγραφή φωνητικής κλήσης σε μορφή AAC δεν υποστηρίζεται.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Τύπος αρχείου</string>
   <string name="storage_setting">Θέση αποθήκευσης</string>
   <string name="storage_setting_sdcard_item">Κάρτα SD</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Αποθ. χώρος τηλεφώνου αποπροσαρτημένος</string>
   <string name="keyboard">Πληκτρολόγιο</string>
   <string name="file_deleted">Το αρχείο έχει διαγραφεί</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Εσωτερικό σφάλμα.\n\nΤο μικρόφωνο μπορεί να είναι σε χρήση.</string>
   <string name="view_recordings">Προβολή εγγραφών</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Δικαιώματα</string>
   <string name="perm_mic">Η Ηχογράφηση χρειάζεται πρόσβαση στο μικρόφωνο για την καταγραφή ήχου.</string>
   <string name="perm_storage">Η Ηχογράφηση χρειάζεται πρόσβαση στον αποθηκευτικό χώρο για την αποθήκευση εγγεγραμμένων αρχείων.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Ρωτήστε ξανά</string>
   <string name="dismiss">Παράβλεψη</string>
   <string name="perm_toast">Η εφαρμογή δεν έχει τα απαραίτητα δικαιώματα. Ενεργοποιήστε τα από τις Ρυθμίσεις για να ξεκινήσει η εγγραφή</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Η πρόσβαση στον αποθηκευτικό χώρο USB απέτυχε. Βεβαιωθείτε ότι η Ηχογράφηση έχει δικαίωμα πρόσβασης στον αποθηκευτικό χώρο</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Η πρόσβαση στην κάρτα SD απέτυχε. Βεβαιωθείτε ότι η Ηχογράφηση έχει δικαίωμα πρόσβασης στον αποθηκευτικό χώρο</string>
   <string name="in_call_record_error">Δεν επιτρέπεται η εγγραφή κατά τη διάρκεια μιας κλήσης.</string>
   <string name="button_menu">Περισσότερες επιλογές</string>

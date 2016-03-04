@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Паузирано</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Снимање завршено</string>
+  <!-- Button to save the current recording -->
   <string name="save">Сачувај</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Неподржани формат.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Ова опција није подржана у току позива.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC снимање говорног позива није подржано.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип фајла</string>
   <string name="storage_setting">Локација складишта</string>
   <string name="storage_setting_sdcard_item">SD картица</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Телефонско складиште није монтирано</string>
   <string name="keyboard">Тастатура</string>
   <string name="file_deleted">Фајл је избрисан</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Интерна грешка апликације.\n\nМикрофон је можда у употреби.</string>
   <string name="view_recordings">Погледај снимке</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Дозволе</string>
   <string name="perm_mic">Снимач звука треба приступ микрофону за снимање аудио записа.</string>
   <string name="perm_storage">Снимач звука треба приступ складишту за чување снимљених фајлова.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Питај поново</string>
   <string name="dismiss">Одбаци</string>
   <string name="perm_toast">Потребна дозвола је одбијена, омогући је из апликације за подешавање да започнете снимање</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Није могуће приступити складишту USB-а. Провери да ли снимач звука има дозуволу за приступ складишту</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Није могуће приступити SD картици. Провери да ли снимач звука има дозволу да приступи складишту</string>
   <string name="in_call_record_error">Снимање није дозвољено током позива.</string>
   <string name="button_menu">Више опција</string>

@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Tydelik onderbreek</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Opneming is klaar</string>
+  <!-- Button to save the current recording -->
   <string name="save">Stoor</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nie-ondersteunde formaat.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Hierdie opsie word nie tydens \'n oproep ondersteun nie.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAK stem oproep opname word nie ondersteun nie.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Lêertipe</string>
   <string name="storage_setting">Stoor plek</string>
   <string name="storage_setting_sdcard_item">SD kaart</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Selfoon spasie ongemonteer</string>
   <string name="keyboard">Sleutelbord</string>
   <string name="file_deleted">Lêer is verwyder</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Interne program fout.\n\nDie Mikrofoon mag in gebruik wees.</string>
   <string name="view_recordings">Wys opnames</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Toestemmings</string>
   <string name="perm_mic">Klankopnemer het mikrofoon toegang nodig om oudio op te neem.</string>
   <string name="perm_storage">Klankopnemer het stoor spasie toegang nodig om opnemings te stoor.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Vra weer</string>
   <string name="dismiss">Verwyder</string>
   <string name="perm_toast">Nodige magtiging geweier, aktiveer hulle vanaf Instellings toep om die opname te begin</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Kan nie toegang verkry na USB. Maak seker Klankopnemer het toestemming na die stoor spasie</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Kan nie toegang verkry na SD-Kaart. Maak seker Klankopnemer het toestemming na die stoor spasie</string>
   <string name="in_call_record_error">Opneming word nie toegelaat gedurende \'n oproep nie.</string>
   <string name="button_menu">Meer opsies</string>

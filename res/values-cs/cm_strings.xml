@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pozastaveno</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Nahrávání dokončeno</string>
+  <!-- Button to save the current recording -->
   <string name="save">Uložit</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nepodporovaný formát.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Tato volba není při hovoru podporována.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Nahrávání hovoru do AAC není podporováno.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ souboru</string>
   <string name="storage_setting">Umístění nahrávek</string>
   <string name="storage_setting_sdcard_item">Karta SD</string>
@@ -29,8 +36,10 @@
   <string name="no_phonestorage">Úložiště telefonu není připojené</string>
   <string name="keyboard">Klávesnice</string>
   <string name="file_deleted">Soubor byl smazán</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Interní chyba aplikace.\n\nMikrofon je už používán.</string>
   <string name="view_recordings">Zobrazit nahrávky</string>
+  <!-- Permissions feedback -->
   <string name="denied_title">Oprávnění</string>
   <string name="perm_mic">Pro nahrávání je vyžadováno oprávnění přístup k mikrofonu.</string>
   <string name="perm_storage">Pro ukládání je vyžadováno oprávnění přístupu k úložišti.</string>
@@ -43,7 +52,9 @@
   <string name="ask_again">Opakovaně se dotazovat</string>
   <string name="dismiss">Neukládat</string>
   <string name="perm_toast">Požadovaná oprávnění byla odepřena, pro spuštění nahrávání je povolte v nastavení aplikace</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Nelze získat přístup k USB úložišti. Ujistěte se, že Záznam zvuku má oprávnění přistupovat k úložišti</string>
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Nelze získat přístup k SD kartě. Ujistěte se, že Záznam zvuku má oprávnění přistupovat k SD kartě</string>
   <string name="in_call_record_error">Zaznamenávání zvuku není povoleno během hovoru.</string>
   <string name="button_menu">Více možností</string>

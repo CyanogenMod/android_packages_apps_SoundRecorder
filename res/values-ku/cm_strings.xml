@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">ڕاگیرا</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">تۆمارکردن کۆتایی هات</string>
+  <!-- Button to save the current recording -->
   <string name="save">پاشەکەوت</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">پاڵپشتی ناکات.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">ئه‌م هه‌ڵبژاردنه‌ پشتگیرینه‌كراوه‌ له‌ كاتی په‌یوه‌ندیكردن.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC تسجیل كردنی په‌یوه‌ندی ده‌نگی پشتگیرینه‌كراوه‌.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">جۆری فایل</string>
   <string name="storage_setting">شوێنی هه‌ڵگرتن</string>
   <string name="storage_setting_sdcard_item">بیرگەی دەرەکی</string>
@@ -29,6 +36,10 @@
   <string name="no_phonestorage">بیرگەی تەلەفۆن ناجێگیرکراوە</string>
   <string name="keyboard">تەختەکلیل</string>
   <string name="file_deleted">فایلەکە سڕایەوە</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">هەڵەی بەرنامەی ناوەکی.\n\nلەوانەیە میکڕۆفۆن کارا بێت.</string>
   <string name="view_recordings">بینینی تۆمارەکان</string>
+  <!-- Permissions feedback -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
 </resources>
