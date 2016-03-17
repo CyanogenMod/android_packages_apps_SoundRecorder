@@ -17,14 +17,45 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
+  <string name="recording_paused">અટક્યું</string>
   <!-- Label shown when recording is finished -->
+  <string name="recording_finished">રૅકોર્ડિંગ સમાપ્ત થયું</string>
   <!-- Button to save the current recording -->
+  <string name="save">સાચવો</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <string name="error_app_unsupported">અસમર્થિત ફોર્મેટ.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+  <string name="error_mediadb_incall">કૉલ દરમિયાન આ વિકલ્પ સમર્થિત નથી.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">AAC વૉઇસ કૉલ રેકૉર્ડિંગ સમર્થિત નથી.</string>
   <!-- shown as the dialog title when user selects recording format -->
+  <string name="format_setting">ફાઇલ પ્રકાર</string>
+  <string name="storage_setting">સંગ્રહ સ્થાન</string>
+  <string name="storage_setting_sdcard_item">SD કાર્ડ</string>
+  <string name="storage_setting_local_item">ફોન સંગ્રહ</string>
+  <string name="no_phonestorage">ફોન સંગ્રહ અનમાઉન્ટ કર્યું</string>
+  <string name="keyboard">કીબોર્ડ</string>
+  <string name="file_deleted">ફાઇલ રદ કરવામાં આવી</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <string name="error_app_internal_recorder">આંતરિક ઍપ્લિકેશન ભૂલ.\n\nમાઇક્રોફોન વપરાશમાં હોવાની સંભાવના.</string>
+  <string name="view_recordings">રેકોર્ડિંગ્સ જુઓ</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">પરવાનગીઓ</string>
+  <string name="perm_mic">ઑડિયો રેકૉર્ડ કરવા માટે સાઉન્ડ રેકૉર્ડર માટે માઇક્રોફોન ઍક્સેસ કરવું જરૂરી છે.</string>
+  <string name="perm_storage">રેકૉર્ડ કરેલ ફાઇલ્સ સેવ કરવા માટે સાઉન્ડ રેકૉર્ડર માટે સગ્રહનો ઍક્સેસ હોય તે જરૂરી છે.</string>
+  <string name="perm_phone">તમે કૉલ કરતા હોવ ત્યારે આ ઍપને રેકૉર્ડિંગ કરતા રોકવા માટે સાઉન્ડ રેકૉર્ડર માટે ફોનનો સ્થિતિ ઍક્સેસ જરૂરી છે.</string>
+  <string name="perm_micstorage">રેકૉર્ડ કરેલ ફાઇલ્સ સેવ કરવા માટે સંગ્રહ ઍક્સેસ અને ઑડિયો રેકૉર્ડ કરવા માટે સાઉન્ડ રેકૉર્ડર માટે માઇક્રોફોન ઍક્સેસ જરૂરી છે.</string>
+  <string name="perm_micphone">તમે કૉલ કરતા હોવ ત્યારે આ ઍપને રેકૉર્ડિંગ કરતા રોકવા માટે સાઉન્ડ રેકૉર્ડર માટે રેકૉર્ડ ઑડિયો ઍક્સેસ કરવો અને ફોન સ્થિતિ ઍક્સેસ જે માટે માઇક્રોફોન ઍક્સેસ જરૂરી છે.</string>
+  <string name="perm_storagephone">તમે કૉલ કરતા હોવ ત્યારે આ ઍપને રેકૉર્ડિંગ કરતા રોકવા માટે સાઉન્ડ રેકૉર્ડર માટે રેકૉર્ડ કરેલ ફાઇલ્સ સેવ પર ઍક્સેસ કરવો અને ફોન સ્થિતિ ઍક્સેસ જે માટે સંગ્રહ ઍક્સેસ જરૂરી છે.</string>
+  <string name="perm_allperms">સાઉન્ડ રેકૉર્ડર માટે ઑડિયો રેકૉર્ડ કરવા માઇક્રોફોન ઍક્સેસ જરૂરી છે, રેકૉર્ડ કરેલ ફાઇલ્સ સેવ કરવા સંગ્રહ ઍક્સેસ અને ફોન સ્થિતિ ઍક્સેસ જેથી આ ઍપને તમે ફોન કરતા હોવ ત્યારે રેકૉર્ડ કરતા રોકી શકાય.</string>
+  <string name="perm_unknown">પરવાનગી ભૂલ, સેટિંગ્સ ઍપમાં પરવાનગી સ્થિતિ ચકાસો.</string>
+  <string name="ask_again">ફરી પૂછો</string>
+  <string name="dismiss">છોડી દો</string>
+  <string name="perm_toast">જરૂરી પરવાનગીઓ નકારવામાં આવી, રેકૉર્ડિંગ શરૂ કરવા માટે Settings ઍપમાંથી તે સક્ષમ કરો.</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">USB સંગ્રહનો વપરાશ થઇ શકશે નહીં. ખાતરી કરી લેશો કે Sound Recorder પાસે સંગ્રહ ઍક્સેસ કરવાની પરવાનગી હોય.</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">SD કાર્ડનો વપરાશ થઇ શકશે નહીં. ખાતરી કરી લેશો કે Sound Recorder પાસે સંગ્રહ ઍક્સેસ કરવાની પરવાનગી હોય.</string>
+  <string name="in_call_record_error">કૉલ દરમિયાન રેકૉર્ડિંગની છૂટ નથી.</string>
+  <string name="button_menu">વધુ વિકલ્પો</string>
 </resources>

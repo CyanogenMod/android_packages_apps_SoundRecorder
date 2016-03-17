@@ -57,4 +57,5 @@
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">ไม่สามารถเข้าถึง SD card ได้ กรุณาตรวจสอบว่าแอปบันทึกเสียงได้รับอนุญาตให้เข้าถึงที่เก็บข้อมูล</string>
   <string name="in_call_record_error">ไม่อนุญาตให้บันทึกเสียงขณะโทร</string>
+  <string name="button_menu">ตัวเลือกเพิ่มเติม</string>
 </resources>

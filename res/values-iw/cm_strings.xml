@@ -27,13 +27,13 @@
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
-  <string name="error_mediadb_aacincall">הקלטת קול שיחה בפורמט AAC לא נתמך.</string>
+  <string name="error_mediadb_aacincall">הקלטת שיחה קולית בפורמט AAC לא נתמכת.</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס זיכרון</string>
-  <string name="storage_setting_local_item">אחסון פנימי</string>
-  <string name="no_phonestorage">אחסון המכשיר הוסר</string>
+  <string name="storage_setting_local_item">אחסון טלפון</string>
+  <string name="no_phonestorage">אחסון המכשיר בוטל</string>
   <string name="keyboard">מקלדת</string>
   <string name="file_deleted">הקובץ נמחק</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->

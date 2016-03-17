@@ -17,14 +17,47 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
+  <string name="recording_paused">താൽക്കാലികമായി നിർത്തി</string>
   <!-- Label shown when recording is finished -->
+  <string name="recording_finished">റെക്കോർഡിംഗ് പൂർത്തിയായി</string>
   <!-- Button to save the current recording -->
+  <string name="save">സംരക്ഷിക്കുക</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <string name="error_app_unsupported">പിന്തുണയ്ക്കാത്ത ഫോർമാറ്റ്.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+  <string name="error_mediadb_incall">ഒരു കോൾ ചെയ്യുന്ന സമയത്ത് ഈ ഐച്ഛികം പിന്തുണയ്ക്കില്ല.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">AAC വോയ്സ് കോൾ റെക്കോർഡിംഗ് പിന്തുണയ്ക്കില്ല.</string>
   <!-- shown as the dialog title when user selects recording format -->
+  <string name="format_setting">ഫയൽ തരം</string>
+  <string name="storage_setting">സംഭരണ സ്ഥാനം</string>
+  <string name="storage_setting_sdcard_item">SD കാർഡ്</string>
+  <string name="storage_setting_local_item">ഫോൺ സംഭരണം</string>
+  <string name="no_phonestorage">ഫോൺ സംഭരണം അൺമൗണ്ട് ചെയ്യുന്നതാണ്</string>
+  <string name="keyboard">കീബോർഡ്</string>
+  <string name="file_deleted">ഫയൽ ഇല്ലാതാക്കി</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <string name="error_app_internal_recorder">ആന്തരിക ആപ്ലിക്കേഷൻ പിശക്.\n\nമൈക്രോഫോണ്‍ ഉപയോഗത്തിലായിരിക്കാം.</string>
+  <string name="view_recordings">റെക്കോർഡിങ്ങുകൾ കാണുക</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">അനുമതികൾ</string>
+  <string name="perm_mic">റക്കൊർടരിനു ശബ്ദം രേഖപെടുത്താൻ മൈക്കിലെക്കുള്ള പ്രവേശനാനുവാദം വേണം.</string>
+  <string name="perm_storage">റക്കൊർടരിനു ശബ്ദം സൂക്ഷിച്ചു വയ്ക്കാൻ സ്റ്റൊരേജ് ടിവൈസിലേക്കുള്ള അനുവാദം വേണം.</string>
+  <string name="perm_phone">സംസാരിക്കുമ്പോൾ ശബ്ദം രേഖപെടുതുന്നത് തടയുന്നതിന് റക്കൊർടരിനു ഫോണിന്റെ സ്റ്റാറ്റസിലെക്കുള്ള അനുവാദം വേണം.</string>
+  <string name="perm_micstorage">സംസാരിക്കുമ്പോൾ റക്കൊർടരിനു ശബ്ദം രേഖപെടുതുന്നത് മൈക്കിലേക്കും, ശബ്ദം സൂക്ഷിച്ചു വൈക്കുന്നതിന്നു സ്റ്റൊരേജ് ടിവൈസിലേക്കും ഉള്ള അനുവാദം വേണം.</string>
+  <string name="perm_micphone">റക്കൊർടരിനു ശബ്ദം രേഖപെടുതുന്നത് മൈക്കിലേക്കും, സംസാരിക്കുമ്പോൾ ശബ്ദം രേഖപെടുത്തുന്നതിൽനിന്നു അപ്പ്ലികേഷനെ തടയുന്നതിന് റക്കൊർടരിനു ഫോണിന്റെ സ്റ്റാറ്റസിലെക്കുമുള്ള അനുവാദം വേണം.</string>
+  <string name="perm_storagephone">റക്കൊർടരിനു ശബ്ദം സൂക്ഷിച്ചു വയ്ക്കാൻ സ്റ്റൊരേജ് ടിവൈസിലേക്കുള്ള അനുവാദവും 
+സംസാരിക്കുമ്പോൾ ശബ്ദം രേഖപെടുതുന്നത് തടയുന്നതിന് റക്കൊർടരിനു ഫോണിന്റെ സ്റ്റാറ്റസിലെക്കുള്ള അനുവാദവും വേണം.</string>
+  <string name="perm_allperms">റക്കൊർടരിനു റക്കൊർടരിനു ശബ്ദം രേഖപെടുത്താൻ മൈക്കിലെക്കുള്ള പ്രവേശനാനുവാദം വേണം., ശബ്ദം സൂക്ഷിച്ചു വയ്ക്കാൻ സ്റ്റൊരേജ് ടിവൈസിലേക്കുള്ള അനുവാദവും 
+സംസാരിക്കുമ്പോൾ ശബ്ദം രേഖപെടുതുന്നത് തടയുന്നതിന് റക്കൊർടരിനു ഫോണിന്റെ സ്റ്റാറ്റസിലെക്കുള്ള അനുവാദവും വേണം.</string>
+  <string name="perm_unknown">അനുവാദമില്ല, സെറ്റിംഗ്സ്-ഇലെ അനുവദ വ്യവസ്ഥ പരിശോധിക്കൂ.</string>
+  <string name="ask_again">ഒന്ന് കൂടി ആവശ്യപെടു</string>
+  <string name="dismiss">നിരസിക്കുക</string>
+  <string name="perm_toast">ആവശ്യമുള്ള അനുമതികൾ നിഷേധിച്ചിരിക്കുന്നു, റെക്കൊർഡിങ്ങിനായി സെറ്റിംഗ്സ് അപ്ലികേഷനിൽ പോയി മാറ്റം വരുതൂ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">യു. എസ. ബീ സ്റ്റൊരേജിലെക്കു അനുമതിയില്ല. വേണ്ട അനുമതികൾ റെക്കൊർഡരിന്നു ഉണ്ടെന്നു ഉറപ്പു വരുതൂ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">എസ ഡീ കാർഡിലേക്ക് അനുമതിയില്ല. വേണ്ട അനുമതികൾ റെക്കൊർഡരിന്നു ഉണ്ടെന്നു ഉറപ്പു വരുതൂ</string>
+  <string name="in_call_record_error">സംസാരിക്കുമ്പോൾ റക്കൊർഡിങ്ങ് സാധ്യമല്ല.</string>
+  <string name="button_menu">ഇനിയും ഉണ്ട്</string>
 </resources>
