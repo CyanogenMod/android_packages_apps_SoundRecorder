@@ -17,14 +17,45 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
+  <string name="recording_paused">विराम केले</string>
   <!-- Label shown when recording is finished -->
+  <string name="recording_finished">रेकॉर्डिंग समाप्त झाले</string>
   <!-- Button to save the current recording -->
+  <string name="save">जतन करा</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <string name="error_app_unsupported">असमर्थित स्वरूपन.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+  <string name="error_mediadb_incall">हा पर्याय कॉल दरम्यान समर्थित नाही.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">AAC व्हॉइस कॉल रेकॉर्डिंग समर्थित नाही.</string>
   <!-- shown as the dialog title when user selects recording format -->
+  <string name="format_setting">फाइल प्रकार</string>
+  <string name="storage_setting">संग्रह स्थान</string>
+  <string name="storage_setting_sdcard_item">SD कार्ड</string>
+  <string name="storage_setting_local_item">फोन संचयन</string>
+  <string name="no_phonestorage">फोन संग्रह अनमाउंट केले</string>
+  <string name="keyboard">कीबोर्ड</string>
+  <string name="file_deleted">फाइल हटवली गेली आहे</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <string name="error_app_internal_recorder">अंतर्गत अनुप्रयोग त्रुटी.\n\nमायक्रोफोन कदाचित वापरात नसेल.</string>
+  <string name="view_recordings">रेकॉर्डिंग्ज पाहा</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">परवानग्या</string>
+  <string name="perm_mic">साउंड रेकॉर्डरला ऑडिओ रेकॉर्ड करण्यासाठी मायक्रोफोन ऍक्सेस लागतो.</string>
+  <string name="perm_storage">साउंड रेकॉर्डरला रेकॉर्ड केलेल्या फाइल्स जतन करण्यासाठी संग्रह ऍक्सेस लागतो.</string>
+  <string name="perm_phone">तुम्ही कॉल करत असताना या अनुप्रयोगाला रेकॉर्ड करण्यापासून प्रतिबंध करण्यासाठी साउंड रेकॉर्डरला फोन स्थिती ऍक्सेस लागतो.</string>
+  <string name="perm_micstorage">साउंड रेकॉर्डरला ऑडिओ रेकॉर्ड करण्यासाठी मायक्रोफोन ऍक्सेस लागतो आणि रेकॉर्ड केलेल्या फाइल्स जतन करण्यासाठी संग्रह ऍक्सेस लागतो.</string>
+  <string name="perm_micphone">साउंड रेकॉर्डरला ऑडिओ रेकॉर्ड करण्यासाठी मायक्रोफोन ऍक्सेस लागतो आणि तुम्ही कॉल करत असताना या अनुप्रयोगाला रेकॉर्ड करण्यापासून प्रतिबंध करण्यासाठी फोन स्थिती ऍक्सेस लागतो.</string>
+  <string name="perm_storagephone">साउंड रेकॉर्डरला रेकॉर्ड केलेल्या फाइल्स जतन करण्यासाठी संग्रह ऍक्सेस लागतो आणि तुम्ही कॉल करत असताना या अनुप्रयोगाला रेकॉर्ड करण्यापासून प्रतिबंध करण्यासाठी फोन स्थिती ऍक्सेस लागतो.</string>
+  <string name="perm_allperms">साउंड रेकॉर्डरला ऑडिओ रेकॉर्ड करण्यासाठी मायक्रोफोन ऍक्सेस लागतो, रेकॉर्ड केलेल्या फाइल्स जतन करण्यासाठी संग्रह ऍक्सेस लागतो आणि तुम्ही कॉल करत असताना या अनुप्रयोगाला रेकॉर्ड करण्यापासून प्रतिबंध करण्यासाठी फोन स्थिती ऍक्सेस लागतो.</string>
+  <string name="perm_unknown">परवानगी त्रुटी, सेटिंग्ज अनुप्रयोगमध्ये परवानगी स्थिती तपासा.</string>
+  <string name="ask_again">पुन्हा विचारा</string>
+  <string name="dismiss">डिसमिस करा</string>
+  <string name="perm_toast">आवश्यक परवानग्या नाकारल्या गेल्या, रेकॉर्डिंग सुरू करण्यासाठी अनुप्रयोग सेटिंग्ज करण्यापासून त्यांना सक्षम करा</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">USB संचयनावर प्रवेश करू शकत नाही. साउंड रेकॉर्डरला संग्रह ऍक्सेस करण्यासाठी परवानगी असल्याची खात्री करा</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">SD कार्डवर प्रवेश करू शकत नाही. साउंड रेकॉर्डरला संग्रह ऍक्सेस करण्यासाठी परवानगी असल्याची खात्री करा</string>
+  <string name="in_call_record_error">कॉल दरम्यान रेकॉर्डिंगला परवानगी नाही.</string>
+  <string name="button_menu">अधिक पर्याय</string>
 </resources>

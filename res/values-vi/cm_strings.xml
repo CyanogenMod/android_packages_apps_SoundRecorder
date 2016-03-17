@@ -40,6 +40,22 @@
   <string name="error_app_internal_recorder">Lỗi ứng dụng nội bộ.\n\nMicro đang được sử dụng.</string>
   <string name="view_recordings">Xem bản ghi âm</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">Quyền truy cập</string>
+  <string name="perm_mic">Trình ghi âm cần truy cập micro để ghi âm.</string>
+  <string name="perm_storage">Trình ghi âm cần truy cập bộ nhớ để lưu tập tin đã ghi.</string>
+  <string name="perm_phone">Trình ghi âm cần truy cập trạng thái điện thoại để ngăn ứng dụng này ghi âm khi bạn đang gọi.</string>
+  <string name="perm_micstorage">Trình ghi âm cần truy cập micro để ghi âm và truy cập bộ nhớ để lưu tập tin đã ghi âm.</string>
+  <string name="perm_micphone">Trình ghi âm cần truy cập micro để ghi âm và truy cập trạng thái điện thoại để ngăn ứng dụng này ghi âm khi bạn đang gọi.</string>
+  <string name="perm_storagephone">Trình ghi âm cần truy cập bộ nhớ để lưu tập tin đã ghi âm và truy cập trạng thái điện thoại để ngăn ứng dụng này ghi âm khi bạn đang gọi.</string>
+  <string name="perm_allperms">Trình ghi âm cần truy cập micro để ghi âm, truy cập bộ nhớ để lưu tập tin đã ghi âm và truy cập trạng thái điện thoại để ngăn ứng dụng này ghi âm khi bạn đang gọi.</string>
+  <string name="perm_unknown">Lỗi quyền truy cập, kiểm tra trạng thái quyền truy cập trong ứng dụng Cài đặt.</string>
+  <string name="ask_again">Hỏi lại</string>
+  <string name="dismiss">Bỏ qua</string>
+  <string name="perm_toast">Quyền truy cập cần thiết đã bị từ chối, kích hoạt chúng trong ứng dụng Cài đặt để bắt đầu ghi âm</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Không thể truy cập bộ nhớ USB. Đảm bảo rằng Trình ghi âm có quyền truy cập bộ nhớ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">Không thể truy cập thẻ nhớ. Đảm bảo rằng Trình ghi âm có quyền truy cập bộ nhớ</string>
+  <string name="in_call_record_error">Không cho phép ghi âm khi thực hiện cuộc gọi.</string>
+  <string name="button_menu">Tuỳ chọn khác</string>
 </resources>

@@ -40,6 +40,22 @@
   <string name="error_app_internal_recorder">ಆಂತರಿಕ ಅಪ್ಲಿಕೇಶನ್ ದೋಷ.\n\nಧ್ವನಿಗ್ರಾಹಕ ಬಳಕೆಯಲ್ಲಿರಬಹುದು.</string>
   <string name="view_recordings">ರಿಕಾರ್ಡಿಂಗ್‍ಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">ಅನುಮತಿಗಳು</string>
+  <string name="perm_mic">ಆಡಿಯೋ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಮೈಕ್ರೋಫೋನ್ ಅಕ್ಸೆಸ್‌ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_storage">ರೆಕಾರ್ಡ್‌ ಮಾಡಿದ ಕಡತಗಳನ್ನು ಉಳಿಸಲು ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಸಂಗ್ರಹ ಅಕ್ಸೆಸ್‌ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_phone">ನೀವು ಕರೆ ಮಾಡುತ್ತಿರುವಾಗ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನ ರೆಕಾರ್ಡಿಂಗ್‌ ತಡೆಯಲು  ನಿಮ್ಮ ಫೋನ್‌ ಸ್ಟೇಟಸ್‌ ಅಕ್ಸೆಸ್ ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_micstorage">ಧ್ವನಿ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಮೈಕ್ರೋಫೋನ್‌ ಅಕ್ಸೆಸ್‌ ಮತ್ತು ರೆಕಾರ್ಡ್‌ ಕಡತಗಳನ್ನು ಉಳಿಸಲು ಸಂಗ್ರಹ ಅಕ್ಸೆಸ್‌ ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_micphone">ನೀವು ಕರೆ ಮಾಡುತ್ತಿರುವಾಗ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನ ರೆಕಾರ್ಡಿಂಗ್‌ ತಡೆಯಲು  ನಿಮ್ಮ ಫೋನ್‌ ಸ್ಟೇಟಸ್‌ ಮತ್ತು ಧ್ವನಿ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಫೋಸ್‌ ಸ್ಟೇಟಸ್‌ ಅಕ್ಸೆಸ್ ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_storagephone">ನೀವು ಕರೆ ಮಾಡುತ್ತಿರುವಾಗ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನ ರೆಕಾರ್ಡಿಂಗ್‌ ತಡೆಯಲು  ನಿಮ್ಮ ಫೋನ್‌ ಸ್ಟೇಟಸ್‌ ಅಕ್ಸೆಸ್‌ ಮತ್ತು ಉಳಿಸಿದ ರೆಕಾರ್ಡ್‌ ಕಡತಗಳ ಸಂಗ್ರಹ ಅಕ್ಸೆಸ್‌ಗೆ ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_allperms">ಧ್ವನಿ ರೆಕಾರ್ಡ್ ಮಾಡಲು ಮೈಕ್ರೊಫೋನ್ ಅಕ್ಸೆಸ್‌, ರೆಕಾರ್ಡ್‌ ಮಾಡಿದ ಕಡತಗಳನ್ನು ಉಳಿಸಲು ಸಂಗ್ರಹ ಅಕ್ಸೆಸ್‌ ಮತ್ತು ನೀವು ಕರೆ ಮಾಡುತ್ತಿರುವಾಗ ಈ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ರೆಕಾರ್ಡಿಂಗ್‌ ತಡೆಯಲು ಫೋನ್‌ ಸ್ಟೇಟಸ್‌ ಅಕ್ಸೆಸ್‌ ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅಗತ್ಯವಿದೆ.</string>
+  <string name="perm_unknown">ಅನುಮತಿ ದೋಷ, ಸೆಟ್ಟಿಂಗ್ಸ್‌ ಅಪ್ಲಿಕೇಶನ್‌ನಲ್ಲಿ ಅನುಮತಿ ಸ್ಥಿತಿಗತಿಯನ್ನು ಪರಿಶೀಲಿಸಿ</string>
+  <string name="ask_again">ಮತ್ತೆ ಕೇಳಿ</string>
+  <string name="dismiss">ವಜಾಗೊಳಿಸು</string>
+  <string name="perm_toast">ಅಗತ್ಯ ಅನುಮತಿಗಳನ್ನು ನಿರಾಕರಿಸಲಾಗಿದೆ, ರೆಕಾರ್ಡಿಂಗ್‌ ಆರಂಭಿಸಲು ಸೆಟ್ಟಿಂಗ್ಸ್‌ ಅಪ್ಲಿಕೇಶನ್‌ನಿಂದ ಸಕ್ರಿಯಗೊಳಿಸಿ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">USB ಸಂಗ್ರಹಣೆ ಪ್ರವೇಶಿಸಲಾಗುವುದಿಲ್ಲ. ಸಂಗ್ರಹವನ್ನು ಅಕ್ಸೆಸ್‌ ಮಾಡಲು ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅನುಮತಿಯಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">SD ಕಾರ್ಡ್ ಪ್ರವೇಶಿಸಲಾಗುವುದಿಲ್ಲ. ಸಂಗ್ರಹವನ್ನು ಅಕ್ಸೆಸ್‌ ಮಾಡಲು ಸೌಂಡ್‌ ರೆಕಾರ್ಡರ್‌ಗೆ ಅನುಮತಿಯಿದೆ ಎಂದು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ</string>
+  <string name="in_call_record_error">ಕರೆ ವೇಳೆ ರೆಕಾರ್ಡಿಂಗ್‌ ಅನುಮತಿಸಲ್ಪಟ್ಟಿಲ್ಲ.</string>
+  <string name="button_menu">ಇನ್ನಷ್ಟು ಆಯ್ಕೆಗಳು</string>
 </resources>

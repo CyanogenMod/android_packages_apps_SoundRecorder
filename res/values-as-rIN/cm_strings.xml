@@ -17,14 +17,45 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
+  <string name="recording_paused">পজ কৰি ৰখা হৈছে</string>
   <!-- Label shown when recording is finished -->
+  <string name="recording_finished">ৰেকৰ্ডিং সমাপ্ত হৈছে</string>
   <!-- Button to save the current recording -->
+  <string name="save">ছেভ কৰা</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <string name="error_app_unsupported">অসমৰ্থিত সজ্জা।</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+  <string name="error_mediadb_incall">এই বিকল্পটো কল চলি থকা সময়ত সমৰ্থিত নহয়।</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">AAC ভইচ কল ৰেকৰ্ডিং সমৰ্থিত নহয়।</string>
   <!-- shown as the dialog title when user selects recording format -->
+  <string name="format_setting">ফাইলৰ প্ৰকাৰ</string>
+  <string name="storage_setting">ষ্ট\'ৰেজ অৱস্থান</string>
+  <string name="storage_setting_sdcard_item">SD কাৰ্ড</string>
+  <string name="storage_setting_local_item">ফোন ষ্টোৰেজ</string>
+  <string name="no_phonestorage">ফোন ষ্ট\'ৰেজ আনমাউণ্ট কৰা হৈছে</string>
+  <string name="keyboard">কীবোৰ্ড</string>
+  <string name="file_deleted">ফাইল বিলোপ কৰা হৈছে</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <string name="error_app_internal_recorder">আভ্যন্তৰীণ এপ্লিকেচন ত্ৰুটি।\n\nমাইক্ৰ\'ফোন ব্যৱহাৰ হৈ নাথাকিব পাৰে।</string>
+  <string name="view_recordings">ৰেকৰ্ডিংবোৰ চাওক</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">অনুমতিসমূহ</string>
+  <string name="perm_mic">অডিঅ\' ৰেকৰ্ডিঙৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে মাইক্ৰ\'ফোনত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_storage">ৰেকৰ্ড কৰা ফাইলবোৰ সংৰক্ষণ কৰাৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে ষ্ট\'ৰেজত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_phone">আপুনি কল কৰি থাকোতে এই এপ্প্‌টোৱে ৰেকৰ্ডিং কৰাটো প্ৰতিৰোধ কৰিবলৈ চাউণ্ড ৰেকৰ্ডাৰে ফোন স্থিতিত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_micstorage">অডিঅ\' ৰেকৰ্ডিঙৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে মাইক্ৰ\'ফোনত প্ৰৱেশ কৰাটো আৰু ৰেকৰ্ড কৰা ফাইলবোৰ সংৰক্ষণ কৰাৰ বাবে ষ্ট\'ৰেজত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_micphone">অডিঅ\' ৰেকৰ্ডিঙৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে মাইক্ৰ\'ফোনত প্ৰৱেশ কৰাটো আৰু এই এপ্প্‌টোৱে ৰেকৰ্ডিং কৰাটো প্ৰতিৰোধ কৰিবলৈ ফোন স্থিতিত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_storagephone">ৰেকৰ্ড কৰা ফাইলবোৰ সংৰক্ষণ কৰাৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে ষ্ট\'ৰেজত প্ৰৱেশ কৰাটো আৰু এই এপ্প্‌টোৱে ৰেকৰ্ডিং কৰাটো প্ৰতিৰোধ কৰিবলৈ ফোন স্থিতিত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_allperms">অডিঅ\' ৰেকৰ্ডিঙৰ বাবে চাউণ্ড ৰেকৰ্ডাৰে মাইক্ৰ\'ফোনত প্ৰৱেশ কৰাটো আৰু ৰেকৰ্ড কৰা ফাইলবোৰ সংৰক্ষণ কৰাৰ বাবে ষ্ট\'ৰেজত প্ৰৱেশ কৰাটো আৰু এই এপ্প্‌টোৱে ৰেকৰ্ডিং কৰাটো প্ৰতিৰোধ কৰিবলৈ ফোন স্থিতিত প্ৰৱেশ কৰাটো প্ৰয়োজন।</string>
+  <string name="perm_unknown">অনুমতিৰ ত্ৰুটি, ছেটিংচ এপ্প্‌ত অনুমতি স্থিতি পৰীক্ষা কৰক।</string>
+  <string name="ask_again">পুনৰ পৰীক্ষা কৰক</string>
+  <string name="dismiss">বৰ্খাস্ত কৰা</string>
+  <string name="perm_toast">প্ৰয়োজনীয় অনুমতি অস্বীকাৰ কৰা হৈছিল, ৰেকৰ্ডিং কৰিবলৈ ছেটিংচ এপ্প্‌ৰ পৰা সেইবোৰ সক্ষম কৰক</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">USB ষ্টোৰেজ আহৰণ কৰিব নোৱাৰে। নিশ্চিত কৰক যাতে চাউণ্ড ৰেকৰ্ডাৰৰ ষ্ট\'ৰেজত প্ৰৱেশ কৰাৰ অনুমতি আছে</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">SD কাৰ্ড আহৰণ কৰিব নোৱাৰে। নিশ্চিত কৰক যাতে চাউণ্ড ৰেকৰ্ডাৰৰ ষ্ট\'ৰেজত প্ৰৱেশ কৰাৰ অনুমতি আছে</string>
+  <string name="in_call_record_error">কল চলি থকা সময়ত ৰেকৰ্ডিঙৰ অনুমতি দিয়া নহয়।</string>
+  <string name="button_menu">অধিক বিকল্পসমূহ</string>
 </resources>
