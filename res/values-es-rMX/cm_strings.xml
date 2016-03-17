@@ -25,6 +25,22 @@
   <!-- shown as the dialog title when user selects recording format -->
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <!-- Permissions feedback -->
+  <string name="denied_title">Permisos</string>
+  <string name="perm_mic">La grabadora de sonidos necesita acceso al micrófono para grabar audio.</string>
+  <string name="perm_storage">La grabadora de sonidos necesita acceso al almacenamiento para guardar archivos grabados.</string>
+  <string name="perm_phone">La grabadora de sonidos necesita acceder al estado del teléfono para evitar que esta aplicación grabe mientras estás llamando.</string>
+  <string name="perm_micstorage">La grabadora de sonidos necesita acceso micrófono para grabar audio y almacenamiento para guardar los archivos grabados.</string>
+  <string name="perm_micphone">La grabadora de sonidos necesita acceso al micrófono para grabar audio y el estado del teléfono para evitar que esta aplicación grabe mientras estás llamando.</string>
+  <string name="perm_storagephone">La grabadora de sonidos necesita acceso de almacenamiento para guardar los archivos grabados y acceso a el estado del teléfono para evitar que esta aplicación grabe mientras estás llamando.</string>
+  <string name="perm_allperms">La grabadora de sonido necesita acceso al micrófono para grabar el audio, acceso al almacenamiento para guardar archivos grabados y acceso al estado del teléfono para evitar que esta aplicación grabe mientras estás llamando.</string>
+  <string name="perm_unknown">Error de permiso, compruebe el estado de permiso en la aplicación Ajustes.</string>
+  <string name="ask_again">Preguntar de nuevo</string>
+  <string name="dismiss">Descartar</string>
+  <string name="perm_toast">Los permisos necesarios se denegaron, actívalos desde la aplicación de Ajustes para iniciar la grabación</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">No se pudo acceder al almacenamiento USB. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">No se pudo acceder a la tarjeta SD. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
+  <string name="in_call_record_error">No se permite la grabación durante una llamada.</string>
+  <string name="button_menu">Más opciones</string>
 </resources>

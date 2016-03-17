@@ -40,6 +40,22 @@
   <string name="error_app_internal_recorder">ئەپ ئىچكى خاتالىقى.\n\nمىكروفون ئىشلىتىلىۋاتقان بولۇشى مۇمكىن.</string>
   <string name="view_recordings">خاتىرىلەرنى كۆرۈش</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">ھوقۇقلار</string>
+  <string name="perm_mic">ئۈنئالغۇ ئۈنگە ئېلىش ھوقۇقىغا ئېرىشكەندە ئاندىن ئۈنگە ئالالايدۇ.</string>
+  <string name="perm_storage">ئۈنئالغۇ ساقلىغۇچى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە ئاندىن ئۈنگە ئالالايدۇ.</string>
+  <string name="perm_phone">ئۈنئالغۇ تېلېفون ھالىتىنى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە، ئاندىن سىز سۆزلىشىپ بولغاندا ئۈن ئېلىشتىن توختايدۇ.</string>
+  <string name="perm_micstorage">ئۈنئالغۇ مىكروفون ۋە ساقلاش ھوقۇقىغا ئېرىشكەندە، ئاۋازغا ئالىدۇ ۋە ئاۋاز ھۆججىتىنى ساقلايدۇ.</string>
+  <string name="perm_micphone">ئۈنئالغۇ مىكروفوننى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە ئاۋازغا ئالىدۇ، ھەمدە تېلېفون ھالىتىنى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە، سىز تېلېفون سۆزلىشىۋاتقاندا ئاۋازغا ئېلىشتىن ساقلىنىدۇ.</string>
+  <string name="perm_storagephone">ئۈنئالغۇ ساقلىغۇچنى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە ئاۋاز ھۆججىتىنى ساقلايدۇ، ھەمدە تېلېفون ھالىتىنى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە، سىز تېلېفون سۆزلىشىۋاتقاندا ئاۋازغا ئېلىشتىن ساقلىنىدۇ.</string>
+  <string name="perm_allperms">ئۈنئالغۇ مىكروفون ۋە ساقلاش ھوقۇقىغا ئېرىشكەندە، ئاۋازغا ئالىدۇ ۋە ئاۋاز ھۆججىتىنى ساقلايدۇ، ھەمدە تېلېفون ھالىتىنى زىيارەت قىلىش ھوقۇقىغا ئېرىشكەندە، سىز تېلېفون سۆزلىشىۋاتقاندا ئاۋازغا ئېلىشتىن ساقلىنىدۇ.</string>
+  <string name="perm_unknown">ھوقۇق خاتالىقى، تەڭشەك ئەپتە ھوقۇق ھالىتىنى تەكشۈرۈڭ.</string>
+  <string name="ask_again">يەنە بىر سوراش</string>
+  <string name="dismiss">پەرۋا قىلماڭ</string>
+  <string name="perm_toast">لازىملىق ھوقۇق رەت قىلىندى، ئەپ تەڭشەشتە ئۇلارنى قوزغىتىپ ئاۋاز ئېلىشنى باشلاڭ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">ساقلىغۇچ USB نى زىيارەت قىلالمىدى، ئۈنئالغۇنىڭ ساقلاش بوشلۇقنى زىيارەت قىلىش ھوقۇقنى جەزىملەشتۈرۈڭ</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">كارتىنى زىيارەت قىلالمىدى، ئۈنئالغۇنىڭ ساقلاش بوشلۇقنى زىيارەت قىلىش ھوقۇقنى جەزىملەشتۈرۈڭ</string>
+  <string name="in_call_record_error">سۆزلىشىش جەريانىدا ئاۋازغا ئېلىشقا يول قويمايدۇ.</string>
+  <string name="button_menu">تېخىمۇ كۆپ تاللانما</string>
 </resources>

@@ -41,12 +41,21 @@
   <string name="view_recordings">Vezi înregistrările</string>
   <!-- Permissions feedback -->
   <string name="denied_title">Permisiuni</string>
+  <string name="perm_mic">Înregistrare voce are nevoie de acces la microfon pentru înregistrare audio.</string>
+  <string name="perm_storage">Înregistrare voce are nevoie de acces la stocare pentru a salva fișierele înregistrate.</string>
+  <string name="perm_phone">Înregistrare voce are nevoie de acces la starea telefonului pentru a împiedica aplicația să înregistreze în timpul apelurilor.</string>
+  <string name="perm_micstorage">Înregistrare voce are nevoie de acces la microfon pentru a înregistra și acces la stocare pentru a salva fișierele.</string>
+  <string name="perm_micphone">Înregistrare voce are nevoie de acces la microfon pentru a înregistra și acces la starea telefonului pentru a împiedica aplicația să înregistreze când apelați.</string>
+  <string name="perm_storagephone">Înregistrare voce are nevoie de acces la stocare pentru a salva fișiere și acces la starea telefonului pentru a împiedica aplicația să înregistreze când apelați.</string>
+  <string name="perm_allperms">Înregistrare voce are nevoie de acces la microfon pentru a înregistra, acces la stocare pentru a salva fișiere și acces la starea telefonului pentru a împiedica aplicația să înregistreze când apelați.</string>
   <string name="perm_unknown">Eroare de permisiune, verificați starea permisiunii în aplicația Setări.</string>
   <string name="ask_again">Întreabă din nou</string>
   <string name="dismiss">Respingere</string>
   <string name="perm_toast">Permisiunile necesare au fost refuzate, activați-le din aplicația Setări pentru a începe înregistrarea</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Nu se poate accesa stocarea USB. Verificați dacă Înregistrare voce are permisiunea de a accesa stocarea</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">Nu se poate accesa cardul SD. Verificați dacă Înregistrare voce are permisiunea de a accesa stocarea</string>
   <string name="in_call_record_error">Înregistrarea nu este permisă în timpul unui apel.</string>
   <string name="button_menu">Mai multe opțiuni</string>
 </resources>
