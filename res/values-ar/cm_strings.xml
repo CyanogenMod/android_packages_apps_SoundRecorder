@@ -40,6 +40,22 @@
   <string name="error_app_internal_recorder">خطأ داخلي في التطبيق.\n\nالميكروفون ربما يكون قيد الاستخدام. </string>
   <string name="view_recordings">عرض التسجيلات</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">أذونات</string>
+  <string name="perm_mic">مسجل الصوت يحتاج إلى الوصول إلى ميكروفون لتسجيل الصوت.</string>
+  <string name="perm_storage">مسجل الصوت يحتاج إلى الوصول إلى المخزن لحفظ الملفات المسجلة.</string>
+  <string name="perm_phone">مسجل الصوت يحتاج إلى الوصول إلى حالة الهاتف لمنع هذا التطبيق من التسجيل أثناء قيامك بالاتصال.</string>
+  <string name="perm_micstorage">مسجل الصوت يحتاج إلى الوصول إلى الميكروفون لتسجيل الصوت والوصول إلى المخزن لحفظ الملفات المسجلة.</string>
+  <string name="perm_micphone">مسجل الصوت يحتاج إلى الوصول إلى الميكروفون لتسجيل الصوت والوصول إلى حالة الهاتف لمنع هذا التطبيق من التسجيل أثناء قيامك بالاتصال.</string>
+  <string name="perm_storagephone">مسجل الصوت يحتاج إلى الوصول إلى المخزن لحفظ الملفات المسجلة والوصول إلى حالة الهاتف لمنع هذا التطبيق من التسجيل أثناء قيامك بالاتصال.</string>
+  <string name="perm_allperms">مسجل الصوت يحتاج إلى الوصول إلى الميكروفون لتسجيل الصوت والوصول إلى المخزن لحفظ الملفات المسجلة والوصول إلى حالة الهاتف لمنع هذا التطبيق من التسجيل أثناء قيامك بالاتصال.</string>
+  <string name="perm_unknown">خطأ في الإذن، تحقق من حالة الإذن في تطبيق إعدادات.</string>
+  <string name="ask_again">السؤال مرة أخرى</string>
+  <string name="dismiss">تجاهل</string>
+  <string name="perm_toast">تم رفض الأذونات المطلوبة، قم بتمكينها من تطبيق إعدادات لبدء التسجيل</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">لا يمكن الوصول إلى مخزن USB. تأكد من أن \"مسجل الصوت\" لديه الإذن للوصول إلى المخزن</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">لا يمكن الوصول إلى بطاقة SD. تأكد من أن \"مسجل الصوت\" لديه الإذن للوصول إلى المخزن</string>
+  <string name="in_call_record_error">غير مسموح بالتسجيل أثناء الاتصال.</string>
+  <string name="button_menu">المزيد من الخيارات</string>
 </resources>
