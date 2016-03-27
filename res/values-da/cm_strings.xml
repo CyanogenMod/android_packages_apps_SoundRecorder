@@ -40,6 +40,10 @@
   <string name="error_app_internal_recorder">Intern program fejl.\n\nMikrofon kan være i brug.</string>
   <string name="view_recordings">Vis optagelser</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">Tilladelser</string>
+  <string name="ask_again">Spørg igen</string>
+  <string name="dismiss">Afvis</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="button_menu">Flere muligheder</string>
 </resources>
