@@ -17,28 +17,13 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
-  <string name="recording_paused">Dijeda</string>
   <!-- Label shown when recording is finished -->
-  <string name="recording_finished">Rekaman selesai</string>
   <!-- Button to save the current recording -->
-  <string name="save">Simpan</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
-  <string name="error_app_unsupported">Format tidak didukung.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
-  <string name="error_mediadb_incall">Opsi ini tidak didukung selama panggilan.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
-  <string name="error_mediadb_aacincall">Rekaman panggilan suara AAC tidak didukung.</string>
   <!-- shown as the dialog title when user selects recording format -->
-  <string name="format_setting">Jenis file</string>
-  <string name="storage_setting">Lokasi penyimpanan</string>
-  <string name="storage_setting_sdcard_item">Kartu SD</string>
-  <string name="storage_setting_local_item">Penyimpanan telepon</string>
-  <string name="no_phonestorage">Penyimpanan telepon dilepas</string>
-  <string name="keyboard">Keyboard</string>
-  <string name="file_deleted">File telah dihapus</string>
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
-  <string name="error_app_internal_recorder">Kesalahan aplikasi internal.\n\nMikrofon mungkin sedang digunakan.</string>
-  <string name="view_recordings">Lihat rekaman</string>
   <!-- Permissions feedback -->
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->

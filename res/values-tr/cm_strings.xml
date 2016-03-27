@@ -57,4 +57,5 @@
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">SD karta erişilemiyor. Ses Kaydedici\'nin depolama birimine erişim izni olduğundan emin olun</string>
   <string name="in_call_record_error">Arama sırasında kayıt yapmaya izin verilmiyor.</string>
+  <string name="button_menu">Daha fazla seçenek</string>
 </resources>

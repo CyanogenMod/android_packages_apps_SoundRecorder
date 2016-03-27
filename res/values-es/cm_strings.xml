@@ -57,4 +57,5 @@
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">No se pudo acceder a la tarjeta SD. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
   <string name="in_call_record_error">No se permite la grabación durante una llamada.</string>
+  <string name="button_menu">Más opciones</string>
 </resources>
