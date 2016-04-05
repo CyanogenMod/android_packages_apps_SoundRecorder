@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">Няма достъп до картата памет. Уверете се, че приложението има необходимите разрешения за достъп</string>
   <string name="in_call_record_error">Записването не е позволено по време на разговор.</string>
   <string name="button_menu">Още опции</string>
+  <string name="notification_bg_title">Записване на звук</string>
+  <string name="notification_bg_content">Звукозаписвачът записва\u2026</string>
+  <string name="notification_stopped_title">Записът спря</string>
+  <string name="notification_stopped_content">Записът беше спрян защото имаше обаждане</string>
 </resources>

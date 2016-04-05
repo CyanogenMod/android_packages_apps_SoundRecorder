@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">Non riesco ad accedere alla scheda SD. Assicurati che Registratore Suoni disponga dei permessi per accedere alla scheda SD</string>
   <string name="in_call_record_error">Impossibile registrare durante una chiamata.</string>
   <string name="button_menu">Altre opzioni</string>
+  <string name="notification_bg_title">Registrazione audio</string>
+  <string name="notification_bg_content">Sound Recorder sta registrando\u2026</string>
+  <string name="notification_stopped_title">Registrazione interrotta</string>
+  <string name="notification_stopped_content">La registrazione è stata interrota perché c\'era una chiamata</string>
 </resources>

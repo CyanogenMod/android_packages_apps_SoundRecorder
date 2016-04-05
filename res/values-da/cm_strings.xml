@@ -41,9 +41,25 @@
   <string name="view_recordings">Vis optagelser</string>
   <!-- Permissions feedback -->
   <string name="denied_title">Tilladelser</string>
+  <string name="perm_mic">Lydoptager skal have adgang til mikrofonen for at optage lyd.</string>
+  <string name="perm_storage">Lydoptager skal have lagringsadgang for at gemme optaget filer.</string>
+  <string name="perm_phone">Lydoptager skal bruge adgang til telefonens status for at forhindre denne app i at optage mens du ringer.</string>
+  <string name="perm_micstorage">Lydoptager skal bruge adgang til mikrofonen for at optage lyd og lagringsadgang for at gemme optagede filer.</string>
+  <string name="perm_micphone">Lydoptager skal bruge adgang til mikrofonen for at optage lyd og adgang til telefonens status for at forhindre denne app i at optage mens du ringer.</string>
+  <string name="perm_storagephone">Lydoptageren skal bruge lagringsadgang for at gemme optagede filer og adgang til telefonens status for at forhindre denne app i at optage mens du ringer.</string>
+  <string name="perm_allperms">Lydoptager skal bruge adgang til mikrofonen for at optage lyd, lagringsadgang for at gemme optagede filer og adgang til telefonens status for at forhindre denne app i at optage mens du ringer.</string>
+  <string name="perm_unknown">Tilladelsesfejl, check tilladelsesstatus i Indstillinger-appen.</string>
   <string name="ask_again">Spørg igen</string>
   <string name="dismiss">Afvis</string>
+  <string name="perm_toast">Nødvendige tilladelser blev nægtet, aktiverer dem fra Indstillinger-appen for at starte optagelsen</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Kan ikke få adgang til USB-lager. Sørg for at Lydoptager har tilladelse til få adgang til lageret</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">Kan ikke få adgang til SD-kortet. Sørg for at Lydoptager har tilladelse til få adgang til lageret</string>
+  <string name="in_call_record_error">Optagelse er ikke tilladt under et opkald.</string>
   <string name="button_menu">Flere muligheder</string>
+  <string name="notification_bg_title">Optager lyd</string>
+  <string name="notification_bg_content">Lydoptager optager\u2026</string>
+  <string name="notification_stopped_title">Optagelse stoppet</string>
+  <string name="notification_stopped_content">Din optagelse blev stoppet fordi der var et opkald</string>
 </resources>

@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">לא ניתן לגשת לכרטיס הזיכרון. ודע שיש לרשמקול הרשאה לגשת לאחסון זה</string>
   <string name="in_call_record_error">לא ניתן לבצע הקלטה במהלך השיחה.</string>
   <string name="button_menu">אפשרויות נוספות</string>
+  <string name="notification_bg_title">מקליט שמע</string>
+  <string name="notification_bg_content">Sound Recorder מקליט\u2026</string>
+  <string name="notification_stopped_title">הקלטה הופסקה</string>
+  <string name="notification_stopped_content">הקלטתך הופסקה בשל שיחה</string>
 </resources>
