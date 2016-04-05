@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">Ei voida käyttää SD-korttia. Varmista että Ääninauhurilla on oikeudet käyttää tallennustilaa</string>
   <string name="in_call_record_error">Tallennusta ei sallita puhelun aikana.</string>
   <string name="button_menu">Lisäasetukset</string>
+  <string name="notification_bg_title">Tallennetaan ääntä</string>
+  <string name="notification_bg_content">Ääninauhuri nauhoittaa\u2026</string>
+  <string name="notification_stopped_title">Nauhoitus pysäytetty</string>
+  <string name="notification_stopped_content">Äänitys pysäytettiin puhelun vuoksi</string>
 </resources>
