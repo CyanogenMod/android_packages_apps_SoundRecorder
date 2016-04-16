@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">Nie ma dostępu do karty SD. Upewnij się, że Rejestrator dźwięku ma uprawnienia dostępu do pamięci</string>
   <string name="in_call_record_error">Nagrywanie nie jest dozwolone w trakcie wykonywania połączenia.</string>
   <string name="button_menu">Więcej opcji</string>
+  <string name="notification_bg_title">Nagrywanie dźwięku</string>
+  <string name="notification_bg_content">Nagrywanie dźwięku\u2026</string>
+  <string name="notification_stopped_title">Zatrzymano nagrywanie</string>
+  <string name="notification_stopped_content">Nagrywanie zatrzymano z powodu połączenia</string>
 </resources>
