@@ -58,4 +58,8 @@
   <string name="error_storage_access" product="default">Ezin izan da SD txartela atzitu. Egiaztatu Soinu grabatzaileak biltegiratzea atzitzeko baimena duela</string>
   <string name="in_call_record_error">Ezin da grabatu dei baten bitartean.</string>
   <string name="button_menu">Aukera gehiago</string>
+  <string name="notification_bg_title">Soinua grabatzen</string>
+  <string name="notification_bg_content">Soinu grabatzailea grabatzen dago\u2026</string>
+  <string name="notification_stopped_title">Grabazioa gelditu da</string>
+  <string name="notification_stopped_content">Zure grabazioa gelditu da dei bat izan delako</string>
 </resources>
