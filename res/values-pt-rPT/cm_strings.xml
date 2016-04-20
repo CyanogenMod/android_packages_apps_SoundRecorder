@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Em pausa</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">A gravação terminou</string>
+  <!-- Button to save the current recording -->
   <string name="save">Gravar</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formato não suportado.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Esta opção não é suportada durante uma chamada.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Gravação de chamada de voz AAC não é suportada.</string>
   <string name="in_call_record_error">A gravação não pode ser feita durante uma chamada.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo de ficheiro</string>
   <string name="storage_setting">Local de armazenamento</string>
   <string name="storage_setting_sdcard_item">Cartão SD</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Armazenamento do telefone desmontado</string>
   <string name="keyboard">Teclado</string>
   <string name="file_deleted">O ficheiro foi apagado</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Erro interno da aplicação.\n\nO microfone pode estar em utilização.</string>
   <string name="view_recordings">Ver as gravações</string>
 </resources>

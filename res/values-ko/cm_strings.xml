@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">일시 정지됨</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">녹음 완료</string>
+  <!-- Button to save the current recording -->
   <string name="save">저장</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">지원되지 않는 형식입니다.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">이 기능은 통화 중에는 사용할 수 없습니다.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC 음성통화 녹음은 지원되지 않습니다.</string>
   <string name="in_call_record_error">통화 중에는 녹음을 사용할 수 없습니다.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">파일 형식</string>
   <string name="storage_setting">저장 위치</string>
   <string name="storage_setting_sdcard_item">SD 카드</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">휴대전화 저장소 분리됨</string>
   <string name="keyboard">키보드</string>
   <string name="file_deleted">파일이 삭제되었습니다</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">내부 애플리케이션 오류.\n\n마이크가 사용 중일 수 있습니다.</string>
   <string name="view_recordings">녹음 확인</string>
 </resources>

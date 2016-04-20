@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Sustabdyta</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Įrašymas baigtas</string>
+  <!-- Button to save the current recording -->
   <string name="save">Išsaugoti</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nepalaikomas formatas.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Ši parinktis yra nepalaikoma pokalbio metu.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC balso skambučių įrašymas nepalaikomas.</string>
   <string name="in_call_record_error">Įrašymas nepalaikomas pokalbio metu.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Failo tipas</string>
   <string name="storage_setting">Saugyklos vieta</string>
   <string name="storage_setting_sdcard_item">SD kortelė</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Telefono saugykla atjungta</string>
   <string name="keyboard">Klaviatūra</string>
   <string name="file_deleted">Failas ištrintas</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Vidinės programos klaida.\n\nMikrofonas gali būti naudojamas.</string>
   <string name="view_recordings">Žiūrėti įrašus</string>
 </resources>
