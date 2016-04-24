@@ -25,6 +25,4 @@
 
     <color name="fab_background">@color/primary</color>
     <color name="fab_pressed">#fafafa</color>
-    <color name="fab_focused">#fafafa</color>
-    <color name="floating_action_button_touch_tint">#d3d3d3</color>
 </resources>
