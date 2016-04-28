@@ -20,8 +20,6 @@
   <string name="recording_paused">Pozastaveno</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Nahrávání dokončeno</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Uložit</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nepodporovaný formát.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

@@ -20,8 +20,6 @@
   <string name="recording_paused">Keskeytetty</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Tallennus valmis</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Tallenna</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Muotoa ei tueta.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

@@ -20,8 +20,6 @@
   <string name="recording_paused">Peatatud</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Lindistus lõpetatud</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Salvesta</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Toetuseta formaat.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

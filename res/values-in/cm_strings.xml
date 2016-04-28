@@ -20,8 +20,6 @@
   <string name="recording_paused">Dijeda</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Rekaman selesai</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Simpan</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Format tidak didukung.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

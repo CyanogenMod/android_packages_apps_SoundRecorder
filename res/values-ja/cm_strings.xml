@@ -20,8 +20,6 @@
   <string name="recording_paused">一時停止中</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">録音が終了しました</string>
-  <!-- Button to save the current recording -->
-  <string name="save">保存</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">サポートされていないフォーマットです。</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

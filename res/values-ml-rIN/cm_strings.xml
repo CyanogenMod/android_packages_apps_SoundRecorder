@@ -20,8 +20,6 @@
   <string name="recording_paused">താൽക്കാലികമായി നിർത്തി</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">റെക്കോർഡിംഗ് പൂർത്തിയായി</string>
-  <!-- Button to save the current recording -->
-  <string name="save">സംരക്ഷിക്കുക</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">പിന്തുണയ്ക്കാത്ത ഫോർമാറ്റ്.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
