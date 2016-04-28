@@ -20,8 +20,6 @@
   <string name="recording_paused">Sustabdyta</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Įrašymas baigtas</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Išsaugoti</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Nepalaikomas formatas.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

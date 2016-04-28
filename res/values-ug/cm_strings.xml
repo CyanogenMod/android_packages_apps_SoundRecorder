@@ -20,8 +20,6 @@
   <string name="recording_paused">ۋاقىتلىق توختىدى</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">خاتىرىلەش تامام</string>
-  <!-- Button to save the current recording -->
-  <string name="save">ساقلا</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">قوللىمايدىغان پىچىم.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

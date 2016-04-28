@@ -20,8 +20,6 @@
   <string name="recording_paused">இடைநிறுத்தப்பட்டது</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">பதிவுசெய்தல் முடிவடைந்தது</string>
-  <!-- Button to save the current recording -->
-  <string name="save">சேமி</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">ஆதரிக்கப்படாத வடிவம்.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

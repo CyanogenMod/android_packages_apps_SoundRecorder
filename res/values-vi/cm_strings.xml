@@ -20,8 +20,6 @@
   <string name="recording_paused">Đã t.dừng</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Ghi âm hoàn thành</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Lưu</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Định dạng không được hỗ trợ.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

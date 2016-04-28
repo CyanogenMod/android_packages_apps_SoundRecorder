@@ -20,8 +20,6 @@
   <string name="recording_paused">En pause</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Enregistrement terminé</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Enregistrer</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Format non pris en charge.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

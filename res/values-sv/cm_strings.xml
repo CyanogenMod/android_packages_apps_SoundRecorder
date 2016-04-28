@@ -20,8 +20,6 @@
   <string name="recording_paused">Pausad</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Inspelningen slutförd</string>
-  <!-- Button to save the current recording -->
-  <string name="save">Spara</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Formatet stöds inte.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->

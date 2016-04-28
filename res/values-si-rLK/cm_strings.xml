@@ -20,8 +20,6 @@
   <string name="recording_paused">විරාම වී</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">පටිගතකරණය අවසන්</string>
-  <!-- Button to save the current recording -->
-  <string name="save">සුරකින්න</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">සහාය නොදක්වන නිමැවුමකි.</string>
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
