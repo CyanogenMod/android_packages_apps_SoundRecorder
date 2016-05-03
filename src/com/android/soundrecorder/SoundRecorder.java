@@ -743,6 +743,8 @@ public class SoundRecorder extends Activity
 
         setContentView(R.layout.main);
         initResourceRefs();
+        View menuButton = findViewById(R.id.menu_button);
+        setupFakeOverflowMenuButton(menuButton);
         mUiHandler.post(mUpdateUiRunnable);
     }
 
