@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ไม่รองรับการบันทึกเสียง AAC ระหว่างใช้สาย</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">เปลี่ยนกลับไปที่ตำแหน่งการเก็บภายใน</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ประเภทไฟล์</string>
   <string name="storage_setting">ตำแหน่งการจัดเก็บ</string>
