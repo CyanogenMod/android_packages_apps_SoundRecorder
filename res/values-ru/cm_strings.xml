@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Этот параметр не поддерживается во время вызова.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Возврат к внутреннему месту хранения</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип файла</string>
   <string name="storage_setting">Место хранения</string>
-  <string name="storage_setting_sdcard_item">SD-карта</string>
   <string name="storage_setting_local_item">Память телефона</string>
   <string name="no_phonestorage">Память телефона не подключена</string>
   <string name="keyboard">Клавиатура</string>
@@ -56,4 +57,8 @@
   <string name="error_storage_access" product="default">Не удается получить доступ к SD-карте. Убедитесь, что Диктофон имеет разрешение на доступ к хранилищу</string>
   <string name="in_call_record_error">Аудиозапись во время телефонного звонка запрещена.</string>
   <string name="button_menu">Ещё</string>
+  <string name="notification_bg_title">Запись аудио</string>
+  <string name="notification_bg_content">Диктофон записывает\u2026</string>
+  <string name="notification_stopped_title">Запись остановлена</string>
+  <string name="notification_stopped_content">Запись была остановлена из-за звонка</string>
 </resources>

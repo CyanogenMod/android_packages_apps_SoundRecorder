@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Cette option n\'est pas prise en charge pendant un appel.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Enregistrement d\'appel vocal AAC non pris en charge.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Retour à l\'emplacement de stockage interne</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Type de fichier</string>
   <string name="storage_setting">Emplacement de stockage</string>
-  <string name="storage_setting_sdcard_item">Carte SD</string>
   <string name="storage_setting_local_item">Stockage du téléphone</string>
   <string name="no_phonestorage">Stockage du téléphone non disponible</string>
   <string name="keyboard">Clavier</string>
@@ -56,4 +57,8 @@
   <string name="error_storage_access" product="default">Impossible d\'accéder à la carte SD. Assurez-vous que le magnétophone est autorisé à accéder au stockage</string>
   <string name="in_call_record_error">L\'enregistrement n\'est pas autorisé pendant un appel.</string>
   <string name="button_menu">Plus d\'options</string>
+  <string name="notification_bg_title">Enregistrement de l\'audio</string>
+  <string name="notification_bg_content">Le magnétophone est en train d\'enregistrer\u2026</string>
+  <string name="notification_stopped_title">Enregistrement arrêté</string>
+  <string name="notification_stopped_content">Votre enregistrement a été arrêté car il y a eu un appel</string>
 </resources>

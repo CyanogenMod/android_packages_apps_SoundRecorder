@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">No se admite esta opción durante una llamada.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">No se admite la grabación AAC de llamada.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo de archivo</string>
   <string name="storage_setting">Ubicación de almacenamiento</string>
-  <string name="storage_setting_sdcard_item">Tarjeta SD</string>
   <string name="storage_setting_local_item">Almacenamiento del teléfono</string>
   <string name="no_phonestorage">Almacenamiento del teléfono no disponible</string>
   <string name="keyboard">Teclado</string>
@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">No se pudo acceder a la tarjeta SD. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
   <string name="in_call_record_error">No se permite la grabación durante una llamada.</string>
   <string name="button_menu">Más opciones</string>
+  <string name="notification_bg_title">Grabando audio</string>
+  <string name="notification_bg_content">La grabadora de sonido está grabando\u2026</string>
+  <string name="notification_stopped_title">Grabación detenida</string>
+  <string name="notification_stopped_content">La grabación se ha detenido porque había una llamada</string>
 </resources>

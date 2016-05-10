@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Tato volba není při hovoru podporována.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Nahrávání hovoru do AAC není podporováno.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Návrat k vnitřnímu úložišti</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ souboru</string>
   <string name="storage_setting">Umístění nahrávek</string>
-  <string name="storage_setting_sdcard_item">Karta SD</string>
   <string name="storage_setting_local_item">Úložiště telefonu</string>
   <string name="no_phonestorage">Úložiště telefonu není připojené</string>
   <string name="keyboard">Klávesnice</string>

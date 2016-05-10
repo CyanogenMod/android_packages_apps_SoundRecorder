@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Aukera hau ez dago eskuragarri dei batean zehar.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC dei grabazioa ez dago jasanda.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Barne biltegiratzera aldatzen</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Fitxategi mota</string>
   <string name="storage_setting">Biltegiratze tokia</string>
-  <string name="storage_setting_sdcard_item">SD txartela</string>
   <string name="storage_setting_local_item">Barne biltegiratzea</string>
   <string name="no_phonestorage">Barne biltegiratzea desmuntatuta</string>
   <string name="keyboard">Teklatua</string>
