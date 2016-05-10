@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Ši parinktis yra nepalaikoma pokalbio metu.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC balso skambučių įrašymas nepalaikomas.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Failo tipas</string>
   <string name="storage_setting">Saugyklos vieta</string>
-  <string name="storage_setting_sdcard_item">SD kortelė</string>
   <string name="storage_setting_local_item">Telefono saugykla</string>
   <string name="no_phonestorage">Telefono saugykla atjungta</string>
   <string name="keyboard">Klaviatūra</string>

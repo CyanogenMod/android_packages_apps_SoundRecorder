@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">ଏହି ବିକଳ୍ପ ଏକ କଲ୍‍ ସମୟରେ ସମ‍ର୍ଥନ କରିବ ନାହିଁ।</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC ସ୍ୱର କଲ୍‍ ରେକର୍ଡିଂ ସମ‍ର୍ଥନ କରୁନାହିଁ</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ଫାଇଲ୍‍ ପ୍ରକାର</string>
   <string name="storage_setting">ଷ୍ଟୋରେଜ୍‍ ଅବସ୍ଥାନ</string>
-  <string name="storage_setting_sdcard_item">SD କାର୍ଡ୍</string>
   <string name="storage_setting_local_item">ଫୋନ୍ ଷ୍ଟୋରେଜ୍</string>
   <string name="no_phonestorage">ଫୋନ୍ ଷ୍ଟୋରେଜ୍ ଅନ୍‍ମାଉଂଟ୍‍ ହୋଇଛି</string>
   <string name="keyboard">କୀବୋର୍ଡ</string>

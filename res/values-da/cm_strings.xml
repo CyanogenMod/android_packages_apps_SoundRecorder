@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Denne indstilling understøttes ikke under et opkald.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Optagelse af AAC-stemmeopkald understøttes ikke.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Filtype</string>
   <string name="storage_setting">Placering af optagelse</string>
-  <string name="storage_setting_sdcard_item">SD-kort</string>
   <string name="storage_setting_local_item">Telefonens hukommelse</string>
   <string name="no_phonestorage">Telefonens hukommelse er frakoblet</string>
   <string name="keyboard">Tastatur</string>

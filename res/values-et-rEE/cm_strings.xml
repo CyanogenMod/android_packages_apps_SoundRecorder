@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">See valik ei ole kõne ajal toetatud.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC kõne salvestus ei ole toetatud.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Faili tüüp</string>
   <string name="storage_setting">Salvestusasukoht</string>
-  <string name="storage_setting_sdcard_item">SD kaart</string>
   <string name="storage_setting_local_item">Telefonimälu</string>
   <string name="no_phonestorage">Telefonimälu lahutatud</string>
   <string name="keyboard">Klaviatuur</string>

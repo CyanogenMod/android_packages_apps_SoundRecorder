@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">سۆزلىشىۋاتقاندا بۇ تاللانمىنى قوللىمايدۇ.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC ئۈن چاقىرىشنى ئۈنگە ئېلىشنى قوللىمايدۇ.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ھۆججەت تىپى</string>
   <string name="storage_setting">ساقلاش ئورنى</string>
-  <string name="storage_setting_sdcard_item">SD كارتا</string>
   <string name="storage_setting_local_item">تېلېفون ساقلىغۇچى</string>
   <string name="no_phonestorage">تېلېفون ساقلىغۇچىسى ئېگەرسىزلەندى</string>
   <string name="keyboard">ھەرپتاختا</string>

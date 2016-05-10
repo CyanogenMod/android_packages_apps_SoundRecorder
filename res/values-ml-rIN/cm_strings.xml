@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">ഒരു കോൾ ചെയ്യുന്ന സമയത്ത് ഈ ഐച്ഛികം പിന്തുണയ്ക്കില്ല.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC വോയ്സ് കോൾ റെക്കോർഡിംഗ് പിന്തുണയ്ക്കില്ല.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ഫയൽ തരം</string>
   <string name="storage_setting">സംഭരണ സ്ഥാനം</string>
-  <string name="storage_setting_sdcard_item">SD കാർഡ്</string>
   <string name="storage_setting_local_item">ഫോൺ സംഭരണം</string>
   <string name="no_phonestorage">ഫോൺ സംഭരണം അൺമൗണ്ട് ചെയ്യുന്നതാണ്</string>
   <string name="keyboard">കീബോർഡ്</string>

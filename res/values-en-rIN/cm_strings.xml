@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">This option is not supported during a call.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC voice call recording is not supported.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">File type</string>
   <string name="storage_setting">Storage location</string>
-  <string name="storage_setting_sdcard_item">SD card</string>
   <string name="storage_setting_local_item">Phone storage</string>
   <string name="no_phonestorage">Phone storage unmounted</string>
   <string name="keyboard">Keyboard</string>

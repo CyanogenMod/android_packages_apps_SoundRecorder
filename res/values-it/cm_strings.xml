@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Questa opzione non è disponibile durante una chiamata.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La registrazione della chiamata in formato AAC non è supportata.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Ripristinato salvataggio in memoria interna</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo file</string>
   <string name="storage_setting">Posizione di memorizzazione</string>
-  <string name="storage_setting_sdcard_item">Scheda SD</string>
   <string name="storage_setting_local_item">Memoria del dispositivo</string>
   <string name="no_phonestorage">Memoria del dispositivo non montata</string>
   <string name="keyboard">Tastiera</string>

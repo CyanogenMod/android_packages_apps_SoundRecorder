@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Esta opción nun tien sofitu mientres una llamada.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La grabación AAC de llamada nun ta sofitada.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipu de ficheru</string>
   <string name="storage_setting">Llugar d\'almacenamientu</string>
-  <string name="storage_setting_sdcard_item">Tarxeta SD</string>
   <string name="storage_setting_local_item">Almac. teléfonu</string>
   <string name="no_phonestorage">Almac. teléfonu desmontáu</string>
   <string name="keyboard">Tecláu</string>
@@ -38,6 +38,22 @@
   <string name="error_app_internal_recorder">Fallu internu de l\'aplicación.\n\nEl micrófonu pue tar n\'usu.</string>
   <string name="view_recordings">Ver grabaciones</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">Permisos</string>
+  <string name="perm_mic">La grabadora de soníu necesita l\'accesu al micrófonu pa grabar audiu.</string>
+  <string name="perm_storage">La grabadora de soníu necesita l\'accesu al almacenamientu pa guardar ficheros grabaos.</string>
+  <string name="perm_phone">La grabadora de soníu necesita l\'accesu al estáu del teléfonu pa evitar qu\'esta aplicación grabe entrín teas llamando.</string>
+  <string name="perm_micstorage">La grabadora de soníu necesita l\'accesu al micrófonu pa grabar audiu y l\'accesu al almacenamientu pa guardar ficheros grabaos.</string>
+  <string name="perm_micphone">La grabadora de soníu necesita l\'accesu al micrófonu pa grabar audiu y l\'accesu al estáu del teléfonu pa evitar qu\'esta aplicación grabe entrín teas llamando.</string>
+  <string name="perm_storagephone">La grabadora de soníu necesita accesu al almacenamientu pa guardar los ficheros grabaos y l\'accesu al estáu del teléfonu pa evitar qu\'esta aplicación grabe entrín teas llamando.</string>
+  <string name="perm_allperms">La grabadora de soníu necesita l\'accesu al micrófonu pa grabar audiu, l\'accesu al almacenamientu pa guardar ficheros grabaos y l\'accesu al estáu del teléfonu pa evitar qu\'esta aplicación grabe entrín teas llamando.</string>
+  <string name="perm_unknown">Fallu de permisos, comprueba l\'estáu de los permisos n\'Axustes.</string>
+  <string name="ask_again">Entrugar de nueves</string>
+  <string name="dismiss">Descartar</string>
+  <string name="perm_toast">Denegáronse los permisos riquíos, habilítalos dende Axustes pa entamar a grabar</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Nun pue accedese al almacenamientu USB. Asegúrate que la grabadora de soníu tien permisu p\'acceder al almacenamientu</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">Nun pue accedese a la tarxeta SD. Asegúrate que la grabadora de soníu tien permisu p\'acceder al almacenamientu</string>
+  <string name="in_call_record_error">Nun se permite la grabación nuna llamada.</string>
+  <string name="button_menu">Más opciones</string>
 </resources>

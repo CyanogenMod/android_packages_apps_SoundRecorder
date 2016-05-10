@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">ඇමතුමක් අතරතුර මෙම විකල්පය සහාය නොදක්වයි.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC හඬ ඇමතුම් රෙකෝඩනය සහාය නොදක්වයි.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ගොනු වර්ගය</string>
   <string name="storage_setting">ආචයන පිහිටුම</string>
-  <string name="storage_setting_sdcard_item">SD කාඩ්පත</string>
   <string name="storage_setting_local_item">දුරකථනයේ ආචයනය</string>
   <string name="no_phonestorage">දුරකථනයේ ආචයනය අනාරූඩය</string>
   <string name="keyboard">යතුරුපුවරුව</string>

@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Гэты параметр не падтрымваецца падчас выкліку.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запіс выкліку ў фармаце AAC не падтрымваецца.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тып файла</string>
   <string name="storage_setting">Месца захоўвання</string>
-  <string name="storage_setting_sdcard_item">SD-картка</string>
   <string name="storage_setting_local_item">Памяць тэлефону</string>
   <string name="no_phonestorage">Памяць тэлефона не падлучана</string>
   <string name="keyboard">Клавіятура</string>

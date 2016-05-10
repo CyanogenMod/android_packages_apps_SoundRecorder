@@ -26,10 +26,11 @@
   <string name="error_mediadb_incall">Tuỳ chọn này không được hỗ trợ khi đang gọi.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Ghi âm cuộc gọi thoại AAC không được hỗ trợ.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Phục hồi vị trí lưu trữ bên trong</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Loại tệp</string>
   <string name="storage_setting">Vị trí lưu trữ</string>
-  <string name="storage_setting_sdcard_item">Thẻ nhớ</string>
   <string name="storage_setting_local_item">Bộ nhớ điện thoại</string>
   <string name="no_phonestorage">Đã ngắt kết nối bộ nhớ điện thoại</string>
   <string name="keyboard">Bàn phím</string>
@@ -56,4 +57,8 @@
   <string name="error_storage_access" product="default">Không thể truy cập thẻ nhớ. Đảm bảo rằng Trình ghi âm có quyền truy cập bộ nhớ</string>
   <string name="in_call_record_error">Không cho phép ghi âm khi thực hiện cuộc gọi.</string>
   <string name="button_menu">Tuỳ chọn khác</string>
+  <string name="notification_bg_title">Ghi âm</string>
+  <string name="notification_bg_content">Sound Recorder đang ghi âm \u2026</string>
+  <string name="notification_stopped_title">Dừng ghi âm</string>
+  <string name="notification_stopped_content">Thao tác ghi âm của bạn đã bị dừng lại do đã có một cuộc gọi</string>
 </resources>

@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Bu seçim zəng vaxtı dəstəklənmir.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC səsli zəng səsyazması dəstəklənmir.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Fayl növü</string>
   <string name="storage_setting">Saxlama yeri</string>
-  <string name="storage_setting_sdcard_item">SD kart</string>
   <string name="storage_setting_local_item">Telefon yaddaşı</string>
   <string name="no_phonestorage">Telefon yaddaşı qoşulmayıb</string>
   <string name="keyboard">Klaviatura</string>

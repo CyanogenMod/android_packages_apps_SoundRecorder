@@ -26,10 +26,10 @@
   <string name="error_mediadb_incall">Această opțiune nu este suportată în cursul unui apel.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Înregistrarea AAC a apelului vocal nu este suportată.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipul fișierului</string>
   <string name="storage_setting">Localizarea stocării</string>
-  <string name="storage_setting_sdcard_item">Card SD</string>
   <string name="storage_setting_local_item">Stocare pe telefon</string>
   <string name="no_phonestorage">Stocarea pe telefon demontată</string>
   <string name="keyboard">Tastatură</string>
