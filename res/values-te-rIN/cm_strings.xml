@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">కాల్ సమయంలో ఈ ఐచ్చికానికి మద్దతు లభించదు.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC వాయిస్ కాల్ రికార్డింగుకు మద్దతు లేదు.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ఫైల్ రకం</string>
   <string name="storage_setting">నిల్వ స్థానం</string>
-  <string name="storage_setting_sdcard_item">SD కార్డు</string>
   <string name="storage_setting_local_item">ఫోన్ నిల్వ</string>
   <string name="no_phonestorage">ఫోన్ నిల్వ అన్మౌంట్ చేయబడింది</string>
   <string name="keyboard">కీబోర్డ్</string>

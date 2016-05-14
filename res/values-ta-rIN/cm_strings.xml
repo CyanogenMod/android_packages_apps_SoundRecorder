@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">இந்த விருப்பம் அழைப்பின்போது ஆதரிக்கப்படுவதில்லை.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC குரல் அழைப்பு பதிவுசெய்தல் ஆதரிக்கப்படவில்லை.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">கோப்பு வகை</string>
   <string name="storage_setting">சேமிப்பு இடம்</string>
-  <string name="storage_setting_sdcard_item">SD கார்டு</string>
   <string name="storage_setting_local_item">தொலைப்பேசி சேமிப்பகம்</string>
   <string name="no_phonestorage">தொலைப்பேசி சேமிப்பகம் அன்மவுண்டட்</string>
   <string name="keyboard">விசைப்பலகை</string>

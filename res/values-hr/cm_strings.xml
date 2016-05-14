@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Ova opcija nije podržana tijekom poziva.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC snimanje glasovnog poziva nije podržano.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Vraćanje na mjesto unutarnje pohrane</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Vrsta datoteke</string>
   <string name="storage_setting">Lokacija pohrane</string>
-  <string name="storage_setting_sdcard_item">SD kartica</string>
   <string name="storage_setting_local_item">Memorija telefona</string>
   <string name="no_phonestorage">Memorija telefona nije montirana</string>
   <string name="keyboard">Tipkovnica</string>
@@ -58,4 +59,8 @@
   <string name="error_storage_access" product="default">Nije moguće pristupiti SD kartici. Provjerite da li Snimač zvuka ima dozvolu za pristup pohrani</string>
   <string name="in_call_record_error">Snimanje nije dopušteno tijekom poziva.</string>
   <string name="button_menu">Više mogućnosti</string>
+  <string name="notification_bg_title">Snimanje zvuka</string>
+  <string name="notification_bg_content">Snimač zvuka snima\u2026</string>
+  <string name="notification_stopped_title">Snimanje zaustavljeno</string>
+  <string name="notification_stopped_content">Snimka je zaustavljena zbog poziva</string>
 </resources>

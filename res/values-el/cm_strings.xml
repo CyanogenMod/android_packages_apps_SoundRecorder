@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Αυτή η επιλογή δεν υποστηρίζεται κατά τη διάρκεια μιας κλήσης.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Η εγγραφή φωνητικής κλήσης σε μορφή AAC δεν υποστηρίζεται.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Έγινε επαναφορά στον εσωτερικό αποθηκευτικό χώρο</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Τύπος αρχείου</string>
   <string name="storage_setting">Θέση αποθήκευσης</string>
-  <string name="storage_setting_sdcard_item">Κάρτα SD</string>
   <string name="storage_setting_local_item">Αποθ. χώρος τηλεφώνου</string>
   <string name="no_phonestorage">Αποθ. χώρος τηλεφώνου αποπροσαρτημένος</string>
   <string name="keyboard">Πληκτρολόγιο</string>

@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">કૉલ દરમિયાન આ વિકલ્પ સમર્થિત નથી.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC વૉઇસ કૉલ રેકૉર્ડિંગ સમર્થિત નથી.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ફાઇલ પ્રકાર</string>
   <string name="storage_setting">સંગ્રહ સ્થાન</string>
-  <string name="storage_setting_sdcard_item">SD કાર્ડ</string>
   <string name="storage_setting_local_item">ફોન સંગ્રહ</string>
   <string name="no_phonestorage">ફોન સંગ્રહ અનમાઉન્ટ કર્યું</string>
   <string name="keyboard">કીબોર્ડ</string>

@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">این گزینه در طول تماس پشتیبانی نمی‌شود.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ضبط تماس صوتی AAC پشتیبانی نمی‌شود.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">نوع فایل</string>
   <string name="storage_setting">محل ذخیره‌سازی</string>
-  <string name="storage_setting_sdcard_item">کارت حافظه</string>
   <string name="storage_setting_local_item">حافظه تلفن</string>
   <string name="no_phonestorage">حافظه گوشی در دسترس نیست</string>
   <string name="keyboard">صفحه‌کلید</string>

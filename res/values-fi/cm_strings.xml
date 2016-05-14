@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Ominaisuutta ei voi käyttää puhelun aikana.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC-tallentamista puhelun aikana ei tueta.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Palautetaan sisäisen tallennustilan sijaintiin</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tiedostotyyppi</string>
   <string name="storage_setting">Tallennustila</string>
-  <string name="storage_setting_sdcard_item">SD-kortti</string>
   <string name="storage_setting_local_item">Puhelimen muisti</string>
   <string name="no_phonestorage">Puhelimen muistia ei ole kiinnitetty</string>
   <string name="keyboard">Näppäimistö</string>

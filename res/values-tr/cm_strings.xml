@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Arama sırasında bu seçenek desteklenmiyor.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC ses çağrısı kaydı desteklenmiyor.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Dahili depolama konumuna geri dönülüyor</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Dosya türü</string>
   <string name="storage_setting">Depolama yeri</string>
-  <string name="storage_setting_sdcard_item">SD kart</string>
   <string name="storage_setting_local_item">Telefon hafızası</string>
   <string name="no_phonestorage">Telefon hafızası ayrılmış</string>
   <string name="keyboard">Klavye</string>
@@ -58,4 +59,8 @@
   <string name="error_storage_access" product="default">SD karta erişilemiyor. Ses Kaydedici\'nin depolama birimine erişim izni olduğundan emin olun</string>
   <string name="in_call_record_error">Arama sırasında kayıt yapmaya izin verilmiyor.</string>
   <string name="button_menu">Daha fazla seçenek</string>
+  <string name="notification_bg_title">Ses kaydediliyor</string>
+  <string name="notification_bg_content">Ses Kaydedici kayıt yapıyor\u2026</string>
+  <string name="notification_stopped_title">Kayıt durduruldu</string>
+  <string name="notification_stopped_content">Bir arama olduğundan dolayı kaydınız durduruldu</string>
 </resources>

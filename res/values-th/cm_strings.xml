@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">ตัวเลือกนี้ไม่สามารถใช้ในระหว่างการโทร</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ไม่รองรับการบันทึกเสียง AAC ระหว่างใช้สาย</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">เปลี่ยนกลับไปที่ตำแหน่งการเก็บภายใน</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ประเภทไฟล์</string>
   <string name="storage_setting">ตำแหน่งการจัดเก็บ</string>
-  <string name="storage_setting_sdcard_item">SD การ์ด</string>
   <string name="storage_setting_local_item">พื้นที่จัดเก็บในโทรศัพท์</string>
   <string name="no_phonestorage">ไม่ได้เชื่อมกับพื้นที่จัดเก็บภายในโทรศัพท์</string>
   <string name="keyboard">แป้นพิมพ์</string>
@@ -58,4 +59,8 @@
   <string name="error_storage_access" product="default">ไม่สามารถเข้าถึง SD card ได้ กรุณาตรวจสอบว่าแอปบันทึกเสียงได้รับอนุญาตให้เข้าถึงที่เก็บข้อมูล</string>
   <string name="in_call_record_error">ไม่อนุญาตให้บันทึกเสียงขณะโทร</string>
   <string name="button_menu">ตัวเลือกเพิ่มเติม</string>
+  <string name="notification_bg_title">กำลังบันทึกเสียง</string>
+  <string name="notification_bg_content">ตัวบันทึกเสียงกำลังบันทึกอยู่\u2026</string>
+  <string name="notification_stopped_title">หยุดการบันทึกเสียงแล้ว</string>
+  <string name="notification_stopped_content">การบันทึกเสียงหยุดลงเนื่องจากมีการโทร</string>
 </resources>

@@ -22,6 +22,7 @@
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <!-- Permissions feedback -->

@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">ئه‌م هه‌ڵبژاردنه‌ پشتگیرینه‌كراوه‌ له‌ كاتی په‌یوه‌ندیكردن.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC تسجیل كردنی په‌یوه‌ندی ده‌نگی پشتگیرینه‌كراوه‌.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">جۆری فایل</string>
   <string name="storage_setting">شوێنی هه‌ڵگرتن</string>
-  <string name="storage_setting_sdcard_item">بیرگەی دەرەکی</string>
   <string name="storage_setting_local_item">بیرگەی تەلەفۆن</string>
   <string name="no_phonestorage">بیرگەی تەلەفۆن ناجێگیرکراوە</string>
   <string name="keyboard">تەختەکلیل</string>

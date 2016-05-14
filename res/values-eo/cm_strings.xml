@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">Tiu opcio ne estas subtenata dum la alvoko.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Registrado de AAC alvoko ne estas subtenata.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Dosierformo</string>
   <string name="storage_setting">Loko de memorilo</string>
-  <string name="storage_setting_sdcard_item">SD-karto</string>
   <string name="storage_setting_local_item">Telefona memorilo</string>
   <string name="no_phonestorage">Telefona memoro ne estas muntita</string>
   <string name="keyboard">Klavaro</string>

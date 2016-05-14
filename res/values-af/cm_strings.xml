@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Hierdie opsie word nie tydens \'n oproep ondersteun nie.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAK stem oproep opname word nie ondersteun nie.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Stel terug na interne stoor spasie</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Lêertipe</string>
   <string name="storage_setting">Stoor plek</string>
-  <string name="storage_setting_sdcard_item">SD kaart</string>
   <string name="storage_setting_local_item">Interne Foon spasie</string>
   <string name="no_phonestorage">Selfoon spasie ongemonteer</string>
   <string name="keyboard">Sleutelbord</string>
@@ -58,4 +59,8 @@
   <string name="error_storage_access" product="default">Kan nie toegang verkry na SD-Kaart. Maak seker Klankopnemer het toestemming na die stoor spasie</string>
   <string name="in_call_record_error">Opneming word nie toegelaat gedurende \'n oproep nie.</string>
   <string name="button_menu">Meer opsies</string>
+  <string name="notification_bg_title">Klank opneming</string>
+  <string name="notification_bg_content">Klank opnemer is besig om op te neem\u2026</string>
+  <string name="notification_stopped_title">Opneming is gestop</string>
+  <string name="notification_stopped_content">Jou opname is gestop omdat daar \'n oproep was</string>
 </resources>

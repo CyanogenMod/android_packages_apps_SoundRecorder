@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">Цей параметр не підтримується під час дзвінка.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC запис голосового дзвінка не підтримується.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип файлу</string>
   <string name="storage_setting">Місце зберігання</string>
-  <string name="storage_setting_sdcard_item">SD-карта</string>
   <string name="storage_setting_local_item">Пам’ять телефону</string>
   <string name="no_phonestorage">Пам\'ять телефону демонтовано</string>
   <string name="keyboard">Клавіатура</string>

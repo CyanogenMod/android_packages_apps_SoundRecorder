@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">यह विकल्प कॉल के दौरान समर्थित नहीं है।</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">एएसी वोइस कॉल रिकॉर्डिंग समर्थित नहीं है।</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">फ़ाइल प्रकार</string>
   <string name="storage_setting">भंडारण का स्थान</string>
-  <string name="storage_setting_sdcard_item">एसडी कार्ड</string>
   <string name="storage_setting_local_item">फ़ोन भंडारण</string>
   <string name="no_phonestorage">फ़ोन भंडारण को अनमाउंट किया गया</string>
   <string name="keyboard">कुंजीपटल</string>

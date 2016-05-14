@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">هذا الخيار غير معتمد أثناء المكالمة.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">تسجيل المكالمة الصوتية بصيغة AAC غير معتمد.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">العودة إلى موقع التخزين الداخلي</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">نوع الملف</string>
   <string name="storage_setting">موقع التخزين</string>
-  <string name="storage_setting_sdcard_item">بطاقة SD</string>
   <string name="storage_setting_local_item">تخزين الهاتف</string>
   <string name="no_phonestorage">إلغاء تحميل تخزين الهاتف </string>
   <string name="keyboard">لوحة المفاتيح</string>
@@ -58,4 +59,8 @@
   <string name="error_storage_access" product="default">لا يمكن الوصول إلى بطاقة SD. تأكد من أن \"مسجل الصوت\" لديه الإذن للوصول إلى المخزن</string>
   <string name="in_call_record_error">غير مسموح بالتسجيل أثناء الاتصال.</string>
   <string name="button_menu">المزيد من الخيارات</string>
+  <string name="notification_bg_title">تسجيل الصوت</string>
+  <string name="notification_bg_content">يقوم مسجل الصوت بتسجيل \u2026</string>
+  <string name="notification_stopped_title">توقف التسجيل</string>
+  <string name="notification_stopped_content">تم إيقاف التسجيل الخاص بك بسبب وجود مكالمة</string>
 </resources>

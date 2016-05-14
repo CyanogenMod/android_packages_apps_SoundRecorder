@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">Dës Optioun ka während engem Uruff net benotzt ginn.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">D\'Ophuele vu Sproochnoriichten am AAC-Format gëtt net ënnerstëtzt.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Fichierstyp</string>
   <string name="storage_setting">Späicherplaz</string>
-  <string name="storage_setting_sdcard_item">SD-Kaart</string>
   <string name="storage_setting_local_item">Telefonsspäicher</string>
   <string name="no_phonestorage">Telefonsspäicher net agebonnen</string>
   <string name="keyboard">Tastatur</string>

@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">通话期间不支持此选项</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">不支持 AAC 语音通话录音。</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">恢复到内置的存储位置</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">文件类型</string>
   <string name="storage_setting">存储位置</string>
-  <string name="storage_setting_sdcard_item">SD 卡</string>
   <string name="storage_setting_local_item">手机存储</string>
   <string name="no_phonestorage">手机存储已卸载</string>
   <string name="keyboard">键盘</string>

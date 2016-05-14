@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">Тази опция не се поддържа по време на разговор.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запис на разговор в AAC формат не се поддържа.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Връщане към вътрешното хранилище за съхранение</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип на файла</string>
   <string name="storage_setting">Място на съхранение</string>
-  <string name="storage_setting_sdcard_item">Карта памет</string>
   <string name="storage_setting_local_item">Вградена памет</string>
   <string name="no_phonestorage">Вградената памет е недостъпна</string>
   <string name="keyboard">Клавиатура</string>

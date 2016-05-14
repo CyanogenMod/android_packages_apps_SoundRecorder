@@ -28,10 +28,11 @@
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">הקלטת שיחה קולית בפורמט AAC לא נתמכת.</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">חוזר למיקום אחסון פנימי</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
-  <string name="storage_setting_sdcard_item">כרטיס זיכרון</string>
   <string name="storage_setting_local_item">אחסון טלפון</string>
   <string name="no_phonestorage">אחסון המכשיר בוטל</string>
   <string name="keyboard">מקלדת</string>

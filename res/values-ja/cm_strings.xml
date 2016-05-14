@@ -28,10 +28,10 @@
   <string name="error_mediadb_incall">このオプションは通話中にはサポートされていません。</string>
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ACCの音声通話録音はサポートされていません。</string>
+  <!-- shown as the toast text when storage is fallback from external to internal -->
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ファイル形式</string>
   <string name="storage_setting">ストレージの場所</string>
-  <string name="storage_setting_sdcard_item">SDカード</string>
   <string name="storage_setting_local_item">携帯電話のストレージ</string>
   <string name="no_phonestorage">携帯電話のストレージがマウントされていません</string>
   <string name="keyboard">キーボード</string>
