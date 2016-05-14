@@ -58,8 +58,4 @@
   <string name="error_storage_access" product="default">Kan ikke få adgang til SD-kortet. Sørg for at Lydoptager har tilladelse til få adgang til lageret</string>
   <string name="in_call_record_error">Optagelse er ikke tilladt under et opkald.</string>
   <string name="button_menu">Flere muligheder</string>
-  <string name="notification_bg_title">Optager lyd</string>
-  <string name="notification_bg_content">Lydoptager optager\u2026</string>
-  <string name="notification_stopped_title">Optagelse stoppet</string>
-  <string name="notification_stopped_content">Din optagelse blev stoppet fordi der var et opkald</string>
 </resources>

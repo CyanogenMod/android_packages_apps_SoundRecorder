@@ -58,6 +58,4 @@
   <string name="error_storage_access" product="default">Није могуће приступити SD картици. Провери да ли снимач звука има дозволу да приступи складишту</string>
   <string name="in_call_record_error">Снимање није дозвољено током позива.</string>
   <string name="button_menu">Више опција</string>
-  <string name="notification_stopped_title">Снимање заустављено</string>
-  <string name="notification_stopped_content">Снимање је заустављено због позива</string>
 </resources>

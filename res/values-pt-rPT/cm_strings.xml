@@ -58,8 +58,4 @@
   <string name="error_storage_access" product="default">Não é possível aceder ao cartão SD. Certifique-se que o Gravador de som tem permissão para aceder ao armazenamento</string>
   <string name="in_call_record_error">Não é permitida a gravação durante uma chamada.</string>
   <string name="button_menu">Mais opções</string>
-  <string name="notification_bg_title">Gravar som</string>
-  <string name="notification_bg_content">O Gravador de som está a gravar\u2026</string>
-  <string name="notification_stopped_title">A gravação foi parada</string>
-  <string name="notification_stopped_content">A sua gravação foi interrompida porque houve uma chamada</string>
 </resources>

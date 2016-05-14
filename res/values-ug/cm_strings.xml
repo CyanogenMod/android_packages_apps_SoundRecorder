@@ -58,8 +58,4 @@
   <string name="error_storage_access" product="default">كارتىنى زىيارەت قىلالمىدى، ئۈنئالغۇنىڭ ساقلاش بوشلۇقنى زىيارەت قىلىش ھوقۇقنى جەزىملەشتۈرۈڭ</string>
   <string name="in_call_record_error">سۆزلىشىش جەريانىدا ئاۋازغا ئېلىشقا يول قويمايدۇ.</string>
   <string name="button_menu">تېخىمۇ كۆپ تاللانما</string>
-  <string name="notification_bg_title">ئۈن ئېلىۋاتىدۇ</string>
-  <string name="notification_bg_content">ئۈنئالغۇ ئۈن ئېلىۋاتىدۇ\u2026</string>
-  <string name="notification_stopped_title">خاتىرىلەش توختىتىلدى</string>
-  <string name="notification_stopped_content">ئۈن ئېلىش توختىتىلدى، چۈنكى سىزگە تېلېفون كەلدى</string>
 </resources>

@@ -58,8 +58,4 @@
   <string name="error_storage_access" product="default">Η πρόσβαση στην κάρτα SD απέτυχε. Βεβαιωθείτε ότι η Ηχογράφηση έχει δικαίωμα πρόσβασης στον αποθηκευτικό χώρο</string>
   <string name="in_call_record_error">Δεν επιτρέπεται η εγγραφή κατά τη διάρκεια μιας κλήσης.</string>
   <string name="button_menu">Περισσότερες επιλογές</string>
-  <string name="notification_bg_title">Εγγραφή ήχου</string>
-  <string name="notification_bg_content">Ηχογράφηση σε εξέλιξη\u2026</string>
-  <string name="notification_stopped_title">Η εγγραφή σταμάτησε</string>
-  <string name="notification_stopped_content">Η ηχογράφησή σας διακόπηκε επειδή υπήρξε μια κλήση</string>
 </resources>

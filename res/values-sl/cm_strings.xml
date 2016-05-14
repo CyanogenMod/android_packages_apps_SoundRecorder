@@ -58,8 +58,4 @@
   <string name="error_storage_access" product="default">Dostop do kartice SD ni mogoč. Prepričajte se, da ima Snemalnik zvoka dovoljenje za dostop do pomnilniške naprave</string>
   <string name="in_call_record_error">Snemanje med klicem ni dovoljeno.</string>
   <string name="button_menu">Več možnosti</string>
-  <string name="notification_bg_title">Snemanje zvoka</string>
-  <string name="notification_bg_content">Snemalnik zvoka snema \u2026</string>
-  <string name="notification_stopped_title">Snemanje ustavljeno</string>
-  <string name="notification_stopped_content">Vaš posnetek je bil ustavljen, ker ste prejeli klic</string>
 </resources>
