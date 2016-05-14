@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">La grabación AAC de llamada nun ta sofitada.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Restaurando la llocalización d\'almacenamientu internu</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipu de ficheru</string>
   <string name="storage_setting">Llugar d\'almacenamientu</string>
@@ -56,4 +57,8 @@
   <string name="error_storage_access" product="default">Nun pue accedese a la tarxeta SD. Asegúrate que la grabadora de soníu tien permisu p\'acceder al almacenamientu</string>
   <string name="in_call_record_error">Nun se permite la grabación nuna llamada.</string>
   <string name="button_menu">Más opciones</string>
+  <string name="notification_bg_title">Grabando audiu</string>
+  <string name="notification_bg_content">El grabador de soníu ta grabando\u2026</string>
+  <string name="notification_stopped_title">Grabación parada</string>
+  <string name="notification_stopped_content">Paróse la to grabación porque hebo una llamada</string>
 </resources>
