@@ -48,7 +48,7 @@
   <string name="perm_allperms">Geluidsrecorder heeft toegang nodig tot de microfoon om audio op te kunnen nemen, toegang tot de opslag nodig om bestanden op te kunnen slaan en toegang nodig tot de telefoonstatus om te voorkomen dat deze app opneemt tijdens oproepen.</string>
   <string name="perm_unknown">Machtigingsfout, controleer de status van de machtiging in Instellingen.</string>
   <string name="ask_again">Opnieuw vragen</string>
-  <string name="dismiss">Weggooien</string>
+  <string name="dismiss">Sluiten</string>
   <string name="perm_toast">Vereiste machtigingen werden geweigerd, schakel ze in in Instellingen om opname te starten</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">Geen toegang tot USB-opslag. Zorg ervoor dat Geluidsrecorder de machtiging heeft voor toegang tot de opslag</string>
@@ -56,4 +56,5 @@
   <string name="error_storage_access" product="default">Geen toegang tot SD-kaart. Zorg ervoor dat Geluidsrecorder de machtiging heeft voor toegang tot de opslag</string>
   <string name="in_call_record_error">Opnemen niet toegestaan tijdens een oproep.</string>
   <string name="button_menu">Meer opties</string>
+  <string name="notification_bg_title">Audio opnemen</string>
 </resources>
