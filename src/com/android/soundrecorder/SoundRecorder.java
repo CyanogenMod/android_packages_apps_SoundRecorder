@@ -1279,6 +1279,9 @@ public class SoundRecorder extends Activity
             menu.removeItem(R.id.menu_item_view_recordings);
         }
 
+        /* do not show recordings while in a recroding state */
+        menu.findItem(R.id.menu_item_view_recordings).setEnabled(mRecorder.state()
+                                                                       != Recorder.RECORDING_STATE);
         menu.findItem(R.id.menu_item_keyboard).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
         menu.findItem(R.id.menu_item_filetype).setEnabled(mRecorder.state() == Recorder.IDLE_STATE);
         final boolean extStorage = hasExternalStorage();
