@@ -29,6 +29,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC taleanrop opptak støttes ikke.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Går tilbake til intern lagringsplassering</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Filtype</string>
   <string name="storage_setting">Lagringslokasjon</string>
