@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pausatuta</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Grabaketa bukatu da</string>
+  <!-- Button to save the current recording -->
   <string name="save">Gorde</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Euskarririk gabeko formatua.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Aukera hau ez dago eskuragarri dei batean zehar.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC dei grabazioa ez dago jasanda.</string>
   <string name="in_call_record_error">Ezin da grabatu dei baten bitartean.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Fitxategi mota</string>
   <string name="storage_setting">Biltegiratze tokia</string>
   <string name="storage_setting_sdcard_item">SD txartela</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Barne biltegiratzea desmuntatuta</string>
   <string name="keyboard">Teklatua</string>
   <string name="file_deleted">Fitxategia ezabatu da</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Aplikazioaren barne errorea.\n\nMikrofonoa okupatuta egon daiteke.</string>
   <string name="view_recordings">Ikusi grabaketak</string>
 </resources>

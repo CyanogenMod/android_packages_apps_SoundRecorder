@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">หยุดชั่วคราวแล้ว</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">บันทึกเสร็จแล้ว</string>
+  <!-- Button to save the current recording -->
   <string name="save">บันทึก</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">ไม่รองรับไฟล์นามสกุลนี้</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">ตัวเลือกนี้ไม่สามารถใช้ในระหว่างการโทร</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ไม่รองรับการบันทึกเสียง AAC ระหว่างใช้สาย</string>
   <string name="in_call_record_error">ไม่​สามารถ​บันทึก​เสียง​ระหว่าง​โทร​ได้​</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ประเภทไฟล์</string>
   <string name="storage_setting">ตำแหน่งการจัดเก็บ</string>
   <string name="storage_setting_sdcard_item">SD การ์ด</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">ไม่ได้เชื่อมกับพื้นที่จัดเก็บภายในโทรศัพท์</string>
   <string name="keyboard">แป้นพิมพ์</string>
   <string name="file_deleted">ไฟล์ถูกลบ</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">ปัญหา​ภายใน​ของ​แอปพลิเคชั่น​\n\n​ไมโครโฟน​อาจ​ถูก​ใช้​อยู่​</string>
   <string name="view_recordings">ดู​สิ่งที่บันทึก</string>
 </resources>

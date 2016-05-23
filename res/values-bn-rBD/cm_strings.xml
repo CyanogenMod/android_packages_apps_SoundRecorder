@@ -16,12 +16,19 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">বিরতি</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">রেকর্ড করা শেষ হয়েছে</string>
+  <!-- Button to save the current recording -->
   <string name="save">সংরক্ষণ</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">অসমর্থিত বিন্যাস।</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">এই অপশনটি একটি কল চলাকালীন সমর্থিত নয়।</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC ভয়েস কল রেকর্ড সমর্থিত নয়।</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ফাইলের ধরন</string>
   <string name="storage_setting">সংগ্রহস্থলের অবস্থান</string>
   <string name="storage_setting_sdcard_item">এসডি কার্ড</string>
@@ -29,4 +36,5 @@
   <string name="no_phonestorage">ফোন সংগ্রহস্থল আনমাউন্ট</string>
   <string name="keyboard">কী-বোর্ড</string>
   <string name="file_deleted">ফাইল মুছেফেলা হয়েছে</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
 </resources>

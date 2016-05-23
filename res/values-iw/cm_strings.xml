@@ -16,20 +16,28 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">מושהה</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">הקלטה הסתיימה</string>
+  <!-- Button to save the current recording -->
   <string name="save">שמור</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">פורמט לא נתמך.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">אפשרות זו אינה נתמכת במהלך שיחה.</string>
-  <string name="error_mediadb_aacincall">הקלטת קול שיחה בפורמט AAC לא נתמך.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">הקלטת שיחה קולית בפורמט AAC לא נתמכת.</string>
   <string name="in_call_record_error">הקלטה במהלך שיחה אינה נתמכת.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">סוג קובץ</string>
   <string name="storage_setting">מיקום אחסון</string>
   <string name="storage_setting_sdcard_item">כרטיס זיכרון</string>
-  <string name="storage_setting_local_item">אחסון פנימי</string>
-  <string name="no_phonestorage">אחסון המכשיר הוסר</string>
+  <string name="storage_setting_local_item">אחסון טלפון</string>
+  <string name="no_phonestorage">אחסון המכשיר בוטל</string>
   <string name="keyboard">מקלדת</string>
   <string name="file_deleted">הקובץ נמחק</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">שגיאת יישום פנימית.\n\nיכול להיות שהמיקרופון נמצא כבר בשימוש.</string>
   <string name="view_recordings">הצג הקלטות</string>
 </resources>

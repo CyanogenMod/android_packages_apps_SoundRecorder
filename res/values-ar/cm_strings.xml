@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">موقف مؤقتاً</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">انتهى التسجيل</string>
+  <!-- Button to save the current recording -->
   <string name="save">حفظ</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">صيغة الملف غير مدعومة.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">هذا الخيار غير معتمد أثناء المكالمة.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">تسجيل المكالمة الصوتية بصيغة AAC غير معتمد.</string>
   <string name="in_call_record_error">التسجيل أثناء إجراء مكالمة غير معتمد.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">نوع الملف</string>
   <string name="storage_setting">موقع التخزين</string>
   <string name="storage_setting_sdcard_item">بطاقة SD</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">إلغاء تحميل تخزين الهاتف </string>
   <string name="keyboard">لوحة المفاتيح</string>
   <string name="file_deleted">تم حذف الملف</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">خطأ داخلي في التطبيق.\n\nالميكروفون ربما يكون قيد الاستخدام. </string>
   <string name="view_recordings">عرض التسجيلات</string>
 </resources>

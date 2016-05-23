@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Прыпынена</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Запіс завершаны</string>
+  <!-- Button to save the current recording -->
   <string name="save">Захаваць</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Непадтрымоўваны фармат.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Гэты параметр не падтрымваецца падчас выкліку.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запіс выкліку ў фармаце AAC не падтрымваецца.</string>
   <string name="in_call_record_error">Запіс не падтрымваецца падчас выкліку.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тып файла</string>
   <string name="storage_setting">Месца захоўвання</string>
   <string name="storage_setting_sdcard_item">SD-картка</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Памяць тэлефона не падлучана</string>
   <string name="keyboard">Клавіятура</string>
   <string name="file_deleted">Файл быў выдалены</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Унутраная абмыла.\n\nМагчыма, мікрафон выкарыстоўваецца іншым дадаткам.</string>
   <string name="view_recordings">Адкрыць тэчку запісаў</string>
 </resources>
