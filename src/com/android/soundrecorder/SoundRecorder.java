@@ -735,17 +735,6 @@ public class SoundRecorder extends Activity
     }
 
     @Override
-    public void onConfigurationChanged(Configuration newConfig) {
-        super.onConfigurationChanged(newConfig);
-
-        setContentView(R.layout.main);
-        initResourceRefs();
-        View menuButton = findViewById(R.id.menu_button);
-        setupFakeOverflowMenuButton(menuButton);
-        mUiHandler.post(mUpdateUiRunnable);
-    }
-
-    @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
 
