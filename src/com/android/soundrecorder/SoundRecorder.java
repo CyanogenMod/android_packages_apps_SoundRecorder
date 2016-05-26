@@ -329,6 +329,7 @@ public class SoundRecorder extends Activity
     WakeLock mWakeLock;
     String mRequestedType = AUDIO_ANY;
     Recorder mRecorder;
+    private PopupMenu mPopupMenu;
     boolean mSampleInterrupted = false;
     static boolean bSSRSupported;
     private String mLastFileName;
@@ -2239,26 +2240,29 @@ public class SoundRecorder extends Activity
     }
 
     public void setupFakeOverflowMenuButton(View menuButton) {
-        final PopupMenu fakeOverflow = new PopupMenu(menuButton.getContext(), menuButton) {
+        if (mPopupMenu != null) {
+            mPopupMenu.dismiss();
+            mPopupMenu = null;
+        }
+        mPopupMenu = new PopupMenu(menuButton.getContext(), menuButton) {
             @Override
             public void show() {
                 onPrepareOptionsMenu(getMenu());
                 super.show();
             }
         };
-        fakeOverflow.inflate(R.menu.main_menu);
-        fakeOverflow.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener () {
+        mPopupMenu.inflate(R.menu.main_menu);
+        mPopupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener () {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
                 return onOptionsItemSelected(item);
             }
         });
-
-        menuButton.setOnTouchListener(fakeOverflow.getDragToOpenListener());
+        menuButton.setOnTouchListener(mPopupMenu.getDragToOpenListener());
         menuButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                fakeOverflow.show();
+                mPopupMenu.show();
             }
         });
     }
