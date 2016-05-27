@@ -29,6 +29,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">No se admite la grabación AAC de llamada.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Restaurar a ubicación de almacenamiento predeterminada</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tipo de archivo</string>
   <string name="storage_setting">Ubicación de almacenamiento</string>
