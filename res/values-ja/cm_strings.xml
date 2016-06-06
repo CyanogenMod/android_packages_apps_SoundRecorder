@@ -49,7 +49,7 @@
   <string name="perm_storagephone">音声レコーダーは録音したファイルを保存するためにストレージへのアクセスと、通話中に録音を停止するために携帯電話の状態へのアクセスを必要とします。</string>
   <string name="perm_allperms">音声レコーダーは音声を録音するためにマイクへのアクセス、録音したファイルを保存するためにストレージへのアクセス、通話中に録音を停止するために携帯電話の状態へのアクセスを必要とします。</string>
   <string name="perm_unknown">権限エラーが発生しました、設定アプリで権限の状態を確認してください。</string>
-  <string name="ask_again">次回も表示する</string>
+  <string name="ask_again">次回も確認する</string>
   <string name="dismiss">閉じる</string>
   <string name="perm_toast">必要な権限が拒否されました、録音を開始するには設定アプリから権限を有効にしてください。</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
