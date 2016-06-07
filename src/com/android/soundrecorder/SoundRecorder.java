@@ -2069,6 +2069,7 @@ public class SoundRecorder extends Activity
                 .setContentIntent(pendingNotifIntent)
                 .setSmallIcon(onGoing ? R.drawable.record : R.drawable.record_disabled)
                 .setOngoing(onGoing)
+                .setAutoCancel(true)
                 .build();
 
         NotificationManager notificationmanager = (NotificationManager)
