@@ -492,6 +492,11 @@ public class SoundRecorder extends Activity
                     case FOCUS_CHANGE:
                         switch (msg.arg1) {
                             case AudioManager.AUDIOFOCUS_LOSS:
+                            /* Ideally we should pause for transient, but
+                             * the current UI design does not provide a pause mechanism
+                             * let's just stop it instead.
+                             */
+                            case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
                                 if (mRecorder.state() == Recorder.RECORDING_STATE) {
                                     mRecorder.stop();
                                     if (mRecorder.sampleLength() > 0) {
