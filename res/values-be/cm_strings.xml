@@ -58,4 +58,5 @@
   <string name="error_storage_access" product="default">Не атрымоўваецца атрымаць доступ да SD-карты. Пераканайся, што Гуказапіс мае дазвол на доступ да сховішча</string>
   <string name="in_call_record_error">Запіс аўдыя падчас размовы немагчымы.</string>
   <string name="button_menu">Іншыя налады</string>
+  <string name="notification_bg_title">Запіс аўдыё</string>
 </resources>
