@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">ವಿರಾಮಿಸಲಾಗಿದೆ</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">ರಿಕಾರ್ಡಿಂಗ್ ಅಂತ್ಯಗೊಂಡಿದೆ</string>
+  <!-- Button to save the current recording -->
   <string name="save">ಉಳಿಸು</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">ಅಬೆಂಬಲಿತ ಸ್ವರೂಪ.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">ಈ ಆಯ್ಕೆ ಕರೆ ಮಾಡುವ ಸಂದರ್ಭದಲ್ಲಿ ಬೆಂಬಲಿತವಾಗಿಲ್ಲ.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC ಧ್ವನಿ ಕರೆ ರಿಕಾರ್ಡಿಂಗನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
   <string name="in_call_record_error">ಕರೆ ಮಾಡುವ ಸಂದರ್ಭದಲ್ಲಿ ರಿಕಾರ್ಡಿಂಗನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ಕಡತ ಪ್ರಕಾರ</string>
   <string name="storage_setting">ಸಂಗ್ರಹಣೆ ಸ್ಥಳ</string>
   <string name="storage_setting_sdcard_item">SD ಕಾರ್ಡ್</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">ಫೋನ್ ಸಂಗ್ರಹಣೆ ಮೌಂಟ್ ಮಾಡಿಲ್ಲ</string>
   <string name="keyboard">ಕೀಬೋರ್ಡ್</string>
   <string name="file_deleted">ಕಡತವನ್ನು ಅಳಿಸಲಾಗಿದೆ</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">ಆಂತರಿಕ ಅಪ್ಲಿಕೇಶನ್ ದೋಷ.\n\nಧ್ವನಿಗ್ರಾಹಕ ಬಳಕೆಯಲ್ಲಿರಬಹುದು.</string>
   <string name="view_recordings">ರಿಕಾರ್ಡಿಂಗ್‍ಗಳನ್ನು ವೀಕ್ಷಿಸಿ</string>
 </resources>

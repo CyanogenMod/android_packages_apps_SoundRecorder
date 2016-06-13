@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Angehalten</string>
-  <string name="recording_finished">Aufnahme abgeschlossen</string>
+  <!-- Label shown when recording is finished -->
+  <string name="recording_finished">Aufzeichnung abgeschlossen</string>
+  <!-- Button to save the current recording -->
   <string name="save">Speichern</string>
-  <string name="error_app_unsupported">Format nicht unterstützt.</string>
-  <string name="error_mediadb_incall">Während eines Anrufs wird diese Option nicht unterstützt.</string>
-  <string name="error_mediadb_aacincall">Aufnahme von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
-  <string name="in_call_record_error">Aufnahme wird während eines Anrufs nicht unterstützt.</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
+  <string name="error_app_unsupported">Nicht unterstütztes Format.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
+  <string name="error_mediadb_incall">Diese Option wird während eines Anrufs nicht unterstützt.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
+  <string name="error_mediadb_aacincall">Die Aufzeichnung von Sprachanrufen wird im AAC-Format nicht unterstützt.</string>
+  <string name="in_call_record_error">Aufzeichnung wird während eines Anrufs nicht unterstützt.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Dateityp</string>
   <string name="storage_setting">Speicherort</string>
   <string name="storage_setting_sdcard_item">SD-Karte</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Telefonspeicher ist nicht verfügbar</string>
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">Datei wurde gelöscht</string>
-  <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\n Das Mikrofon wird eventuell verwendet.</string>
-  <string name="view_recordings">Aufnahmen anzeigen</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
+  <string name="error_app_internal_recorder">Interner Anwendungsfehler.\n\nDas Mikrofon wird eventuell verwendet.</string>
+  <string name="view_recordings">Aufzeichnungen anzeigen</string>
 </resources>

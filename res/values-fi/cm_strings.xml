@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Keskeytetty</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Tallennus valmis</string>
+  <!-- Button to save the current recording -->
   <string name="save">Tallenna</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Muotoa ei tueta.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Ominaisuutta ei voi käyttää puhelun aikana.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">AAC-tallentamista puhelun aikana ei tueta.</string>
   <string name="in_call_record_error">Tallennusta ei tueta puhelun aikana.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Tiedostotyyppi</string>
   <string name="storage_setting">Tallennustila</string>
   <string name="storage_setting_sdcard_item">SD-kortti</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Puhelimen muistia ei ole kiinnitetty</string>
   <string name="keyboard">Näppäimistö</string>
   <string name="file_deleted">Tiedosto on poistettu</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Sovelluksen sisäinen virhe.\n\nMikrofoni saattaa olla käytössä.</string>
   <string name="view_recordings">Tarkastele nauhoituksia</string>
 </resources>

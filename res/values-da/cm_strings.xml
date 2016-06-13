@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">Sat på pause</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">Optagelse færdig</string>
+  <!-- Button to save the current recording -->
   <string name="save">Gem</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">Ikke understøttet format.</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">Denne indstilling understøttes ikke under et opkald.</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Optagelse af AAC-stemmeopkald understøttes ikke.</string>
   <string name="in_call_record_error">Optagelse understøttes ikke under et opkald.</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Filtype</string>
   <string name="storage_setting">Placering af optagelse</string>
   <string name="storage_setting_sdcard_item">SD-kort</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">Telefonens hukommelse er frakoblet</string>
   <string name="keyboard">Tastatur</string>
   <string name="file_deleted">Filen er blevet slettet</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">Intern program fejl.\n\nMikrofon kan være i brug.</string>
   <string name="view_recordings">Vis optagelser</string>
 </resources>

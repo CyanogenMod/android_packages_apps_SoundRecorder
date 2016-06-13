@@ -16,13 +16,20 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- Label shown when recording is paused -->
   <string name="recording_paused">已暂停</string>
+  <!-- Label shown when recording is finished -->
   <string name="recording_finished">录音完成</string>
+  <!-- Button to save the current recording -->
   <string name="save">保存</string>
+  <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <string name="error_app_unsupported">不支持的格式</string>
+  <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <string name="error_mediadb_incall">通话期间不支持此选项</string>
+  <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">不支持 AAC 语音通话录音。</string>
   <string name="in_call_record_error">在通话期间录音功能将不可用。</string>
+  <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">文件类型</string>
   <string name="storage_setting">存储位置</string>
   <string name="storage_setting_sdcard_item">SD 卡</string>
@@ -30,6 +37,7 @@
   <string name="no_phonestorage">手机存储已卸载</string>
   <string name="keyboard">键盘</string>
   <string name="file_deleted">文件已被删除</string>
+  <!-- shown as the message in a dialog when the app encountered an internal error while trying to start recording -->
   <string name="error_app_internal_recorder">程序内部出错。\n\n可能因为麦克风正在被使用。</string>
   <string name="view_recordings">查看录音</string>
 </resources>
