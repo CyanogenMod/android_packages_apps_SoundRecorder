@@ -70,5 +70,5 @@
     <string name="notification_bg_content">Sound Recorder is recording\u2026</string>
 
     <string name="notification_stopped_title">Recording stopped</string>
-    <string name="notification_stopped_content">Your recording has been stopped because there was a call</string>
+    <string name="notification_stopped_content">Interrupted by call or music</string>
 </resources>
