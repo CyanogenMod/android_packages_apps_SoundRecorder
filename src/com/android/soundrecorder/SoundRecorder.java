@@ -887,6 +887,9 @@ public class SoundRecorder extends Activity
                 case FOCUS_CHANGE:
                     switch (msg.arg1) {
                         case AudioManager.AUDIOFOCUS_LOSS:
+                            clearNotification();
+                            createNotification(getString(R.string.notification_stopped_title),
+                                    getString(R.string.notification_stopped_content), false);
                             invalidateOptionsMenu();
                             break;
                     }
