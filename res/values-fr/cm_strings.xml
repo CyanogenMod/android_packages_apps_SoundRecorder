@@ -60,5 +60,4 @@
   <string name="notification_bg_title">Enregistrement de l\'audio</string>
   <string name="notification_bg_content">Le magnétophone est en train d\'enregistrer\u2026</string>
   <string name="notification_stopped_title">Enregistrement arrêté</string>
-  <string name="notification_stopped_content">Votre enregistrement a été arrêté car il y a eu un appel</string>
 </resources>

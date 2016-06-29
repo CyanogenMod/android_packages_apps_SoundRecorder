@@ -60,5 +60,4 @@
   <string name="notification_bg_title">Grabando audio</string>
   <string name="notification_bg_content">La grabadora de sonido está grabando\u2026</string>
   <string name="notification_stopped_title">Grabación detenida</string>
-  <string name="notification_stopped_content">La grabación se ha detenido porque había una llamada</string>
 </resources>

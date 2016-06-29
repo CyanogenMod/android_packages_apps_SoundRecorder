@@ -60,5 +60,5 @@
   <string name="notification_bg_title">Audio aufzeichnen</string>
   <string name="notification_bg_content">Soundrekorder zeichnet auf\u2026</string>
   <string name="notification_stopped_title">Aufzeichnung beendet</string>
-  <string name="notification_stopped_content">Ihre Aufzeichnung wurde wegen eines Anrufs beendet</string>
+  <string name="notification_stopped_content">Durch Anruf oder Musik unterbrochen</string>
 </resources>
