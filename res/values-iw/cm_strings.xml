@@ -60,5 +60,4 @@
   <string name="notification_bg_title">מקליט שמע</string>
   <string name="notification_bg_content">Sound Recorder מקליט\u2026</string>
   <string name="notification_stopped_title">הקלטה הופסקה</string>
-  <string name="notification_stopped_content">הקלטתך הופסקה בשל שיחה</string>
 </resources>

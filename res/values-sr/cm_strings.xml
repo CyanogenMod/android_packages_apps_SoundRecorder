@@ -60,5 +60,5 @@
   <string name="notification_bg_title">Снимам звук</string>
   <string name="notification_bg_content">Снимач звука снима\u2026</string>
   <string name="notification_stopped_title">Снимање заустављено</string>
-  <string name="notification_stopped_content">Снимање је заустављено због позива</string>
+  <string name="notification_stopped_content">Прекинуто позивом или музиком</string>
 </resources>

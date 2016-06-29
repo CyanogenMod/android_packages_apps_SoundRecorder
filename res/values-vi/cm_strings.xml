@@ -60,5 +60,4 @@
   <string name="notification_bg_title">Ghi âm</string>
   <string name="notification_bg_content">Sound Recorder đang ghi âm \u2026</string>
   <string name="notification_stopped_title">Dừng ghi âm</string>
-  <string name="notification_stopped_content">Thao tác ghi âm của bạn đã bị dừng lại do đã có một cuộc gọi</string>
 </resources>
