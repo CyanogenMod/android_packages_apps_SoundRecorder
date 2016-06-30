@@ -68,4 +68,12 @@
     <!-- shown as the message in a dialog when the recording could not be added to the media database -->
     <string name="error_mediadb_new_record">Couldn\'t save recorded audio.</string>
 
+    <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+    <string name="bt_using_headset">Using bluetooth headset</string>
+    <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+    <string name="bt_headset_connecting">Connecting to headset</string>
+    <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+    <string name="bt_headset_disconnected">Bluetooth connection lost</string>
+    <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+    <string name="bt_headset_timeout">Bluetooth connection timeout</string>
 </resources>
