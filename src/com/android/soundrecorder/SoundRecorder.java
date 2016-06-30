@@ -362,12 +362,12 @@ public class SoundRecorder extends Activity
     private static boolean BLUETOOTH_RECORDING_ENABLED = true;
     private BluetoothAdapter mBluetoothAdapter;
     private BluetoothHeadset mBluetoothHeadset;
+
     private int mBluetoothScoState = -1;
-    private boolean mBluetoothScoOwned;
     private int mBluetoothScoPendingRecordArg1;
     private int mBluetoothScoPendingRecordArg2;
     private Toast mBluetoothConnectingToast;
-    private boolean mStartRecordingWithBtPending;
+    private boolean mBluetoothScoStarted;
     private static final int BLUETOOTH_SCO_MODE_TIMEOUT = 5000;
 
     private PhoneStateListener getPhoneStateListener(int subId) {
@@ -589,10 +589,10 @@ public class SoundRecorder extends Activity
                         if (mRecorder.sampleLength() > 0) {
                             mRecorderStop = true;
                         }
-                        if (mBluetoothScoOwned) {
+                        if (mBluetoothScoStarted) {
                             Log.d(TAG, "Stopping Bluetooth SCO");
                             mAudioManager.stopBluetoothSco();
-                            mBluetoothScoOwned = false;
+                            mBluetoothScoStarted = false;
                         }
                         break;
                     case STOP_AND_SAVE:
@@ -602,8 +602,7 @@ public class SoundRecorder extends Activity
 
                     case BLUETOOTH_SCO_MODE_TIMEDOUT:
                         Log.w(TAG, "Bluetooth SCO mode timed out");
-                        mStartRecordingWithBtPending = false;
-                        mBluetoothScoOwned = false;
+                        mBluetoothScoStarted = false;
                         mAudioManager.stopBluetoothSco();
                         // TODO
                         Toast.makeText(SoundRecorder.this, "Bluetooth timeout", Toast.LENGTH_SHORT).show();
@@ -631,6 +630,7 @@ public class SoundRecorder extends Activity
         }
     };
 
+    // return true if an async request is pending and recording start should be delayed
     private boolean startBluetoothAsync() {
         if (!mBluetoothAdapter.isEnabled() ||
                 mBluetoothHeadset == null ||
@@ -638,64 +638,55 @@ public class SoundRecorder extends Activity
             return false;
         }
 
-        //call functions on mBluetoothHeadset to check if Bluetooth SCO audio is connected.
-        List<BluetoothDevice> devices = ;
-        for (final BluetoothDevice dev : devices ) {
-            if (mBluetoothHeadset.isAudioConnected(dev)) {
-                // TODO
-                Toast.makeText(this, "Using bluetooth headset", Toast.LENGTH_SHORT).show();
-                Log.d(TAG, "headset " + dev.getName() + " audio connected " + dev.getAliasName());
-                return false;
-            }
+        if (mBluetoothScoState == AudioManager.SCO_AUDIO_STATE_CONNECTED) {
+            // already connected, good to go.
+            return false;
         }
 
         Log.d(TAG, "Starting SCO Mode");
-        // TODO
-        mBluetoothConnectingToast = Toast.makeText(this, "Connecting to headset", Toast.LENGTH_SHORT);
-        mBluetoothConnectingToast.show();
-
-        mStartRecordingWithBtPending = true;
-        mBluetoothScoOwned = true;
+        mBluetoothScoStarted = true;
         mAudioManager.startBluetoothSco();
         mRecordHandler.sendEmptyMessageDelayed(BLUETOOTH_SCO_MODE_TIMEDOUT, BLUETOOTH_SCO_MODE_TIMEOUT);
+
+        // TODO
+        mBluetoothConnectingToast = Toast.makeText(this, "Connecting to headset", Toast.LENGTH_LONG);
+        mBluetoothConnectingToast.show();
         return true;
     }
 
     private void onBluetoothScoStateChanged(int state) {
 
+        Log.d(TAG, "SCO state: " + mBluetoothScoState + " -> " + state);
+
         switch (state) {
-            case -1:
-                // first change
-                break;
             case AudioManager.SCO_AUDIO_STATE_DISCONNECTED:
                 if (mBluetoothScoState == AudioManager.SCO_AUDIO_STATE_CONNECTED) {
-
+                    if (mBluetoothScoStarted) {
+                        Toast.makeText(this, "Bluetooth connection lost", Toast.LENGTH_LONG).show();
+                        mRecordHandler.sendEmptyMessage(STOP);
+                    }
                 }
                 break;
             case AudioManager.SCO_AUDIO_STATE_CONNECTED:
+                if (mBluetoothScoStarted) {
+                    Toast.makeText(this, "Using bluetooth headset", Toast.LENGTH_SHORT).show();
+                    if (mBluetoothConnectingToast != null) {
+                        mBluetoothConnectingToast.cancel();
+                    }
+                    mRecordHandler.removeMessages(BLUETOOTH_SCO_MODE_TIMEDOUT);
+                    mRecordHandler.obtainMessage(START_RECORDING_WITH_BT,
+                            mBluetoothScoPendingRecordArg1, mBluetoothScoPendingRecordArg2)
+                            .sendToTarget();
+                }
+                break;
+            case AudioManager.SCO_AUDIO_STATE_CONNECTING:
+                break;
+            default:
+                Log.wtf(TAG, "Unexpected SCO_AUDIO_STATE: " + state);
                 break;
         }
 
         mBluetoothScoState = state;
-
-        if (mBluetoothScoConnected) {
-            if (!mStartRecordingWithBtPending) {
-                return;
-            }
-            mStartRecordingWithBtPending = false;
-            if (mBluetoothConnectingToast != null) {
-                mBluetoothConnectingToast.cancel();
-            }
-            Toast.makeText(this, "Using bluetooth headset", Toast.LENGTH_SHORT).show();
-            mRecordHandler.removeMessages(BLUETOOTH_SCO_MODE_TIMEDOUT);
-            mRecordHandler.obtainMessage(START_RECORDING_WITH_BT,
-                    mBluetoothScoPendingRecordArg1, mBluetoothScoPendingRecordArg2)
-                    .sendToTarget();
-        } else {
-            if (mBluetoothScoOwned) {
-                mRecordHandler.sendEmptyMessage(STOP);
-            }
-        }
     }
 
     private void checkSRecPermissions() {
