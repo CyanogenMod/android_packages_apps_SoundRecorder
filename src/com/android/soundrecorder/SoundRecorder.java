@@ -18,19 +18,20 @@
 package com.android.soundrecorder;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import android.Manifest;
 import android.animation.Animator;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothHeadset;
+import android.bluetooth.BluetoothProfile;
 import android.content.ActivityNotFoundException;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -43,7 +44,6 @@ import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.Editor;
-import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.database.Cursor;
 import android.media.AudioManager;
@@ -64,8 +64,6 @@ import android.os.PowerManager.WakeLock;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.ViewAnimationUtils;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.ContextThemeWrapper;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -79,7 +77,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -278,6 +275,7 @@ public class SoundRecorder extends Activity
     static final int STOP_RECORDING = 1;
     static final int STOP_PLAYBACK = 2;
     static final int START_RECORDING = 3;
+    static final int START_RECORDING_WITH_BT = 31;
     static final int START_PLAYBACK = 4;
     static final int PAUSE_RECORDING = 5;
     static final int RESUME_RECORDING = 6;
@@ -285,6 +283,7 @@ public class SoundRecorder extends Activity
     static final int ERROR = 8;
     static final int STOP = 9;
     static final int STOP_AND_SAVE = 10;
+    static final int BLUETOOTH_SCO_MODE_TIMEDOUT = 11;
 
     static final String STORAGE_PATH_LOCAL_PHONE = Environment.getExternalStorageDirectory()
             .toString();
@@ -359,6 +358,17 @@ public class SoundRecorder extends Activity
     private Editor mPrefsStoragePathEditor;
 
     private PhoneStateListener[] mPhoneStateListener;
+
+    private static boolean BLUETOOTH_RECORDING_ENABLED = true;
+    private BluetoothAdapter mBluetoothAdapter;
+    private BluetoothHeadset mBluetoothHeadset;
+    private int mBluetoothScoState = -1;
+    private boolean mBluetoothScoOwned;
+    private int mBluetoothScoPendingRecordArg1;
+    private int mBluetoothScoPendingRecordArg2;
+    private Toast mBluetoothConnectingToast;
+    private boolean mStartRecordingWithBtPending;
+    private static final int BLUETOOTH_SCO_MODE_TIMEOUT = 5000;
 
     private PhoneStateListener getPhoneStateListener(int subId) {
         PhoneStateListener phoneStateListener = new PhoneStateListener(subId) {
@@ -477,6 +487,18 @@ public class SoundRecorder extends Activity
             bSSRSupported = false;
         }
 
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        mBluetoothAdapter.getProfileProxy(this, mProfileListener, BluetoothProfile.HEADSET);
+        registerReceiver(new BroadcastReceiver() {
+            @Override
+            public void onReceive(Context context, Intent intent) {
+                int state = intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, -1);
+
+                Log.d(TAG, "Bluetooth SCO State Change: " + state);
+                onBluetoothScoStateChanged(state);
+            }
+        }, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_UPDATED));
+
         View menuButton = findViewById(R.id.menu_button);
         setupFakeOverflowMenuButton(menuButton);
 
@@ -488,6 +510,7 @@ public class SoundRecorder extends Activity
                 if (mRecorder == null) {
                     Log.wtf(TAG, "Recorder instance is null");
                 }
+                Log.d(TAG, "handleMessage: " + msg);
                 switch (msg.what) {
                     case FOCUS_CHANGE:
                         switch (msg.arg1) {
@@ -525,6 +548,18 @@ public class SoundRecorder extends Activity
                         mRecorder.stopPlayback();
                         break;
                     case START_RECORDING:
+                        if (BLUETOOTH_RECORDING_ENABLED) {
+                            if (mAudioSourceType == MediaRecorder.AudioSource.MIC && startBluetoothAsync()) {
+                                // we just started an async bluetooth connection request
+                                // save the arguments and invoke START_RECORDING_WITH_BT later
+                                mBluetoothScoPendingRecordArg1 = msg.arg1;
+                                mBluetoothScoPendingRecordArg2 = msg.arg2;
+                                Log.d(TAG, "bt starting async");
+                                break;
+                            }
+                        }
+                        // fall-thru
+                    case START_RECORDING_WITH_BT:
                         switch (msg.arg1) {
                             case MediaRecorder.OutputFormat.RAW_AMR:
                                 startRecordingAMR();
@@ -554,11 +589,26 @@ public class SoundRecorder extends Activity
                         if (mRecorder.sampleLength() > 0) {
                             mRecorderStop = true;
                         }
+                        if (mBluetoothScoOwned) {
+                            Log.d(TAG, "Stopping Bluetooth SCO");
+                            mAudioManager.stopBluetoothSco();
+                            mBluetoothScoOwned = false;
+                        }
                         break;
                     case STOP_AND_SAVE:
                         mRecorder.stop();
                         saveSample();
                         break;
+
+                    case BLUETOOTH_SCO_MODE_TIMEDOUT:
+                        Log.w(TAG, "Bluetooth SCO mode timed out");
+                        mStartRecordingWithBtPending = false;
+                        mBluetoothScoOwned = false;
+                        mAudioManager.stopBluetoothSco();
+                        // TODO
+                        Toast.makeText(SoundRecorder.this, "Bluetooth timeout", Toast.LENGTH_SHORT).show();
+                        break;
+
                     default:
                         break;
                 }
@@ -566,6 +616,86 @@ public class SoundRecorder extends Activity
         };
 
         mUiHandler.post(mUpdateUiRunnable);
+    }
+
+    private BluetoothProfile.ServiceListener mProfileListener = new BluetoothProfile.ServiceListener() {
+        public void onServiceConnected(int profile, BluetoothProfile proxy) {
+            if (profile == BluetoothProfile.HEADSET) {
+                mBluetoothHeadset = (BluetoothHeadset) proxy;
+            }
+        }
+        public void onServiceDisconnected(int profile) {
+            if (profile == BluetoothProfile.HEADSET) {
+                mBluetoothHeadset = null;
+            }
+        }
+    };
+
+    private boolean startBluetoothAsync() {
+        if (!mBluetoothAdapter.isEnabled() ||
+                mBluetoothHeadset == null ||
+                mBluetoothHeadset.getConnectedDevices().size() == 0) {
+            return false;
+        }
+
+        //call functions on mBluetoothHeadset to check if Bluetooth SCO audio is connected.
+        List<BluetoothDevice> devices = ;
+        for (final BluetoothDevice dev : devices ) {
+            if (mBluetoothHeadset.isAudioConnected(dev)) {
+                // TODO
+                Toast.makeText(this, "Using bluetooth headset", Toast.LENGTH_SHORT).show();
+                Log.d(TAG, "headset " + dev.getName() + " audio connected " + dev.getAliasName());
+                return false;
+            }
+        }
+
+        Log.d(TAG, "Starting SCO Mode");
+        // TODO
+        mBluetoothConnectingToast = Toast.makeText(this, "Connecting to headset", Toast.LENGTH_SHORT);
+        mBluetoothConnectingToast.show();
+
+        mStartRecordingWithBtPending = true;
+        mBluetoothScoOwned = true;
+        mAudioManager.startBluetoothSco();
+        mRecordHandler.sendEmptyMessageDelayed(BLUETOOTH_SCO_MODE_TIMEDOUT, BLUETOOTH_SCO_MODE_TIMEOUT);
+        return true;
+    }
+
+    private void onBluetoothScoStateChanged(int state) {
+
+        switch (state) {
+            case -1:
+                // first change
+                break;
+            case AudioManager.SCO_AUDIO_STATE_DISCONNECTED:
+                if (mBluetoothScoState == AudioManager.SCO_AUDIO_STATE_CONNECTED) {
+
+                }
+                break;
+            case AudioManager.SCO_AUDIO_STATE_CONNECTED:
+                break;
+        }
+
+        mBluetoothScoState = state;
+
+        if (mBluetoothScoConnected) {
+            if (!mStartRecordingWithBtPending) {
+                return;
+            }
+            mStartRecordingWithBtPending = false;
+            if (mBluetoothConnectingToast != null) {
+                mBluetoothConnectingToast.cancel();
+            }
+            Toast.makeText(this, "Using bluetooth headset", Toast.LENGTH_SHORT).show();
+            mRecordHandler.removeMessages(BLUETOOTH_SCO_MODE_TIMEDOUT);
+            mRecordHandler.obtainMessage(START_RECORDING_WITH_BT,
+                    mBluetoothScoPendingRecordArg1, mBluetoothScoPendingRecordArg2)
+                    .sendToTarget();
+        } else {
+            if (mBluetoothScoOwned) {
+                mRecordHandler.sendEmptyMessage(STOP);
+            }
+        }
     }
 
     private void checkSRecPermissions() {
@@ -1630,6 +1760,9 @@ public class SoundRecorder extends Activity
      */
     @Override
     public void onDestroy() {
+
+        mBluetoothAdapter.closeProfileProxy(BluetoothProfile.HEADSET, mBluetoothHeadset);
+
         if (mSDCardMountEventReceiver != null) {
             unregisterReceiver(mSDCardMountEventReceiver);
             mSDCardMountEventReceiver = null;
