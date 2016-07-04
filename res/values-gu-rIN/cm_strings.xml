@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SD કાર્ડનો વપરાશ થઇ શકશે નહીં. ખાતરી કરી લેશો કે Sound Recorder પાસે સંગ્રહ ઍક્સેસ કરવાની પરવાનગી હોય.</string>
   <string name="in_call_record_error">કૉલ દરમિયાન રેકૉર્ડિંગની છૂટ નથી.</string>
   <string name="button_menu">વધુ વિકલ્પો</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

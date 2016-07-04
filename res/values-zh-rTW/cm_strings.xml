@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">不支援 AAC 語音通話錄音</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">恢復到預設的儲存位置</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">檔案格式</string>
   <string name="storage_setting">儲存位置</string>
@@ -56,4 +57,9 @@
   <string name="error_storage_access" product="default">無法存取 SD 卡，請確保錄音程式有權限存取儲存空間。</string>
   <string name="in_call_record_error">通話時不允許錄音。</string>
   <string name="button_menu">更多選項</string>
+  <string name="notification_stopped_content">已被通話或音樂中斷</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>
