@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SD কাৰ্ড আহৰণ কৰিব নোৱাৰে। নিশ্চিত কৰক যাতে চাউণ্ড ৰেকৰ্ডাৰৰ ষ্ট\'ৰেজত প্ৰৱেশ কৰাৰ অনুমতি আছে</string>
   <string name="in_call_record_error">কল চলি থকা সময়ত ৰেকৰ্ডিঙৰ অনুমতি দিয়া নহয়।</string>
   <string name="button_menu">অধিক বিকল্পসমূহ</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SD କାର୍ଡ୍ ଆକସେସ୍ କରିପାରିବେ ନାହିଁ। ଷ୍ଟୋରେଜ୍‍ ଆକ୍‍ସେସ୍‍ କରିବାକୁ ସାଉଣ୍ଡ ରେକର୍ଡର୍‍ ପାଖରେ ଅନୁମତି ଥିବା ସୁନିଶ୍ଚିତ କରନ୍ତୁ</string>
   <string name="in_call_record_error">ଏକ କଲ୍‍ ସମୟରେ ରେକର୍ଡିଂ ପାଇଁ ଅନୁମତି ଦିଆଯାଇନାହିଁ।</string>
   <string name="button_menu">ଅଧିକ ବିକଳ୍ପଗୁଡିକ</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

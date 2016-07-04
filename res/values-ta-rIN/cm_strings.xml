@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SD அட்டையை அணுக முடியாது. சேமிப்பகத்தை அணுக சவுண்ட் ரெக்கார்டரிடம் அனுமதி இருப்பதை உறுதிசெய்</string>
   <string name="in_call_record_error">அழைப்பின்போது பதிவுசெய்தல் அனுமதிக்கப்படுவதில்லை.</string>
   <string name="button_menu">கூடுதல் விருப்பங்கள்</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

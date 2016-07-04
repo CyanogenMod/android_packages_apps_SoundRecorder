@@ -43,4 +43,8 @@
   <string name="error_storage_access" product="default">No se pudo acceder a la tarjeta SD. Asegúrate de que la grabadora de sonidos tenga permiso para acceder al almacenamiento</string>
   <string name="in_call_record_error">No se permite la grabación durante una llamada.</string>
   <string name="button_menu">Más opciones</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

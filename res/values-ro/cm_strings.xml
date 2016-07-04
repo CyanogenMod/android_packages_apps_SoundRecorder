@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">Nu se poate accesa cardul SD. Verificați dacă Înregistrare voce are permisiunea de a accesa stocarea</string>
   <string name="in_call_record_error">Înregistrarea nu este permisă în timpul unui apel.</string>
   <string name="button_menu">Mai multe opțiuni</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

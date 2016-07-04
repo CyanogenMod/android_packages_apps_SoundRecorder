@@ -57,4 +57,8 @@
   <string name="in_call_record_error">Запіс аўдыя падчас размовы немагчымы.</string>
   <string name="button_menu">Іншыя налады</string>
   <string name="notification_bg_title">Запіс аўдыё</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

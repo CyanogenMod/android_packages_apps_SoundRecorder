@@ -60,4 +60,8 @@
   <string name="notification_bg_title">Merekam audio</string>
   <string name="notification_bg_content">Perekam suara merekam\u2026</string>
   <string name="notification_stopped_title">Rekaman berhenti</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

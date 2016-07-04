@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SD-kártya nem érhető el. Lehet, hogy a Hangrögzítő nem rendelkezik a tárhely eléréséhez szükséges engedéllyel</string>
   <string name="in_call_record_error">Telefonálás közbeni hangrögzítés nem engedélyezett.</string>
   <string name="button_menu">További opciók</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>

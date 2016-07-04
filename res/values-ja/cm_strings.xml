@@ -56,4 +56,8 @@
   <string name="error_storage_access" product="default">SDカードにアクセスできません。音声レコーダーにストレージへのアクセス権限が与えられていることを確認してください。</string>
   <string name="in_call_record_error">通話中の録音は許可されていません。</string>
   <string name="button_menu">その他のオプション</string>
+  <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
 </resources>
