@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">La gravació s\'ha aturat</string>
   <string name="notification_stopped_content">Interrompuda per una trucada o música</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">S\'estan utilitzant uns auriculars bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">S\'està connectant als auriculars</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">S\'ha perdut la connexió bluetooth</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Temps d\'espera de connexió bluetooth esgotat</string>
 </resources>

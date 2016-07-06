@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">Η εγγραφή σταμάτησε</string>
   <string name="notification_stopped_content">Διακόπηκε από κλήση ή μουσική</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Χρησιμοποιούνται ακουστικά bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Γίνεται σύνδεση με τα ακουστικά</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Η σύνδεση bluetooth χάθηκε</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Το χρονικό όριο σύνδεσης bluetooth έληξε</string>
 </resources>
