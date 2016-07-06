@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">Grabazioa gelditu da</string>
   <string name="notification_stopped_content">Dei batek edo musikak etenda</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Bluetooth aurikularrak erabiltzen</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Aurikularretara konektatzen</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Bluetooth konexioa galdu da</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Bluetooth konexioaren denbora muga gainditu da</string>
 </resources>

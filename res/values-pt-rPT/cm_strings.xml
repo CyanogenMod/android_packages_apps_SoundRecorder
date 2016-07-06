@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">A gravação foi parada</string>
   <string name="notification_stopped_content">Interrompido por chamada ou música</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">A utilizar auricular bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">A ligar ao auricular</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Ligação bluetooth perdida</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Tempo para ligação bluetooth excedido</string>
 </resources>

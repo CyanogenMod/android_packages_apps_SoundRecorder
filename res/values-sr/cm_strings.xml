@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">Снимање заустављено</string>
   <string name="notification_stopped_content">Прекинуто позивом или музиком</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Коришћење bluetooth слушалице</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Повезивање на слушалице</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Bluetooth конекција изгубљена</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Bluetooth конекција истекла</string>
 </resources>
