@@ -42,25 +42,25 @@
   <string name="view_recordings">Vis opptak</string>
   <!-- Permissions feedback -->
   <string name="denied_title">Tillatelser</string>
-  <string name="perm_mic">Lydopptakeren trenger mikrofon tilgang for å spille inn lyd.</string>
-  <string name="perm_storage">Lydopptakeren trenger lagrings tilgang for å lagre innspilt lyd.</string>
-  <string name="perm_phone">Lydopptakeren trenger telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
-  <string name="perm_micstorage">Lydopptakeren trenger mikrofon tilgang for å spille inn lyd og lagrings tilgang for å lagre innspilt lyd.</string>
-  <string name="perm_micphone">Lydopptakeren trenger mikrofon tilgang for å spille inn lyd og telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
-  <string name="perm_storagephone">Lydopptakeren trenger lagrings tilgang for å lagre innspilt lyd og telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
-  <string name="perm_allperms">Lydopptakeren trenger mikrofon tilgang for å innspille lyd, lagrings tilgang for å lagre innspill og telefon status tilgang for å passe på at du ikke tar opp anropene dine.</string>
+  <string name="perm_mic">Lydopptaker trenger mikrofon tilgang for å spille inn lyd.</string>
+  <string name="perm_storage">Lydopptaker trenger lagrings tilgang for å lagre innspilt lyd.</string>
+  <string name="perm_phone">Lydopptaker trenger telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
+  <string name="perm_micstorage">Lydopptaker trenger mikrofon tilgang for å spille inn lyd og lagrings tilgang for å lagre innspilt lyd.</string>
+  <string name="perm_micphone">Lydopptaker trenger mikrofon tilgang for å spille inn lyd og telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
+  <string name="perm_storagephone">Lydopptaker trenger lagrings tilgang for å lagre innspilt lyd og telefon tilgang for å passe på at du ikke tar opp anropene dine.</string>
+  <string name="perm_allperms">Lydopptaker trenger mikrofon tilgang for å innspille lyd, lagrings tilgang for å lagre innspill og telefon status tilgang for å passe på at du ikke tar opp anropene dine.</string>
   <string name="perm_unknown">Tillatelsesfeil, sjekk tillatelse status i telefonens innstillinger.</string>
   <string name="ask_again">Spør igjen</string>
   <string name="dismiss">Avvis</string>
   <string name="perm_toast">Nødvendige tillatelser ble nektet, aktiver dem fra telefonens innstillinger for å starte å ta opp lyd</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
-  <string name="error_storage_access" product="nosdcard">Kunne ikke få tilgang til USB-lagring. Kontroller at Lydinnspilling har tilgang til lagringen</string>
+  <string name="error_storage_access" product="nosdcard">Kunne ikke få tilgang til USB-lagring. Kontroller at Lydopptaker har tilgang til lagringen</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
-  <string name="error_storage_access" product="default">Kunne ikke få tilgang til SD-lagring. Kontroller at Lydinnspilling har tilgang til lagringen</string>
+  <string name="error_storage_access" product="default">Kunne ikke få tilgang til SD-lagring. Kontroller at Lydopptaker har tilgang til lagringen</string>
   <string name="in_call_record_error">Innspillingen er ikke låvelig ikke under en samtale.</string>
   <string name="button_menu">Flere alternativer</string>
   <string name="notification_bg_title">Lydopptak pågår</string>
-  <string name="notification_bg_content">Lydinnspiller tar opp\u2026</string>
+  <string name="notification_bg_content">Lydopptaker tar opp\u2026</string>
   <string name="notification_stopped_title">Innspillingen stoppet</string>
   <string name="notification_stopped_content">Innspillingen din har stoppet på grunn av et anrop</string>
 </resources>
