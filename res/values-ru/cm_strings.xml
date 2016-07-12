@@ -27,7 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Запись вызова в формате AAC не поддерживается.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
-  <string name="storage_fallback">Возврат к внутреннему месту хранения</string>
+  <string name="storage_fallback">Переключение на встроенную память</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Тип файла</string>
   <string name="storage_setting">Место хранения</string>
@@ -40,10 +40,10 @@
   <string name="view_recordings">Открыть папку записей</string>
   <!-- Permissions feedback -->
   <string name="denied_title">Разрешения</string>
-  <string name="perm_mic">Программе «Диктофон» требуется доступ к микрофону для аудиозаписи.</string>
-  <string name="perm_storage">Программе «Диктофон» требуется доступ к хранилищу для сохранения записанных файлов.</string>
+  <string name="perm_mic">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи.</string>
+  <string name="perm_storage">Приложению «Диктофон» требуется доступ к хранилищу для сохранения записанных файлов.</string>
   <string name="perm_phone">Приложению «Диктофон» требуется доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
-  <string name="perm_micstorage">Программе «Диктофон» требуется доступ к микрофону для аудиозаписи и доступ к хранилищу для сохранения записанных файлов.</string>
+  <string name="perm_micstorage">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи и доступ к хранилищу для сохранения записанных файлов.</string>
   <string name="perm_micphone">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
   <string name="perm_storagephone">Приложению «Диктофон» требуется доступ к хранилищу для сохранения записанных файлов и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
   <string name="perm_allperms">Приложению «Диктофон» требуется доступ к микрофону для аудиозаписи, доступ к хранилищу для сохранения записанных файлов и доступ к состоянию телефона, чтобы прекращать аудиозапись во время звонка.</string>
@@ -55,13 +55,18 @@
   <string name="error_storage_access" product="nosdcard">Не удается получить доступ к USB-накопителю. Убедитесь, что Диктофон имеет разрешение на доступ к хранилищу</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">Не удается получить доступ к SD-карте. Убедитесь, что Диктофон имеет разрешение на доступ к хранилищу</string>
-  <string name="in_call_record_error">Аудиозапись во время телефонного звонка запрещена.</string>
+  <string name="in_call_record_error">Запись аудио во время телефонного звонка невозможна.</string>
   <string name="button_menu">Ещё</string>
   <string name="notification_bg_title">Запись аудио</string>
   <string name="notification_bg_content">Диктофон записывает\u2026</string>
   <string name="notification_stopped_title">Запись остановлена</string>
+  <string name="notification_stopped_content">Прервано вызовом или музыкой</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Используется гарнитура Bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Подключение к гарнитуре</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Потеряно соединение Bluetooth</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Истекло время ожидания соединения Bluetooth</string>
 </resources>
