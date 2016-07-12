@@ -62,7 +62,11 @@
   <string name="notification_stopped_title">已停止录音</string>
   <string name="notification_stopped_content">被通话或音乐打断</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">使用蓝牙耳机</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">正在连接到耳机</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">蓝牙连接丢失</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">蓝牙连接超时</string>
 </resources>
