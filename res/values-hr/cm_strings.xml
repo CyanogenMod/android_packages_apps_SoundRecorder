@@ -19,7 +19,7 @@
   <!-- Label shown when recording is paused -->
   <string name="recording_paused">Pauzirano</string>
   <!-- Label shown when recording is finished -->
-  <string name="recording_finished">Snimanje završeno</string>
+  <string name="recording_finished">Snimanje je završeno</string>
   <!-- Button to save the current recording -->
   <string name="save">Spremi</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
