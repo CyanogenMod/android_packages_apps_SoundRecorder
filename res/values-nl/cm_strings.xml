@@ -59,4 +59,5 @@
   <string name="in_call_record_error">Opnemen niet toegestaan tijdens een oproep.</string>
   <string name="button_menu">Meer opties</string>
   <string name="notification_bg_title">Audio opnemen</string>
+  <string name="notification_stopped_content">Opname gestopt vanwege inkomende oproep</string>
 </resources>
