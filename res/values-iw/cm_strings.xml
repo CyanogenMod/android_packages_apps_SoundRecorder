@@ -60,8 +60,13 @@
   <string name="notification_bg_title">מקליט שמע</string>
   <string name="notification_bg_content">Sound Recorder מקליט\u2026</string>
   <string name="notification_stopped_title">הקלטה הופסקה</string>
+  <string name="notification_stopped_content">נקטע על ידי שיחה או מוזיקה</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">משתמש באוזניית Bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">מתחבר לאוזניות</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">חיבור ה־Bluetooth אבד</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">חיבור ה־Bluetooth נותק</string>
 </resources>
