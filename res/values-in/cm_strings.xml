@@ -40,22 +40,22 @@
   <string name="error_app_internal_recorder">Galat aplikasi internal.\n\nMikrofon mungkin sedang digunakan.</string>
   <string name="view_recordings">Lihat rekaman</string>
   <!-- Permissions feedback -->
-  <string name="denied_title">Izin</string>
+  <string name="denied_title">Perizinan</string>
   <string name="perm_mic">Perekam Suara membutuhkan akses mikrofon untuk merekam pendengaran.</string>
-  <string name="perm_storage">Perekam Suara memerlukan akses penyimpanan untuk menyimpan berkas.</string>
-  <string name="perm_phone">Penyimpan Suara memerlukan akses status ponsel untuk mengatasi aplikasi ini merekam saat Anda melakukan panggilan.</string>
-  <string name="perm_micstorage">Perekam Suara memerlukan akses mikropon untuk merekam pendengaran dan akses penyimpanan untuk menyimpan berkas.</string>
-  <string name="perm_micphone">Perekam Suara memerlukan akses mikrofon untuk merekam pendengaran dan akses status ponsel untuk mencegah aplikasi ini merekam saat Anda melakukan panggilan.</string>
-  <string name="perm_storagephone">Perekam Suara membutuhkan akses penyimpanan untuk menyimpan berkas dan akses status ponsel untuk mencegah aplikasi ini merekam saat Anda melakukan panggilan.</string>
-  <string name="perm_allperms">Perekam Suara membutuhkan akses mikrofon untuk merekam pendengaran, akses penyimpanan untuk menyimpan berkas dan akses status ponsel untuk mengatasi aplikasi ini merekam saat Anda melakukan panggilan.</string>
-  <string name="perm_unknown">Galat izin, periksalah status perizinan di aplikasi Pengaturan.</string>
-  <string name="ask_again">Tanya kembali</string>
+  <string name="perm_storage">Perekam Suara membutuhkan akses penyimpanan untuk menyimpan berkas.</string>
+  <string name="perm_phone">Penyimpan Suara membutuhkan akses status ponsel untuk mencegah aplikasi ini untuk merekam saat Anda melakukan panggilan.</string>
+  <string name="perm_micstorage">Perekam Suara membutuhkan akses mikrofon untuk merekam audio dan akses penyimpanan untuk menyimpan berkas.</string>
+  <string name="perm_micphone">Perekam Suara membutuhkan akses mikrofon untuk merekam audio dan akses status ponsel untuk mencegah aplikasi ini untuk merekam saat Anda melakukan panggilan.</string>
+  <string name="perm_storagephone">Perekam Suara membutuhkan akses penyimpanan untuk menyimpan berkas dan akses status ponsel untuk mencegah aplikasi ini untuk merekam saat Anda melakukan panggilan.</string>
+  <string name="perm_allperms">Perekam Suara membutuhkan akses mikrofon untuk merekam audio, akses penyimpanan untuk menyimpan berkas dan akses status ponsel untuk mencegah aplikasi ini untuk merekam saat Anda melakukan panggilan.</string>
+  <string name="perm_unknown">Kesalahan perizinan, periksa status perizinan pada aplikasi Pengaturan.</string>
+  <string name="ask_again">Tanya lagi</string>
   <string name="dismiss">Abaikan</string>
-  <string name="perm_toast">Izin yang diperlukan ditolak, aktifkan dari aplikasi Pengaturan untuk mulai proses rekaman</string>
+  <string name="perm_toast">Izin yang diperlukan ditolak, aktifkan dari aplikasi Pengaturan untuk mulai merekam</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
-  <string name="error_storage_access" product="nosdcard">Tidak dapat mengakses penyimpanan USB. Pastikan Perekam Suara memiliki izin untuk mengakses penyimpanan</string>
+  <string name="error_storage_access" product="nosdcard">Tidak dapat mengakses penyimpanan USB. Pastikan Perekam Suara memiliki izin untuk akses penyimpanan</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
-  <string name="error_storage_access" product="default">Tidak dapat mengakses kartu Secure Digital. Pastikan Perekam Suara memiliki izin untuk mengakses penyimpanan</string>
-  <string name="in_call_record_error">Proses rekaman tidak diizinkan selama panggilan.</string>
+  <string name="error_storage_access" product="default">Tidak dapat mengakses kartu SD. Pastikan Perekam Suara memiliki izin untuk akses penyimpanan</string>
+  <string name="in_call_record_error">Merekam tidak diizinkan selama panggilan.</string>
   <string name="button_menu">Pilihan lainnya</string>
 </resources>
