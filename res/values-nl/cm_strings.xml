@@ -29,6 +29,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Gesprekken opnemen in AAC niet ondersteund.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Terugzetten naar interne opslaglocatie</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Bestandstype</string>
   <string name="storage_setting">Opslaglocatie</string>
@@ -59,5 +60,7 @@
   <string name="in_call_record_error">Opnemen niet toegestaan tijdens een oproep.</string>
   <string name="button_menu">Meer opties</string>
   <string name="notification_bg_title">Audio opnemen</string>
+  <string name="notification_bg_content">Geluidsrecorder is aan het opnemen\u2026</string>
+  <string name="notification_stopped_title">Opnemen gestopt</string>
   <string name="notification_stopped_content">Opname gestopt vanwege inkomende oproep</string>
 </resources>
