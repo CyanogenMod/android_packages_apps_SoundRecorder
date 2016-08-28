@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Copyright (C) 2011 The Android Open Source Project
-     Copyright (C) 2015 The CyanogenMod Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -15,34 +14,10 @@
      limitations under the License.
 -->
 <resources>
-    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Material">
-        <item name="android:colorPrimary">@color/primary</item>
-        <item name="android:colorPrimaryDark">@color/primary_dark</item>
-        <item name="android:colorAccent">@color/accent</item>
-        <item name="android:windowNoTitle">true</item>
-        <item name="android:windowActionBar">false</item>
+    <style name="Theme.SoundRecorder" parent="@android:style/Theme.Holo.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
-
     <style name="MediaButton" parent="@android:style/MediaButton">
-        <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
-        <item name="android:layout_height">@dimen/media_button_dimen</item>
-        <item name="android:layout_width">@dimen/media_button_dimen</item>
-        <item name="android:layout_marginStart">@dimen/media_button_margin</item>
-        <item name="android:layout_marginEnd">@dimen/media_button_margin</item>
+        <item name="android:background">@android:drawable/btn_default</item>
     </style>
-
-    <style name="floating_action_button">
-        <item name="android:layout_width">@dimen/fab_size</item>
-        <item name="android:layout_height">@dimen/fab_size</item>
-        <item name="android:layout_margin">@dimen/fab_margin</item>
-        <item name="android:background">@drawable/fab_accent</item>
-        <item name="android:stateListAnimator">@anim/floating_action_button_elevation</item>
-        <item name="android:elevation">@dimen/fab_elevation_normal</item>
-    </style>
-
-    <!-- The more menu icon in Light theme is black, change it to white -->
-    <style name="RecorderOverflowButtonStyle" parent="@android:style/Widget.Material.ActionButton.Overflow">
-        <item name="android:src">@drawable/ic_menu_moreoverflow_material</item>
-    </style>
-
 </resources>
