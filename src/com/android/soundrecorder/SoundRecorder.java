@@ -502,14 +502,16 @@ public class SoundRecorder extends Activity
 
         if (BLUETOOTH_RECORDING_ENABLED) {
             mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-            mBluetoothAdapter.getProfileProxy(this, mProfileListener, BluetoothProfile.HEADSET);
-            registerReceiver(new BroadcastReceiver() {
-                @Override
-                public void onReceive(Context context, Intent intent) {
-                    onBluetoothScoStateChanged(
-                            intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, -1));
-                }
-            }, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_UPDATED));
+            if (mBluetoothAdapter != null) {
+                mBluetoothAdapter.getProfileProxy(this, mProfileListener, BluetoothProfile.HEADSET);
+                registerReceiver(new BroadcastReceiver() {
+                    @Override
+                    public void onReceive(Context context, Intent intent) {
+                        onBluetoothScoStateChanged(
+                                intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, -1));
+                    }
+                }, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_UPDATED));
+            }
         }
 
         View menuButton = findViewById(R.id.menu_button);
@@ -560,7 +562,7 @@ public class SoundRecorder extends Activity
                         mRecorder.stopPlayback();
                         break;
                     case START_RECORDING:
-                        if (BLUETOOTH_RECORDING_ENABLED) {
+                        if (BLUETOOTH_RECORDING_ENABLED && mBluetoothAdapter != null) {
                             if (mAudioSourceType == MediaRecorder.AudioSource.MIC
                                     && startBluetoothSco()) {
                                 // We just started an async bluetooth connection request
