@@ -59,5 +59,6 @@
   <string name="in_call_record_error">Inspelning är inte tillåtet under ett samtal.</string>
   <string name="button_menu">Fler alternativ</string>
   <string name="notification_bg_title">Spelar in ljud</string>
+  <string name="notification_bg_content">Ljudinspelaren spelar in\u2026</string>
   <string name="notification_stopped_title">Inspelningen stoppad</string>
 </resources>
