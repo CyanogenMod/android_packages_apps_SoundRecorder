@@ -360,6 +360,7 @@ public class SoundRecorder extends Activity
     ImageButton mAcceptButton;
     ImageButton mDiscardButton;
 
+    private BroadcastReceiver mBluetoothReceiver = null;
     private BroadcastReceiver mSDCardMountEventReceiver = null;
     private BroadcastReceiver mPowerOffReceiver = null;
     private TelephonyManager mTelephonyManager;
@@ -504,13 +505,7 @@ public class SoundRecorder extends Activity
             mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
             if (mBluetoothAdapter != null) {
                 mBluetoothAdapter.getProfileProxy(this, mProfileListener, BluetoothProfile.HEADSET);
-                registerReceiver(new BroadcastReceiver() {
-                    @Override
-                    public void onReceive(Context context, Intent intent) {
-                        onBluetoothScoStateChanged(
-                                intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, -1));
-                    }
-                }, new IntentFilter(AudioManager.ACTION_SCO_AUDIO_STATE_UPDATED));
+                registerBluetoothListener();
             }
         }
 
@@ -1782,6 +1777,10 @@ public class SoundRecorder extends Activity
 
         mBluetoothAdapter.closeProfileProxy(BluetoothProfile.HEADSET, mBluetoothHeadset);
 
+        if (mBluetoothReceiver != null) {
+            unregisterReceiver(mBluetoothReceiver);
+            mBluetoothReceiver = null;
+        }
         if (mSDCardMountEventReceiver != null) {
             unregisterReceiver(mSDCardMountEventReceiver);
             mSDCardMountEventReceiver = null;
@@ -1792,6 +1791,21 @@ public class SoundRecorder extends Activity
         }
         clearNotification();
         super.onDestroy();
+    }
+
+    private void registerBluetoothListener() {
+        if (mBluetoothReceiver == null) {
+            mBluetoothReceiver = new BroadcastReceiver() {
+                @Override
+                public void onReceive(Context context, Intent intent) {
+                    onBluetoothScoStateChanged(
+                            intent.getIntExtra(AudioManager.EXTRA_SCO_AUDIO_STATE, -1));
+                }
+            };
+            IntentFilter iFilter = new IntentFilter();
+            iFilter.addAction(AudioManager.ACTION_SCO_AUDIO_STATE_UPDATED);
+            registerReceiver(mBluetoothReceiver, iFilter);
+        }
     }
 
     /*
