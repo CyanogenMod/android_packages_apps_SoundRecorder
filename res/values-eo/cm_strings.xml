@@ -17,7 +17,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Label shown when recording is paused -->
-  <string name="recording_paused">Paŭzita</string>
   <!-- Label shown when recording is finished -->
   <string name="recording_finished">Registrado finita</string>
   <!-- Button to save the current recording -->
