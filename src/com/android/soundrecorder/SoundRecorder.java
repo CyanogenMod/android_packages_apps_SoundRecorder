@@ -1336,6 +1336,7 @@ public class SoundRecorder extends Activity
         if (mWAVSupport) {
             adapter.add(R.string.format_setting_wav_item);
         }
+        adapter.add(R.string.format_setting_aac_item);
 
         final DialogInterface.OnClickListener clickListener =
                 new DialogInterface.OnClickListener() {
@@ -1364,6 +1365,13 @@ public class SoundRecorder extends Activity
                         mRequestedType = getResources().getBoolean(R.bool.record_stereo) ?
                                 AUDIO_WAVE_2CH_LPCM : AUDIO_WAVE_1CH_LPCM;
                         mFileType = 2;
+                        mPrefsStoragePathEditor.putString("requestedType", mRequestedType);
+                        mPrefsStoragePathEditor.putInt("fileType", mFileType);
+                        mPrefsStoragePathEditor.commit();
+                        break;
+                    case R.string.format_setting_aac_item:
+                        mRequestedType = AUDIO_AAC_MP4;
+                        mFileType = 3;
                         mPrefsStoragePathEditor.putString("requestedType", mRequestedType);
                         mPrefsStoragePathEditor.putInt("fileType", mFileType);
                         mPrefsStoragePathEditor.commit();
