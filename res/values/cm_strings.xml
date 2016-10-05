@@ -35,6 +35,7 @@
     <string name="format_setting_amr_item" translatable="false">AMR</string>
     <string name="format_setting_3gpp_item" translatable="false">3GPP</string>
     <string name="format_setting_wav_item" translatable="false">WAV</string>
+    <string name="format_setting_aac_item" translatable="false">AAC</string>
     <string name="storage_setting">Storage location</string>
     <string name="storage_setting_local_item">Phone storage</string>
     <string name="no_phonestorage">Phone storage unmounted</string>
