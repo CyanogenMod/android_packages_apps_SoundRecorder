@@ -61,5 +61,4 @@
   <string name="notification_bg_title">오디오 녹음 중</string>
   <string name="notification_bg_content">Sound Recorder가 녹음중입니다\u2026</string>
   <string name="notification_stopped_title">녹음 중지됨</string>
-  <string name="notification_stopped_content">전화 때문에 녹음이 중지되었습니다</string>
 </resources>
