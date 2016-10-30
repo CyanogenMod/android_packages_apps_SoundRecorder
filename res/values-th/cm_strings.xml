@@ -62,5 +62,4 @@
   <string name="notification_bg_title">กำลังบันทึกเสียง</string>
   <string name="notification_bg_content">ตัวบันทึกเสียงกำลังบันทึกอยู่\u2026</string>
   <string name="notification_stopped_title">หยุดการบันทึกเสียงแล้ว</string>
-  <string name="notification_stopped_content">การบันทึกเสียงหยุดลงเนื่องจากมีการโทร</string>
 </resources>
