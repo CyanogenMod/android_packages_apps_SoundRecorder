@@ -42,5 +42,4 @@
   <!-- Permissions feedback -->
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
-  <string name="notification_stopped_content">Запис зупинено через вхідний дзвінок</string>
 </resources>

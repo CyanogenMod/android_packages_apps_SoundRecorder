@@ -62,5 +62,5 @@
   <string name="notification_bg_title">Nagrywanie dźwięku</string>
   <string name="notification_bg_content">Nagrywanie dźwięku\u2026</string>
   <string name="notification_stopped_title">Zatrzymano nagrywanie</string>
-  <string name="notification_stopped_content">Nagrywanie zatrzymano z powodu połączenia</string>
+  <string name="notification_stopped_content">Przerwane przez połączenie lub muzykę</string>
 </resources>
