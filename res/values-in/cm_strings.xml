@@ -62,5 +62,5 @@
   <string name="notification_bg_title">Merekam audio</string>
   <string name="notification_bg_content">Perekam suara merekam\u2026</string>
   <string name="notification_stopped_title">Rekaman berhenti</string>
-  <string name="notification_stopped_content">Rekaman Anda telah berhenti karena ada panggilan</string>
+  <string name="notification_stopped_content">Terganggu oleh panggilan atau musik</string>
 </resources>
