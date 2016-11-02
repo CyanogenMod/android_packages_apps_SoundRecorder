@@ -62,5 +62,5 @@
   <string name="notification_bg_title">Записване на звук</string>
   <string name="notification_bg_content">Звукозаписвачът записва\u2026</string>
   <string name="notification_stopped_title">Записът спря</string>
-  <string name="notification_stopped_content">Записът беше спрян защото имаше обаждане</string>
+  <string name="notification_stopped_content">Прекъснат от обаждане или музика</string>
 </resources>

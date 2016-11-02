@@ -62,5 +62,5 @@
   <string name="notification_bg_title">Gravar son</string>
   <string name="notification_bg_content">A gravadora de son está grabando\u2026</string>
   <string name="notification_stopped_title">Parouse a grabación</string>
-  <string name="notification_stopped_content">A túa gravación deteuse porque había unha chamada</string>
+  <string name="notification_stopped_content">Interrompido por unha chamada ou música</string>
 </resources>

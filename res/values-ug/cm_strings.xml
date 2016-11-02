@@ -61,5 +61,4 @@
   <string name="notification_bg_title">ئۈن ئېلىۋاتىدۇ</string>
   <string name="notification_bg_content">ئۈنئالغۇ ئۈن ئېلىۋاتىدۇ\u2026</string>
   <string name="notification_stopped_title">خاتىرىلەش توختىتىلدى</string>
-  <string name="notification_stopped_content">ئۈن ئېلىش توختىتىلدى، چۈنكى سىزگە تېلېفون كەلدى</string>
 </resources>

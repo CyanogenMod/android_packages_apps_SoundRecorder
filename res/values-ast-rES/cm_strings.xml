@@ -62,5 +62,4 @@
   <string name="notification_bg_title">Grabando audiu</string>
   <string name="notification_bg_content">El grabador de soníu ta grabando\u2026</string>
   <string name="notification_stopped_title">Grabación parada</string>
-  <string name="notification_stopped_content">Paróse la to grabación porque hebo una llamada</string>
 </resources>
