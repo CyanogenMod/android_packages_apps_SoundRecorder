@@ -62,5 +62,4 @@
   <string name="notification_bg_title">Ses kaydediliyor</string>
   <string name="notification_bg_content">Ses Kaydedici kayıt yapıyor\u2026</string>
   <string name="notification_stopped_title">Kayıt durduruldu</string>
-  <string name="notification_stopped_content">Bir arama olduğundan dolayı kaydınız durduruldu</string>
 </resources>

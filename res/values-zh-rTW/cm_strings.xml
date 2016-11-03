@@ -59,4 +59,5 @@
   <string name="error_storage_access" product="default">無法存取 SD 卡，請確保錄音程式有權限存取儲存空間。</string>
   <string name="in_call_record_error">通話時不允許錄音。</string>
   <string name="button_menu">更多選項</string>
+  <string name="notification_stopped_content">已被通話或音樂中斷</string>
 </resources>
