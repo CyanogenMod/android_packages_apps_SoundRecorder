@@ -60,8 +60,13 @@
   <string name="notification_bg_title">Klank opneming</string>
   <string name="notification_bg_content">Klank opnemer is besig om op te neem\u2026</string>
   <string name="notification_stopped_title">Opneming is gestop</string>
+  <string name="notification_stopped_content">Onderbreek deur oproep of musiek</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Met behulp van Bluetooth-kopstuk</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Koppel tans aan kopstuk</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Bluetooth-konneksie verloor</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Bluetooth-konneksie uitgetel</string>
 </resources>
