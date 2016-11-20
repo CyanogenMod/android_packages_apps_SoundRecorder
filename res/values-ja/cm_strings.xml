@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">ACCの音声通話録音はサポートされていません。</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">内部ストレージの保存場所に戻しています</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">ファイル形式</string>
   <string name="storage_setting">ストレージの場所</string>
@@ -56,8 +57,16 @@
   <string name="error_storage_access" product="default">SDカードにアクセスできません。音声レコーダーにストレージへのアクセス権限が与えられていることを確認してください。</string>
   <string name="in_call_record_error">通話中の録音は許可されていません。</string>
   <string name="button_menu">その他のオプション</string>
+  <string name="notification_bg_title">録音中</string>
+  <string name="notification_bg_content">音声レコーダーは録音中です\u2026</string>
+  <string name="notification_stopped_title">録音を停止しました</string>
+  <string name="notification_stopped_content">通話または音楽によって中断されました</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Bluetoothヘッドセットを使用しています</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">ヘッドセットに接続しています</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Bluetooth接続が切断されました</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Bluetooth接続がタイムアウトしました</string>
 </resources>
