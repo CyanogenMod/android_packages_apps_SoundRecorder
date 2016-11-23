@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Zapisywanie połączenia głosowego w formacie AAC jest nieobsługiwane.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Powracanie do pamięci wewnętrzej</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ pliku</string>
   <string name="storage_setting">Miejsce przechowywania</string>
@@ -59,6 +60,7 @@
   <string name="notification_bg_title">Nagrywanie dźwięku</string>
   <string name="notification_bg_content">Nagrywanie dźwięku\u2026</string>
   <string name="notification_stopped_title">Zatrzymano nagrywanie</string>
+  <string name="notification_stopped_content">Przerwane przez połączenie lub muzykę</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
   <string name="bt_using_headset">Za pomocą zestawu słuchawkowego Bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
