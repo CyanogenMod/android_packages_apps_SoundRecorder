@@ -19,7 +19,6 @@
   <!-- Label shown when recording is paused -->
   <!-- Label shown when recording is finished -->
   <!-- Button to save the current recording -->
-  <string name="save">Konservi</string>
   <!-- shown as the message in a dialog when the app encountered and unsupported format -->
   <!-- shown as the message in a dialog when the recording cannot be started while in call -->
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
