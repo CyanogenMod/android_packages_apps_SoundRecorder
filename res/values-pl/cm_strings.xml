@@ -66,7 +66,7 @@
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
   <string name="bt_headset_connecting">Łączenie z zestawem słuchawkowym</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
-  <string name="bt_headset_disconnected">Utracone połączenie Bluetooth</string>
+  <string name="bt_headset_disconnected">Utracono połączenie Bluetooth</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
   <string name="bt_headset_timeout">Przekroczono czas połączenia Bluetooth</string>
 </resources>
