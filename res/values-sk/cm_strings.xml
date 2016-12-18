@@ -27,6 +27,7 @@
   <!-- shown as the message in a dialog when voice call recording is started for AAC format -->
   <string name="error_mediadb_aacincall">Nahrávanie hovoru do formátu AAC nie je podporované.</string>
   <!-- shown as the toast text when storage is fallback from external to internal -->
+  <string name="storage_fallback">Návrat na vnútorný ukladací priestor</string>
   <!-- shown as the dialog title when user selects recording format -->
   <string name="format_setting">Typ súboru</string>
   <string name="storage_setting">Úložisko</string>
@@ -38,10 +39,34 @@
   <string name="error_app_internal_recorder">Vnútorná chyba aplikácie.\n\nMôžete použiť mikrofón.</string>
   <string name="view_recordings">Zobraziť nahrávky</string>
   <!-- Permissions feedback -->
+  <string name="denied_title">Oprávnenia</string>
+  <string name="perm_mic">Záznam zvuku potrebuje prístup k mikrofónu na záznam zvuku.</string>
+  <string name="perm_storage">Záznam zvuku potrebuje prístup k úložisku na ukladanie nahratých súborov.</string>
+  <string name="perm_phone">Záznam zvuku potrebuje prístup k stavu telefónu na zabránenie nahrávaniu počas hovoru.</string>
+  <string name="perm_micstorage">Záznam zvuku potrebuje prístup k mikrofónu na záznam zvuku a prístup k úložisku na ukladanie nahraných súborov.</string>
+  <string name="perm_micphone">Záznam zvuku potrebuje prístup k mikrofónu na záznam zvuku a prístup k stavu telefónu na zabránenie nahrávaniu počas hovoru.</string>
+  <string name="perm_storagephone">Záznam zvuku potrebuje prístup k úložisku na ukladanie nahraných súborov a k stavu telefónu na zabránenie nahrávaniu počas hovoru.</string>
+  <string name="perm_allperms">Záznam zvuku potrebuje prístup k mikrofónu na záznam zvuku, prístup k úložisku na ukladanie nahraných súborov a prístup s stavu telefónu na zabránenie nahrávania počas hovoru.</string>
+  <string name="perm_unknown">Chyba povolení, skontrolujte stav povolení v aplikácii Nastavenia.</string>
+  <string name="ask_again">Spýtať sa znova</string>
+  <string name="dismiss">Zavrieť</string>
+  <string name="perm_toast">Požadované povolenia boli odopreté, povoľte ich v aplikácii Nastavenia na spustenie záznamu</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
+  <string name="error_storage_access" product="nosdcard">Pamäťové USB médium sa nedá sprístupniť. Uistite sa, že Záznam zvuku má povolenie na prístup k úložisku</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
+  <string name="error_storage_access" product="default">SD karta sa nedá sprístupniť. Uistite sa, že Záznam zvuku má povolenie na prístup k úložisku</string>
+  <string name="in_call_record_error">Nahrávanie nie je povolené počas hovoru.</string>
+  <string name="button_menu">Viac volieb</string>
+  <string name="notification_bg_title">Záznam zvuku</string>
+  <string name="notification_bg_content">Záznam zvuku sa nahráva\u2026</string>
+  <string name="notification_stopped_title">Záznam zastavený</string>
+  <string name="notification_stopped_content">Prerušenie hovoru alebo hudby</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">Používajú sa slúchadlá Bluetooth</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">Pripojenie slúchadiel</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">Spojenie Bluetooth prerušené</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">Časový limit pripojenia Bluetooth</string>
 </resources>
