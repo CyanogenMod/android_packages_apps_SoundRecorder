@@ -40,26 +40,33 @@
   <string name="view_recordings">查看錄音</string>
   <!-- Permissions feedback -->
   <string name="denied_title">權限</string>
-  <string name="perm_mic">錄音程式需要存取麥克風以錄製音訊。</string>
-  <string name="perm_storage">錄音程式需要存取儲存空間以儲存錄音檔案。</string>
-  <string name="perm_phone">錄音程式需要存取手機狀態，以避免程式在您通話時錄音。</string>
-  <string name="perm_micstorage">錄音程式需要存取麥克風和儲存空間，以錄製並儲存音訊檔案。</string>
-  <string name="perm_micphone">錄音程式需要存取麥克風和手機狀態，以錄製音訊檔案並避免程式在您通話時錄音。</string>
-  <string name="perm_storagephone">錄音程式需要存取儲存空間和手機狀態，以儲存音訊檔案並避免程式在您通話時錄音。</string>
-  <string name="perm_allperms">錄音程式需要存取麥克風、儲存空間和手機狀態，以錄製和儲存音訊檔案並避免在您通話時錄音。</string>
+  <string name="perm_mic">錄音程式需要存取麥克風即可錄製音訊。</string>
+  <string name="perm_storage">錄音程式需要存取儲存空間即可儲存錄音檔案。</string>
+  <string name="perm_phone">錄音程式需要存取手機狀態，即可避免程式在您通話時錄音。</string>
+  <string name="perm_micstorage">錄音程式需要存取麥克風和儲存空間，即可錄製並儲存音訊檔案。</string>
+  <string name="perm_micphone">錄音程式需要存取麥克風和手機狀態，即可錄製音訊檔案並避免程式在您通話時錄音。</string>
+  <string name="perm_storagephone">錄音程式需要存取儲存空間和手機狀態，即可儲存音訊檔案並避免程式在您通話時錄音。</string>
+  <string name="perm_allperms">錄音程式需要存取麥克風、儲存空間和手機狀態，即可錄製和儲存音訊檔案並避免在您通話時錄音。</string>
   <string name="perm_unknown">權限錯誤，請在設定中檢查權限狀態。</string>
   <string name="ask_again">再次詢問</string>
   <string name="dismiss">忽略</string>
-  <string name="perm_toast">所需權限被拒，請在設定中啟用以開始錄音。</string>
+  <string name="perm_toast">所需權限被拒，請在設定中啟用即可開始錄音。</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card [CHAR LIMIT=NONE] -->
   <string name="error_storage_access" product="nosdcard">無法存取 USB 儲存空間，請確保錄音程式有權限存取儲存空間。</string>
   <!-- shown as the message in a dialog when an error occured because of an error accessing the sd card -->
   <string name="error_storage_access" product="default">無法存取 SD 卡，請確保錄音程式有權限存取儲存空間。</string>
   <string name="in_call_record_error">通話時不允許錄音。</string>
   <string name="button_menu">更多選項</string>
+  <string name="notification_bg_title">錄製音訊</string>
+  <string name="notification_bg_content">錄音機正在錄音\u2026</string>
+  <string name="notification_stopped_title">已停止錄音</string>
   <string name="notification_stopped_content">已被通話或音樂中斷</string>
   <!-- shown as a toast when a recording is started with a bluetooth headset as the input source -->
+  <string name="bt_using_headset">使用藍牙耳機</string>
   <!-- shown as a toast when initiating a connection to a bluetooth headset -->
+  <string name="bt_headset_connecting">連接至耳機</string>
   <!-- shown as a toast when recording is stopped because a bluetooth connection is dropped -->
+  <string name="bt_headset_disconnected">藍牙連線丟失</string>
   <!-- shown as a toast when recording fails to start because a bluetooth connection was not started -->
+  <string name="bt_headset_timeout">藍牙連線逾時</string>
 </resources>
